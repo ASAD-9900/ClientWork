@@ -1,0 +1,5010 @@
+/* ==========================================================================
+   ORAANJ INTERIOR ARCHITECTURE & CONSTRUCTION — REUSABLE MASTER STYLESHEET
+   File: style.css
+   Compatible with WordPress Classic / Gutenberg Editor & Bootstrap
+   Strictly Scoped with 'orc-' prefix to prevent interference with existing CSS
+   Typography: Playfair Display / El Messiri (Headings) | Inter (Body)
+   Palette: Terracotta (#B94E1A) | Plum (#670066) | Dark Charcoal (#1A1816)
+            Muted Body (#5E5953) | Tint (#FFF6F2) | White (#FFFFFF)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. BOX-SIZING & BASE RESET (SCOPED TO ORC COMPONENTS)
+   -------------------------------------------------------------------------- */
+.orc-hero-wrap, .orc-hero-wrap *,
+.orc-section, .orc-section *,
+.orc-case-study-wrap, .orc-case-study-wrap * {
+  box-sizing: border-box !important;
+}
+
+/* Scoped Heading Font-Weight Hardening (No Theme Overwrite) */
+.orc-hero-wrap h1, .orc-hero-wrap h2, .orc-hero-wrap h3, .orc-hero-wrap h4,
+.orc-section h1, .orc-section h2, .orc-section h3, .orc-section h4,
+.orc-case-study-wrap h1, .orc-case-study-wrap h2, .orc-case-study-wrap h3, .orc-case-study-wrap h4 {
+  font-weight: 400 !important;
+}
+.orc-hero-wrap h1 {
+  font-weight: 500 !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. ANTI-WPAUTOP DEFENSES (SCOPED SO THEME NEVER BREAKS GRID)
+   -------------------------------------------------------------------------- */
+.orc-hero-wrap p:empty, .orc-hero-content > p:empty,
+.orc-section p:empty, .orc-container > p:empty,
+.orc-col-content > p:empty, .orc-col-media > p:empty,
+.orc-split > p, .orc-cards-grid > p, .orc-points-grid > p,
+.orc-gap-grid > p, .orc-step-grid > p, .orc-timeline-grid > p,
+.orc-case-study-grid > p, .orc-dual-grid > p,
+.orc-card-body > p:empty, .orc-card > p:empty,
+.orc-case-study-wrap p:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+.orc-hero-wrap br,
+.orc-section br,
+.orc-case-study-wrap br {
+  display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. SECTION WRAPPERS & CONTAINERS
+   -------------------------------------------------------------------------- */
+.orc-section {
+  position: relative !important;
+  width: 100% !important;
+  padding: 100px 24px !important;
+  overflow: hidden !important;
+}
+
+.orc-bg-tint {
+  background-color: #FFF6F2 !important;
+}
+
+.orc-bg-white {
+  background-color: #FFFFFF !important;
+}
+
+.orc-container {
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. SECTION HEADERS & COMMON TYPOGRAPHY
+   -------------------------------------------------------------------------- */
+.orc-header {
+  margin-bottom: 56px !important;
+}
+
+.orc-header-center {
+  text-align: center !important;
+  max-width: 820px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.orc-header-split {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  gap: 48px !important;
+}
+
+.orc-header-col-left {
+  flex: 0 0 calc(50% - 24px) !important;
+  max-width: calc(50% - 24px) !important;
+}
+
+.orc-header-col-right {
+  flex: 0 0 calc(50% - 24px) !important;
+  max-width: calc(50% - 24px) !important;
+  padding-top: 10px !important;
+}
+
+.orc-eyebrow-wrap {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.orc-header-center .orc-eyebrow-wrap {
+  justify-content: center !important;
+}
+
+.orc-eyebrow {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  display: inline-block !important;
+  line-height: 1.4 !important;
+}
+
+.orc-rule {
+  width: 42px !important;
+  height: 2px !important;
+  background-color: #B94E1A !important;
+  margin: 0 0 20px 0 !important;
+  display: block !important;
+}
+
+.orc-rule-center {
+  margin: 0 auto 20px auto !important;
+}
+
+.orc-inline-line {
+  display: inline-block !important;
+  width: 32px !important;
+  height: 1.5px !important;
+  background-color: #B94E1A !important;
+}
+
+.orc-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(30px, 3.2vw, 42px) !important;
+  font-weight: 400 !important;
+  line-height: 1.22 !important;
+  color: #1A1816 !important;
+  margin: 0 0 12px 0 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.orc-subtitle {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 16.5px !important;
+  font-weight: 500 !important;
+  color: #8C8882 !important;
+  margin: 0 0 14px 0 !important;
+  line-height: 1.5 !important;
+}
+
+.orc-lead {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 16.5px !important;
+  font-weight: 500 !important;
+  line-height: 1.6 !important;
+  color: #1A1816 !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.orc-body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 400 !important;
+  line-height: 1.68 !important;
+  color: #5E5953 !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.orc-body-sub {
+  color: #1A1816 !important;
+  font-weight: 500 !important;
+  margin-top: 18px !important;
+  margin-bottom: 8px !important;
+}
+
+.orc-body-highlight {
+  color: #1A1816 !important;
+  font-weight: 500 !important;
+}
+
+.orc-note-text {
+  font-style: italic !important;
+  margin-top: 18px !important;
+}
+
+.orc-max-760 {
+  max-width: 760px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.orc-center-note {
+  text-align: center !important;
+  max-width: 820px !important;
+  margin: 32px auto 0 auto !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. BUTTONS & ACTIONS
+   -------------------------------------------------------------------------- */
+.orc-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  border-radius: 30px !important;
+  padding: 14px 32px !important;
+  text-decoration: none !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  transition: all 0.25s ease !important;
+  cursor: pointer !important;
+  line-height: 1 !important;
+}
+
+.orc-btn-primary {
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  border: 1px solid #B94E1A !important;
+}
+
+.orc-btn-primary:hover {
+  background-color: #670066 !important;
+  border-color: #670066 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+}
+
+.orc-btn-outline {
+  background-color: transparent !important;
+  color: #B94E1A !important;
+  border: 1.5px solid #B94E1A !important;
+}
+
+.orc-btn-outline:hover {
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+}
+
+.orc-btn-arrow {
+  display: inline-block !important;
+  transition: transform 0.25s ease !important;
+}
+
+.orc-btn:hover .orc-btn-arrow {
+  transform: translateX(4px) !important;
+}
+
+.orc-center-action {
+  text-align: center !important;
+  margin-top: 48px !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. HERO SECTION (.orc-hero-wrap)
+   -------------------------------------------------------------------------- */
+.orc-hero-wrap {
+  position: relative !important;
+  background-color: #FFF6F2 !important;
+  padding: 100px 32px 95px 32px !important;
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
+.orc-hero-wrap .orc-container {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 60px !important;
+}
+
+.orc-hero-content {
+  flex: 0 0 calc(53% - 30px) !important;
+  max-width: calc(53% - 30px) !important;
+}
+
+.orc-hero-heading {
+  font-family: 'El Messiri', 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(34px, 3.8vw, 54px) !important;
+  font-weight: 500 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.015em !important;
+  color: #1A1816 !important;
+  margin: 0 0 22px 0 !important;
+}
+
+.orc-hero-lead {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: clamp(16px, 1.35vw, 18px) !important;
+  font-weight: 500 !important;
+  line-height: 1.6 !important;
+  color: #1A1816 !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.orc-hero-body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.68 !important;
+  color: #5E5953 !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.orc-hero-highlight {
+  color: #1A1816 !important;
+  font-weight: 500 !important;
+  margin: 0 0 32px 0 !important;
+}
+
+.orc-hero-visual-col {
+  flex: 0 0 calc(47% - 30px) !important;
+  max-width: calc(47% - 30px) !important;
+}
+
+.orc-hero-image-frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 660px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+}
+
+.orc-hero-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  transition: transform 0.5s ease !important;
+}
+
+.orc-hero-image-frame:hover .orc-hero-img {
+  transform: scale(1.03) !important;
+}
+
+.orc-hero-badge {
+  position: absolute !important;
+  bottom: 22px !important;
+  left: 22px !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid #DFDBD3 !important;
+  border-radius: 30px !important;
+  padding: 8px 18px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  z-index: 2 !important;
+}
+
+.orc-badge-dot {
+  width: 6px !important;
+  height: 6px !important;
+  background-color: #B94E1A !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-badge-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #1A1816 !important;
+}
+
+/* --------------------------------------------------------------------------
+   7. SPLIT MEDIA + CHECKLIST COMPONENT
+   -------------------------------------------------------------------------- */
+.orc-split {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 60px !important;
+}
+
+.orc-col-media {
+  flex: 0 0 calc(46% - 30px) !important;
+  max-width: calc(46% - 30px) !important;
+}
+
+.orc-col-content {
+  flex: 0 0 calc(54% - 30px) !important;
+  max-width: calc(54% - 30px) !important;
+}
+
+.orc-media-frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 560px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+}
+
+.orc-split-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.orc-media-badge {
+  position: absolute !important;
+  bottom: 20px !important;
+  left: 20px !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid #DFDBD3 !important;
+  border-radius: 30px !important;
+  padding: 8px 18px !important;
+}
+
+.orc-scope-label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #1A1816 !important;
+  margin: 24px 0 16px 0 !important;
+}
+
+.orc-points-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 12px 18px !important;
+  margin-bottom: 24px !important;
+}
+
+.orc-point-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 6px !important;
+  padding: 10px 14px !important;
+}
+
+.orc-point-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-point-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #1A1816 !important;
+}
+
+.orc-action-row {
+  margin-top: 24px !important;
+}
+
+/* --------------------------------------------------------------------------
+   8. DIAGNOSTIC / GAP ANALYSIS BLOCK
+   -------------------------------------------------------------------------- */
+.orc-gap-block {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 36px 32px !important;
+  margin-bottom: 36px !important;
+}
+
+.orc-gap-header-bar {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 28px !important;
+  padding-bottom: 18px !important;
+  border-bottom: 1px solid #ECE8E1 !important;
+}
+
+.orc-gap-heading {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 21px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 !important;
+}
+
+.orc-gap-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 20px !important;
+}
+
+.orc-gap-card {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  padding: 16px !important;
+  background-color: #FFFFFF !important;
+  border-radius: 6px !important;
+  border-left: 3px solid #B94E1A !important;
+}
+
+.orc-gap-card-span {
+  grid-column: span 2 !important;
+}
+
+.orc-gap-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+  line-height: 1.4 !important;
+}
+
+.orc-gap-item-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #1A1816 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.orc-gap-item-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+  line-height: 1.5 !important;
+}
+
+.orc-support-banner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 32px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 28px 32px !important;
+}
+
+.orc-support-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.orc-support-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+  max-width: 820px !important;
+}
+
+/* --------------------------------------------------------------------------
+   9. CARD GRIDS (3-COL, 4-COL, 2-COL)
+   -------------------------------------------------------------------------- */
+.orc-cards-grid {
+  display: grid !important;
+  gap: 24px !important;
+}
+
+.orc-grid-3col {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.orc-grid-4col {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.orc-grid-2col {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+.orc-grid-span-full {
+  grid-column: 1 / -1 !important;
+}
+
+/* Standard Service Card */
+.orc-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 30px 26px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+.orc-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 28px rgba(26, 24, 22, 0.06) !important;
+  border-color: #DFDBD3 !important;
+}
+
+.orc-card-top-tag {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 18px !important;
+}
+
+.orc-tag-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+}
+
+.orc-tag-label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 10.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #8C8882 !important;
+  background-color: #FFFFFF !important;
+  padding: 4px 10px !important;
+  border-radius: 20px !important;
+  border: 1px solid #ECE8E1 !important;
+}
+
+.orc-card-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 21px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 12px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-card-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+/* Visual Image Cards (Residential) */
+.orc-visual-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.orc-visual-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 28px rgba(26, 24, 22, 0.06) !important;
+}
+
+.orc-card-img-frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 230px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+}
+
+.orc-img-frame-sm {
+  height: 180px !important;
+}
+
+.orc-card-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.45s ease !important;
+}
+
+.orc-visual-card:hover .orc-card-img,
+.orc-commercial-card:hover .orc-card-img {
+  transform: scale(1.04) !important;
+}
+
+.orc-img-tag {
+  position: absolute !important;
+  top: 14px !important;
+  left: 14px !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  border-radius: 20px !important;
+  padding: 4px 12px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 10.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+}
+
+.orc-visual-card .orc-card-body,
+.orc-commercial-card .orc-card-body {
+  padding: 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+/* Commercial Cards */
+.orc-commercial-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.orc-commercial-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 28px rgba(26, 24, 22, 0.06) !important;
+}
+
+.orc-commercial-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 12px !important;
+}
+
+.orc-meta-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+}
+
+.orc-meta-badge {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #8C8882 !important;
+}
+
+/* --------------------------------------------------------------------------
+   10. QUOTATION FACTORS MATRIX
+   -------------------------------------------------------------------------- */
+.orc-factors-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+  margin-bottom: 36px !important;
+}
+
+.orc-factor-item {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 24px 20px !important;
+}
+
+.orc-factor-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 10px !important;
+}
+
+.orc-factor-dot {
+  width: 6px !important;
+  height: 6px !important;
+  background-color: #B94E1A !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-factor-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 !important;
+}
+
+.orc-factor-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+.orc-callout-box {
+  background-color: #FFFFFF !important;
+  border-left: 3px solid #B94E1A !important;
+  border-radius: 6px !important;
+  padding: 18px 24px !important;
+  max-width: 820px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.orc-callout-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 500 !important;
+  color: #1A1816 !important;
+  margin: 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* --------------------------------------------------------------------------
+   11. SEQUENCED PRE-START STEP GRID (8 CARDS)
+   -------------------------------------------------------------------------- */
+.orc-step-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+}
+
+.orc-step-card {
+  background-color: #FFF6F2 !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 26px 22px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.3s ease !important;
+}
+
+.orc-step-card:hover {
+  transform: translateY(-3px) !important;
+  border-color: #DFDBD3 !important;
+}
+
+.orc-step-top {
+  margin-bottom: 14px !important;
+}
+
+.orc-step-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+}
+
+.orc-step-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-step-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+/* --------------------------------------------------------------------------
+   12. ON-SITE TIMELINE / DELIVERY ROADMAP (9 STAGES)
+   -------------------------------------------------------------------------- */
+.orc-timeline-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+}
+
+.orc-timeline-item {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.orc-timeline-item:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08) !important;
+}
+
+.orc-timeline-img-frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 180px !important;
+  overflow: hidden !important;
+  background-color: #F8F5F0 !important;
+}
+
+.orc-timeline-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+.orc-timeline-item:hover .orc-timeline-img {
+  transform: scale(1.05) !important;
+}
+
+.orc-timeline-badge {
+  position: absolute !important;
+  top: 12px !important;
+  left: 12px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid rgba(26, 24, 22, 0.12) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+  border-radius: 6px !important;
+  width: 36px !important;
+  height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 2 !important;
+}
+
+.orc-timeline-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+}
+
+.orc-timeline-body {
+  padding: 20px 20px 24px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.orc-timeline-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-timeline-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+/* --------------------------------------------------------------------------
+   13. CASE STUDY SECTION (.orc-case-study-wrap)
+   -------------------------------------------------------------------------- */
+.orc-case-study-wrap {
+  background-color: #FFFFFF !important;
+  padding: 100px 24px !important;
+  width: 100% !important;
+}
+
+.orc-case-study-header {
+  text-align: center !important;
+  max-width: 820px !important;
+  margin: 0 auto 54px auto !important;
+}
+
+.orc-case-study-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(28px, 3vw, 40px) !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 10px 0 16px 0 !important;
+}
+
+.orc-case-study-subtitle {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 16px !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+.orc-case-study-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+  margin-bottom: 48px !important;
+}
+
+.orc-case-study-grid.orc-grid-3col {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.orc-case-study-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 18px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.3s ease !important;
+}
+
+.orc-case-study-card:hover {
+  transform: translateY(-3px) !important;
+}
+
+.orc-cs-tag {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 12px !important;
+}
+
+.orc-cs-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+}
+
+.orc-cs-name {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 10.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #8C8882 !important;
+}
+
+.orc-cs-img-wrap {
+  width: 100% !important;
+  height: 150px !important;
+  border-radius: 4px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+  margin-bottom: 14px !important;
+}
+
+.orc-cs-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.orc-cs-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.orc-cs-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12.5px !important;
+  line-height: 1.55 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+.orc-cs-meta-bar {
+  background-color: #FFF6F2 !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 24px 32px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 24px !important;
+}
+
+.orc-cs-meta-group {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 32px !important;
+}
+
+.orc-cs-meta-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.orc-cs-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.orc-cs-meta-text {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.orc-cs-label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 10.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #8C8882 !important;
+}
+
+.orc-cs-val {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #1A1816 !important;
+}
+
+/* --------------------------------------------------------------------------
+   14. DUAL PATHWAY CARDS (DESIGNED BY ORAANJ VS SOMEONE ELSE)
+   -------------------------------------------------------------------------- */
+.orc-dual-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 32px !important;
+}
+
+.orc-dual-card {
+}
+.orc-dual-featured {
+  border-color: #B94E1A !important;
+  box-shadow: 0 12px 32px rgba(185, 78, 26, 0.08) !important;
+}
+.orc-dual-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 42px 36px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.orc-dual-badge {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  display: inline-block !important;
+  margin-bottom: 8px !important;
+}
+
+.orc-dual-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 26px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.orc-dual-tagline {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: #8C8882 !important;
+  margin: 0 0 20px 0 !important;
+}
+
+.orc-check-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 12px 0 20px 0 !important;
+}
+
+.orc-check-list li {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  color: #1A1816 !important;
+  margin-bottom: 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.orc-bullet-check {
+  color: #B94E1A !important;
+  font-weight: 700 !important;
+}
+
+.orc-dual-notice {
+  background-color: #FFFFFF !important;
+  border-left: 3px solid #B94E1A !important;
+  padding: 12px 16px !important;
+  border-radius: 4px !important;
+  margin: 16px 0 20px 0 !important;
+}
+
+.orc-notice-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  font-style: italic !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+  line-height: 1.5 !important;
+}
+
+.orc-dual-action {
+  margin-top: auto !important;
+  padding-top: 24px !important;
+}
+
+/* --------------------------------------------------------------------------
+   15. BUILDING CONTEXT CARDS (APARTMENTS & PERIOD PROPERTIES)
+   -------------------------------------------------------------------------- */
+.orc-context-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 36px 32px !important;
+}
+
+.orc-context-header {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  margin-bottom: 18px !important;
+}
+
+.orc-context-icon {
+  background-color: #FFF6F2 !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  width: 44px !important;
+  height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-context-eyebrow {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  display: block !important;
+  margin-bottom: 4px !important;
+}
+
+.orc-context-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.orc-context-sub {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14px !important;
+  color: #8C8882 !important;
+  margin: 0 !important;
+}
+
+.orc-tag-list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin: 18px 0 !important;
+}
+
+.orc-tag-pill {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: #1A1816 !important;
+  background-color: #FFF6F2 !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 20px !important;
+  padding: 6px 14px !important;
+}
+
+/* --------------------------------------------------------------------------
+   16. RESPONSIBILITY MATRIX CARDS (6 ROLES)
+   -------------------------------------------------------------------------- */
+.orc-role-card {
+  background-color: #FFF6F2 !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 28px 24px !important;
+}
+
+.orc-role-card-highlight {
+  border-color: #B94E1A !important;
+  background-color: #FFF1EB !important;
+}
+
+.orc-role-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.orc-role-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+}
+
+.orc-role-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 19px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 !important;
+}
+
+.orc-role-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+/* --------------------------------------------------------------------------
+   17. COST & TIMELINE GUIDANCE CARDS
+   -------------------------------------------------------------------------- */
+.orc-info-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 38px 32px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.orc-info-header {
+  margin-bottom: 18px !important;
+}
+
+.orc-info-tag {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  display: block !important;
+  margin-bottom: 6px !important;
+}
+
+.orc-info-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 23px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-info-subtitle {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 500 !important;
+  color: #8C8882 !important;
+  margin: 0 !important;
+}
+
+.orc-variable-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 8px 16px !important;
+  margin: 18px 0 !important;
+}
+
+.orc-var-item {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  color: #1A1816 !important;
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 8px !important;
+  line-height: 1.5 !important;
+}
+
+.orc-var-dot {
+  color: #B94E1A !important;
+  font-weight: 700 !important;
+}
+
+.orc-info-action {
+  margin-top: auto !important;
+  padding-top: 24px !important;
+}
+
+/* --------------------------------------------------------------------------
+   18. SERVICE DECISION CARDS (WHICH SERVICE DO YOU NEED?)
+   -------------------------------------------------------------------------- */
+.orc-decision-card {
+  background-color: #FFF6F2 !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 36px 28px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.orc-decision-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 28px rgba(26, 24, 22, 0.06) !important;
+}
+
+.orc-decision-featured {
+  background-color: #FFFFFF !important;
+  border: 2px solid #B94E1A !important;
+  position: relative !important;
+}
+
+.orc-decision-top {
+  margin-bottom: 20px !important;
+}
+
+.orc-decision-tag {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  display: block !important;
+  margin-bottom: 8px !important;
+}
+
+.orc-decision-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-decision-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+.orc-decision-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 0 28px 0 !important;
+}
+
+.orc-decision-list li {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  color: #1A1816 !important;
+  margin-bottom: 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.orc-check-icon {
+  color: #B94E1A !important;
+  font-weight: 700 !important;
+}
+
+.orc-decision-bottom {
+  margin-top: auto !important;
+}
+
+/* --------------------------------------------------------------------------
+   18.5. STRUCTURAL UTILITIES & INNER SUB-CLASSES
+   -------------------------------------------------------------------------- */
+.orc-btn-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: transform 0.25s ease !important;
+}
+
+.orc-btn:hover .orc-btn-icon {
+  transform: translateX(4px) !important;
+}
+
+.orc-btn-label {
+  display: inline-block !important;
+  font-family: inherit !important;
+}
+
+.orc-hero-action {
+  display: block !important;
+  margin-top: 10px !important;
+}
+
+.orc-intro-block {
+  margin-bottom: 20px !important;
+}
+
+.orc-gap-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-gap-content {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.orc-support-content {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.orc-support-action {
+  flex-shrink: 0 !important;
+}
+
+.orc-timeline-body {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.orc-dual-header {
+  margin-bottom: 20px !important;
+}
+
+.orc-decision-body {
+  margin-bottom: 24px !important;
+}
+
+/* --------------------------------------------------------------------------
+   18.6. IMAGE-RICH CARDS, SIDEBAR & TEAM STRIP EXTENSIONS
+   -------------------------------------------------------------------------- */
+/* Sidebar Layout (Section 3) */
+.orc-sidebar-layout {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 54px !important;
+  align-items: flex-start !important;
+}
+
+.orc-sidebar-col {
+  flex: 0 0 calc(38% - 27px) !important;
+  max-width: calc(38% - 27px) !important;
+  position: sticky !important;
+  top: 30px !important;
+}
+
+.orc-sidebar-header {
+  margin-bottom: 24px !important;
+}
+
+.orc-sidebar-img-frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 480px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+}
+
+.orc-sidebar-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.5s ease !important;
+}
+
+.orc-sidebar-img-frame:hover .orc-sidebar-img {
+  transform: scale(1.03) !important;
+}
+
+.orc-sidebar-badge {
+  position: absolute !important;
+  bottom: 18px !important;
+  left: 18px !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid #DFDBD3 !important;
+  border-radius: 30px !important;
+  padding: 8px 16px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.orc-sidebar-main {
+  flex: 0 0 calc(62% - 27px) !important;
+  max-width: calc(62% - 27px) !important;
+}
+
+.orc-sticky-sidebar {
+  position: sticky !important;
+  top: 40px !important;
+}
+
+.orc-sidebar-frame {
+  background: #FFFFFF !important;
+  border: 1px solid #DFDBD3 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+}
+
+.orc-sidebar-caption {
+  padding: 20px 24px 24px 24px !important;
+  background-color: #FFFFFF !important;
+}
+
+.orc-caption-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.orc-caption-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+
+/* Image-Top Capability Card & Universal Image Card Rules */
+.orc-card-with-img,
+.orc-card:has(.orc-card-img-frame),
+.orc-visual-card,
+.orc-commercial-card,
+.orc-timeline-item,
+.orc-dual-card,
+.orc-context-card,
+.orc-info-card,
+.orc-decision-card {
+  padding: 0 !important;
+  overflow: hidden !important;
+  background-color: #FFFFFF !important;
+  border-radius: 8px !important;
+}
+
+.orc-card-img-frame,
+.orc-timeline-img-frame,
+.orc-img-frame-sm,
+.orc-img-frame-dual,
+.orc-img-frame-context,
+.orc-img-frame-info,
+.orc-img-frame-decision {
+  border-bottom: 1px solid rgba(26, 24, 22, 0.08) !important;
+}
+
+.orc-card-body,
+.orc-card-with-img .orc-card-body,
+.orc-visual-card .orc-card-body,
+.orc-commercial-card .orc-card-body,
+.orc-timeline-body,
+.orc-dual-content-body,
+.orc-context-body,
+.orc-info-body,
+.orc-decision-content-inner {
+  padding: 28px 24px 32px 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.orc-cs-img-wrap {
+  margin-bottom: 20px !important;
+}
+
+.orc-case-study-card {
+  padding: 24px 22px 26px 22px !important;
+}
+
+
+/* Dual Cards Image Top */
+.orc-dual-card {
+}
+.orc-dual-featured {
+  border-color: #B94E1A !important;
+  box-shadow: 0 12px 32px rgba(185, 78, 26, 0.08) !important;
+}
+.orc-dual-card {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.orc-img-frame-dual {
+  height: 240px !important;
+}
+
+.orc-dual-content-body {
+  padding: 34px 30px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+/* Context Cards Image Top */
+.orc-context-card {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.orc-img-frame-context {
+  height: 240px !important;
+}
+
+.orc-context-body {
+  padding: 30px 28px !important;
+}
+
+/* Info Cards Image Top */
+.orc-info-card {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.orc-img-frame-info {
+  height: 210px !important;
+}
+
+.orc-info-body {
+  padding: 30px 28px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+/* Decision Cards Image Top */
+.orc-decision-card {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.orc-img-frame-decision {
+  height: 210px !important;
+}
+
+.orc-decision-content-inner {
+  padding: 30px 26px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+/* Team Strip (Section 15) */
+.orc-team-strip {
+  display: flex !important;
+  align-items: center !important;
+  gap: 36px !important;
+  background-color: #FFF6F2 !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  margin-top: 36px !important;
+}
+
+.orc-team-img-frame {
+  flex: 0 0 320px !important;
+  max-width: 320px !important;
+  height: 220px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+}
+
+.orc-team-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.orc-team-content {
+  padding: 28px 32px 28px 0 !important;
+}
+
+.orc-team-badge {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  display: block !important;
+  margin-bottom: 8px !important;
+}
+
+.orc-team-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 21px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.orc-team-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+/* --------------------------------------------------------------------------
+   18.7. VISUAL POLISH & TRUST ENHANCEMENTS
+   -------------------------------------------------------------------------- */
+.orc-hero-trust-bar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px 24px !important;
+  margin-top: 24px !important;
+  padding-top: 20px !important;
+  border-top: 1px solid rgba(26, 24, 22, 0.08) !important;
+}
+
+.orc-trust-item {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #1A1816 !important;
+}
+
+.orc-trust-icon {
+  flex-shrink: 0 !important;
+  stroke: #B94E1A !important;
+}
+
+.orc-stamp-badge {
+  position: absolute !important;
+  bottom: 24px !important;
+  left: 24px !important;
+  background: rgba(26, 24, 22, 0.92) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 8px !important;
+  padding: 12px 18px !important;
+  display: inline-flex !important;
+  flex-direction: column !important;
+  gap: 3px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25) !important;
+  z-index: 3 !important;
+}
+
+.orc-stamp-badge span:first-child {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 10px !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  font-weight: 700 !important;
+}
+
+.orc-stamp-badge span:last-child {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 14px !important;
+  color: #FFFFFF !important;
+  font-weight: 400 !important;
+}
+
+.orc-director-review-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 8px 16px !important;
+  background: rgba(185, 78, 26, 0.08) !important;
+  border: 1px solid rgba(185, 78, 26, 0.2) !important;
+  border-radius: 30px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  margin-bottom: 18px !important;
+}
+
+@keyframes orcPulse {
+  0% { transform: scale(0.95); opacity: 0.8; box-shadow: 0 0 0 0 rgba(185, 78, 26, 0.6); }
+  70% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 6px rgba(185, 78, 26, 0); }
+  100% { transform: scale(0.95); opacity: 0.8; box-shadow: 0 0 0 0 rgba(185, 78, 26, 0); }
+}
+
+.orc-pulse {
+  animation: orcPulse 2s infinite ease-in-out !important;
+}
+
+.orc-explore-link,
+.orc-card-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  color: #B94E1A !important;
+  text-decoration: none !important;
+  margin-top: 14px !important;
+  transition: all 0.3s ease !important;
+}
+
+.orc-explore-link:hover,
+.orc-card-link:hover {
+  color: #670066 !important;
+  transform: translateX(3px) !important;
+}
+
+.orc-explore-text {
+  border-bottom: 1px solid rgba(185, 78, 26, 0.3) !important;
+  padding-bottom: 1px !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.orc-explore-link:hover .orc-explore-text,
+.orc-card-link:hover .orc-explore-text {
+  border-bottom-color: #670066 !important;
+}
+
+.orc-arrow {
+  display: inline-block !important;
+  transition: transform 0.3s ease !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+}
+
+.orc-explore-link:hover .orc-arrow,
+.orc-card-link:hover .orc-arrow {
+  transform: translateX(4px) !important;
+}
+
+.orc-factor-icon-wrap {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 8px !important;
+  background: rgba(185, 78, 26, 0.08) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 16px !important;
+  color: #B94E1A !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.orc-factor-card:hover .orc-factor-icon-wrap {
+  background: rgba(103, 0, 102, 0.1) !important;
+  color: #670066 !important;
+}
+
+.orc-gap-icon-wrap {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: rgba(185, 78, 26, 0.08) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 14px !important;
+  color: #B94E1A !important;
+}
+
+.orc-role-icon-wrap {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 8px !important;
+  background: #FFF6F2 !important;
+  border: 1px solid rgba(185, 78, 26, 0.15) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 14px !important;
+  color: #B94E1A !important;
+}
+
+.orc-var-icon {
+  color: #B94E1A !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  margin-right: 6px !important;
+  display: inline-block !important;
+}
+
+.orc-bullet-check-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-right: 8px !important;
+  flex-shrink: 0 !important;
+  vertical-align: middle !important;
+}
+
+.orc-step-accent {
+  width: 28px !important;
+  height: 2px !important;
+  background: #B94E1A !important;
+  margin-bottom: 14px !important;
+  border-radius: 2px !important;
+}
+
+.orc-phase-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  margin-bottom: 20px !important;
+  padding-bottom: 12px !important;
+  border-bottom: 1px solid rgba(26, 24, 22, 0.08) !important;
+}
+
+.orc-phase-chip {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  background: rgba(185, 78, 26, 0.08) !important;
+  color: #B94E1A !important;
+  padding: 3px 8px !important;
+  border-radius: 4px !important;
+  margin-left: 8px !important;
+}
+
+.orc-phase-badge {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  background: #B94E1A !important;
+  color: #FFFFFF !important;
+  padding: 4px 10px !important;
+  border-radius: 4px !important;
+}
+
+.orc-phase-heading {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.orc-tag-featured {
+  background: #B94E1A !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   18.8. DESIGN & BUILD SPECIALISED COMPONENTS
+   -------------------------------------------------------------------------- */
+.orc-container-narrow {
+  max-width: 920px !important;
+}
+
+.orc-hero-subtitle {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 16px 0 !important;
+  line-height: 1.35 !important;
+}
+
+.orc-chain-wrap {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px 14px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 26px 22px !important;
+  margin-top: 36px !important;
+}
+
+.orc-chain-step {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 14px !important;
+  background-color: #FFF6F2 !important;
+  border: 1px solid rgba(185, 78, 26, 0.15) !important;
+  border-radius: 6px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+}
+
+.orc-chain-num {
+  color: #B94E1A !important;
+  font-weight: 700 !important;
+}
+
+.orc-chain-name {
+  color: #1A1816 !important;
+}
+
+.orc-chain-arrow {
+  color: #B94E1A !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+.orc-trades-matrix {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 12px 24px !important;
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 24px !important;
+}
+
+.orc-trades-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.orc-trade-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  color: #1A1816 !important;
+}
+
+.orc-alert-box {
+  background-color: #FFF6F2 !important;
+  border-left: 3px solid #B94E1A !important;
+  border-radius: 0 8px 8px 0 !important;
+  padding: 18px 22px !important;
+  margin-top: 24px !important;
+}
+
+.orc-alert-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.orc-alert-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+.orc-bullet-card {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+  margin-top: 24px !important;
+}
+
+.orc-bullet-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+}
+
+.orc-bullet-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+  color: #5E5953 !important;
+}
+
+.orc-bullet-text strong {
+  color: #1A1816 !important;
+  font-weight: 600 !important;
+}
+
+.orc-card-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 14px 0 0 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.orc-card-list li {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  color: #5E5953 !important;
+  padding-left: 16px !important;
+  position: relative !important;
+}
+
+.orc-card-list li::before {
+  content: "•" !important;
+  color: #B94E1A !important;
+  position: absolute !important;
+  left: 0 !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+}
+
+.orc-grid-5col {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 20px !important;
+}
+
+.orc-director-quote-badge {
+  position: absolute !important;
+  bottom: 24px !important;
+  left: 24px !important;
+  right: 24px !important;
+  background: rgba(26, 24, 22, 0.92) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 8px !important;
+  padding: 20px 24px !important;
+  color: #FFFFFF !important;
+  z-index: 3 !important;
+}
+
+.orc-quote-mark {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 36px !important;
+  color: #B94E1A !important;
+  line-height: 1 !important;
+  display: block !important;
+  margin-bottom: 4px !important;
+}
+
+.orc-quote-text {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 15px !important;
+  font-style: italic !important;
+  line-height: 1.5 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.orc-quote-author {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  display: block !important;
+}
+
+.orc-briefing-checklist {
+  background: #FFF6F2 !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 32px 36px !important;
+  margin-top: 32px !important;
+}
+
+.orc-briefing-heading {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 20px 0 !important;
+}
+
+.orc-mt-8 { margin-top: 8px !important; }
+.orc-mt-20 { margin-top: 20px !important; }
+.orc-mt-30 { margin-top: 30px !important; }
+.orc-mt-40 { margin-top: 40px !important; }
+
+.orc-btn-block {
+  width: 100% !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.orc-media-frame-tall {
+  height: 580px !important;
+}
+
+.orc-card-split {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.orc-card-split .orc-split {
+  gap: 0 !important;
+  align-items: stretch !important;
+}
+
+.orc-card-split .orc-col-media {
+  flex: 0 0 45% !important;
+  max-width: 45% !important;
+}
+
+.orc-card-split .orc-col-content {
+  flex: 0 0 55% !important;
+  max-width: 55% !important;
+  padding: 32px 30px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.orc-card-split .orc-card-img-frame {
+  height: 100% !important;
+  min-height: 280px !important;
+  border-radius: 0 !important;
+}
+
+.orc-card-split .orc-card-title {
+  font-size: 24px !important;
+}
+
+.orc-card-split .orc-card-desc {
+  font-size: 15px !important;
+  margin-bottom: 16px !important;
+}
+
+.orc-media-center {
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.orc-alert-center {
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.orc-alert-inline {
+  text-align: left !important;
+  display: inline-block !important;
+  max-width: 600px !important;
+}
+
+.orc-hero-actions-center {
+  justify-content: center !important;
+  display: flex !important;
+}
+
+.orc-bullet-card-2col {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 10px !important;
+}
+
+.orc-checklist-cat-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 10px 0 !important;
+}
+
+.orc-list-inline-block {
+  text-align: left !important;
+  display: inline-block !important;
+}
+
+.orc-card-blank {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.orc-split-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.orc-hero-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 16px !important;
+  align-items: center !important;
+  margin-top: 32px !important;
+}
+
+.orc-hero-img-badge {
+  position: absolute !important;
+  top: 24px !important;
+  right: 24px !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 30px !important;
+  padding: 8px 16px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+  z-index: 3 !important;
+}
+
+.orc-media-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.orc-media-overlay-card {
+  position: absolute !important;
+  bottom: 24px !important;
+  left: 24px !important;
+  right: 24px !important;
+  background: rgba(26, 24, 22, 0.92) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 8px !important;
+  padding: 18px 22px !important;
+  color: #FFFFFF !important;
+  z-index: 3 !important;
+}
+
+.orc-overlay-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+  display: block !important;
+  margin-bottom: 2px !important;
+}
+
+.orc-overlay-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.orc-overlay-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12.5px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin: 0 !important;
+  line-height: 1.5 !important;
+}
+
+.orc-media-overlay-tag {
+  position: absolute !important;
+  bottom: 24px !important;
+  left: 24px !important;
+  background: rgba(26, 24, 22, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 6px !important;
+  padding: 8px 16px !important;
+  color: #FFFFFF !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  z-index: 3 !important;
+}
+
+.orc-card-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 12px !important;
+}
+
+.orc-card-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+}
+
+.orc-card-tag {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  background-color: #FFF6F2 !important;
+  color: #B94E1A !important;
+  padding: 3px 8px !important;
+  border-radius: 4px !important;
+}
+
+.orc-dual-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  color: #5E5953 !important;
+  margin-bottom: 20px !important;
+}
+
+.orc-dual-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.orc-dual-list li {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.5 !important;
+  color: #5E5953 !important;
+  position: relative !important;
+  padding-left: 18px !important;
+}
+
+.orc-dual-list li::before {
+  content: "•" !important;
+  color: #B94E1A !important;
+  position: absolute !important;
+  left: 0 !important;
+  font-size: 16px !important;
+  line-height: 1 !important;
+}
+
+.orc-dual-list li strong {
+  color: #1A1816 !important;
+}
+
+.orc-form-wrap {
+  width: 100% !important;
+}
+
+.orc-faq-accordion {
+  width: 100% !important;
+}
+
+.orc-support-btn-wrap {
+  flex-shrink: 0 !important;
+}
+
+
+/* ==========================================================================
+   CARDS BACKGROUND & ACCENT ARCHITECTURE
+   - Inside non-white / tinted sections (.orc-bg-tint): Cards are crisp white
+   - Inside white sections (.orc-bg-white, .orc-case-study-wrap): Cards are white WITH terracotta accent
+   ========================================================================== */
+
+/* 1. Inside Non-White / Tinted Sections (.orc-bg-tint): Pure White Cards */
+.orc-bg-tint .orc-card,
+.orc-bg-tint .orc-card-with-img,
+.orc-bg-tint .orc-visual-card,
+.orc-bg-tint .orc-commercial-card,
+.orc-bg-tint .orc-timeline-item,
+.orc-bg-tint .orc-case-study-card,
+.orc-bg-tint .orc-dual-card,
+.orc-bg-tint .orc-context-card,
+.orc-bg-tint .orc-info-card,
+.orc-bg-tint .orc-decision-card,
+.orc-bg-tint .orc-role-card,
+.orc-bg-tint .orc-step-card,
+.orc-bg-tint .orc-factor-item,
+.orc-bg-tint .orc-gap-card,
+.orc-bg-tint .orc-point-item,
+.orc-bg-tint .orc-trade-item {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-top: 1px solid #ECE8E1 !important;
+  box-shadow: 0 4px 16px rgba(26, 24, 22, 0.04) !important;
+}
+
+.orc-bg-tint .orc-card:hover,
+.orc-bg-tint .orc-card-with-img:hover,
+.orc-bg-tint .orc-visual-card:hover,
+.orc-bg-tint .orc-commercial-card:hover,
+.orc-bg-tint .orc-timeline-item:hover,
+.orc-bg-tint .orc-case-study-card:hover,
+.orc-bg-tint .orc-dual-card:hover,
+.orc-bg-tint .orc-context-card:hover,
+.orc-bg-tint .orc-info-card:hover,
+.orc-bg-tint .orc-decision-card:hover,
+.orc-bg-tint .orc-role-card:hover,
+.orc-bg-tint .orc-step-card:hover,
+.orc-bg-tint .orc-factor-item:hover {
+  transform: translateY(-4px) !important;
+  border-color: #DFDBD3 !important;
+  box-shadow: 0 14px 32px rgba(26, 24, 22, 0.08) !important;
+}
+
+/* 2. Inside White Sections (.orc-bg-white, .orc-case-study-wrap): White Cards WITH Terracotta Accent */
+.orc-bg-white .orc-card,
+.orc-bg-white .orc-card-with-img,
+.orc-bg-white .orc-visual-card,
+.orc-bg-white .orc-commercial-card,
+.orc-bg-white .orc-timeline-item,
+.orc-case-study-wrap .orc-case-study-card,
+.orc-bg-white .orc-dual-card,
+.orc-bg-white .orc-context-card,
+.orc-bg-white .orc-info-card,
+.orc-bg-white .orc-decision-card,
+.orc-bg-white .orc-role-card,
+.orc-bg-white .orc-step-card,
+.orc-bg-white .orc-factor-item,
+.orc-bg-white .orc-gap-card,
+.orc-bg-white .orc-point-item {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-top: 3px solid #B94E1A !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05) !important;
+}
+
+.orc-bg-white .orc-card:hover,
+.orc-bg-white .orc-card-with-img:hover,
+.orc-bg-white .orc-visual-card:hover,
+.orc-bg-white .orc-commercial-card:hover,
+.orc-bg-white .orc-timeline-item:hover,
+.orc-case-study-wrap .orc-case-study-card:hover,
+.orc-bg-white .orc-dual-card:hover,
+.orc-bg-white .orc-context-card:hover,
+.orc-bg-white .orc-info-card:hover,
+.orc-bg-white .orc-decision-card:hover,
+.orc-bg-white .orc-role-card:hover,
+.orc-bg-white .orc-step-card:hover,
+.orc-bg-white .orc-factor-item:hover {
+  transform: translateY(-4px) !important;
+  border-top-color: #670066 !important;
+  box-shadow: 0 14px 32px rgba(185, 78, 26, 0.12) !important;
+}
+
+/* --------------------------------------------------------------------------
+   NEW LAYOUT PATTERNS — VISUAL VARIETY FOR SERVICE PAGES
+   -------------------------------------------------------------------------- */
+
+/* --- A. FLOW STRIP (Horizontal workflow: ORDER → PAY → PREPARE → COLLECT) --- */
+.orc-flow-strip {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  margin-top: 40px !important;
+}
+
+.orc-flow-node {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  flex: 0 0 auto !important;
+  min-width: 120px !important;
+  max-width: 160px !important;
+  padding: 0 8px !important;
+}
+
+.orc-flow-icon {
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 50% !important;
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  margin-bottom: 14px !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-flow-label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  color: #171513 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.orc-flow-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+.orc-flow-arrow {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 22px !important;
+  color: #B94E1A !important;
+  padding: 0 6px !important;
+  margin-top: -20px !important;
+  flex-shrink: 0 !important;
+}
+
+/* --- B. JOURNEY FLOW (Vertical guest journey with left accent) --- */
+.orc-journey-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+  margin-top: 36px !important;
+}
+
+.orc-journey-step {
+  display: flex !important;
+  gap: 28px !important;
+  padding: 28px 0 !important;
+  border-bottom: 1px solid #ECE8E1 !important;
+  align-items: flex-start !important;
+}
+
+.orc-journey-step:last-child {
+  border-bottom: none !important;
+}
+
+.orc-journey-marker {
+  flex-shrink: 0 !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  background-color: #FFF6F2 !important;
+  border: 2px solid #B94E1A !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16px !important;
+  color: #B94E1A !important;
+}
+
+.orc-journey-body h3 {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.orc-journey-body p {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+/* --- C. PILLAR CARDS (Tall narrow feature cards with accent top bar) --- */
+.orc-pillar-grid {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 20px !important;
+  margin-top: 40px !important;
+}
+
+.orc-pillar-card {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 28px 22px !important;
+  text-align: center !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.orc-pillar-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 28px rgba(185, 78, 26, 0.1) !important;
+}
+
+.orc-pillar-num {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  margin-bottom: 16px !important;
+}
+
+.orc-pillar-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 0 10px 0 !important;
+}
+
+.orc-pillar-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+/* --- D. COMPARISON PATHS (Side-by-side Design Only vs Design+Delivery) --- */
+.orc-compare-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 28px !important;
+  margin-top: 40px !important;
+}
+
+.orc-compare-card {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 10px !important;
+  padding: 36px 30px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.orc-compare-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06) !important;
+}
+
+.orc-compare-card.orc-compare-featured {
+  border-color: #B94E1A !important;
+  border-width: 2px !important;
+  position: relative !important;
+}
+
+.orc-compare-badge {
+  position: absolute !important;
+  top: -12px !important;
+  left: 28px !important;
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  padding: 4px 14px !important;
+  border-radius: 20px !important;
+}
+
+.orc-compare-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.orc-compare-subtitle {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  color: #55504A !important;
+  margin: 0 0 22px 0 !important;
+}
+
+.orc-compare-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.orc-compare-list li {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: #3A3632 !important;
+  padding: 9px 0 !important;
+  border-bottom: 1px solid #F0ECE6 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.orc-compare-list li:last-child {
+  border-bottom: none !important;
+}
+
+.orc-compare-check {
+  color: #B94E1A !important;
+  flex-shrink: 0 !important;
+}
+
+/* --- E. LAYER STACK (Stacked horizontal bars for concepts) --- */
+.orc-layer-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+  margin-top: 40px !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  border: 1px solid #ECE8E1 !important;
+}
+
+.orc-layer-bar {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+  padding: 20px 28px !important;
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid #ECE8E1 !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.orc-layer-bar:last-child {
+  border-bottom: none !important;
+}
+
+.orc-layer-bar:hover {
+  background-color: #FFF6F2 !important;
+}
+
+.orc-layer-label {
+  flex-shrink: 0 !important;
+  min-width: 120px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+}
+
+.orc-layer-content {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+  color: #3A3632 !important;
+}
+
+/* --- F. ICON FEATURE GRID (Compact service features with SVG icons) --- */
+.orc-icon-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+  margin-top: 40px !important;
+}
+
+.orc-icon-feature {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  padding: 24px 20px !important;
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+.orc-icon-feature:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06) !important;
+  border-color: #B94E1A !important;
+}
+
+.orc-icon-circle {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background-color: #FFF6F2 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 16px !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-icon-circle svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.orc-icon-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.orc-icon-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+/* --- G. DOCUMENT SHOWCASE (Technical drawing page previews) --- */
+.orc-doc-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+  margin-top: 40px !important;
+}
+
+.orc-doc-page {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.orc-doc-page:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06) !important;
+}
+
+.orc-doc-preview {
+  width: 100% !important;
+  height: 180px !important;
+  background-color: #F5F0EB !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+.orc-doc-preview img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.orc-doc-label {
+  padding: 14px 16px !important;
+}
+
+.orc-doc-num {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  display: block !important;
+  margin-bottom: 4px !important;
+}
+
+.orc-doc-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 !important;
+}
+
+/* --- H. DETAIL PAIRS (Two-element relationship pairs) --- */
+.orc-pairs-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 22px !important;
+  margin-top: 40px !important;
+}
+
+.orc-pair-card {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 26px 22px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.orc-pair-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06) !important;
+}
+
+.orc-pair-label {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  color: #B94E1A !important;
+  margin: 0 0 10px 0 !important;
+}
+
+.orc-pair-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+/* --- I. MOSAIC GRID (Asymmetric image gallery) --- */
+.orc-mosaic-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  grid-template-rows: auto auto !important;
+  gap: 16px !important;
+  margin-top: 40px !important;
+}
+
+.orc-mosaic-item {
+  position: relative !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+  min-height: 220px !important;
+}
+
+.orc-mosaic-item.orc-mosaic-wide {
+  grid-column: span 2 !important;
+}
+
+.orc-mosaic-item.orc-mosaic-tall {
+  grid-row: span 2 !important;
+}
+
+.orc-mosaic-item.orc-mosaic-full {
+  grid-column: span 3 !important;
+}
+
+.orc-mosaic-item img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.5s ease !important;
+}
+
+.orc-mosaic-item:hover img {
+  transform: scale(1.04) !important;
+}
+
+.orc-bento-pill {
+  position: absolute !important;
+  top: 14px !important;
+  left: 14px !important;
+  background: rgba(26, 24, 22, 0.85) !important;
+  color: #FFFFFF !important;
+  padding: 5px 12px !important;
+  border-radius: 20px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  z-index: 2 !important;
+}
+
+.orc-bento-pill-featured {
+  background: #B94E1A !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.orc-mosaic-caption {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  padding: 24px 20px 18px 20px !important;
+  background: linear-gradient(to top, rgba(15, 14, 13, 0.92) 0%, rgba(15, 14, 13, 0.55) 65%, transparent 100%) !important;
+  color: #FFFFFF !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  z-index: 1 !important;
+}
+
+.orc-mosaic-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 3px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-mosaic-desc {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  color: rgba(255, 255, 255, 0.82) !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+/* --- I2. TIMELINE MILESTONE GRID --- */
+.orc-milestone-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 12px !important;
+  margin-top: 24px !important;
+}
+
+.orc-milestone-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 14px 16px !important;
+  transition: transform 0.2s ease, border-color 0.2s ease !important;
+}
+
+.orc-milestone-item:hover {
+  border-color: #B94E1A !important;
+  transform: translateY(-2px) !important;
+}
+
+.orc-milestone-item.orc-milestone-full {
+  grid-column: span 2 !important;
+}
+
+.orc-milestone-num {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+  background: #FFF6F2 !important;
+  border-radius: 4px !important;
+  padding: 3px 7px !important;
+  line-height: 1 !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-milestone-info strong {
+  display: block !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #1A1816 !important;
+  margin-bottom: 2px !important;
+}
+
+.orc-milestone-info span {
+  display: block !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  color: #5E5953 !important;
+  line-height: 1.4 !important;
+}
+
+/* --- I3. RUSH HOUR OPERATIONAL HIGHLIGHTS --- */
+.orc-rush-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 12px !important;
+  margin: 20px 0 !important;
+}
+
+.orc-rush-card {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-left: 3px solid #B94E1A !important;
+  border-radius: 6px !important;
+  padding: 14px 16px !important;
+}
+
+.orc-rush-card h4 {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #1A1816 !important;
+  margin: 0 0 4px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.orc-rush-card p {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  color: #5E5953 !important;
+  line-height: 1.45 !important;
+  margin: 0 !important;
+}
+
+.orc-callout-card {
+  background: #FFF6F2 !important;
+  border: 1px solid #DFDBD3 !important;
+  border-radius: 8px !important;
+  padding: 16px 20px !important;
+  margin-top: 18px !important;
+}
+
+.orc-callout-card p {
+  margin: 0 !important;
+}
+
+/* --- J. CHECKLIST SECTION (Checkbox-style grid items) --- */
+.orc-checklist-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px 28px !important;
+  margin-top: 30px !important;
+}
+
+.orc-check-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  padding: 14px 0 !important;
+  border-bottom: 1px solid #ECE8E1 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14.5px !important;
+  line-height: 1.5 !important;
+  color: #3A3632 !important;
+}
+
+.orc-check-box {
+  flex-shrink: 0 !important;
+  width: 18px !important;
+  height: 18px !important;
+  border: 2px solid #B94E1A !important;
+  border-radius: 3px !important;
+  margin-top: 2px !important;
+}
+
+/* --- K. STAT BAR (Horizontal statistics strip) --- */
+.orc-stat-bar {
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+  padding: 32px 0 !important;
+  margin-top: 30px !important;
+  border-top: 1px solid #ECE8E1 !important;
+  border-bottom: 1px solid #ECE8E1 !important;
+}
+
+.orc-stat-item {
+  text-align: center !important;
+  flex: 1 !important;
+}
+
+.orc-stat-num {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  color: #B94E1A !important;
+  display: block !important;
+  margin-bottom: 6px !important;
+}
+
+.orc-stat-label {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  color: #55504A !important;
+}
+
+/* --- L. VERTICAL PROCESS TIMELINE (Alternating left/right with line) --- */
+.orc-vtimeline {
+  position: relative !important;
+  padding-left: 40px !important;
+  margin-top: 40px !important;
+}
+
+.orc-vtimeline::before {
+  content: '' !important;
+  position: absolute !important;
+  left: 15px !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 2px !important;
+  background-color: #ECE8E1 !important;
+}
+
+.orc-vt-step {
+  position: relative !important;
+  padding-bottom: 36px !important;
+}
+
+.orc-vt-step:last-child {
+  padding-bottom: 0 !important;
+}
+
+.orc-vt-dot {
+  position: absolute !important;
+  left: -33px !important;
+  top: 4px !important;
+  width: 14px !important;
+  height: 14px !important;
+  border-radius: 50% !important;
+  background-color: #B94E1A !important;
+  border: 3px solid #FFF6F2 !important;
+}
+
+.orc-vt-label {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  display: block !important;
+  margin-bottom: 6px !important;
+}
+
+.orc-vt-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.orc-vt-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+/* --- M. GRID VARIANTS --- */
+.orc-grid-2col {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+.orc-grid-4col {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+/* Background accent for new card types */
+.orc-bg-tint .orc-pillar-card,
+.orc-bg-tint .orc-compare-card,
+.orc-bg-tint .orc-icon-feature,
+.orc-bg-tint .orc-doc-page,
+.orc-bg-tint .orc-pair-card {
+  background: #FFFFFF !important;
+}
+
+.orc-bg-white .orc-pillar-card,
+.orc-bg-white .orc-compare-card,
+.orc-bg-white .orc-icon-feature,
+.orc-bg-white .orc-doc-page,
+.orc-bg-white .orc-pair-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-top: 3px solid #B94E1A !important;
+}
+
+/* Anti-wpautop for new grid containers */
+.orc-flow-strip > p, .orc-journey-list > p, .orc-pillar-grid > p,
+.orc-compare-grid > p, .orc-layer-stack > p, .orc-icon-grid > p,
+.orc-doc-grid > p, .orc-pairs-grid > p, .orc-mosaic-grid > p,
+.orc-checklist-grid > p, .orc-vtimeline > p {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* --- N. CTA SECTION --- */
+.orc-cta-section {
+  text-align: center !important;
+}
+
+.orc-cta-content {
+  max-width: 760px !important;
+  margin: 0 auto !important;
+}
+
+/* --- O. MOSAIC IMAGE ALIAS --- */
+.orc-mosaic-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.5s ease !important;
+}
+
+.orc-mosaic-item:hover .orc-mosaic-img {
+  transform: scale(1.04) !important;
+}
+
+/* --- P. SIDEBAR STICKY ALIAS --- */
+.orc-sidebar-sticky {
+  position: sticky !important;
+  top: 40px !important;
+}
+
+/* --- Q. ICON FEATURE TEXT ALIASES (used by some subagent builds) --- */
+.orc-feature-icon {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background-color: #FFF6F2 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 16px !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-feature-icon svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.orc-feature-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.orc-feature-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+/* --- R. JOURNEY / LAYER TEXT ALIASES --- */
+.orc-journey-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.orc-journey-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+.orc-layer-title {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #171513 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.orc-layer-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+/* --- S. FLOW STRIP ALIASES --- */
+.orc-flow-num {
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 50% !important;
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  margin-bottom: 14px !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-flow-name {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  color: #171513 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+/* --- T. COMPARISON DESC ALIAS --- */
+.orc-compare-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  color: #55504A !important;
+  margin: 0 0 18px 0 !important;
+}
+
+/* --- U. STICKY ALIAS --- */
+.orc-sticky {
+  position: sticky !important;
+  top: 40px !important;
+}
+
+/* --- V. VERTICAL TIMELINE NUM --- */
+.orc-vt-num {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  display: block !important;
+  margin-bottom: 6px !important;
+}
+
+/* --- W. UTILITY MARGIN --- */
+.orc-mt-10 {
+  margin-top: 10px !important;
+}
+
+.orc-mt-20 {
+  margin-top: 20px !important;
+}
+
+.orc-mt-30 {
+  margin-top: 30px !important;
+}
+
+.orc-mt-40 {
+  margin-top: 40px !important;
+}
+
+.orc-mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.orc-mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.orc-stat-val {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  color: #B94E1A !important;
+  display: block !important;
+  margin-bottom: 6px !important;
+}
+
+/* --- X. CARD BLANK (empty slot placeholder) --- */
+.orc-card-blank {
+  visibility: hidden !important;
+}
+
+/* --- Y. ICON FEATURE ALIASES (orc-if-* and orc-cc-* used by renovation page) --- */
+.orc-if-icon {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background-color: #FFF6F2 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 16px !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-if-icon svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.orc-if-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.orc-if-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+.orc-cc-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.orc-cc-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  color: #55504A !important;
+  margin: 0 0 18px 0 !important;
+}
+
+/* --- Z. VERTICAL TIMELINE CONTENT WRAPPER --- */
+.orc-vt-content {
+  padding-left: 0 !important;
+}
+
+/* --- AA. DOCUMENT IMAGE WRAPPER --- */
+.orc-doc-img-wrap {
+  width: 100% !important;
+  height: 180px !important;
+  background-color: #F5F0EB !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+.orc-doc-img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* --- AB. ICON WRAP --- */
+.orc-icon-wrap {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background-color: #FFF6F2 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 16px !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-icon-wrap svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* --- AC. NUMBERED STEPS --- */
+.orc-numbered-steps {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+  margin-top: 36px !important;
+}
+
+.orc-step-item {
+  display: flex !important;
+  gap: 24px !important;
+  padding: 24px 0 !important;
+  border-bottom: 1px solid #ECE8E1 !important;
+  align-items: flex-start !important;
+}
+
+.orc-step-item:last-child {
+  border-bottom: none !important;
+}
+
+.orc-step-body {
+  flex: 1 !important;
+}
+
+.orc-step-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+/* --- AD. PAIR TITLE --- */
+.orc-pair-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  color: #171513 !important;
+  margin: 0 0 8px 0 !important;
+}
+
+/* --- AE. SECTION BANNER (Full-width decorative or contextual image strip) --- */
+.orc-section-banner {
+  width: 100% !important;
+  height: 380px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  margin: 36px 0 0 0 !important;
+  background-color: #ECE8E1 !important;
+  position: relative !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+.orc-section-banner-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.5s ease !important;
+}
+
+.orc-section-banner:hover .orc-section-banner-img {
+  transform: scale(1.02) !important;
+}
+
+/* --- AE. 5-ITEM BENTO GRID (Separate text below image, no overlays) --- */
+.orc-bento-5grid {
+  display: grid !important;
+  grid-template-columns: repeat(6, 1fr) !important;
+  gap: 20px !important;
+  margin-top: 36px !important;
+}
+
+.orc-bento-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.orc-bento-card:hover {
+  transform: translateY(-3px) !important;
+  border-color: #B94E1A !important;
+  box-shadow: 0 8px 24px rgba(26, 24, 22, 0.07) !important;
+}
+
+.orc-bento-card.orc-bento-span3 {
+  grid-column: span 3 !important;
+}
+
+.orc-bento-card.orc-bento-span2 {
+  grid-column: span 2 !important;
+}
+
+.orc-bento-card.orc-bento-span6 {
+  grid-column: span 6 !important;
+}
+
+.orc-bento-img-wrap {
+  width: 100% !important;
+  height: 220px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+  position: relative !important;
+}
+
+.orc-bento-card.orc-bento-span3 .orc-bento-img-wrap {
+  height: 250px !important;
+}
+
+.orc-bento-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.5s ease !important;
+}
+
+.orc-bento-card:hover .orc-bento-img {
+  transform: scale(1.04) !important;
+}
+
+.orc-bento-body {
+  padding: 20px 22px 22px 22px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 !important;
+}
+
+.orc-bento-step-tag {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  margin-bottom: 6px !important;
+  display: inline-block !important;
+}
+
+.orc-bento-card-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.35 !important;
+}
+
+.orc-bento-card-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+/* --- AF. FEATURE TAG GRID (Compact layout without emojis) --- */
+.orc-feature-tag-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 10px !important;
+  margin: 20px 0 !important;
+}
+
+.orc-feature-tag {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 6px !important;
+  padding: 10px 14px !important;
+  transition: border-color 0.2s ease, transform 0.2s ease !important;
+}
+
+.orc-feature-tag:hover {
+  border-color: #B94E1A !important;
+  transform: translateY(-1px) !important;
+}
+
+.orc-feature-tag-icon {
+  width: 16px !important;
+  height: 16px !important;
+  color: #B94E1A !important;
+  flex-shrink: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.orc-feature-tag-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: #1A1816 !important;
+  line-height: 1.3 !important;
+}
+
+/* --- AG. LINEAR STEP CHAIN --- */
+.orc-step-chain {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 24px 0 !important;
+}
+
+.orc-chain-pill {
+  background-color: #FFF6F2 !important;
+  border: 1px solid #DFDBD3 !important;
+  border-radius: 20px !important;
+  padding: 7px 16px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  color: #1A1816 !important;
+}
+
+.orc-chain-arrow-icon {
+  color: #B94E1A !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+/* --- AH. DECISION GRID (8 connected decisions) --- */
+.orc-decision-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 16px !important;
+  margin-top: 32px !important;
+}
+
+.orc-decision-card {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 20px 18px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.2s ease, border-color 0.2s ease !important;
+}
+
+.orc-decision-card:hover {
+  border-color: #B94E1A !important;
+  transform: translateY(-2px) !important;
+}
+
+.orc-decision-tag {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  margin-bottom: 6px !important;
+}
+
+.orc-decision-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  color: #1A1816 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.orc-decision-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   19. RESPONSIVE BREAKPOINTS (TABLET & MOBILE)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1080px) {
+  .orc-hero-wrap {
+    padding: 75px 24px 70px 24px !important;
+  }
+
+  .orc-hero-wrap .orc-container {
+    flex-direction: column !important;
+    gap: 48px !important;
+  }
+
+  .orc-hero-content,
+  .orc-hero-visual-col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .orc-hero-image-frame {
+    height: 440px !important;
+  }
+
+  .orc-split,
+  .orc-split-reverse {
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+
+  .orc-col-media,
+  .orc-col-content {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .orc-media-frame {
+    height: 400px !important;
+  }
+
+  .orc-media-frame-tall {
+    height: 380px !important;
+  }
+
+  .orc-card-split .orc-col-media,
+  .orc-card-split .orc-col-content {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .orc-card-split .orc-card-img-frame {
+    height: 280px !important;
+    min-height: 280px !important;
+  }
+
+  .orc-card-split .orc-col-content {
+    padding: 28px 24px !important;
+  }
+
+  .orc-header-split {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  .orc-header-col-left,
+  .orc-header-col-right {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding-top: 0 !important;
+  }
+
+  .orc-grid-3col,
+  .orc-grid-4col,
+  .orc-grid-5col,
+  .orc-step-grid,
+  .orc-factors-grid,
+  .orc-case-study-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .orc-timeline-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .orc-sidebar-layout {
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+
+  .orc-sidebar-col,
+  .orc-sidebar-main {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    position: static !important;
+  }
+
+  .orc-sidebar-img-frame {
+    height: 380px !important;
+  }
+
+  .orc-team-strip {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .orc-team-img-frame {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 260px !important;
+  }
+
+  .orc-team-content {
+    padding: 24px !important;
+  }
+
+  .orc-dual-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .orc-pillar-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .orc-compare-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .orc-icon-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .orc-doc-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .orc-pairs-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .orc-mosaic-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .orc-mosaic-item.orc-mosaic-wide {
+    grid-column: span 1 !important;
+  }
+
+  .orc-mosaic-item.orc-mosaic-tall {
+    grid-row: span 1 !important;
+  }
+
+  .orc-mosaic-item.orc-mosaic-full {
+    grid-column: span 2 !important;
+  }
+
+  .orc-bento-5grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .orc-bento-card.orc-bento-span3,
+  .orc-bento-card.orc-bento-span2,
+  .orc-bento-card.orc-bento-span6 {
+    grid-column: span 1 !important;
+  }
+
+  .orc-decision-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .orc-flow-strip {
+    gap: 12px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .orc-flow-node {
+    min-width: 100px !important;
+    max-width: 130px !important;
+  }
+
+  .orc-flow-arrow {
+    display: none !important;
+  }
+
+  .orc-layer-label {
+    min-width: 90px !important;
+  }
+
+  .orc-stat-bar {
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+  }
+
+  .orc-stat-item {
+    flex: 0 0 calc(33.333% - 12px) !important;
+  }
+
+  .orc-checklist-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .orc-sticky-sidebar,
+  .orc-sidebar-sticky {
+    position: static !important;
+  }
+
+  .orc-card-blank {
+    display: none !important;
+  }
+
+  .orc-section-banner {
+    height: 300px !important;
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+  .orc-hero-wrap,
+  .orc-section,
+  .orc-case-study-wrap {
+    padding: 55px 18px !important;
+  }
+
+  .orc-title {
+    font-size: 27px !important;
+  }
+
+  .orc-hero-heading {
+    font-size: 30px !important;
+  }
+
+  .orc-hero-image-frame,
+  .orc-media-frame,
+  .orc-sidebar-img-frame,
+  .orc-team-img-frame,
+  .orc-img-frame-dual,
+  .orc-img-frame-context,
+  .orc-img-frame-info,
+  .orc-img-frame-decision,
+  .orc-timeline-img-frame {
+    height: 240px !important;
+  }
+
+  .orc-grid-3col,
+  .orc-grid-4col,
+  .orc-grid-5col,
+  .orc-grid-2col,
+  .orc-step-grid,
+  .orc-factors-grid,
+  .orc-timeline-grid,
+  .orc-case-study-grid,
+  .orc-dual-grid,
+  .orc-trades-matrix,
+  .orc-gap-grid,
+  .orc-points-grid,
+  .orc-variable-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .orc-gap-card-span {
+    grid-column: span 1 !important;
+  }
+
+  .orc-support-banner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .orc-cs-meta-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .orc-cs-btn-wrap {
+    width: 100% !important;
+  }
+
+  .orc-cs-btn-wrap .orc-btn {
+    width: 100% !important;
+  }
+
+  .orc-btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .orc-hero-trust-bar {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .orc-phase-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+
+  .orc-pillar-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .orc-icon-grid,
+  .orc-doc-grid,
+  .orc-pairs-grid,
+  .orc-mosaic-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .orc-mosaic-item.orc-mosaic-full,
+  .orc-milestone-item.orc-milestone-full {
+    grid-column: span 1 !important;
+  }
+
+  .orc-milestone-grid,
+  .orc-rush-grid,
+  .orc-bento-5grid,
+  .orc-feature-tag-grid,
+  .orc-decision-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .orc-layer-bar {
+    flex-direction: column !important;
+    gap: 8px !important;
+    padding: 16px 20px !important;
+  }
+
+  .orc-layer-label {
+    min-width: auto !important;
+  }
+
+  .orc-flow-strip {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  .orc-flow-node {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    flex-direction: row !important;
+    text-align: left !important;
+    gap: 16px !important;
+  }
+
+  .orc-flow-icon {
+    margin-bottom: 0 !important;
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 15px !important;
+  }
+
+  .orc-stat-bar {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .orc-stat-item {
+    flex: none !important;
+  }
+
+  .orc-stat-num {
+    font-size: 26px !important;
+  }
+
+  .orc-vtimeline {
+    padding-left: 32px !important;
+  }
+
+  .orc-journey-step {
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  .orc-section-banner {
+    height: 240px !important;
+  }
+
+  .orc-split,
+  .orc-split-reverse {
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+
+  .orc-media-frame-tall {
+    height: 240px !important;
+  }
+
+  .orc-card-split .orc-card-img-frame {
+    height: 220px !important;
+    min-height: 220px !important;
+  }
+
+  .orc-card-split .orc-col-content {
+    padding: 24px 18px !important;
+  }
+
+  .orc-card-split .orc-card-title {
+    font-size: 20px !important;
+  }
+
+  .orc-compare-card {
+    padding: 26px 20px !important;
+  }
+
+  .orc-media-overlay-card {
+    bottom: 12px !important;
+    left: 12px !important;
+    right: 12px !important;
+    padding: 12px 14px !important;
+  }
+
+  .orc-hero-badge {
+    bottom: 12px !important;
+    left: 12px !important;
+    padding: 6px 14px !important;
+    max-width: calc(100% - 24px) !important;
+  }
+
+  .orc-chain-wrap {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    padding: 20px 16px !important;
+  }
+
+  .orc-chain-arrow {
+    display: none !important;
+  }
+
+  .orc-chain-step {
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+
+  .orc-numbered-steps {
+    margin-top: 24px !important;
+  }
+
+  .orc-step-item {
+    gap: 16px !important;
+    padding: 20px 0 !important;
+  }
+
+  .orc-bullet-card-2col {
+    grid-template-columns: 1fr !important;
+  }
+
+  .orc-alert-inline {
+    display: block !important;
+    max-width: 100% !important;
+  }
+
+  .orc-media-center,
+  .orc-alert-center {
+    max-width: 100% !important;
+  }
+
+  .orc-sidebar-sticky,
+  .orc-sticky-sidebar {
+    position: static !important;
+  }
+
+  .orc-card-blank {
+    display: none !important;
+  }
+
+  .orc-checklist-grid,
+  .orc-compare-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .orc-header {
+    margin-bottom: 36px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .orc-hero-wrap,
+  .orc-section,
+  .orc-case-study-wrap {
+    padding: 40px 14px !important;
+  }
+
+  .orc-header {
+    margin-bottom: 28px !important;
+  }
+
+  .orc-rule {
+    margin-bottom: 18px !important;
+  }
+
+  .orc-title {
+    font-size: 23px !important;
+    line-height: 1.25 !important;
+  }
+
+  .orc-hero-heading {
+    font-size: 25px !important;
+    line-height: 1.2 !important;
+  }
+
+  .orc-subtitle {
+    font-size: 15px !important;
+  }
+
+  .orc-lead {
+    font-size: 14px !important;
+  }
+
+  .orc-body {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  .orc-btn {
+    padding: 13px 18px !important;
+    font-size: 12px !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .orc-card {
+    padding: 20px 16px !important;
+  }
+
+  .orc-compare-card {
+    padding: 22px 16px !important;
+  }
+
+  .orc-compare-list li {
+    font-size: 13px !important;
+  }
+
+  .orc-hero-badge {
+    font-size: 10px !important;
+    padding: 5px 10px !important;
+  }
+
+  .orc-hero-trust-bar {
+    font-size: 12px !important;
+  }
+
+  .orc-point-item {
+    padding: 8px 10px !important;
+    font-size: 13px !important;
+  }
+
+  .orc-pillar-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .orc-trades-matrix {
+    padding: 16px 12px !important;
+  }
+
+  .orc-layer-bar {
+    padding: 12px 14px !important;
+  }
+
+  .orc-mosaic-item {
+    min-height: 180px !important;
+  }
+
+  .orc-dual-content-body {
+    padding: 20px 16px !important;
+  }
+
+  .orc-card-split .orc-card-img-frame {
+    height: 190px !important;
+    min-height: 190px !important;
+  }
+
+  .orc-card-split .orc-col-content {
+    padding: 20px 14px !important;
+  }
+
+  .orc-media-frame-tall {
+    height: 210px !important;
+  }
+
+  .orc-flow-node {
+    padding: 14px 16px !important;
+  }
+
+  .orc-flow-icon {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* ==========================================================================
+   DESIGN & BUILD PAGE EXTENSIONS
+   ========================================================================== */
+
+.orc-decision-grid-2col {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 14px !important;
+}
+
+.orc-trust-stats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 14px !important;
+  margin: 24px 0 !important;
+}
+
+.orc-trust-stat-card {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 16px 12px !important;
+  text-align: center !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03) !important;
+}
+
+.orc-trust-stat-val {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+  line-height: 1.1 !important;
+  margin-bottom: 4px !important;
+}
+
+.orc-trust-stat-lbl {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #55504A !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  line-height: 1.3 !important;
+}
+
+.orc-diff-grid-2col {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 14px !important;
+  margin-top: 20px !important;
+}
+
+.orc-diff-card {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 16px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03) !important;
+}
+
+.orc-diff-card-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 8px !important;
+}
+
+.orc-diff-icon-wrap {
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 6px !important;
+  background-color: #FFF6F2 !important;
+  color: #B94E1A !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.orc-diff-card-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 15.5px !important;
+  font-weight: 600 !important;
+  color: #171513 !important;
+  margin: 0 !important;
+}
+
+.orc-diff-card-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+.orc-quote-card {
+  background: #FFF6F2 !important;
+  border: 1px solid rgba(185, 78, 26, 0.15) !important;
+  border-left: 4px solid #B94E1A !important;
+  border-radius: 8px !important;
+  padding: 20px 22px !important;
+  margin-top: 20px !important;
+}
+
+.orc-quote-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  color: #B94E1A !important;
+  margin-bottom: 6px !important;
+}
+
+.orc-quote-text {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16px !important;
+  font-style: italic !important;
+  line-height: 1.55 !important;
+  color: #171513 !important;
+  margin: 0 !important;
+}
+
+.orc-property-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  margin-top: 24px !important;
+}
+
+.orc-property-item {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-left: 3px solid #B94E1A !important;
+  border-radius: 6px !important;
+  padding: 16px 18px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03) !important;
+}
+
+.orc-property-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16.5px !important;
+  font-weight: 600 !important;
+  color: #171513 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.orc-property-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+.orc-milestone-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  margin-top: 24px !important;
+}
+
+@media screen and (max-width: 900px) {
+  .orc-trust-stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .orc-decision-grid-2col,
+  .orc-diff-grid-2col {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Hero Reverse Layout */
+.orc-hero-wrap .orc-container.orc-hero-reverse {
+  flex-direction: row-reverse !important;
+}
+
+@media screen and (max-width: 1080px) {
+  .orc-hero-wrap .orc-container.orc-hero-reverse {
+    flex-direction: column !important;
+  }
+}
+
+/* Vertical Media Frame */
+.orc-media-frame-vertical {
+  position: relative !important;
+  width: 100% !important;
+  height: 640px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06) !important;
+}
+
+.orc-media-frame-vertical .orc-media-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+@media screen and (max-width: 680px) {
+  .orc-media-frame-vertical {
+    height: 480px !important;
+  }
+}
+
+/* Project Roadmap Grid */
+.orc-roadmap-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 12px !important;
+  margin-top: 24px !important;
+}
+
+.orc-roadmap-card {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 14px 16px !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02) !important;
+}
+
+.orc-roadmap-card:hover {
+  transform: translateY(-2px) !important;
+  border-color: #B94E1A !important;
+  box-shadow: 0 6px 16px rgba(185, 78, 26, 0.08) !important;
+}
+
+.orc-roadmap-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+  background-color: #FFF6F2 !important;
+  padding: 2px 8px !important;
+  border-radius: 4px !important;
+  display: inline-block !important;
+  margin-bottom: 6px !important;
+}
+
+.orc-roadmap-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #171513 !important;
+  margin: 0 0 4px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-roadmap-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12.5px !important;
+  line-height: 1.45 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+.orc-roadmap-card.orc-roadmap-span2 {
+  grid-column: span 2 !important;
+}
+
+@media screen and (max-width: 680px) {
+  .orc-roadmap-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .orc-roadmap-card.orc-roadmap-span2 {
+    grid-column: span 1 !important;
+  }
+}
+
+/* Matrix Grid (for decision dependencies, priority allocation, etc.) */
+.orc-matrix-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+  margin-top: 32px !important;
+}
+
+.orc-matrix-card {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 24px 22px !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03) !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.orc-matrix-card:hover {
+  transform: translateY(-2px) !important;
+  border-color: #B94E1A !important;
+  box-shadow: 0 8px 20px rgba(185, 78, 26, 0.08) !important;
+}
+
+.orc-matrix-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+  background-color: #FFF6F2 !important;
+  padding: 3px 9px !important;
+  border-radius: 4px !important;
+  display: inline-block !important;
+  align-self: flex-start !important;
+  margin-bottom: 12px !important;
+  letter-spacing: 0.05em !important;
+}
+
+.orc-matrix-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #171513 !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-matrix-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: #55504A !important;
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 980px) {
+  .orc-matrix-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .orc-matrix-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.orc-matrix-card.orc-matrix-span-full {
+  grid-column: 1 / -1 !important;
+}

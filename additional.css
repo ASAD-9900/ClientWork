@@ -1,0 +1,344 @@
+
+
+/* ==================================================
+   ORAANJ LONDON HERO SECTION (olh-)
+   ================================================== */
+
+.olh-wrap,
+.olh-wrap *,
+.olh-wrap *::before,
+.olh-wrap *::after {
+  box-sizing: border-box !important;
+}
+
+/* Anti-wpautop Protection */
+.olh-wrap p:empty,
+.olh-wrap br,
+.olh-container > p,
+.olh-content > p:empty,
+.olh-visual-col > p {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Section Wrapper */
+.olh-wrap {
+  position: relative !important;
+  background-color: #FFF6F2 !important;
+  padding: 100px 32px 95px 32px !important;
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
+/* Content Container */
+.olh-container {
+  max-width: 1380px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 60px !important;
+}
+
+/* Left Content Column */
+.olh-content {
+  flex: 0 0 calc(53% - 30px) !important;
+  max-width: calc(53% - 30px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+/* Eyebrow & Architectural Accent Line */
+.olh-eyebrow-wrap {
+  display: block !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.olh-eyebrow {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  color: #8C8882 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.22em !important;
+  display: inline-block !important;
+}
+
+.olh-rule {
+  width: 38px !important;
+  height: 1.5px !important;
+  background-color: #B94E1A !important;
+  margin: 0 0 24px 0 !important;
+  display: block !important;
+}
+
+/* Main Display Heading (El Messiri) */
+.olh-heading {
+  font-family: 'El Messiri', 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(34px, 3.8vw, 56px) !important;
+  font-weight: 500 !important;
+  line-height: 1.14 !important;
+  letter-spacing: -0.015em !important;
+  color: #1A1816 !important;
+  margin: 0 0 22px 0 !important;
+  text-align: left !important;
+}
+
+/* Lead Paragraph */
+.olh-lead {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: clamp(16px, 1.35vw, 18px) !important;
+  font-weight: 500 !important;
+  line-height: 1.6 !important;
+  color: #1A1816 !important;
+  margin: 0 0 16px 0 !important;
+  max-width: 580px !important;
+  text-align: left !important;
+}
+
+/* Narrative Body Paragraphs */
+.olh-body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.68 !important;
+  color: #5E5953 !important;
+  margin: 0 0 14px 0 !important;
+  max-width: 580px !important;
+  text-align: left !important;
+}
+
+.olh-body-highlight {
+  color: #1A1816 !important;
+  font-weight: 450 !important;
+  margin: 0 0 34px 0 !important;
+}
+
+/* Primary CTA Button */
+.olh-action {
+  margin: 0 !important;
+  display: block !important;
+}
+
+.olh-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  padding: 16px 34px !important;
+  border-radius: 30px !important;
+  text-decoration: none !important;
+  transition: background-color 0.25s ease, transform 0.25s ease !important;
+  cursor: pointer !important;
+  border: none !important;
+}
+
+.olh-btn-label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif ;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  line-height: 1 !important;
+}
+
+.olh-btn-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #FFFFFF !important;
+  transition: transform 0.25s ease !important;
+  line-height: 1 !important;
+}
+
+.olh-btn:hover {
+  background-color: #670066 !important;
+  transform: translateY(-1px) !important;
+}
+
+.olh-btn:hover .olh-btn-icon {
+  transform: translateX(4px) !important;
+}
+
+/* Right Visual Column */
+.olh-visual-col {
+  flex: 0 0 calc(47% - 30px) !important;
+  max-width: calc(47% - 30px) !important;
+  display: block !important;
+}
+
+.olh-image-frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 680px !important;
+  min-height: 680px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+}
+
+.olh-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  transition: transform 0.5s ease !important;
+}
+
+.olh-image-frame:hover .olh-img {
+  transform: scale(1.03) !important;
+}
+
+/* Architectural Inset Tag */
+.olh-badge {
+  position: absolute !important;
+  bottom: 22px !important;
+  left: 22px !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid #DFDBD3 !important;
+  border-radius: 30px !important;
+  padding: 8px 18px 8px 14px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  z-index: 2 !important;
+}
+
+.olh-badge-dot {
+  width: 6px !important;
+  height: 6px !important;
+  background-color: #B94E1A !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+}
+
+.olh-badge-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #1A1816 !important;
+  line-height: 1 !important;
+}
+
+/* ==================================================
+   RESPONSIVE ADAPTATIONS
+   ================================================== */
+
+@media screen and (max-width: 1080px) {
+  .olh-wrap {
+    padding: 75px 24px 70px 24px !important;
+  }
+
+  .olh-container {
+    flex-direction: column !important;
+    gap: 48px !important;
+  }
+
+  .olh-content {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .olh-lead,
+  .olh-body {
+    max-width: 100% !important;
+  }
+
+  .olh-visual-col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .olh-image-frame {
+    height: 480px !important;
+    min-height: 480px !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .olh-wrap {
+    padding: 55px 18px 50px 18px !important;
+  }
+
+  .olh-container {
+    gap: 38px !important;
+  }
+
+  .olh-eyebrow {
+    font-size: 10px !important;
+    letter-spacing: 0.18em !important;
+  }
+
+  .olh-rule {
+    margin: 0 0 18px 0 !important;
+  }
+
+  .olh-heading {
+    font-size: 31px !important;
+    line-height: 1.16 !important;
+    margin: 0 0 18px 0 !important;
+  }
+
+  .olh-lead {
+    font-size: 15px !important;
+    margin: 0 0 14px 0 !important;
+  }
+
+  .olh-body {
+    font-size: 14px !important;
+    line-height: 1.62 !important;
+    margin: 0 0 12px 0 !important;
+  }
+
+  .olh-body-highlight {
+    margin: 0 0 28px 0 !important;
+  }
+
+  .olh-action {
+    width: 100% !important;
+  }
+
+  .olh-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 15px 22px !important;
+  }
+
+  .olh-btn-label {
+    font-size: 11px !important;
+  }
+
+  .olh-image-frame {
+    height: 340px !important;
+    min-height: 340px !important;
+  }
+
+  .olh-badge {
+    bottom: 14px !important;
+    left: 14px !important;
+    padding: 7px 14px !important;
+  }
+
+  .olh-badge-text {
+    font-size: 10px !important;
+  }
+}
+
+
+
+
