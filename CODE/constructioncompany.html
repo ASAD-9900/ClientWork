@@ -3,9 +3,10 @@
      Page HTML for WordPress Gutenberg Classic Editor
      Scoped with 'orc-' classes to prevent CSS conflicts across site
      Architectural, High-Converting Design Language matching Interiordesigner.html - done
+     Redesigned: 1 Image per Section with Alternating Left/Right Layout (No Projects Section)
      ========================================================================== -->
 
-<!-- 1. HERO SECTION -->
+<!-- 1. HERO SECTION (IMAGE ON RIGHT) -->
 <section class="orc-hero-wrap">
   <div class="orc-container">
     <div class="orc-hero-content">
@@ -55,7 +56,7 @@
   </div>
 </section>
 
-<!-- 2. ALREADY HAVE YOUR DRAWINGS? (SPLIT MEDIA + CHECKLIST) -->
+<!-- 2. ALREADY HAVE YOUR DRAWINGS? (IMAGE ON LEFT) -->
 <section class="orc-section orc-bg-white">
   <div class="orc-container">
     <div class="orc-split">
@@ -143,126 +144,72 @@
   </div>
 </section>
 
-<!-- 3. WHAT IF MY DRAWINGS AREN'T COMPLETE? (SIDEBAR IMAGE + DIAGNOSTIC GRID) -->
+<!-- 3. WHAT IF MY DRAWINGS AREN'T COMPLETE? (IMAGE ON RIGHT) -->
 <section class="orc-section orc-bg-tint">
   <div class="orc-container">
-    <div class="orc-sidebar-layout">
-      <!-- SIDEBAR WITH LARGE IMAGE (MATCHING SNP-WRAP IN INTERIOR DESIGNER) -->
-      <div class="orc-sidebar-col">
-        <div class="orc-sidebar-header">
-          <div class="orc-eyebrow-wrap">
-            <span class="orc-eyebrow">Technical Feasibility</span>
-          </div>
-          <div class="orc-rule"></div>
-          <h2 class="orc-title">Find the Gaps Before Work Begins</h2>
-          <p class="orc-lead">A CGI can show what the finished room should look like. It doesn't necessarily explain how everything should be built.</p>
-          <p class="orc-body">Before meaningful costing and construction, we identify what must be resolved to protect your programme and budget.</p>
-        </div>
-        <div class="orc-sidebar-img-frame">
-          <img class="orc-sidebar-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Start-With-the-Project-Not-the-Package.jpeg" alt="Technical interior design planning and detailed gap inspection" loading="lazy" />
-          <div class="orc-sidebar-badge">
+    <div class="orc-split orc-split-reverse">
+      <div class="orc-col-media">
+        <div class="orc-media-frame">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Start-With-the-Project-Not-the-Package.jpeg" alt="Technical interior design planning and detailed gap inspection" loading="lazy" />
+          <div class="orc-media-badge">
             <span class="orc-badge-dot"></span>
             <span class="orc-badge-text">Technical Pre-Construction Check</span>
+          </div>
+          <div class="orc-stamp-badge">
+            <span>GAP ANALYSIS</span>
           </div>
         </div>
       </div>
 
-      <!-- MAIN DIAGNOSTIC QUESTION CARDS -->
-      <div class="orc-sidebar-main">
-        <div class="orc-gap-block">
-          <div class="orc-gap-header-bar">
-            <span class="orc-gap-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
-            <h3 class="orc-gap-heading">Before Meaningful Costing &amp; Construction, We Understand:</h3>
+      <div class="orc-col-content">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">Technical Feasibility</span>
+        </div>
+        <div class="orc-rule"></div>
+        <h2 class="orc-title">Find the Gaps Before Work Begins</h2>
+        <p class="orc-lead">A CGI can show what the finished room should look like. It doesn't necessarily explain how everything should be built.</p>
+        <p class="orc-body">Before meaningful costing and construction, we identify what must be resolved to protect your programme and budget.</p>
+
+        <div class="orc-scope-label orc-mt-20">Before Meaningful Costing &amp; Construction, We Understand:</div>
+        <div class="orc-points-grid">
+          <div class="orc-point-item">
+            <span class="orc-point-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></span>
+            <span class="orc-point-text">Demolition &amp; retention scope</span>
           </div>
-          <div class="orc-gap-grid">
-            <div class="orc-gap-card">
-              <div class="orc-gap-icon-wrap">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-              </div>
-              <div class="orc-gap-content">
-                <h4 class="orc-gap-item-title">Demolition &amp; Retention</h4>
-                <p class="orc-gap-item-desc">What is being removed? What is being retained?</p>
-              </div>
-            </div>
-            <div class="orc-gap-card">
-              <div class="orc-gap-icon-wrap">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
-              </div>
-              <div class="orc-gap-content">
-                <h4 class="orc-gap-item-title">Proposed Dimensions</h4>
-                <p class="orc-gap-item-desc">Are the proposed dimensions clear and site-checked?</p>
-              </div>
-            </div>
-            <div class="orc-gap-card">
-              <div class="orc-gap-icon-wrap">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M6 14h12l-2-6H8l-2 6zM9 18h6M11 22h2"></path></svg>
-              </div>
-              <div class="orc-gap-content">
-                <h4 class="orc-gap-item-title">Lighting Positions</h4>
-                <p class="orc-gap-item-desc">Where should lighting be positioned in relation to furniture?</p>
-              </div>
-            </div>
-            <div class="orc-gap-card">
-              <div class="orc-gap-icon-wrap">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M9 10v4M15 10v4"></path></svg>
-              </div>
-              <div class="orc-gap-content">
-                <h4 class="orc-gap-item-title">Sockets &amp; Switches</h4>
-                <p class="orc-gap-item-desc">Where are sockets, switches and audio-visual points required?</p>
-              </div>
-            </div>
-            <div class="orc-gap-card">
-              <div class="orc-gap-icon-wrap">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"></path><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
-              </div>
-              <div class="orc-gap-content">
-                <h4 class="orc-gap-item-title">Kitchen Design</h4>
-                <p class="orc-gap-item-desc">Is the kitchen cabinetry, appliances and services design finalised?</p>
-              </div>
-            </div>
-            <div class="orc-gap-card">
-              <div class="orc-gap-icon-wrap">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"></path><path d="M6 12V5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1"></path></svg>
-              </div>
-              <div class="orc-gap-content">
-                <h4 class="orc-gap-item-title">Bathroom Fixtures</h4>
-                <p class="orc-gap-item-desc">Are bathroom fixtures, concealed valves and waste runs specified?</p>
-              </div>
-            </div>
-            <div class="orc-gap-card">
-              <div class="orc-gap-icon-wrap">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1"></rect><line x1="12" y1="4" x2="12" y2="20"></line></svg>
-              </div>
-              <div class="orc-gap-content">
-                <h4 class="orc-gap-item-title">Bespoke Joinery</h4>
-                <p class="orc-gap-item-desc">Is bespoke joinery detailed with internal fittings and finishes?</p>
-              </div>
-            </div>
-            <div class="orc-gap-card">
-              <div class="orc-gap-icon-wrap">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline></svg>
-              </div>
-              <div class="orc-gap-content">
-                <h4 class="orc-gap-item-title">Materials &amp; Finishes</h4>
-                <p class="orc-gap-item-desc">Are flooring, tiling, paint and decorative materials identified?</p>
-              </div>
-            </div>
-            <div class="orc-gap-card orc-gap-card-span">
-              <div class="orc-gap-icon-wrap">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l10 10-10 10L2 12z"></path><path d="M12 7v10"></path></svg>
-              </div>
-              <div class="orc-gap-content">
-                <h4 class="orc-gap-item-title">Specialist Consultants &amp; Approvals</h4>
-                <p class="orc-gap-item-desc">Are structural engineers, party wall surveyors or freeholder licences required?</p>
-              </div>
-            </div>
+          <div class="orc-point-item">
+            <span class="orc-point-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg></span>
+            <span class="orc-point-text">Clear, site-checked dimensions</span>
+          </div>
+          <div class="orc-point-item">
+            <span class="orc-point-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M6 14h12l-2-6H8l-2 6zM9 18h6M11 22h2"></path></svg></span>
+            <span class="orc-point-text">Lighting positions &amp; circuits</span>
+          </div>
+          <div class="orc-point-item">
+            <span class="orc-point-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M9 10v4M15 10v4"></path></svg></span>
+            <span class="orc-point-text">Sockets, switches &amp; AV points</span>
+          </div>
+          <div class="orc-point-item">
+            <span class="orc-point-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"></path><path d="M3 9h18"></path><path d="M9 21V9"></path></svg></span>
+            <span class="orc-point-text">Finalised kitchen cabinetry</span>
+          </div>
+          <div class="orc-point-item">
+            <span class="orc-point-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"></path><path d="M6 12V5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1"></path></svg></span>
+            <span class="orc-point-text">Bathroom valves &amp; waste runs</span>
+          </div>
+          <div class="orc-point-item">
+            <span class="orc-point-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1"></rect><line x1="12" y1="4" x2="12" y2="20"></line></svg></span>
+            <span class="orc-point-text">Bespoke joinery elevations</span>
+          </div>
+          <div class="orc-point-item">
+            <span class="orc-point-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline></svg></span>
+            <span class="orc-point-text">Specialist consultant approvals</span>
           </div>
         </div>
 
-        <div class="orc-support-banner">
+        <div class="orc-support-banner orc-mt-24">
           <div class="orc-support-content">
             <h4 class="orc-support-title">Need Help Developing Technical Information?</h4>
-            <p class="orc-support-desc">If important information is missing, we can identify what should be resolved before works begin. Where appropriate, Oraanj's interior architecture and technical design team can help develop the required drawings.</p>
+            <p class="orc-support-desc">Where important drawings are missing, Oraanj's interior architecture and technical design team can help develop the required details before site works begin.</p>
           </div>
           <div class="orc-support-action">
             <a class="orc-btn orc-btn-outline" href="https://www.oraanj-interiors.co.uk/interior-architecture/">
@@ -276,339 +223,263 @@
   </div>
 </section>
 
-<!-- 4. WHAT CONSTRUCTION WORK DOES ORAANJ UNDERTAKE? (9 IMAGE-RICH CARDS MATCHING WDA-GRID) -->
+<!-- 4. WHAT CONSTRUCTION WORK DOES ORAANJ UNDERTAKE? (IMAGE ON LEFT) -->
 <section class="orc-section orc-bg-white">
   <div class="orc-container">
-    <div class="orc-header orc-header-center">
-      <div class="orc-eyebrow-wrap"><span class="orc-eyebrow">OUR CAPABILITIES</span></div>
-      <div class="orc-rule orc-rule-center"></div>
-      <h2 class="orc-title">What Construction Work Does Oraanj Undertake?</h2>
-      <p class="orc-subtitle">Comprehensive interior construction, refurbishment and fit-out capabilities across London.</p>
-    </div>
-
-    <div class="orc-cards-grid orc-grid-3col">
-      <!-- 01 -->
-      <article class="orc-card orc-card-with-img">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/large-property-interior-design-by-oraanj-interior-designers.jpeg" alt="Whole-property refurbishment London" loading="lazy" />
-          <span class="orc-img-tag">01 / 09</span>
+    <div class="orc-split">
+      <div class="orc-col-media">
+        <div class="orc-media-frame">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/large-property-interior-design-by-oraanj-interior-designers.jpeg" alt="Full-scope construction and refurbishment across London properties" loading="lazy" />
+          <div class="orc-media-badge">
+            <span class="orc-badge-text">Full-Scope Construction &amp; Refurbishment</span>
+          </div>
+          <div class="orc-stamp-badge">
+            <span>ALL TRADES</span>
+          </div>
         </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Whole-Property Refurbishment</h3>
-          <p class="orc-card-desc">Interior refurbishment of existing houses and apartments, from strip-out and preparation through to the agreed finished interior.</p>
-          <a class="orc-explore-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">
-            <span class="orc-explore-text">Explore Whole-Property Refurbishment</span>
-            <span class="orc-arrow">→</span>
+      </div>
+
+      <div class="orc-col-content">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">OUR CAPABILITIES</span>
+          <span class="orc-inline-line"></span>
+        </div>
+        <h2 class="orc-title">What Construction Work Does Oraanj Undertake?</h2>
+        <p class="orc-subtitle">Comprehensive interior construction, refurbishment and fit-out capabilities across London.</p>
+        <p class="orc-lead">From structural alterations and full strip-outs to made-to-measure joinery, we coordinate every trade required to execute approved drawings with precision.</p>
+
+        <div class="orc-split-grid-2">
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">01</span>
+              <span class="orc-split-card-tag">Scope</span>
+            </div>
+            <h3 class="orc-split-card-title">Whole-Property Refurbishment</h3>
+            <p class="orc-split-card-desc">Strip-out, reconfiguration and delivery from initial preparation through to the finished interior.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">Explore Refurbishment →</a>
+          </div>
+
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">02</span>
+              <span class="orc-split-card-tag">Structure</span>
+            </div>
+            <h3 class="orc-split-card-title">Internal Alterations</h3>
+            <p class="orc-split-card-desc">Approved layout changes, partition removals and structural wall alterations with engineering oversight.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/interior-architecture/">Explore Alterations →</a>
+          </div>
+
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">03</span>
+              <span class="orc-split-card-tag">Kitchens</span>
+            </div>
+            <h3 class="orc-split-card-title">Kitchen Installation</h3>
+            <p class="orc-split-card-desc">Coordination of cabinetry, worktops, appliances, lighting, plumbing and fine finishing works.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">Explore Kitchens →</a>
+          </div>
+
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">04</span>
+              <span class="orc-split-card-tag">Plumbing</span>
+            </div>
+            <h3 class="orc-split-card-title">Bathroom Installation</h3>
+            <p class="orc-split-card-desc">Coordination of sanitaryware, tiling, lighting, concealed valves and specialist plumbing.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">Explore Bathrooms →</a>
+          </div>
+
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">05</span>
+              <span class="orc-split-card-tag">Finishes</span>
+            </div>
+            <h3 class="orc-split-card-title">Flooring &amp; Decorating</h3>
+            <p class="orc-split-card-desc">Installation of hardwood, stone, architectural mouldings, fine decorating and specialist finishes.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/interior-designers-london/">Explore Finishes →</a>
+          </div>
+
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">06</span>
+              <span class="orc-split-card-tag">Joinery</span>
+            </div>
+            <h3 class="orc-split-card-title">Bespoke Joinery &amp; Storage</h3>
+            <p class="orc-split-card-desc">Fitted wardrobes, media walls, cabinetry, panelling and made-to-measure interior elements.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/custom-furniture-design/">Explore Joinery →</a>
+          </div>
+        </div>
+
+        <div class="orc-action-row">
+          <a class="orc-btn orc-btn-primary" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
+            <span class="orc-btn-label">Discuss Your Construction Project</span>
+            <span class="orc-btn-arrow">→</span>
           </a>
         </div>
-      </article>
-
-      <!-- 02 -->
-      <article class="orc-card orc-card-with-img">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/space-planning-1.jpeg" alt="Internal alterations and structural layout" loading="lazy" />
-          <span class="orc-img-tag">02 / 09</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Internal Alterations</h3>
-          <p class="orc-card-desc">Implementation of approved changes to the existing interior layout, with relevant specialist design and approvals undertaken where required.</p>
-          <a class="orc-explore-link" href="https://www.oraanj-interiors.co.uk/interior-architecture/">
-            <span class="orc-explore-text">Explore Layout Alterations</span>
-            <span class="orc-arrow">→</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- 03 -->
-      <article class="orc-card orc-card-with-img">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/renovating-a-property.jpeg" alt="Kitchen installation London" loading="lazy" />
-          <span class="orc-img-tag">03 / 09</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Kitchen Installation</h3>
-          <p class="orc-card-desc">Coordination of cabinetry, worktops, appliances, lighting, electrical and plumbing requirements and associated finishes according to the agreed design.</p>
-          <a class="orc-explore-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">
-            <span class="orc-explore-text">Explore Kitchen Renovation</span>
-            <span class="orc-arrow">→</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- 04 -->
-      <article class="orc-card orc-card-with-img">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://oraanj-interiors.co.uk/projects/wp-content/uploads/2025/11/Kitchen-design-1-300x218-2.webp" alt="Bathroom installation and sanitaryware" loading="lazy" />
-          <span class="orc-img-tag">04 / 09</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Bathroom Installation</h3>
-          <p class="orc-card-desc">Coordination of sanitaryware, tiling, lighting, fittings, storage and associated plumbing and electrical services.</p>
-          <a class="orc-explore-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">
-            <span class="orc-explore-text">Explore Bathroom Installation</span>
-            <span class="orc-arrow">→</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- 05 -->
-      <article class="orc-card orc-card-with-img">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/high-end-interior-designed-by-oraanj-interiors.jpeg" alt="Flooring and decorating finishes" loading="lazy" />
-          <span class="orc-img-tag">05 / 09</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Flooring &amp; Decorating</h3>
-          <p class="orc-card-desc">Installation of agreed flooring, timber, stone, wall finishes, decorating and specialist interior finishing works.</p>
-          <a class="orc-explore-link" href="https://www.oraanj-interiors.co.uk/interior-designers-london/">
-            <span class="orc-explore-text">Explore Finishes &amp; Decorating</span>
-            <span class="orc-arrow">→</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- 06 -->
-      <article class="orc-card orc-card-with-img">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/lighting-design-by-oraanj-interior-designers.jpeg" alt="Lighting and electrical works" loading="lazy" />
-          <span class="orc-img-tag">06 / 09</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Lighting &amp; Electrical Works</h3>
-          <p class="orc-card-desc">Implementation of the agreed interior lighting, switching and electrical requirements by appropriately qualified trades.</p>
-          <a class="orc-explore-link" href="https://www.oraanj-interiors.co.uk/lighting-design/">
-            <span class="orc-explore-text">Explore Lighting &amp; Electrical</span>
-            <span class="orc-arrow">→</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- 07 -->
-      <article class="orc-card orc-card-with-img">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/cozy-interior-design-by-oraanj-interior-design.jpeg" alt="Plumbing and heating works" loading="lazy" />
-          <span class="orc-img-tag">07 / 09</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Plumbing</h3>
-          <p class="orc-card-desc">Relevant plumbing works associated with kitchens, bathrooms, heating integration and wider interior refurbishment.</p>
-          <a class="orc-explore-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">
-            <span class="orc-explore-text">Explore Plumbing Services</span>
-            <span class="orc-arrow">→</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- 08 -->
-      <article class="orc-card orc-card-with-img">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/bespoke-joinery-design-by-oraanj-interiors.jpeg" alt="Bespoke joinery installation" loading="lazy" />
-          <span class="orc-img-tag">08 / 09</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Bespoke Joinery</h3>
-          <p class="orc-card-desc">Installation of wardrobes, media walls, cabinetry, shelving, storage and other made-to-measure interior elements.</p>
-          <a class="orc-explore-link" href="https://www.oraanj-interiors.co.uk/custom-furniture-design/">
-            <span class="orc-explore-text">Explore Bespoke Joinery</span>
-            <span class="orc-arrow">→</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- 09 -->
-      <article class="orc-card orc-card-with-img">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Luxurious-Modern-Living-Room-Build-By-Oraanj-Interior-Design.jpeg" alt="Final interior installation and styling" loading="lazy" />
-          <span class="orc-img-tag">09 / 09</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Final Installation</h3>
-          <p class="orc-card-desc">Coordination of agreed fittings, architectural hardware, furniture and finishing elements as the project approaches completion.</p>
-          <a class="orc-explore-link" href="https://www.oraanj-interiors.co.uk/turnkey-interior-design-london/">
-            <span class="orc-explore-text">Explore Turnkey Installation</span>
-            <span class="orc-arrow">→</span>
-          </a>
-        </div>
-      </article>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 5. RESIDENTIAL CONSTRUCTION & REFURBISHMENT (6 IMAGE CARDS) -->
+<!-- 5. RESIDENTIAL CONSTRUCTION & REFURBISHMENT (IMAGE ON RIGHT) -->
 <section class="orc-section orc-bg-tint">
   <div class="orc-container">
-    <div class="orc-header orc-header-split">
-      <div class="orc-header-col-left">
-        <div class="orc-eyebrow-wrap"><span class="orc-eyebrow">Residential Refurbishment</span></div>
-        <div class="orc-rule"></div>
-        <h2 class="orc-title">Existing Homes, Reworked for the Way You Want to Live</h2>
+    <div class="orc-split orc-split-reverse">
+      <div class="orc-col-media">
+        <div class="orc-media-frame">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/family-home-interior-designed-by-oraanj-interior-designers.jpeg" alt="Residential construction and complete home refurbishment London" loading="lazy" />
+          <div class="orc-media-badge">
+            <span class="orc-badge-text">Prime London Residences</span>
+          </div>
+          <div class="orc-stamp-badge">
+            <span>RESIDENTIAL</span>
+          </div>
+        </div>
       </div>
-      <div class="orc-header-col-right">
+
+      <div class="orc-col-content">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">Residential Refurbishment</span>
+          <span class="orc-inline-line"></span>
+        </div>
+        <h2 class="orc-title">Existing Homes, Reworked for the Way You Want to Live</h2>
         <p class="orc-lead">Our residential construction work focuses on improving and transforming existing properties across London.</p>
         <p class="orc-body">From single-room structural transformations to full house refurbishments, we work from approved drawings to deliver high-quality, durable finishes.</p>
-      </div>
-    </div>
 
-    <div class="orc-cards-grid orc-grid-3col">
-      <div class="orc-visual-card">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/family-home-interior-designed-by-oraanj-interior-designers.jpeg" alt="Complete house refurbishment London" loading="lazy" />
-          <span class="orc-img-tag">Homes</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Complete House Refurbishment</h3>
-          <p class="orc-card-desc">Renovation across multiple rooms or an entire property, coordinated from initial strip-out to final handover.</p>
-          <a class="orc-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">EXPLORE HOUSE RENOVATION <span class="orc-arrow">→</span></a>
-        </div>
-      </div>
+        <div class="orc-split-grid-2">
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">01</span>
+              <span class="orc-split-card-tag">Houses</span>
+            </div>
+            <h3 class="orc-split-card-title">Complete House Refurbishment</h3>
+            <p class="orc-split-card-desc">Renovation across multiple rooms or an entire property, coordinated from initial strip-out to final handover.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">Explore Houses →</a>
+          </div>
 
-      <div class="orc-visual-card">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/open-plan-interior-designed-by-oraanj-interior-designers.jpeg" alt="Apartment refurbishment London" loading="lazy" />
-          <span class="orc-img-tag">Apartments</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Apartment Refurbishment</h3>
-          <p class="orc-card-desc">Interior renovation coordinated around the property, building management regulations, lift access and logistics.</p>
-          <a class="orc-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">EXPLORE APARTMENT RENOVATION <span class="orc-arrow">→</span></a>
-        </div>
-      </div>
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">02</span>
+              <span class="orc-split-card-tag">Apartments</span>
+            </div>
+            <h3 class="orc-split-card-title">Apartment Refurbishment</h3>
+            <p class="orc-split-card-desc">Interior renovation coordinated around building management regulations, lift access and logistics.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">Explore Apartments →</a>
+          </div>
 
-      <div class="orc-visual-card">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/renovating-a-property.jpeg" alt="Kitchen and living room renovation" loading="lazy" />
-          <span class="orc-img-tag">Living &amp; Cooking</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Kitchen &amp; Living Renovation</h3>
-          <p class="orc-card-desc">Construction and installation around an approved kitchen and living-space design, including all service integration.</p>
-          <a class="orc-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">EXPLORE LIVING RENOVATIONS <span class="orc-arrow">→</span></a>
-        </div>
-      </div>
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">03</span>
+              <span class="orc-split-card-tag">Cooking</span>
+            </div>
+            <h3 class="orc-split-card-title">Kitchen &amp; Living Renovation</h3>
+            <p class="orc-split-card-desc">Construction and installation around an approved layout, including all service and extraction integration.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">Explore Living Spaces →</a>
+          </div>
 
-      <div class="orc-visual-card">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://oraanj-interiors.co.uk/projects/wp-content/uploads/2025/11/Kitchen-design-1-300x218-2.webp" alt="Bathroom refurbishment" loading="lazy" />
-          <span class="orc-img-tag">Sanitaryware</span>
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">04</span>
+              <span class="orc-split-card-tag">Heritage</span>
+            </div>
+            <h3 class="orc-split-card-title">Period Property Refurbishment</h3>
+            <p class="orc-split-card-desc">Renovation within older buildings where existing architectural mouldings, features and fabric need care.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">Explore Heritage →</a>
+          </div>
         </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Bathroom Refurbishment</h3>
-          <p class="orc-card-desc">Installation and finishing of luxury bathrooms as individual projects or part of a wider home renovation.</p>
-          <a class="orc-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">EXPLORE BATHROOM REFURBISHMENT <span class="orc-arrow">→</span></a>
-        </div>
-      </div>
 
-      <div class="orc-visual-card">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/period-properties-renovation.jpeg" alt="Period property refurbishment" loading="lazy" />
-          <span class="orc-img-tag">Heritage</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Period Property Refurbishment</h3>
-          <p class="orc-card-desc">Interior renovation within older properties where existing architectural mouldings, features and fabric need consideration.</p>
-          <a class="orc-card-link" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">EXPLORE PERIOD REFURBISHMENT <span class="orc-arrow">→</span></a>
+        <div class="orc-action-row">
+          <a class="orc-btn orc-btn-outline" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">
+            <span class="orc-btn-label">Explore Home Renovation</span>
+            <span class="orc-btn-arrow">→</span>
+          </a>
         </div>
       </div>
-
-      <div class="orc-visual-card">
-        <div class="orc-card-img-frame">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/bespoke-joinery-design-by-oraanj-interiors.jpeg" alt="Bespoke interior fit out" loading="lazy" />
-          <span class="orc-img-tag">Custom Fit-Out</span>
-        </div>
-        <div class="orc-card-body">
-          <h3 class="orc-card-title">Bespoke Interior Fit-Out</h3>
-          <p class="orc-card-desc">Made-to-measure joinery, specialist finishes, architectural lighting and custom interior elements executed to precise details.</p>
-          <a class="orc-card-link" href="https://www.oraanj-interiors.co.uk/custom-furniture-design/">EXPLORE BESPOKE FIT-OUT <span class="orc-arrow">→</span></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="orc-center-action">
-      <a class="orc-btn orc-btn-outline" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">
-        <span class="orc-btn-label">Explore Home Renovation</span>
-        <span class="orc-btn-arrow">→</span>
-      </a>
     </div>
   </div>
 </section>
 
-<!-- 6. COMMERCIAL FIT-OUT & REFURBISHMENT (4 IMAGE CARDS) -->
+<!-- 6. COMMERCIAL FIT-OUT & REFURBISHMENT (IMAGE ON LEFT) -->
 <section class="orc-section orc-bg-white">
   <div class="orc-container">
-    <div class="orc-header orc-header-split">
-      <div class="orc-header-col-left">
-        <div class="orc-eyebrow-wrap"><span class="orc-eyebrow">Commercial Construction</span></div>
-        <div class="orc-rule"></div>
-        <h2 class="orc-title">Getting the Space Ready for Business</h2>
+    <div class="orc-split">
+      <div class="orc-col-media">
+        <div class="orc-media-frame">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/complete-commercial-interior-design.jpeg" alt="Commercial interior fit-out and office refurbishment London" loading="lazy" />
+          <div class="orc-media-badge">
+            <span class="orc-badge-text">Commercial Fit-Out &amp; Refurbishment</span>
+          </div>
+          <div class="orc-stamp-badge">
+            <span>ON SCHEDULE</span>
+          </div>
+        </div>
       </div>
-      <div class="orc-header-col-right">
+
+      <div class="orc-col-content">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">Commercial Construction</span>
+          <span class="orc-inline-line"></span>
+        </div>
+        <h2 class="orc-title">Getting the Space Ready for Business</h2>
         <p class="orc-lead">Commercial construction has another priority: the premises need to work when the doors open.</p>
         <p class="orc-body">Oraanj undertakes selected interior refurbishment and commercial fit-out projects where programme reliability and craftsmanship are vital to opening on schedule.</p>
+
+        <div class="orc-split-grid-2">
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">01</span>
+              <span class="orc-split-card-tag">Workplace</span>
+            </div>
+            <h3 class="orc-split-card-title">Offices &amp; Workplaces</h3>
+            <p class="orc-split-card-desc">Desking zones, meeting rooms, reception areas, breakout hubs, storage and acoustic partition systems.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/office-interior-design-london/">Explore Offices →</a>
+          </div>
+
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">02</span>
+              <span class="orc-split-card-tag">Hospitality</span>
+            </div>
+            <h3 class="orc-split-card-title">Restaurants &amp; Dining</h3>
+            <p class="orc-split-card-desc">Dining areas, bespoke bars, counter units, lighting, flooring and complete front-of-house finishes.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/restaurant-interior-design-london/">Explore Restaurants →</a>
+          </div>
+
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">03</span>
+              <span class="orc-split-card-tag">Food &amp; Beverage</span>
+            </div>
+            <h3 class="orc-split-card-title">Cafés &amp; Coffee Bars</h3>
+            <p class="orc-split-card-desc">Barista counters, display joinery, seating layouts, customer circulation and extraction integration.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/cafe-interior-designer/">Explore Cafés →</a>
+          </div>
+
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">04</span>
+              <span class="orc-split-card-tag">Retail</span>
+            </div>
+            <h3 class="orc-split-card-title">Retail &amp; Customer Spaces</h3>
+            <p class="orc-split-card-desc">Product displays, cash desks, fitting areas, back-of-house storage and high-impact commercial lighting.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/commercial-interior-design/">Explore Retail →</a>
+          </div>
+        </div>
+
+        <p class="orc-body orc-note-text orc-mt-14">Specialist commercial requirements (licensing, fire safety, MEP) should be developed and approved before or during the fit-out programme.</p>
+
+        <div class="orc-action-row">
+          <a class="orc-btn orc-btn-primary" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
+            <span class="orc-btn-label">Discuss a Commercial Fit-Out</span>
+            <span class="orc-btn-arrow">→</span>
+          </a>
+        </div>
       </div>
-    </div>
-
-    <div class="orc-cards-grid orc-grid-4col">
-      <div class="orc-commercial-card">
-        <div class="orc-card-img-frame orc-img-frame-sm">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/complete-commercial-interior-design.jpeg" alt="Commercial office fit-out London" loading="lazy" />
-        </div>
-        <div class="orc-card-body">
-          <div class="orc-commercial-meta"><span class="orc-meta-num">01</span><span class="orc-meta-badge">Workplace</span></div>
-          <h3 class="orc-card-title">Offices</h3>
-          <p class="orc-card-desc">Workstations, meeting rooms, reception spaces, breakout areas, storage and associated interior works.</p>
-          <a class="orc-card-link" href="https://www.oraanj-interiors.co.uk/office-interior-design-london/">EXPLORE OFFICES <span class="orc-arrow">→</span></a>
-        </div>
-      </div>
-
-      <div class="orc-commercial-card">
-        <div class="orc-card-img-frame orc-img-frame-sm">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/restaurant-interior-design-by-oraanj-interior-designers.jpeg" alt="Restaurant interior fit-out London" loading="lazy" />
-        </div>
-        <div class="orc-card-body">
-          <div class="orc-commercial-meta"><span class="orc-meta-num">02</span><span class="orc-meta-badge">Hospitality</span></div>
-          <h3 class="orc-card-title">Restaurants</h3>
-          <p class="orc-card-desc">Dining areas, bars, counters, lighting, joinery, finishes and other agreed front-of-house interior elements.</p>
-          <a class="orc-card-link" href="https://www.oraanj-interiors.co.uk/restaurant-interior-design-london/">EXPLORE RESTAURANTS <span class="orc-arrow">→</span></a>
-        </div>
-      </div>
-
-      <div class="orc-commercial-card">
-        <div class="orc-card-img-frame orc-img-frame-sm">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/cafe-interior-design-by-oraanj-interior-designers.jpeg" alt="Café refurbishment London" loading="lazy" />
-        </div>
-        <div class="orc-card-body">
-          <div class="orc-commercial-meta"><span class="orc-meta-num">03</span><span class="orc-meta-badge">Food &amp; Beverage</span></div>
-          <h3 class="orc-card-title">Cafés</h3>
-          <p class="orc-card-desc">Coffee counters, display, seating areas, joinery, lighting, flooring and agreed interior works.</p>
-          <a class="orc-card-link" href="https://www.oraanj-interiors.co.uk/cafe-interior-designer/">EXPLORE CAFÉS <span class="orc-arrow">→</span></a>
-        </div>
-      </div>
-
-      <div class="orc-commercial-card">
-        <div class="orc-card-img-frame orc-img-frame-sm">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/shop-interior-design-by-oraanj-interiors.jpeg" alt="Retail fit-out London" loading="lazy" />
-        </div>
-        <div class="orc-card-body">
-          <div class="orc-commercial-meta"><span class="orc-meta-num">04</span><span class="orc-meta-badge">Retail</span></div>
-          <h3 class="orc-card-title">Retail &amp; Customer Spaces</h3>
-          <p class="orc-card-desc">Displays, counters, storage, lighting and other architectural elements required for the agreed commercial interior.</p>
-          <a class="orc-card-link" href="https://www.oraanj-interiors.co.uk/commercial-interior-design/">EXPLORE RETAIL <span class="orc-arrow">→</span></a>
-        </div>
-      </div>
-    </div>
-
-    <p class="orc-body orc-center-note">Depending on the project, specialist commercial requirements should be developed and approved by the appropriate professionals before or during the fit-out programme.</p>
-
-    <div class="orc-center-action">
-      <a class="orc-btn orc-btn-primary" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
-        <span class="orc-btn-label">Discuss a Commercial Fit-Out</span>
-        <span class="orc-btn-arrow">→</span>
-      </a>
     </div>
   </div>
 </section>
 
-<!-- 7. BEFORE WE PRICE THE WORKS (QUOTATION FACTOR MATRIX WITH BESPOKE SVG ICONS) -->
+<!-- 7. BEFORE WE PRICE THE WORKS (4 HORIZONTAL CARDS) -->
 <section class="orc-section orc-bg-tint">
   <div class="orc-container">
     <div class="orc-header orc-header-center">
@@ -619,723 +490,498 @@
       <p class="orc-lead orc-max-760">A quotation is only as useful as the information behind it. If one contractor prices a basic specification and another assumes premium materials, the figures aren't directly comparable.</p>
     </div>
 
-    <div class="orc-factors-grid">
-      <!-- 01 SCOPE -->
-      <div class="orc-factor-item">
-        <div class="orc-factor-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+    <div class="orc-factors-4col">
+      <!-- 01 Scope -->
+      <div class="orc-factor-card-h">
+        <div class="orc-factor-card-top">
+          <div class="orc-factor-icon-wrap">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+          </div>
+          <span class="orc-factor-badge-num">01 / SCOPE</span>
         </div>
-        <div class="orc-factor-header">
-          <h3 class="orc-factor-title">01. Scope</h3>
-        </div>
-        <p class="orc-factor-desc">Exactly what work is included in the project boundaries?</p>
+        <h3 class="orc-factor-card-title">Defined Scope of Works</h3>
+        <p class="orc-factor-card-desc">Exactly what work is included in the project boundaries, what is being stripped out, and what structural elements or existing fabric are retained.</p>
       </div>
 
-      <!-- 02 DRAWINGS -->
-      <div class="orc-factor-item">
-        <div class="orc-factor-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+      <!-- 02 Drawings -->
+      <div class="orc-factor-card-h">
+        <div class="orc-factor-card-top">
+          <div class="orc-factor-icon-wrap">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line></svg>
+          </div>
+          <span class="orc-factor-badge-num">02 / DRAWINGS</span>
         </div>
-        <div class="orc-factor-header">
-          <h3 class="orc-factor-title">02. Drawings</h3>
-        </div>
-        <p class="orc-factor-desc">What are the contractors expected to build from?</p>
+        <h3 class="orc-factor-card-title">Technical Drawings &amp; CAD</h3>
+        <p class="orc-factor-card-desc">Clear floor plans, elevations, lighting plans, electrical circuits, and joinery drawings required for contractors to price and build from.</p>
       </div>
 
-      <!-- 03 SPECIFICATION -->
-      <div class="orc-factor-item">
-        <div class="orc-factor-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+      <!-- 03 Specification -->
+      <div class="orc-factor-card-h">
+        <div class="orc-factor-card-top">
+          <div class="orc-factor-icon-wrap">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline></svg>
+          </div>
+          <span class="orc-factor-badge-num">03 / SPEC</span>
         </div>
-        <div class="orc-factor-header">
-          <h3 class="orc-factor-title">03. Specification</h3>
-        </div>
-        <p class="orc-factor-desc">Which materials, products and finishes have been selected?</p>
+        <h3 class="orc-factor-card-title">Material Specification</h3>
+        <p class="orc-factor-card-desc">Defined selections for sanitaryware, kitchen cabinetry, worktops, flooring types, timber mouldings, paint grades and specialist finishes.</p>
       </div>
 
-      <!-- 04 JOINERY -->
-      <div class="orc-factor-item">
-        <div class="orc-factor-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1"></rect><line x1="12" y1="4" x2="12" y2="20"></line><circle cx="8" cy="12" r="1"></circle><circle cx="16" cy="12" r="1"></circle></svg>
+      <!-- 04 Programme -->
+      <div class="orc-factor-card-h">
+        <div class="orc-factor-card-top">
+          <div class="orc-factor-icon-wrap">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <span class="orc-factor-badge-num">04 / PROGRAMME</span>
         </div>
-        <div class="orc-factor-header">
-          <h3 class="orc-factor-title">04. Joinery</h3>
-        </div>
-        <p class="orc-factor-desc">What bespoke made-to-measure items need to be manufactured?</p>
-      </div>
-
-      <!-- 05 KITCHENS & BATHROOMS -->
-      <div class="orc-factor-item">
-        <div class="orc-factor-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"></path><path d="M6 12V5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1"></path></svg>
-        </div>
-        <div class="orc-factor-header">
-          <h3 class="orc-factor-title">05. Kitchens &amp; Bathrooms</h3>
-        </div>
-        <p class="orc-factor-desc">What is client-supplied and what needs contractor installation?</p>
-      </div>
-
-      <!-- 06 SPECIALIST WORK -->
-      <div class="orc-factor-item">
-        <div class="orc-factor-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-        </div>
-        <div class="orc-factor-header">
-          <h3 class="orc-factor-title">06. Specialist Work</h3>
-        </div>
-        <p class="orc-factor-desc">Are structural, electrical, plumbing or other specialist requirements involved?</p>
-      </div>
-
-      <!-- 07 SITE CONDITIONS -->
-      <div class="orc-factor-item">
-        <div class="orc-factor-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-        </div>
-        <div class="orc-factor-header">
-          <h3 class="orc-factor-title">07. Site Conditions</h3>
-        </div>
-        <p class="orc-factor-desc">Are there access, parking, management-company or working-hour restrictions?</p>
-      </div>
-
-      <!-- 08 PROGRAMME -->
-      <div class="orc-factor-item">
-        <div class="orc-factor-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-        </div>
-        <div class="orc-factor-header">
-          <h3 class="orc-factor-title">08. Programme</h3>
-        </div>
-        <p class="orc-factor-desc">When does the property need to be completed and handed over?</p>
+        <h3 class="orc-factor-card-title">Site Conditions &amp; Programme</h3>
+        <p class="orc-factor-card-desc">Target handover dates, building management rules, access restrictions, working hours, and procurement lead times for bespoke items.</p>
       </div>
     </div>
 
     <div class="orc-callout-box">
-      <p class="orc-callout-text">The clearer these items are, the easier it becomes to understand what a quotation actually covers and ensure true price certainty.</p>
+      <p class="orc-callout-text">The clearer these 4 key factors are, the easier it becomes to understand what a quotation actually covers and ensure true price certainty.</p>
     </div>
   </div>
 </section>
 
-<!-- 8. WHAT HAPPENS BEFORE CONSTRUCTION STARTS? (8 PRE-START STEPS WITH HOVER ACCENTS) -->
+<!-- 8. WHAT HAPPENS BEFORE CONSTRUCTION STARTS? (IMAGE ON LEFT) -->
 <section class="orc-section orc-bg-white">
   <div class="orc-container">
-    <div class="orc-header orc-header-center">
-      <div class="orc-eyebrow-wrap"><span class="orc-eyebrow">Pre-Start Governance</span></div>
-      <div class="orc-rule orc-rule-center"></div>
-      <h2 class="orc-title">What Happens Before Construction Starts?</h2>
-      <p class="orc-subtitle">A clear, disciplined 8-stage sequence to eliminate ambiguity before physical works begin.</p>
-    </div>
-
-    <div class="orc-step-grid">
-      <div class="orc-step-card">
-        <div class="orc-step-accent"></div>
-        <div class="orc-step-top"><span class="orc-step-num">01</span><span class="orc-phase-chip">Review</span></div>
-        <h3 class="orc-step-title">Project Information</h3>
-        <p class="orc-step-desc">We review the property and available design information in detail.</p>
-      </div>
-
-      <div class="orc-step-card">
-        <div class="orc-step-accent"></div>
-        <div class="orc-step-top"><span class="orc-step-num">02</span><span class="orc-phase-chip">Site Visit</span></div>
-        <h3 class="orc-step-title">Site Review</h3>
-        <p class="orc-step-desc">Where appropriate, the existing property is reviewed alongside the proposed works.</p>
-      </div>
-
-      <div class="orc-step-card">
-        <div class="orc-step-accent"></div>
-        <div class="orc-step-top"><span class="orc-step-num">03</span><span class="orc-phase-chip">Audit</span></div>
-        <h3 class="orc-step-title">Information Check</h3>
-        <p class="orc-step-desc">We identify whether relevant drawings, specifications or specialist information are missing.</p>
-      </div>
-
-      <div class="orc-step-card">
-        <div class="orc-step-accent"></div>
-        <div class="orc-step-top"><span class="orc-step-num">04</span><span class="orc-phase-chip">Scope</span></div>
-        <h3 class="orc-step-title">Scope of Works</h3>
-        <p class="orc-step-desc">The proposed construction and refurbishment requirements are clearly defined.</p>
-      </div>
-
-      <div class="orc-step-card">
-        <div class="orc-step-accent"></div>
-        <div class="orc-step-top"><span class="orc-step-num">05</span><span class="orc-phase-chip">Tender</span></div>
-        <h3 class="orc-step-title">Costing</h3>
-        <p class="orc-step-desc">The agreed scope provides the rigorous basis for developing the construction quotation.</p>
-      </div>
-
-      <div class="orc-step-card">
-        <div class="orc-step-accent"></div>
-        <div class="orc-step-top"><span class="orc-step-num">06</span><span class="orc-phase-chip">Schedule</span></div>
-        <h3 class="orc-step-title">Programme</h3>
-        <p class="orc-step-desc">The proposed sequence of works is considered alongside access, lead times and important project dates.</p>
-      </div>
-
-      <div class="orc-step-card">
-        <div class="orc-step-accent"></div>
-        <div class="orc-step-top"><span class="orc-step-num">07</span><span class="orc-phase-chip">Logistics</span></div>
-        <h3 class="orc-step-title">Procurement Planning</h3>
-        <p class="orc-step-desc">Materials, kitchens, joinery and other long-lead items are scheduled in relation to the programme.</p>
-      </div>
-
-      <div class="orc-step-card">
-        <div class="orc-step-accent"></div>
-        <div class="orc-step-top"><span class="orc-step-num">08</span><span class="orc-phase-chip">Pre-Start</span></div>
-        <h3 class="orc-step-title">Pre-Start Coordination</h3>
-        <p class="orc-step-desc">Relevant project information is brought together and confirmed before the main site works begin.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 9. WHAT HAPPENS ON SITE? (9 PHASED DELIVERY STAGES WITH PHASE GROUPINGS) -->
-<section class="orc-section orc-bg-tint">
-  <div class="orc-container">
-    <div class="orc-header orc-header-center">
-      <div class="orc-eyebrow-wrap"><span class="orc-eyebrow">Physical Delivery</span></div>
-      <div class="orc-rule orc-rule-center"></div>
-      <h2 class="orc-title">What Happens on Site?</h2>
-      <p class="orc-subtitle">The physical sequence of construction from initial preparation to final handover.</p>
-    </div>
-
-    <!-- Phase 1: Strip-Out & Services -->
-    <div class="orc-phase-header">
-      <span class="orc-phase-badge">STAGE 1</span>
-      <h3 class="orc-phase-heading">Preparation, Structure &amp; First Fix</h3>
-    </div>
-    <div class="orc-timeline-grid orc-mb-30">
-      <div class="orc-timeline-item">
-        <div class="orc-timeline-img-frame">
-          <img class="orc-timeline-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/renovation-in-progress.jpeg" alt="Strip-Out &amp; Preparation on site London" loading="lazy" />
-          <div class="orc-timeline-badge"><span class="orc-timeline-num">01</span></div>
-        </div>
-        <div class="orc-timeline-body">
-          <h4 class="orc-timeline-title">Strip-Out &amp; Preparation</h4>
-          <p class="orc-timeline-desc">The existing interior is prepared according to the agreed project scope.</p>
-        </div>
-      </div>
-      <div class="orc-timeline-item">
-        <div class="orc-timeline-img-frame">
-          <img class="orc-timeline-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/construction-and-refurbishments-1.jpeg" alt="First-Fix Works electrical and plumbing services London" loading="lazy" />
-          <div class="orc-timeline-badge"><span class="orc-timeline-num">02</span></div>
-        </div>
-        <div class="orc-timeline-body">
-          <h4 class="orc-timeline-title">First-Fix Works</h4>
-          <p class="orc-timeline-desc">Relevant services and internal works progress according to the approved project information.</p>
-        </div>
-      </div>
-      <div class="orc-timeline-item">
-        <div class="orc-timeline-img-frame">
-          <img class="orc-timeline-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/renovating-a-property.jpeg" alt="Internal Construction and structural works London" loading="lazy" />
-          <div class="orc-timeline-badge"><span class="orc-timeline-num">03</span></div>
-        </div>
-        <div class="orc-timeline-body">
-          <h4 class="orc-timeline-title">Internal Construction</h4>
-          <p class="orc-timeline-desc">Approved alterations and associated interior structural works are undertaken.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Phase 2: Installations & Craftsmanship -->
-    <div class="orc-phase-header">
-      <span class="orc-phase-badge">STAGE 2</span>
-      <h3 class="orc-phase-heading">Kitchens, Bathrooms &amp; Joinery</h3>
-    </div>
-    <div class="orc-timeline-grid orc-mb-30">
-      <div class="orc-timeline-item">
-        <div class="orc-timeline-img-frame">
-          <img class="orc-timeline-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/period-properties-renovation.jpeg" alt="Kitchens &amp; Bathrooms installation London" loading="lazy" />
-          <div class="orc-timeline-badge"><span class="orc-timeline-num">04</span></div>
-        </div>
-        <div class="orc-timeline-body">
-          <h4 class="orc-timeline-title">Kitchens &amp; Bathrooms</h4>
-          <p class="orc-timeline-desc">Installation progresses in coordination with the relevant services, finishes and specifications.</p>
-        </div>
-      </div>
-      <div class="orc-timeline-item">
-        <div class="orc-timeline-img-frame">
-          <img class="orc-timeline-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/bespoke-joinery-design-by-oraanj-interiors.jpeg" alt="Bespoke Joinery fitted on site" loading="lazy" />
-          <div class="orc-timeline-badge"><span class="orc-timeline-num">05</span></div>
-        </div>
-        <div class="orc-timeline-body">
-          <h4 class="orc-timeline-title">Bespoke Joinery</h4>
-          <p class="orc-timeline-desc">Bespoke interior elements are fitted with care at the appropriate stage.</p>
-        </div>
-      </div>
-      <div class="orc-timeline-item">
-        <div class="orc-timeline-img-frame">
-          <img class="orc-timeline-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/high-end-interior-designed-by-oraanj-interiors.jpeg" alt="Flooring &amp; Decorating fine finishes London" loading="lazy" />
-          <div class="orc-timeline-badge"><span class="orc-timeline-num">06</span></div>
-        </div>
-        <div class="orc-timeline-body">
-          <h4 class="orc-timeline-title">Flooring &amp; Decorating</h4>
-          <p class="orc-timeline-desc">The property moves into the fine finishing and decorative stages.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Phase 3: Finishing & Handover -->
-    <div class="orc-phase-header">
-      <span class="orc-phase-badge">STAGE 3</span>
-      <h3 class="orc-phase-heading">Fittings, Commissioning &amp; Handover</h3>
-    </div>
-    <div class="orc-timeline-grid">
-      <div class="orc-timeline-item">
-        <div class="orc-timeline-img-frame">
-          <img class="orc-timeline-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/lighting-design-by-oraanj-interior-designers.jpeg" alt="Lighting &amp; Final Fittings installation London" loading="lazy" />
-          <div class="orc-timeline-badge"><span class="orc-timeline-num">07</span></div>
-        </div>
-        <div class="orc-timeline-body">
-          <h4 class="orc-timeline-title">Lighting &amp; Final Fittings</h4>
-          <p class="orc-timeline-desc">Agreed lighting fixtures, switches, faceplates and fittings are installed.</p>
-        </div>
-      </div>
-      <div class="orc-timeline-item">
-        <div class="orc-timeline-img-frame">
-          <img class="orc-timeline-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Furniture-FFE-By-Oraanj-Interiors.jpeg" alt="Final Installation furniture placement London" loading="lazy" />
-          <div class="orc-timeline-badge"><span class="orc-timeline-num">08</span></div>
-        </div>
-        <div class="orc-timeline-body">
-          <h4 class="orc-timeline-title">Final Installation</h4>
-          <p class="orc-timeline-desc">Furniture and other specified elements are coordinated where included.</p>
-        </div>
-      </div>
-      <div class="orc-timeline-item">
-        <div class="orc-timeline-img-frame">
-          <img class="orc-timeline-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/a-transformed-home.jpeg" alt="Review &amp; Handover transformed home London" loading="lazy" />
-          <div class="orc-timeline-badge"><span class="orc-timeline-num">09</span></div>
-        </div>
-        <div class="orc-timeline-body">
-          <h4 class="orc-timeline-title">Review &amp; Handover</h4>
-          <p class="orc-timeline-desc">Outstanding items are identified, snags completed and the project progresses to handover.</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="orc-body orc-center-note">The exact sequence varies according to the property and project requirements.</p>
-  </div>
-</section>
-
-<!-- 10. SEE HOW WE BUILD (CASE STUDY PROCESS DOCUMENTATION - 8 STAGE IMAGES) -->
-<section class="orc-case-study-wrap">
-  <div class="orc-container">
-    <header class="orc-case-study-header">
-      <span class="orc-eyebrow">SEE HOW WE BUILD</span>
-      <h2 class="orc-case-study-title">Don't Just Show the Finished Photograph</h2>
-      <div class="orc-rule orc-rule-center"></div>
-      <p class="orc-case-study-subtitle">A genuine Oraanj construction project documenting what happened between design and completion.</p>
-    </header>
-
-    <div class="orc-case-study-grid">
-      <article class="orc-case-study-card">
-        <div class="orc-cs-tag"><span class="orc-cs-num">01</span><span class="orc-cs-name">BEFORE</span></div>
-        <div class="orc-cs-img-wrap"><img class="orc-cs-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/the-original-property.jpeg" alt="Original property before renovation" loading="lazy" /></div>
-        <h3 class="orc-cs-title">The Original Property</h3>
-        <p class="orc-cs-desc">Documenting the starting condition, existing structural walls and dated services before commencement.</p>
-      </article>
-
-      <article class="orc-case-study-card">
-        <div class="orc-cs-tag"><span class="orc-cs-num">02</span><span class="orc-cs-name">APPROVED DESIGN</span></div>
-        <div class="orc-cs-img-wrap"><img class="orc-cs-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/approved-cgl-design.jpeg" alt="Approved design 3D visual" loading="lazy" /></div>
-        <h3 class="orc-cs-title">Approved Design</h3>
-        <p class="orc-cs-desc">Reviewing the client's CGI visuals and design intent to establish key architectural benchmarks.</p>
-      </article>
-
-      <article class="orc-case-study-card">
-        <div class="orc-cs-tag"><span class="orc-cs-num">03</span><span class="orc-cs-name">TECHNICAL INFO</span></div>
-        <div class="orc-cs-img-wrap"><img class="orc-cs-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/joinery-elevation-plan.jpeg" alt="Technical CAD drawings" loading="lazy" /></div>
-        <h3 class="orc-cs-title">Technical Information</h3>
-        <p class="orc-cs-desc">Working drawings, joinery elevations, lighting layouts and specifications prepared for site execution.</p>
-      </article>
-
-      <article class="orc-case-study-card">
-        <div class="orc-cs-tag"><span class="orc-cs-num">04</span><span class="orc-cs-name">STRIP-OUT</span></div>
-        <div class="orc-cs-img-wrap"><img class="orc-cs-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/renovation-in-progress.jpeg" alt="Strip-out phase in progress" loading="lazy" /></div>
-        <h3 class="orc-cs-title">Strip-Out &amp; Demolition</h3>
-        <p class="orc-cs-desc">Stripping back existing partitions, flooring and services to expose the core building structure.</p>
-      </article>
-
-      <article class="orc-case-study-card">
-        <div class="orc-cs-tag"><span class="orc-cs-num">05</span><span class="orc-cs-name">FIRST FIX</span></div>
-        <div class="orc-cs-img-wrap"><img class="orc-cs-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/space-planning-1.jpeg" alt="First fix electrical and plumbing works" loading="lazy" /></div>
-        <h3 class="orc-cs-title">First Fix Works</h3>
-        <p class="orc-cs-desc">Running electrical cables, plumbing feeds, structural steels and ductwork before plastering conceals them.</p>
-      </article>
-
-      <article class="orc-case-study-card">
-        <div class="orc-cs-tag"><span class="orc-cs-num">06</span><span class="orc-cs-name">JOINERY</span></div>
-        <div class="orc-cs-img-wrap"><img class="orc-cs-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/bespoke-joinery-design-by-oraanj-interiors.jpeg" alt="Bespoke joinery installation" loading="lazy" /></div>
-        <h3 class="orc-cs-title">Joinery &amp; Kitchens</h3>
-        <p class="orc-cs-desc">Installing bespoke fitted cabinetry, wardrobes and kitchen units with precise scribing to walls.</p>
-      </article>
-
-      <article class="orc-case-study-card">
-        <div class="orc-cs-tag"><span class="orc-cs-num">07</span><span class="orc-cs-name">FINISHING</span></div>
-        <div class="orc-cs-img-wrap"><img class="orc-cs-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/high-end-interior-designed-by-oraanj-interiors.jpeg" alt="Finishing stages and decorating" loading="lazy" /></div>
-        <h3 class="orc-cs-title">Finishing Details</h3>
-        <p class="orc-cs-desc">Timber floor sanding, bespoke tiling, fine decorating, stone worktops and architectural hardware installation.</p>
-      </article>
-
-      <article class="orc-case-study-card">
-        <div class="orc-cs-tag"><span class="orc-cs-num">08</span><span class="orc-cs-name">COMPLETED</span></div>
-        <div class="orc-cs-img-wrap"><img class="orc-cs-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/a-transformed-home.jpeg" alt="Completed interior transformation" loading="lazy" /></div>
-        <h3 class="orc-cs-title">Completed Interior</h3>
-        <p class="orc-cs-desc">Handover of a fully transformed residence, executed exactly to the agreed design and specification.</p>
-      </article>
-    </div>
-
-    <!-- PROJECT META BAR -->
-    <div class="orc-cs-meta-bar">
-      <div class="orc-cs-meta-group">
-        <div class="orc-cs-meta-item">
-          <div class="orc-cs-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div>
-          <div class="orc-cs-meta-text"><span class="orc-cs-label">Project</span><span class="orc-cs-val">Prime London Residence</span></div>
-        </div>
-        <div class="orc-cs-meta-item">
-          <div class="orc-cs-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
-          <div class="orc-cs-meta-text"><span class="orc-cs-label">Location</span><span class="orc-cs-val">Kensington, London</span></div>
-        </div>
-        <div class="orc-cs-meta-item">
-          <div class="orc-cs-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg></div>
-          <div class="orc-cs-meta-text"><span class="orc-cs-label">Scope</span><span class="orc-cs-val">Full Interior Refurbishment</span></div>
-        </div>
-        <div class="orc-cs-meta-item">
-          <div class="orc-cs-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
-          <div class="orc-cs-meta-text"><span class="orc-cs-label">Delivery</span><span class="orc-cs-val">Oraanj Construction Team</span></div>
-        </div>
-      </div>
-      <div class="orc-cs-btn-wrap">
-        <a class="orc-btn orc-btn-primary" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
-          <span class="orc-btn-label">Discuss Your Project</span>
-          <span class="orc-btn-arrow">→</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 11 & 12. DESIGNED BY ORAANJ? VS DESIGNED BY SOMEONE ELSE? (IMAGE-TOP DUAL CARDS) -->
-<section class="orc-section orc-bg-white">
-  <div class="orc-container">
-    <div class="orc-header orc-header-center">
-      <div class="orc-eyebrow-wrap"><span class="orc-eyebrow">Two Project Routes</span></div>
-      <div class="orc-rule orc-rule-center"></div>
-      <h2 class="orc-title">Who Designed Your Project?</h2>
-      <p class="orc-subtitle">Whether your interior was designed by Oraanj or by an external architect, we provide seamless construction execution.</p>
-    </div>
-
-    <div class="orc-dual-grid">
-      <!-- ROUTE 1: DESIGNED BY ORAANJ -->
-      <div class="orc-dual-card">
-        <div class="orc-card-img-frame orc-img-frame-dual">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/design-and-build.jpeg" alt="Designed by Oraanj design and build project" loading="lazy" />
-          <span class="orc-img-tag">Option A</span>
-        </div>
-        <div class="orc-dual-content-body">
-          <div class="orc-dual-header">
-            <h3 class="orc-dual-title">Designed by Oraanj?</h3>
-            <p class="orc-dual-tagline">Keep the Design Connected to the Build</p>
+    <div class="orc-split">
+      <div class="orc-col-media">
+        <div class="orc-media-frame">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/space-planning-1.jpeg" alt="Pre-construction planning, site survey and trade coordination" loading="lazy" />
+          <div class="orc-media-badge">
+            <span class="orc-badge-text">Pre-Start Due Diligence</span>
           </div>
-          <p class="orc-body">Where Oraanj has designed the project, the construction team works alongside the design and technical teams responsible for developing the interior.</p>
-          <p class="orc-body orc-body-sub">That means the approved:</p>
-          <ul class="orc-check-list">
-            <li>
-              <span class="orc-bullet-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-              <span>Layouts &amp; spatial flow</span>
-            </li>
-            <li>
-              <span class="orc-bullet-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-              <span>3D designs &amp; finishes</span>
-            </li>
-            <li>
-              <span class="orc-bullet-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-              <span>Lighting schemes</span>
-            </li>
-            <li>
-              <span class="orc-bullet-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-              <span>Material specifications</span>
-            </li>
-            <li>
-              <span class="orc-bullet-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-              <span>Joinery drawings &amp; details</span>
-            </li>
-            <li>
-              <span class="orc-bullet-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-              <span>Furniture &amp; technical drawings</span>
-            </li>
-          </ul>
-          <p class="orc-body orc-body-sub">remain part of the conversation as the project moves on site.</p>
-          <p class="orc-body orc-body-highlight">For clients who want Oraanj involved from the beginning, our Design &amp; Build service combines design and delivery within one coordinated project.</p>
-          <div class="orc-dual-action">
-            <a class="orc-btn orc-btn-primary" href="https://www.oraanj-interiors.co.uk/design-and-build/">
-              <span class="orc-btn-label">Explore Design &amp; Build</span>
-              <span class="orc-btn-arrow">→</span>
-            </a>
+          <div class="orc-stamp-badge">
+            <span>PRE-START AUDIT</span>
           </div>
         </div>
       </div>
 
-      <!-- ROUTE 2: DESIGNED BY SOMEONE ELSE -->
-      <div class="orc-dual-card">
-        <div class="orc-card-img-frame orc-img-frame-dual">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/technical-design-by-oraanj-interior-designers.jpeg" alt="Contractor pricing from external architect designs" loading="lazy" />
-          <span class="orc-img-tag">Option B</span>
+      <div class="orc-col-content">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">Pre-Start Governance</span>
+          <span class="orc-inline-line"></span>
         </div>
-        <div class="orc-dual-content-body">
-          <div class="orc-dual-header">
-            <h3 class="orc-dual-title">Designed by Someone Else?</h3>
-            <p class="orc-dual-tagline">We Can Still Review the Construction Project</p>
-          </div>
-          <p class="orc-body">You don't necessarily need to use Oraanj for the original design. If another interior designer or architect has developed the project, send us the available information.</p>
-          <p class="orc-body">We can review whether the documentation is sufficiently developed for the proposed construction scope and discuss the next steps.</p>
-          <div class="orc-dual-notice">
-            <p class="orc-notice-text">Where questions remain, they may need to be resolved with the original designer or relevant specialist before the affected work proceeds.</p>
-          </div>
-          <p class="orc-body orc-body-highlight">We price and deliver projects from independent architects and designers with the same precision, quality control and director oversight.</p>
-          <div class="orc-dual-action">
-            <a class="orc-btn orc-btn-outline" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
-              <span class="orc-btn-label">Send Us Your Project Information</span>
-              <span class="orc-btn-arrow">→</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <h2 class="orc-title">What Happens Before Construction Starts?</h2>
+        <p class="orc-subtitle">A clear, disciplined 4-stage sequence to eliminate ambiguity before physical works begin.</p>
 
-<!-- 13 & 14. PRACTICAL LONDON CHALLENGES (APARTMENTS & PERIOD PROPERTIES WITH IMAGERY) -->
-<section class="orc-section orc-bg-tint">
-  <div class="orc-container">
-    <div class="orc-header orc-header-center">
-      <div class="orc-eyebrow-wrap"><span class="orc-eyebrow">London Property Practicalities</span></div>
-      <div class="orc-rule orc-rule-center"></div>
-      <h2 class="orc-title">Navigating London Buildings with Confidence</h2>
-      <p class="orc-subtitle">Apartments and heritage buildings present unique logistical and structural conditions that require seasoned contractor management.</p>
-    </div>
-
-    <div class="orc-cards-grid orc-grid-2col">
-      <!-- APARTMENTS -->
-      <div class="orc-context-card">
-        <div class="orc-card-img-frame orc-img-frame-context">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/open-plan-interior-designed-by-oraanj-interior-designers.jpeg" alt="London apartment refurbishment and building management" loading="lazy" />
-          <span class="orc-img-tag">Apartments &amp; Mansions</span>
-        </div>
-        <div class="orc-context-body">
-          <div class="orc-context-header">
-            <div class="orc-context-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg></div>
-            <div>
-              <h3 class="orc-context-title">Construction in a London Apartment</h3>
-              <p class="orc-context-sub">Check the Building Rules Before Site Starts</p>
+        <div class="orc-process-pathway">
+          <div class="orc-pathway-step">
+            <div class="orc-pathway-node">01</div>
+            <div class="orc-pathway-content">
+              <div class="orc-pathway-header">
+                <h3 class="orc-pathway-title">Project Information &amp; Site Review</h3>
+                <span class="orc-pathway-tag">Stage 1: Review</span>
+              </div>
+              <p class="orc-pathway-desc">We review the property and available design information in detail, conducting a site visit to assess existing structural fabric and access conditions.</p>
             </div>
           </div>
-          <p class="orc-body">Apartment refurbishment can involve practical requirements beyond the work inside the property. Depending on the building, these can include:</p>
-          <div class="orc-tag-list">
-            <span class="orc-tag-pill">Management-company procedures</span>
-            <span class="orc-tag-pill">Landlord / freeholder licences</span>
-            <span class="orc-tag-pill">Restricted working hours</span>
-            <span class="orc-tag-pill">Lift &amp; staircase protection</span>
-            <span class="orc-tag-pill">Scheduled deliveries</span>
-            <span class="orc-tag-pill">Parking suspensions</span>
-            <span class="orc-tag-pill">Waste removal logistics</span>
-            <span class="orc-tag-pill">Noise restrictions</span>
-            <span class="orc-tag-pill">Protection of communal areas</span>
+
+          <div class="orc-pathway-step">
+            <div class="orc-pathway-node">02</div>
+            <div class="orc-pathway-content">
+              <div class="orc-pathway-header">
+                <h3 class="orc-pathway-title">Technical Audit &amp; Information Check</h3>
+                <span class="orc-pathway-tag">Stage 2: Audit</span>
+              </div>
+              <p class="orc-pathway-desc">We identify whether critical CAD drawings, MEP layouts, structural engineering calculations or specialist consultant reports are missing.</p>
+            </div>
+          </div>
+
+          <div class="orc-pathway-step">
+            <div class="orc-pathway-node">03</div>
+            <div class="orc-pathway-content">
+              <div class="orc-pathway-header">
+                <h3 class="orc-pathway-title">Scope of Works &amp; Costing</h3>
+                <span class="orc-pathway-tag">Stage 3: Pricing</span>
+              </div>
+              <p class="orc-pathway-desc">The proposed construction and refurbishment requirements are clearly defined, providing the rigorous basis for developing an accurate contractor quotation.</p>
+            </div>
+          </div>
+
+          <div class="orc-pathway-step">
+            <div class="orc-pathway-node">04</div>
+            <div class="orc-pathway-content">
+              <div class="orc-pathway-header">
+                <h3 class="orc-pathway-title">Procurement, Programme &amp; Pre-Start</h3>
+                <span class="orc-pathway-tag">Stage 4: Launch</span>
+              </div>
+              <p class="orc-pathway-desc">Long-lead items are scheduled, building management licences and party wall notices confirmed, and trade sequence aligned before site works commence.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="orc-action-row">
+          <a class="orc-btn orc-btn-outline" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
+            <span class="orc-btn-label">Discuss Pre-Start Planning</span>
+            <span class="orc-btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. WHAT HAPPENS ON SITE? (IMAGE ON RIGHT) -->
+<section class="orc-section orc-bg-tint">
+  <div class="orc-container">
+    <div class="orc-split orc-split-reverse">
+      <div class="orc-col-media">
+        <div class="orc-media-frame">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/renovation-in-progress.jpeg" alt="On-site physical construction delivery and strip-out in London" loading="lazy" />
+          <div class="orc-media-badge">
+            <span class="orc-badge-text">Active Site Delivery in London</span>
+          </div>
+          <div class="orc-stamp-badge">
+            <span>SITE EXECUTION</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="orc-col-content">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">Physical Delivery</span>
+          <span class="orc-inline-line"></span>
+        </div>
+        <h2 class="orc-title">What Happens on Site?</h2>
+        <p class="orc-subtitle">The physical sequence of construction from initial preparation to final handover.</p>
+
+        <!-- Stage 1 -->
+        <div class="orc-stage-group orc-mt-20">
+          <div class="orc-stage-group-header">
+            <span class="orc-phase-badge">STAGE 1</span>
+            <h3 class="orc-phase-heading">Preparation, Structure &amp; First Fix</h3>
+          </div>
+          <div class="orc-stage-items-list">
+            <div class="orc-stage-mini-item">
+              <div class="orc-stage-mini-num">01 / Strip-Out</div>
+              <h4 class="orc-stage-mini-title">Preparation</h4>
+              <p class="orc-stage-mini-desc">Existing interior stripped back per agreed scope.</p>
+            </div>
+            <div class="orc-stage-mini-item">
+              <div class="orc-stage-mini-num">02 / Services</div>
+              <h4 class="orc-stage-mini-title">First-Fix Works</h4>
+              <p class="orc-stage-mini-desc">Electrical cabling, plumbing and MEP infrastructure.</p>
+            </div>
+            <div class="orc-stage-mini-item">
+              <div class="orc-stage-mini-num">03 / Structure</div>
+              <h4 class="orc-stage-mini-title">Internal Construction</h4>
+              <p class="orc-stage-mini-desc">Approved alterations and partition framing.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="orc-stage-group">
+          <div class="orc-stage-group-header">
+            <span class="orc-phase-badge">STAGE 2</span>
+            <h3 class="orc-phase-heading">Kitchens, Bathrooms &amp; Joinery</h3>
+          </div>
+          <div class="orc-stage-items-list">
+            <div class="orc-stage-mini-item">
+              <div class="orc-stage-mini-num">04 / Wet Areas</div>
+              <h4 class="orc-stage-mini-title">Kitchens &amp; Bathrooms</h4>
+              <p class="orc-stage-mini-desc">Installation coordinated with services and tiling.</p>
+            </div>
+            <div class="orc-stage-mini-item">
+              <div class="orc-stage-mini-num">05 / Joinery</div>
+              <h4 class="orc-stage-mini-title">Bespoke Joinery</h4>
+              <p class="orc-stage-mini-desc">Fitted cabinetry, wardrobes and bespoke storage.</p>
+            </div>
+            <div class="orc-stage-mini-item">
+              <div class="orc-stage-mini-num">06 / Finishes</div>
+              <h4 class="orc-stage-mini-title">Flooring &amp; Decorating</h4>
+              <p class="orc-stage-mini-desc">Hardwood floors, plastering and fine decorating.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="orc-stage-group">
+          <div class="orc-stage-group-header">
+            <span class="orc-phase-badge">STAGE 3</span>
+            <h3 class="orc-phase-heading">Fittings, Commissioning &amp; Handover</h3>
+          </div>
+          <div class="orc-stage-items-list">
+            <div class="orc-stage-mini-item">
+              <div class="orc-stage-mini-num">07 / Electrics</div>
+              <h4 class="orc-stage-mini-title">Lighting &amp; Fittings</h4>
+              <p class="orc-stage-mini-desc">Luminaires, switch plates and hardware installed.</p>
+            </div>
+            <div class="orc-stage-mini-item">
+              <div class="orc-stage-mini-num">08 / Installation</div>
+              <h4 class="orc-stage-mini-title">Final Installation</h4>
+              <p class="orc-stage-mini-desc">Sanitaryware testing, AV commissioning and styling.</p>
+            </div>
+            <div class="orc-stage-mini-item">
+              <div class="orc-stage-mini-num">09 / Handover</div>
+              <h4 class="orc-stage-mini-title">Review &amp; Handover</h4>
+              <p class="orc-stage-mini-desc">Snagging completed and keys handed over.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="orc-body orc-note-text">The exact sequence varies according to the property and project requirements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. TWO PROJECT ROUTES (IMAGE ON LEFT) -->
+<section class="orc-section orc-bg-white">
+  <div class="orc-container">
+    <div class="orc-split">
+      <div class="orc-col-media">
+        <div class="orc-media-frame">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/design-and-build.jpeg" alt="Collaborative project routes from design through to construction delivery" loading="lazy" />
+          <div class="orc-media-badge">
+            <span class="orc-badge-text">Collaborative Project Routes</span>
+          </div>
+          <div class="orc-stamp-badge">
+            <span>TWO ROUTES</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="orc-col-content">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">Two Project Routes</span>
+          <span class="orc-inline-line"></span>
+        </div>
+        <h2 class="orc-title">Who Designed Your Project?</h2>
+        <p class="orc-subtitle">Whether your interior was designed by Oraanj or by an external architect, we provide seamless construction execution.</p>
+
+        <div class="orc-tier-stack">
+          <!-- Route 1 -->
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">ROUTE A</span>
+              <span class="orc-split-card-tag">Designed by Oraanj</span>
+            </div>
+            <h3 class="orc-split-card-title">Keep the Design Connected to the Build</h3>
+            <p class="orc-split-card-desc">Where Oraanj has designed the project, our construction team works alongside the design and technical specialists responsible for developing your interior. Approved layouts, 3D finishes, lighting schemes and joinery remain tightly coordinated on site.</p>
+            <a class="orc-split-card-link" href="https://www.oraanj-interiors.co.uk/design-and-build/">Explore Design &amp; Build →</a>
+          </div>
+
+          <!-- Route 2 -->
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">ROUTE B</span>
+              <span class="orc-split-card-tag">Designed by Someone Else</span>
+            </div>
+            <h3 class="orc-split-card-title">We Can Still Review the Construction Project</h3>
+            <p class="orc-split-card-desc">If another interior designer or architect has completed the design package, send us the available drawings. We can review documentation suitability, provide a transparent contractor quotation and deliver the works with senior director oversight.</p>
+            <a class="orc-split-card-link" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">Send Us Your Drawings →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. LONDON PROPERTY PRACTICALITIES (IMAGE ON RIGHT) -->
+<section class="orc-section orc-bg-tint">
+  <div class="orc-container">
+    <div class="orc-split orc-split-reverse">
+      <div class="orc-col-media">
+        <div class="orc-media-frame">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/period-properties-renovation.jpeg" alt="London period property and heritage interior refurbishment considerations" loading="lazy" />
+          <div class="orc-media-badge">
+            <span class="orc-badge-text">London Regulations &amp; Heritage Expertise</span>
+          </div>
+          <div class="orc-stamp-badge">
+            <span>LONDON SPECIALISTS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="orc-col-content">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">London Property Practicalities</span>
+          <span class="orc-inline-line"></span>
+        </div>
+        <h2 class="orc-title">Navigating London Buildings with Confidence</h2>
+        <p class="orc-subtitle">Apartments and heritage buildings present unique logistical and structural conditions that require seasoned contractor management.</p>
+
+        <div class="orc-split-card orc-mt-20">
+          <div class="orc-split-card-header">
+            <span class="orc-split-card-num">01</span>
+            <span class="orc-split-card-tag">Apartments</span>
+          </div>
+          <h3 class="orc-split-card-title">Construction in a London Apartment</h3>
+          <p class="orc-split-card-desc">Apartment refurbishment involves practical requirements beyond the works inside the property:</p>
+          <div class="orc-tag-list orc-mb-10">
+            <span class="orc-tag-pill">Management company rules</span>
             <span class="orc-tag-pill">Licence to Alter (LtA)</span>
+            <span class="orc-tag-pill">Restricted working hours</span>
+            <span class="orc-tag-pill">Lift &amp; common area protection</span>
+            <span class="orc-tag-pill">Waste removal &amp; parking</span>
+            <span class="orc-tag-pill">Acoustic flooring compliance</span>
           </div>
-          <p class="orc-body orc-note-text">These requirements vary between properties and should be established before the project programme is finalised.</p>
+          <p class="orc-split-card-desc">These items should be established before the project programme is finalised to avoid site delays.</p>
         </div>
-      </div>
 
-      <!-- PERIOD PROPERTIES -->
-      <div class="orc-context-card">
-        <div class="orc-card-img-frame orc-img-frame-context">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/period-properties-renovation.jpeg" alt="Period property refurbishment London heritage details" loading="lazy" />
-          <span class="orc-img-tag">Heritage &amp; Conservation</span>
-        </div>
-        <div class="orc-context-body">
-          <div class="orc-context-header">
-            <div class="orc-context-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div>
-            <div>
-              <h3 class="orc-context-title">Refurbishing a Period Property</h3>
-              <p class="orc-context-sub">Existing Buildings Can Reveal the Unexpected</p>
-            </div>
+        <div class="orc-split-card orc-mt-14">
+          <div class="orc-split-card-header">
+            <span class="orc-split-card-num">02</span>
+            <span class="orc-split-card-tag">Heritage</span>
           </div>
-          <p class="orc-body">Older properties sometimes reveal conditions once existing finishes or previous alterations are opened up. This might affect:</p>
-          <div class="orc-tag-list">
+          <h3 class="orc-split-card-title">Refurbishing a Period Property</h3>
+          <p class="orc-split-card-desc">Older properties frequently reveal unexpected structural or fabric conditions once opened up:</p>
+          <div class="orc-tag-list orc-mb-10">
             <span class="orc-tag-pill">Sub-floor timbers &amp; joists</span>
             <span class="orc-tag-pill">Historical wall construction</span>
             <span class="orc-tag-pill">Concealed existing services</span>
-            <span class="orc-tag-pill">Substandard previous alterations</span>
-            <span class="orc-tag-pill">Original architectural details</span>
-            <span class="orc-tag-pill">Moisture &amp; damp ingress</span>
-            <span class="orc-tag-pill">Chimney breasts &amp; flues</span>
+            <span class="orc-tag-pill">Damp &amp; moisture ingress</span>
+            <span class="orc-tag-pill">Original architectural mouldings</span>
           </div>
-          <p class="orc-body orc-note-text">Where an issue requires structural or specialist advice, appropriate professionals assess it before works continue. A sensible programme allows for the fact that not everything is visible at the beginning.</p>
+          <p class="orc-split-card-desc">A sensible programme allows for the fact that not everything is visible before strip-out begins.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 15. WHO IS RESPONSIBLE FOR WHAT? (6 RESPONSIBILITY CARDS + TEAM COLLABORATION BANNER) -->
+<!-- 12. WHO IS RESPONSIBLE FOR WHAT? (IMAGE ON LEFT) -->
 <section class="orc-section orc-bg-white">
   <div class="orc-container">
-    <div class="orc-header orc-header-center">
-      <div class="orc-eyebrow-wrap"><span class="orc-eyebrow">Project Governance</span></div>
-      <div class="orc-rule orc-rule-center"></div>
-      <h2 class="orc-title">Who Is Responsible for What?</h2>
-      <p class="orc-subtitle">Clear Responsibilities Make Construction Easier to Manage</p>
-      <p class="orc-lead orc-max-760">A refurbishment can involve several different professionals. Clear role allocation ensures accountability across design, engineering and site execution.</p>
-    </div>
-
-    <div class="orc-cards-grid orc-grid-3col">
-      <div class="orc-role-card">
-        <div class="orc-role-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+    <div class="orc-split">
+      <div class="orc-col-media">
+        <div class="orc-media-frame">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/why-clients-choose-oraanj.jpeg" alt="Dedicated director oversight and professional site coordination" loading="lazy" />
+          <div class="orc-media-badge">
+            <span class="orc-badge-text">Director Oversight &amp; Accountability</span>
+          </div>
+          <div class="orc-stamp-badge">
+            <span>CLEAR ROLES</span>
+          </div>
         </div>
-        <div class="orc-role-header">
-          <span class="orc-role-num">01</span>
-          <h3 class="orc-role-title">Interior Designer</h3>
-        </div>
-        <p class="orc-role-desc">Develops the interior concept, layouts, materials, colours, furniture selection and overall design intent.</p>
       </div>
 
-      <div class="orc-role-card">
-        <div class="orc-role-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+      <div class="orc-col-content">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">Project Governance</span>
+          <span class="orc-inline-line"></span>
         </div>
-        <div class="orc-role-header">
-          <span class="orc-role-num">02</span>
-          <h3 class="orc-role-title">Technical Design Team</h3>
-        </div>
-        <p class="orc-role-desc">Develops agreed technical interior drawings, detailed joinery elevations, lighting layouts and specifications.</p>
-      </div>
+        <h2 class="orc-title">Who Is Responsible for What?</h2>
+        <p class="orc-subtitle">Clear Responsibilities Make Construction Easier to Manage</p>
+        <p class="orc-lead">A refurbishment involves several professionals. Clear role allocation ensures complete accountability across design, engineering and site execution.</p>
 
-      <div class="orc-role-card">
-        <div class="orc-role-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 22 22 22"></polygon><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-        </div>
-        <div class="orc-role-header">
-          <span class="orc-role-num">03</span>
-          <h3 class="orc-role-title">Structural Engineer</h3>
-        </div>
-        <p class="orc-role-desc">Provides structural design, calculations and site inspections where wall removals or alterations require it.</p>
-      </div>
+        <div class="orc-split-grid-2">
+          <div class="orc-split-card">
+            <div class="orc-split-card-num">01 / Concept</div>
+            <h3 class="orc-split-card-title">Interior Designer</h3>
+            <p class="orc-split-card-desc">Develops concepts, layouts, materials, colours and furniture selection.</p>
+          </div>
 
-      <div class="orc-role-card">
-        <div class="orc-role-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line></svg>
-        </div>
-        <div class="orc-role-header">
-          <span class="orc-role-num">04</span>
-          <h3 class="orc-role-title">Specialist Consultants</h3>
-        </div>
-        <p class="orc-role-desc">Provide relevant professional documentation for party wall matters, building control, acoustic tests or MEP services.</p>
-      </div>
+          <div class="orc-split-card">
+            <div class="orc-split-card-num">02 / Documentation</div>
+            <h3 class="orc-split-card-title">Technical Design Team</h3>
+            <p class="orc-split-card-desc">Produces agreed technical interior drawings, joinery details and lighting plans.</p>
+          </div>
 
-      <div class="orc-role-card orc-role-card-highlight">
-        <div class="orc-role-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-        </div>
-        <div class="orc-role-header">
-          <span class="orc-role-num">05</span>
-          <h3 class="orc-role-title">Construction Team</h3>
-        </div>
-        <p class="orc-role-desc">Delivers the physical works on site using approved project information, coordinating trades, craftsmanship and safety.</p>
-      </div>
+          <div class="orc-split-card">
+            <div class="orc-split-card-num">03 / Engineering</div>
+            <h3 class="orc-split-card-title">Structural Engineer</h3>
+            <p class="orc-split-card-desc">Calculates load-bearing wall alterations and structural steel requirements.</p>
+          </div>
 
-      <div class="orc-role-card">
-        <div class="orc-role-icon-wrap">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#B94E1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <div class="orc-split-card">
+            <div class="orc-split-card-num">04 / Compliance</div>
+            <h3 class="orc-split-card-title">Specialist Consultants</h3>
+            <p class="orc-split-card-desc">Advise on party wall agreements, building control and acoustic testing.</p>
+          </div>
+
+          <div class="orc-split-card">
+            <div class="orc-split-card-num">05 / Execution</div>
+            <h3 class="orc-split-card-title">Construction Team</h3>
+            <p class="orc-split-card-desc">Delivers the physical works on site, coordinating trades, safety and craft.</p>
+          </div>
+
+          <div class="orc-split-card">
+            <div class="orc-split-card-num">06 / Delivery</div>
+            <h3 class="orc-split-card-title">Project Manager</h3>
+            <p class="orc-split-card-desc">Coordinates programme milestones, communication, deliveries and procurement.</p>
+          </div>
         </div>
-        <div class="orc-role-header">
-          <span class="orc-role-num">06</span>
-          <h3 class="orc-role-title">Project Manager</h3>
+
+        <p class="orc-body orc-note-text">The exact appointments and responsibilities should be established for each project rather than assumed.</p>
+
+        <div class="orc-action-row orc-mt-24">
+          <a class="orc-btn orc-btn-primary" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
+            <span class="orc-btn-label">Discuss Project Roles &amp; Scope</span>
+            <span class="orc-btn-arrow">→</span>
+          </a>
         </div>
-        <p class="orc-role-desc">Coordinates the agreed programme, communication, procurement schedules and wider project activities.</p>
       </div>
     </div>
-
-    <!-- TEAM COLLABORATION VISUAL STRIP -->
-    <div class="orc-team-strip">
-      <div class="orc-team-img-frame">
-        <img class="orc-team-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/why-clients-choose-oraanj.jpeg" alt="Dedicated director oversight and professional site coordination" loading="lazy" />
-      </div>
-      <div class="orc-team-content">
-        <span class="orc-team-badge">DIRECTOR OVERSIGHT</span>
-        <h4 class="orc-team-title">Seamless Coordination Across Every Trade</h4>
-        <p class="orc-team-desc">From initial information check to final certification, our construction leads coordinate daily with engineers, designers and specialized fabricators to ensure zero miscommunication on site.</p>
-      </div>
-    </div>
-
-    <p class="orc-body orc-center-note">The exact appointments and responsibilities should be established for each project rather than assumed.</p>
   </div>
 </section>
 
-<!-- 16 & 17. COST & TIMELINE GUIDANCE (DUAL INFORMATIONAL CARDS WITH IMAGES) -->
+<!-- 13. COST & TIMELINE CONSIDERATIONS (IMAGE ON RIGHT) -->
 <section class="orc-section orc-bg-tint">
   <div class="orc-container">
-    <div class="orc-header orc-header-center">
-      <div class="orc-eyebrow-wrap"><span class="orc-eyebrow">Transparency</span></div>
-      <div class="orc-rule orc-rule-center"></div>
-      <h2 class="orc-title">Cost &amp; Timeline Considerations</h2>
-      <p class="orc-subtitle">Understanding the variables that influence construction budgets and programmes in London.</p>
-    </div>
-
-    <div class="orc-cards-grid orc-grid-2col">
-      <!-- COST FACTORS -->
-      <div class="orc-info-card">
-        <div class="orc-card-img-frame orc-img-frame-info">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/high-end-interior-designed-by-oraanj-interiors.jpeg" alt="Material specification and cost factors in interior construction" loading="lazy" />
-          <span class="orc-img-tag">Budgets &amp; Costing</span>
+    <div class="orc-split orc-split-reverse">
+      <div class="orc-col-media">
+        <div class="orc-media-frame">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/high-end-interior-designed-by-oraanj-interiors.jpeg" alt="Material specification and cost transparency in interior construction" loading="lazy" />
+          <div class="orc-media-badge">
+            <span class="orc-badge-text">Price &amp; Programme Certainty</span>
+          </div>
+          <div class="orc-stamp-badge">
+            <span>COST &amp; TIMELINE</span>
+          </div>
         </div>
-        <div class="orc-info-body">
-          <div class="orc-info-header">
-            <h3 class="orc-info-title">How Much Does Interior Construction Cost in London?</h3>
-            <p class="orc-info-subtitle">The Drawings Tell Us What We're Pricing</p>
-          </div>
-          <p class="orc-body">There isn't one meaningful price for every refurbishment. Construction cost is directly influenced by:</p>
-          <div class="orc-variable-grid">
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Property size &amp; existing condition</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Extent of strip-out &amp; structural alterations</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Kitchens &amp; bathroom sanitaryware</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Electrical rewiring &amp; plumbing overhaul</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Flooring types &amp; specialist finishes</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Bespoke fitted joinery complexity</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Site access, parking &amp; restrictions</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Agreed programme &amp; lead times</span></div>
-          </div>
-          <p class="orc-body orc-note-text">A contractor pricing from a detailed design has more information than one pricing from a photograph. That is why we review available drawings before discussing a meaningful budget.</p>
-          <div class="orc-info-action">
+      </div>
+
+      <div class="orc-col-content">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">Transparency</span>
+          <span class="orc-inline-line"></span>
+        </div>
+        <h2 class="orc-title">Cost &amp; Timeline Considerations</h2>
+        <p class="orc-subtitle">Understanding the variables that influence construction budgets and programmes in London.</p>
+
+        <div class="orc-tier-stack">
+          <!-- Cost Guidance -->
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">BUDGETS</span>
+              <span class="orc-split-card-tag">Cost Drivers</span>
+            </div>
+            <h3 class="orc-split-card-title">How Much Does Interior Construction Cost in London?</h3>
+            <p class="orc-split-card-desc">There isn't one meaningful price per square metre for every refurbishment. Costs depend directly on existing condition, structural changes, bespoke joinery and selected material tiers.</p>
+            <div class="orc-variable-grid orc-mb-14">
+              <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Property size &amp; starting condition</span></div>
+              <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Kitchen &amp; sanitaryware specifications</span></div>
+              <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Electrical rewiring &amp; plumbing overhaul</span></div>
+              <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Bespoke joinery complexity &amp; finishes</span></div>
+            </div>
             <a class="orc-btn orc-btn-primary" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
               <span class="orc-btn-label">Discuss Your Construction Budget</span>
               <span class="orc-btn-arrow">→</span>
             </a>
           </div>
-        </div>
-      </div>
 
-      <!-- TIMELINE FACTORS -->
-      <div class="orc-info-card">
-        <div class="orc-card-img-frame orc-img-frame-info">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/renovation-in-progress.jpeg" alt="Construction programme and site timeline in progress" loading="lazy" />
-          <span class="orc-img-tag">Programmes &amp; Sequencing</span>
-        </div>
-        <div class="orc-info-body">
-          <div class="orc-info-header">
-            <h3 class="orc-info-title">How Long Does Interior Construction Take?</h3>
-            <p class="orc-info-subtitle">Scope and Property Condition Dictate Timelines</p>
-          </div>
-          <p class="orc-body">A limited refurbishment naturally has a different programme from a complete property involving extensive alterations, new kitchens, bathrooms and bespoke joinery. Timelines are influenced by:</p>
-          <div class="orc-variable-grid">
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Building access &amp; working-hour limits</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Freeholder licences &amp; statutory approvals</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Material &amp; stone lead times</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Bespoke joinery manufacturing duration</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Specialist trade sequencing</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Existing building discoveries during strip-out</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Design variations during works</span></div>
-            <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Commissioning &amp; final snagging</span></div>
-          </div>
-          <p class="orc-body orc-note-text">Before the main works begin, the proposed sequence and important dependencies are considered as part of the formal project programme.</p>
-          <div class="orc-info-action">
+          <!-- Timeline Guidance -->
+          <div class="orc-split-card">
+            <div class="orc-split-card-header">
+              <span class="orc-split-card-num">PROGRAMMES</span>
+              <span class="orc-split-card-tag">Sequencing</span>
+            </div>
+            <h3 class="orc-split-card-title">How Long Does Interior Construction Take?</h3>
+            <p class="orc-split-card-desc">A room-by-room update differs significantly from a whole-property transformation involving extensive alterations. Timelines are determined by access, approvals, material lead times and specialist trade sequencing.</p>
+            <div class="orc-variable-grid orc-mb-14">
+              <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Building access &amp; working-hour limits</span></div>
+              <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Freeholder licences &amp; approvals</span></div>
+              <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Bespoke joinery manufacturing duration</span></div>
+              <div class="orc-var-item"><span class="orc-var-icon">✓</span><span>Commissioning &amp; final snagging</span></div>
+            </div>
             <a class="orc-btn orc-btn-outline" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
               <span class="orc-btn-label">Request Programme Guidance</span>
               <span class="orc-btn-arrow">→</span>
@@ -1347,110 +993,99 @@
   </div>
 </section>
 
-<!-- 18. WHICH SERVICE DO YOU ACTUALLY NEED? (3 IMAGE-TOP DECISION CARDS MATCHING CLD-GRID) -->
+<!-- 14. WHICH SERVICE DO YOU ACTUALLY NEED? (IMAGE ON LEFT) -->
 <section class="orc-section orc-bg-white">
   <div class="orc-container">
-    <div class="orc-header orc-header-center">
-      <div class="orc-eyebrow-wrap"><span class="orc-eyebrow">Service Comparison</span></div>
-      <div class="orc-rule orc-rule-center"></div>
-      <h2 class="orc-title">Construction, Renovation or Design &amp; Build?</h2>
-      <p class="orc-subtitle">Which Service Do You Actually Need?</p>
-    </div>
-
-    <div class="orc-cards-grid orc-grid-3col">
-      <!-- TIER 1 (FEATURED) -->
-      <div class="orc-decision-card orc-decision-featured">
-        <div class="orc-card-img-frame orc-img-frame-decision">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/construction-and-refurbishments-1.jpeg" alt="Interior construction and refurbishment service" loading="lazy" />
-          <span class="orc-img-tag orc-tag-featured">Most Direct Route</span>
-        </div>
-        <div class="orc-decision-content-inner">
-          <div class="orc-decision-top">
-            <span class="orc-decision-tag">Contractor Execution</span>
-            <h3 class="orc-decision-title">Construction &amp; Refurbishment</h3>
-            <p class="orc-decision-desc">Your design is substantially developed and you need the physical works delivered.</p>
+    <div class="orc-split">
+      <div class="orc-col-media">
+        <div class="orc-media-frame">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/a-transformed-home.jpeg" alt="Handover of finished luxury interior transformation London" loading="lazy" />
+          <div class="orc-media-badge">
+            <span class="orc-badge-text">Tailored Construction Routes</span>
           </div>
-          <div class="orc-decision-body">
-            <ul class="orc-decision-list">
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Working from your existing drawings</span></li>
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Full trade coordination &amp; management</span></li>
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Strip-out through to handover</span></li>
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Direct contractor accountability</span></li>
-            </ul>
-          </div>
-          <div class="orc-decision-bottom">
-            <a class="orc-btn orc-btn-primary" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
-              <span class="orc-btn-label">Explore Construction</span>
-              <span class="orc-btn-arrow">→</span>
-            </a>
+          <div class="orc-stamp-badge">
+            <span>DECISION MATRIX</span>
           </div>
         </div>
       </div>
 
-      <!-- TIER 2 -->
-      <div class="orc-decision-card">
-        <div class="orc-card-img-frame orc-img-frame-decision">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/renovating-a-property.jpeg" alt="Home renovation London" loading="lazy" />
-          <span class="orc-img-tag">Design &amp; Build Route</span>
+      <div class="orc-col-content">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">Service Comparison</span>
+          <span class="orc-inline-line"></span>
         </div>
-        <div class="orc-decision-content-inner">
-          <div class="orc-decision-top">
-            <span class="orc-decision-tag">Home Transformation</span>
-            <h3 class="orc-decision-title">Home Renovation</h3>
-            <p class="orc-decision-desc">Your main objective is to improve or transform your home and you may need both design and renovation support.</p>
-          </div>
-          <div class="orc-decision-body">
-            <ul class="orc-decision-list">
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Concept design &amp; space planning</span></li>
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Kitchen, bathroom &amp; living renovation</span></li>
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Material &amp; finish guidance</span></li>
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Phased property transformations</span></li>
-            </ul>
-          </div>
-          <div class="orc-decision-bottom">
-            <a class="orc-btn orc-btn-outline" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">
-              <span class="orc-btn-label">Explore Home Renovation</span>
-              <span class="orc-btn-arrow">→</span>
-            </a>
-          </div>
-        </div>
-      </div>
+        <h2 class="orc-title">Construction, Renovation or Design &amp; Build?</h2>
+        <p class="orc-subtitle">Which Service Do You Actually Need?</p>
 
-      <!-- TIER 3 -->
-      <div class="orc-decision-card">
-        <div class="orc-card-img-frame orc-img-frame-decision">
-          <img class="orc-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/design-and-build.jpeg" alt="Design and build full turnkey interior delivery" loading="lazy" />
-          <span class="orc-img-tag">Turnkey Route</span>
+        <div class="orc-tier-stack">
+          <!-- Tier 1 -->
+          <div class="orc-tier-card-compact orc-tier-featured">
+            <div class="orc-tier-header-row">
+              <h3 class="orc-tier-compact-title">Construction &amp; Refurbishment</h3>
+              <span class="orc-img-tag orc-tag-featured">Most Direct Route</span>
+            </div>
+            <p class="orc-tier-compact-desc">Your design is substantially developed and you need the physical works delivered from approved drawings.</p>
+            <div class="orc-tier-features-inline">
+              <span class="orc-tier-feature-pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#B94E1A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Built from existing drawings</span>
+              <span class="orc-tier-feature-pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#B94E1A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Full trade coordination</span>
+              <span class="orc-tier-feature-pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#B94E1A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Strip-out to handover</span>
+            </div>
+            <div class="orc-tier-card-bottom">
+              <a class="orc-btn orc-btn-primary" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
+                <span class="orc-btn-label">Explore Construction</span>
+                <span class="orc-btn-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier 2 -->
+          <div class="orc-tier-card-compact">
+            <div class="orc-tier-header-row">
+              <h3 class="orc-tier-compact-title">Home Renovation</h3>
+              <span class="orc-split-card-tag">Living Spaces</span>
+            </div>
+            <p class="orc-tier-compact-desc">Your primary objective is to improve or renovate your home, requiring integrated design and refurbishment support.</p>
+            <div class="orc-tier-features-inline">
+              <span class="orc-tier-feature-pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#B94E1A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Concept design &amp; space planning</span>
+              <span class="orc-tier-feature-pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#B94E1A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Kitchen &amp; bathroom overhaul</span>
+              <span class="orc-tier-feature-pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#B94E1A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Material specification</span>
+            </div>
+            <div class="orc-tier-card-bottom">
+              <a class="orc-btn orc-btn-outline" href="https://www.oraanj-interiors.co.uk/renovation-company-london/">
+                <span class="orc-btn-label">Explore Home Renovation</span>
+                <span class="orc-btn-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="orc-tier-card-compact">
+            <div class="orc-tier-header-row">
+              <h3 class="orc-tier-compact-title">Design &amp; Build</h3>
+              <span class="orc-split-card-tag">Turnkey Route</span>
+            </div>
+            <p class="orc-tier-compact-desc">One coordinated route from initial concept and interior architecture through technical drawings, build and styling.</p>
+            <div class="orc-tier-features-inline">
+              <span class="orc-tier-feature-pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#B94E1A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Complete design &amp; CAD package</span>
+              <span class="orc-tier-feature-pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#B94E1A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Single point of overall contact</span>
+              <span class="orc-tier-feature-pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#B94E1A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Full turnkey styling</span>
+            </div>
+            <div class="orc-tier-card-bottom">
+              <a class="orc-btn orc-btn-outline" href="https://www.oraanj-interiors.co.uk/design-and-build/">
+                <span class="orc-btn-label">Explore Design &amp; Build</span>
+                <span class="orc-btn-arrow">→</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="orc-decision-content-inner">
-          <div class="orc-decision-top">
-            <span class="orc-decision-tag">One Integrated Studio</span>
-            <h3 class="orc-decision-title">Design &amp; Build</h3>
-            <p class="orc-decision-desc">You want one coordinated route from initial interior design through technical planning, refurbishment and completion.</p>
-          </div>
-          <div class="orc-decision-body">
-            <ul class="orc-decision-list">
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Complete design &amp; technical CAD package</span></li>
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Single point of overall contact</span></li>
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Seamless design-to-site continuity</span></li>
-              <li><span class="orc-check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#B94E1A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Full turnkey delivery &amp; styling</span></li>
-            </ul>
-          </div>
-          <div class="orc-decision-bottom">
-            <a class="orc-btn orc-btn-outline" href="https://www.oraanj-interiors.co.uk/design-and-build/">
-              <span class="orc-btn-label">Explore Design &amp; Build</span>
-              <span class="orc-btn-arrow">→</span>
-            </a>
-          </div>
-        </div>
+
+        <p class="orc-body orc-note-text orc-mt-14">If you're unsure, send us your existing information and we can discuss the most appropriate starting route.</p>
       </div>
     </div>
-
-    <p class="orc-body orc-center-note">If you're unsure, send us the information you already have and we can discuss the most appropriate starting point.</p>
   </div>
 </section>
 
-<!-- 19. FAQ SECTION (10 ACCORDION TOGGLES + SCHEMA) -->
+<!-- 15. FAQ SECTION (ACCORDION + SCHEMA) -->
 <div class="home_faq_section">
   <div class="container">
     <h4 class="about_common_section_heading text-white text-center"></h4>
@@ -1474,29 +1109,17 @@
   </div>
 </div>
 
-<!-- 20. PROJECT READY TO PRICE FORM & CONTACT SECTION -->
+<!-- 16. PROJECT READY TO PRICE FORM & CONTACT SECTION -->
 <div class="home_form_section">
   <div class="container">
     <div class="container_inner container_inner_white">
       <div class="row">
-        <div class="col-lg-5 col-md-6 text-center">
-          <h3 class="banner_bottom_section_heading">Have a Construction Project Ready to Price?</h3>
-          <div class="home_form_section_text">
-            Send us your drawings and documentation. For the most useful initial review, please share:
-          </div>
-          <div class="inner_page_list my-3 text-left">
-            <ul class="orc-list-inline-block">
-              <li>Property location &amp; approximate size</li>
-              <li>Floor plans &amp; proposed architectural drawings</li>
-              <li>Lighting &amp; electrical layouts</li>
-              <li>Kitchen, bathroom &amp; joinery specifications</li>
-              <li>Photographs of the existing property</li>
-              <li>Expected construction budget &amp; target programme</li>
-              <li>Building-management or access requirements</li>
-            </ul>
+        <div class="col-lg-5 col-md-6">
+          <div class="home_form_section_heading">
+            <h3 class="banner_bottom_section_heading">Have a Construction Project Ready to Price?</h3>
           </div>
           <div class="home_form_section_text">
-            We'll review the available information and discuss whether the project is suitable for Oraanj's construction and refurbishment service.
+            <p>If you have drawings, layouts or a scope of work, submit your details and our team will review the information to discuss the next stage.</p>
           </div>
           <div class="home_form_section_text mt-3">
             <a href="tel:4407448803051"><strong>+44 (0) 7448 803051</strong></a>

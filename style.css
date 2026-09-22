@@ -5008,3 +5008,536 @@
 .orc-matrix-card.orc-matrix-span-full {
   grid-column: 1 / -1 !important;
 }
+
+/* --------------------------------------------------------------------------
+   20. SPLIT SECTION CONTENT COMPONENT UTILITIES (CONSTRUCTION PAGE REDESIGN)
+   -------------------------------------------------------------------------- */
+.orc-split-grid-2 {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px !important;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+@media screen and (max-width: 640px) {
+  .orc-split-grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.orc-split-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 18px 20px !important;
+  transition: all 0.25s ease !important;
+}
+
+.orc-bg-tint .orc-split-card {
+  background-color: #FFFFFF !important;
+}
+
+.orc-bg-white .orc-split-card {
+  background-color: #FAF8F5 !important;
+  border-color: #ECE8E1 !important;
+}
+
+.orc-split-card:hover {
+  border-color: #B94E1A !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05) !important;
+}
+
+.orc-split-card-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 8px !important;
+}
+
+.orc-split-card-num {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+  letter-spacing: 0.08em !important;
+}
+
+.orc-split-card-tag {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #7D756D !important;
+  background-color: #EFECE6 !important;
+  padding: 3px 8px !important;
+  border-radius: 12px !important;
+}
+
+.orc-split-card-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #1A1816 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-split-card-desc {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12.5px !important;
+  line-height: 1.55 !important;
+  color: #605B54 !important;
+  margin: 0 0 10px 0 !important;
+}
+
+.orc-split-card-link {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #B94E1A !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  transition: gap 0.2s ease !important;
+}
+
+.orc-split-card-link:hover {
+  gap: 7px !important;
+}
+
+/* Stage Group in Split Layout */
+.orc-stage-group {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 20px 22px !important;
+  margin-bottom: 16px !important;
+}
+
+.orc-stage-group-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 14px !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid #ECE8E1 !important;
+}
+
+.orc-stage-items-list {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 12px !important;
+}
+
+@media screen and (max-width: 640px) {
+  .orc-stage-items-list {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.orc-stage-mini-item {
+  padding: 10px 12px !important;
+  background-color: #F8F6F2 !important;
+  border-radius: 6px !important;
+  border: 1px solid #ECE8E1 !important;
+}
+
+.orc-stage-mini-num {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+  margin-bottom: 2px !important;
+}
+
+.orc-stage-mini-title {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #1A1816 !important;
+  margin: 0 0 3px 0 !important;
+}
+
+.orc-stage-mini-desc {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  line-height: 1.4 !important;
+  color: #605B54 !important;
+  margin: 0 !important;
+}
+
+/* Decision Tiers in Split Layout */
+.orc-tier-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  margin-top: 24px !important;
+}
+
+.orc-tier-card-compact {
+  background-color: #FAF8F5 !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 20px 24px !important;
+  transition: all 0.25s ease !important;
+}
+
+.orc-tier-card-compact.orc-tier-featured {
+  border-color: #B94E1A !important;
+  background-color: #FFFBF9 !important;
+  box-shadow: 0 4px 16px rgba(185, 78, 26, 0.08) !important;
+}
+
+.orc-tier-header-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 8px !important;
+}
+
+.orc-tier-compact-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #1A1816 !important;
+  margin: 0 !important;
+}
+
+.orc-tier-compact-desc {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  color: #605B54 !important;
+  margin: 0 0 12px 0 !important;
+}
+
+.orc-tier-features-inline {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px 16px !important;
+  margin-bottom: 14px !important;
+}
+
+.orc-tier-feature-pill {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  color: #2E2A27 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.orc-tier-card-bottom {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding-top: 12px !important;
+  border-top: 1px solid #ECE8E1 !important;
+}
+
+/* --------------------------------------------------------------------------
+   21. SECTION 7 & 8 ENHANCEMENTS: 4 HORIZONTAL CARDS & PROCESS PATHWAY
+   -------------------------------------------------------------------------- */
+.orc-factors-4col {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+  margin: 36px 0 !important;
+}
+
+@media screen and (max-width: 980px) {
+  .orc-factors-4col {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .orc-factors-4col {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.orc-factor-card-h {
+  background-color: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 24px 20px !important;
+  transition: all 0.25s ease !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+.orc-factor-card-h:hover {
+  border-color: #B94E1A !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 24px rgba(185, 78, 26, 0.08) !important;
+}
+
+.orc-factor-card-top {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 16px !important;
+}
+
+.orc-factor-badge-num {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+  background-color: #FFF6F2 !important;
+  padding: 3px 8px !important;
+  border-radius: 12px !important;
+  letter-spacing: 0.08em !important;
+}
+
+.orc-factor-card-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #1A1816 !important;
+  margin: 0 0 10px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-factor-card-desc {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  color: #605B54 !important;
+  margin: 0 !important;
+}
+
+/* Process Pathway for "What Happens Before Construction Starts?" */
+.orc-process-pathway {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+  position: relative !important;
+}
+
+.orc-pathway-step {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 18px !important;
+  background-color: #FAF8F5 !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 8px !important;
+  padding: 18px 20px !important;
+  transition: all 0.25s ease !important;
+  position: relative !important;
+}
+
+.orc-pathway-step:hover {
+  border-color: #B94E1A !important;
+  background-color: #FFFFFF !important;
+  transform: translateX(4px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04) !important;
+}
+
+.orc-pathway-node {
+  flex-shrink: 0 !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background-color: #FFF6F2 !important;
+  border: 1.5px solid #B94E1A !important;
+  color: #B94E1A !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+}
+
+.orc-pathway-content {
+  flex: 1 !important;
+}
+
+.orc-pathway-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 6px !important;
+}
+
+.orc-pathway-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 16.5px !important;
+  font-weight: 600 !important;
+  color: #1A1816 !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+}
+
+.orc-pathway-tag {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #7D756D !important;
+  background-color: #EFECE6 !important;
+  padding: 3px 8px !important;
+  border-radius: 12px !important;
+}
+
+.orc-pathway-desc {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12.5px !important;
+  line-height: 1.55 !important;
+  color: #605B54 !important;
+  margin: 0 !important;
+}
+
+/* --------------------------------------------------------------------------
+   22. RESPONSIVE IMAGE & SPLIT SECTION LAYOUT FIXES
+   -------------------------------------------------------------------------- */
+
+/* Media frame styling */
+.orc-media-frame {
+  position: relative !important;
+  width: 100% !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07) !important;
+}
+
+.orc-split-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* Stamp badge positioned top-right so it never collides with media badge */
+.orc-media-frame .orc-stamp-badge {
+  position: absolute !important;
+  top: 18px !important;
+  right: 18px !important;
+  bottom: auto !important;
+  left: auto !important;
+  background: rgba(26, 24, 22, 0.90) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 6px !important;
+  padding: 7px 13px !important;
+  z-index: 3 !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.orc-media-frame .orc-stamp-badge span {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 10px !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+}
+
+/* Media badge positioned bottom-left */
+.orc-media-frame .orc-media-badge {
+  position: absolute !important;
+  bottom: 18px !important;
+  left: 18px !important;
+  top: auto !important;
+  right: auto !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid #DFDBD3 !important;
+  border-radius: 30px !important;
+  padding: 8px 18px !important;
+  z-index: 2 !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10) !important;
+  max-width: calc(100% - 36px) !important;
+}
+
+/* Tablet & Smaller Screens Responsiveness (<= 1080px) */
+@media screen and (max-width: 1080px) {
+  .orc-split,
+  .orc-split-reverse {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+    width: 100% !important;
+  }
+
+  /* Content column first on mobile/tablet */
+  .orc-split .orc-col-content,
+  .orc-split-reverse .orc-col-content {
+    order: 1 !important;
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Media column second on mobile/tablet */
+  .orc-split .orc-col-media,
+  .orc-split-reverse .orc-col-media {
+    order: 2 !important;
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Fluid, responsive media frame */
+  .orc-media-frame {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 10 !important;
+    min-height: 280px !important;
+    max-height: 440px !important;
+  }
+}
+
+/* Mobile Screens (<= 640px) */
+@media screen and (max-width: 640px) {
+  .orc-media-frame {
+    aspect-ratio: 4 / 3 !important;
+    min-height: 220px !important;
+    max-height: 320px !important;
+  }
+
+  .orc-media-frame .orc-stamp-badge {
+    top: 12px !important;
+    right: 12px !important;
+    padding: 5px 10px !important;
+  }
+
+  .orc-media-frame .orc-stamp-badge span {
+    font-size: 9px !important;
+  }
+
+  .orc-media-frame .orc-media-badge {
+    bottom: 12px !important;
+    left: 12px !important;
+    padding: 6px 12px !important;
+    max-width: calc(100% - 24px) !important;
+  }
+
+  .orc-media-frame .orc-media-badge .orc-badge-text {
+    font-size: 11px !important;
+  }
+}
+
+
+
