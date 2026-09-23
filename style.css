@@ -5507,6 +5507,55 @@
     min-height: 280px !important;
     max-height: 440px !important;
   }
+
+  /* Fluid, responsive hero image frame (<= 1080px) */
+  .orc-hero-wrap {
+    padding: 60px 24px !important;
+    width: 100% !important;
+  }
+
+  .orc-hero-wrap .orc-container,
+  .orc-hero-wrap .orc-container.orc-hero-reverse {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 36px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .orc-hero-content {
+    order: 1 !important;
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .orc-hero-visual-col {
+    order: 2 !important;
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .orc-hero-image-frame {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 10 !important;
+    min-height: 260px !important;
+    max-height: 460px !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+  }
+
+  .orc-hero-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+  }
 }
 
 /* Mobile Screens (<= 640px) */
@@ -5535,6 +5584,34 @@
   }
 
   .orc-media-frame .orc-media-badge .orc-badge-text {
+    font-size: 11px !important;
+  }
+
+  /* Hero Section Mobile Polish (<= 640px) */
+  .orc-hero-wrap {
+    padding: 44px 16px 48px 16px !important;
+  }
+
+  .orc-hero-wrap .orc-container,
+  .orc-hero-wrap .orc-container.orc-hero-reverse {
+    gap: 28px !important;
+  }
+
+  .orc-hero-image-frame {
+    aspect-ratio: 4 / 3 !important;
+    min-height: 220px !important;
+    max-height: 340px !important;
+    height: auto !important;
+  }
+
+  .orc-hero-badge {
+    bottom: 12px !important;
+    left: 12px !important;
+    padding: 6px 12px !important;
+    max-width: calc(100% - 24px) !important;
+  }
+
+  .orc-hero-badge .orc-badge-text {
     font-size: 11px !important;
   }
 }
