@@ -5616,5 +5616,684 @@
   }
 }
 
+/* ==========================================================================
+   PORTFOLIO DETAIL COMPONENT STYLES (.pfd-)
+   Strictly Scoped with Anti-wpautop Protection & Site-wide Typography/Palette
+   Typography: Playfair Display (Headings) | Inter (Body, Eyebrows, UI)
+   Palette: Terracotta (#B94E1A) | Plum (#670066) | Dark Charcoal (#1A1816)
+            Muted Body (#5E5953) | Subtitle (#8C8882) | Tint (#FFF6F2) | White (#FFFFFF)
+   ========================================================================== */
 
+/* Global HTML/Body Zero-Margin & Zero-Overflow Defense */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Scoped reset for portfolio detail components */
+.pfd-hero, .pfd-hero *,
+.pfd-description-section, .pfd-description-section *,
+.pfd-bento-section, .pfd-bento-section *,
+.pfd-slider-section, .pfd-slider-section *,
+.pfd-details-section, .pfd-details-section *,
+.pfd-next-project, .pfd-next-project *,
+.pfd-footer, .pfd-footer *,
+.pfd-header, .pfd-header *,
+.pfd-container {
+  box-sizing: border-box !important;
+  max-width: 100%;
+}
+
+/* Anti-wpautop protection */
+.pfd-hero p:empty, .pfd-description-section p:empty,
+.pfd-bento-section p:empty, .pfd-slider-section p:empty,
+.pfd-details-section p:empty,
+.pfd-bento-grid > p, .pfd-desc-grid > p, .pfd-slider-track > p {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+/* Container */
+.pfd-container {
+  width: 100% !important;
+  max-width: 1420px !important;
+  margin: 0 auto !important;
+  padding-left: clamp(20px, 4vw, 48px) !important;
+  padding-right: clamp(20px, 4vw, 48px) !important;
+}
+
+/* Header */
+.pfd-header {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 50 !important;
+  padding: 24px clamp(20px, 4vw, 56px) !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.pfd-brand {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 1.15rem !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  font-weight: 400 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* 1. HERO SECTION */
+.pfd-hero {
+  position: relative !important;
+  width: 100% !important;
+  height: 100vh !important;
+  min-height: 640px !important;
+  max-height: 1080px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/Website-hero-image-1800x1083.png') !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  overflow: hidden !important;
+}
+
+.pfd-hero-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 24, 22, 0.38) 0%,
+    rgba(26, 24, 22, 0.18) 40%,
+    rgba(26, 24, 22, 0.35) 75%,
+    rgba(26, 24, 22, 0.6) 100%
+  ) !important;
+  pointer-events: none !important;
+}
+
+.pfd-hero-content {
+  position: relative !important;
+  z-index: 10 !important;
+  text-align: center !important;
+  max-width: 900px !important;
+  padding: 0 20px !important;
+  animation: pfdFadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+.pfd-hero-location {
+  display: block !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3em !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  margin-bottom: clamp(14px, 2.5vw, 22px) !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
+}
+
+.pfd-hero-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(34px, 5.5vw, 68px) !important;
+  font-weight: 400 !important;
+  line-height: 1.1 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  margin-bottom: clamp(24px, 4vw, 36px) !important;
+  text-shadow: 0 4px 28px rgba(0, 0, 0, 0.55) !important;
+}
+
+.pfd-hero .orc-hero-actions {
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin: 28px auto 0 auto !important;
+  display: flex !important;
+}
+
+.pfd-hero .orc-btn-outline {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: #FFFFFF !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  padding: 14px 34px !important;
+}
+
+.pfd-hero .orc-btn-outline:hover {
+  background-color: #B94E1A !important;
+  border-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+}
+
+.pfd-scroll-hint {
+  position: absolute !important;
+  bottom: 24px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 10 !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+  pointer-events: none !important;
+  animation: pfdFloat 2.6s ease-in-out infinite !important;
+}
+
+.pfd-scroll-hint::after {
+  content: '' !important;
+  width: 1.5px !important;
+  height: 24px !important;
+  background: linear-gradient(180deg, #B94E1A, transparent) !important;
+}
+
+/* 2. DESCRIPTION SECTION */
+.pfd-description-section {
+  background-color: #FFFFFF !important;
+  padding-top: clamp(70px, 9vw, 130px) !important;
+  padding-bottom: clamp(60px, 8vw, 110px) !important;
+}
+
+.pfd-desc-grid {
+  display: grid !important;
+  grid-template-columns: 1.05fr 1fr !important;
+  column-gap: clamp(40px, 6vw, 95px) !important;
+  row-gap: 36px !important;
+  align-items: flex-start !important;
+}
+
+.pfd-desc-heading {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(28px, 3.2vw, 42px) !important;
+  font-weight: 400 !important;
+  line-height: 1.25 !important;
+  color: #1A1816 !important;
+  letter-spacing: -0.01em !important;
+  margin: 0 !important;
+}
+
+.pfd-desc-heading em {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  text-transform: lowercase !important;
+  letter-spacing: 0.01em !important;
+  color: #B94E1A !important;
+  display: inline !important;
+}
+
+.pfd-desc-heading .pfd-caps {
+  text-transform: uppercase !important;
+  letter-spacing: 0.02em !important;
+  color: #1A1816 !important;
+}
+
+.pfd-desc-text {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 22px !important;
+  padding-top: 6px !important;
+}
+
+.pfd-desc-text p {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.72 !important;
+  color: #5E5953 !important;
+  letter-spacing: 0.01em !important;
+  margin: 0 !important;
+}
+
+/* 3. IMAGE BENTO GRID SECTION */
+.pfd-bento-section {
+  background-color: #FFFFFF !important;
+  padding-bottom: clamp(70px, 8vw, 120px) !important;
+}
+
+.pfd-bento-grid {
+  display: grid !important;
+  grid-template-columns: 1.25fr 1fr 1fr !important;
+  gap: clamp(14px, 1.5vw, 22px) !important;
+  align-items: stretch !important;
+}
+
+.pfd-bento-card {
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #FFF6F2 !important;
+  border-radius: 2px !important;
+  border: 1px solid rgba(185, 78, 26, 0.08) !important;
+}
+
+.pfd-bento-card img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease !important;
+}
+
+.pfd-bento-card:hover img {
+  transform: scale(1.035) !important;
+}
+
+.pfd-bento-tall {
+  height: 100% !important;
+  min-height: 520px !important;
+}
+
+.pfd-bento-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: clamp(14px, 1.5vw, 22px) !important;
+  height: 100% !important;
+}
+
+.pfd-bento-small {
+  flex: 1 !important;
+  min-height: 250px !important;
+  position: relative !important;
+}
+
+/* 4. PURE CSS SLIDER SECTION (NO JS) */
+.pfd-slider-section {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  background-color: #1A1816 !important;
+  overflow: hidden !important;
+  overflow-x: clip !important;
+  contain: paint !important;
+  padding: 0 !important;
+}
+
+.pfd-slider-input {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
+.pfd-slider-viewport {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: clamp(480px, 82vh, 920px) !important;
+  overflow: hidden !important;
+  overflow-x: clip !important;
+  contain: paint !important;
+}
+
+.pfd-slider-track {
+  display: flex !important;
+  width: 800% !important;
+  height: 100% !important;
+  transition: transform 0.75s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  will-change: transform !important;
+}
+
+.pfd-slide {
+  width: 12.5% !important;
+  height: 100% !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.pfd-slide-bg {
+  width: 100% !important;
+  height: 100% !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  transition: transform 6s ease-out !important;
+}
+
+#pfd-slide-1:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(0%) !important; }
+#pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-12.5%) !important; }
+#pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-25%) !important; }
+#pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-37.5%) !important; }
+#pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-50%) !important; }
+#pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-62.5%) !important; }
+#pfd-slide-7:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-75%) !important; }
+#pfd-slide-8:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-87.5%) !important; }
+
+#pfd-slide-1:checked ~ .pfd-slider-viewport .pfd-slide-1 .pfd-slide-bg,
+#pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-slide-2 .pfd-slide-bg,
+#pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-slide-3 .pfd-slide-bg,
+#pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-slide-4 .pfd-slide-bg,
+#pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-slide-5 .pfd-slide-bg,
+#pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-slide-6 .pfd-slide-bg,
+#pfd-slide-7:checked ~ .pfd-slider-viewport .pfd-slide-7 .pfd-slide-bg,
+#pfd-slide-8:checked ~ .pfd-slider-viewport .pfd-slide-8 .pfd-slide-bg {
+  transform: scale(1.025) !important;
+}
+
+/* Arrows controls */
+.pfd-slider-controls {
+  position: absolute !important;
+  bottom: clamp(20px, 3.5vw, 36px) !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 30 !important;
+  pointer-events: none !important;
+}
+
+.pfd-arrow-pair {
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 22px !important;
+  pointer-events: auto !important;
+}
+
+.pfd-arrow-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  cursor: pointer !important;
+  color: #FFFFFF !important;
+  background: rgba(26, 24, 22, 0.45) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 50% !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  transition: all 0.25s ease !important;
+  user-select: none !important;
+}
+
+.pfd-arrow-btn svg {
+  width: 14px !important;
+  height: 14px !important;
+  stroke: #FFFFFF !important;
+  stroke-width: 2.2 !important;
+  fill: none !important;
+  transition: transform 0.25s ease !important;
+}
+
+.pfd-arrow-btn:hover {
+  background-color: #B94E1A !important;
+  border-color: #B94E1A !important;
+  transform: scale(1.08) !important;
+}
+
+.pfd-arrow-btn.prev:hover svg {
+  transform: translateX(-2px) !important;
+}
+
+.pfd-arrow-btn.next:hover svg {
+  transform: translateX(2px) !important;
+}
+
+#pfd-slide-1:checked ~ .pfd-slider-viewport .pfd-arrow-pair-1 { display: flex !important; }
+#pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-arrow-pair-2 { display: flex !important; }
+#pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-arrow-pair-3 { display: flex !important; }
+#pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-arrow-pair-4 { display: flex !important; }
+#pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-arrow-pair-5 { display: flex !important; }
+#pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-arrow-pair-6 { display: flex !important; }
+#pfd-slide-7:checked ~ .pfd-slider-viewport .pfd-arrow-pair-7 { display: flex !important; }
+#pfd-slide-8:checked ~ .pfd-slider-viewport .pfd-arrow-pair-8 { display: flex !important; }
+
+/* Dots Navigation */
+.pfd-slider-dots {
+  position: absolute !important;
+  bottom: clamp(24px, 3.6vw, 40px) !important;
+  right: clamp(24px, 4vw, 56px) !important;
+  z-index: 30 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+  background: rgba(26, 24, 22, 0.45) !important;
+  padding: 7px 14px !important;
+  border-radius: 20px !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.pfd-dot {
+  display: block !important;
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  background-color: transparent !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  user-select: none !important;
+}
+
+.pfd-dot:hover {
+  border-color: #B94E1A !important;
+  background-color: rgba(185, 78, 26, 0.4) !important;
+}
+
+#pfd-slide-1:checked ~ .pfd-slider-viewport .pfd-slider-dots .pfd-dot-1,
+#pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-slider-dots .pfd-dot-2,
+#pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-slider-dots .pfd-dot-3,
+#pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-slider-dots .pfd-dot-4,
+#pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-slider-dots .pfd-dot-5,
+#pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-slider-dots .pfd-dot-6,
+#pfd-slide-7:checked ~ .pfd-slider-viewport .pfd-slider-dots .pfd-dot-7,
+#pfd-slide-8:checked ~ .pfd-slider-viewport .pfd-slider-dots .pfd-dot-8 {
+  background-color: #B94E1A !important;
+  border-color: #B94E1A !important;
+  transform: scale(1.3) !important;
+  box-shadow: 0 0 8px rgba(185, 78, 26, 0.85) !important;
+}
+
+/* 5. POST-SLIDER DETAILS SECTION */
+.pfd-details-section {
+  background-color: #FFFFFF !important;
+  padding: clamp(70px, 8vw, 110px) 0 !important;
+  border-top: 1px solid #ECE8E1 !important;
+}
+
+.pfd-details-intro {
+  max-width: 860px !important;
+  margin-bottom: 36px !important;
+}
+
+.pfd-details-narrative {
+  margin-top: 16px !important;
+}
+
+.pfd-details-section .orc-cards-grid {
+  margin-top: 36px !important;
+}
+
+/* 6. NEXT PROJECT */
+.pfd-next-project {
+  position: relative !important;
+  width: 100% !important;
+  height: 420px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/04/Hero-Living-dining.jpg') !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+}
+
+.pfd-next-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(26, 24, 22, 0.5) !important;
+  transition: background 0.4s ease !important;
+}
+
+.pfd-next-project:hover .pfd-next-overlay {
+  background: rgba(26, 24, 22, 0.38) !important;
+}
+
+.pfd-next-content {
+  position: relative !important;
+  z-index: 10 !important;
+  color: #FFFFFF !important;
+}
+
+.pfd-next-eyebrow {
+  display: block !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  margin-bottom: 12px !important;
+}
+
+.pfd-next-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(2rem, 4vw, 3.2rem) !important;
+  font-weight: 400 !important;
+  color: #FFFFFF !important;
+  margin-bottom: 26px !important;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+.pfd-footer {
+  background-color: #1A1816 !important;
+  color: #8C8882 !important;
+  padding: 36px clamp(20px, 4vw, 56px) !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  letter-spacing: 0.02em !important;
+}
+
+.pfd-footer a {
+  color: #8C8882 !important;
+  transition: color 0.2s ease !important;
+}
+
+.pfd-footer a:hover {
+  color: #B94E1A !important;
+}
+
+/* Keyframes */
+@keyframes pfdFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pfdFloat {
+  0%, 100% {
+    transform: translate(-50%, 0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, 8px);
+    opacity: 1;
+  }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .pfd-desc-grid {
+    grid-template-columns: 1fr !important;
+    row-gap: 28px !important;
+  }
+
+  .pfd-desc-text {
+    padding-top: 0 !important;
+  }
+
+  .pfd-bento-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .pfd-bento-tall {
+    grid-column: 1 / -1 !important;
+    height: 540px !important;
+  }
+
+  .pfd-slider-viewport {
+    height: 60vh !important;
+    min-height: 420px !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .pfd-header {
+    padding: 18px 20px !important;
+  }
+
+  .pfd-bento-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .pfd-bento-tall {
+    height: 420px !important;
+  }
+
+  .pfd-bento-small {
+    height: 300px !important;
+  }
+
+  .pfd-slider-viewport {
+    height: 52vh !important;
+    min-height: 340px !important;
+  }
+
+  .pfd-slider-dots {
+    right: 50% !important;
+    transform: translateX(50%) !important;
+    bottom: 16px !important;
+  }
+
+  .pfd-slider-controls {
+    bottom: 54px !important;
+  }
+
+  .pfd-footer {
+    flex-direction: column !important;
+    gap: 14px !important;
+    text-align: center !important;
+  }
+}
 

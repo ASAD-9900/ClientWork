@@ -24,4 +24,4 @@ office interior - completed with images
 retail interior - completed with images
 hotel interior - completed with images
 space planning - completed with images
- 
+portfolio detail (Notting Hill) - completed with images and pure CSS slider (no JS)
