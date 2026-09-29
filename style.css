@@ -5642,7 +5642,8 @@ html, body {
 .pfd-hero, .pfd-hero *,
 .pfd-description-section, .pfd-description-section *,
 .pfd-bento-section, .pfd-bento-section *,
-.pfd-slider-section, .pfd-slider-section *,
+.pfd-slider-section,
+.pfd-slider-viewport,
 .pfd-details-section, .pfd-details-section *,
 .pfd-next-project, .pfd-next-project *,
 .pfd-footer, .pfd-footer *,
@@ -5994,7 +5995,11 @@ html, body {
 
 .pfd-slider-track {
   display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
   width: 800% !important;
+  min-width: 800% !important;
+  max-width: 800% !important;
   height: 100% !important;
   transition: transform 0.75s cubic-bezier(0.25, 1, 0.5, 1) !important;
   will-change: transform !important;
@@ -6002,6 +6007,11 @@ html, body {
 
 .pfd-slide {
   width: 12.5% !important;
+  min-width: 12.5% !important;
+  max-width: 12.5% !important;
+  flex: 0 0 12.5% !important;
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
   height: 100% !important;
   position: relative !important;
   overflow: hidden !important;
