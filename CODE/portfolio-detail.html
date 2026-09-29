@@ -2,408 +2,341 @@
      ORAANJ INTERIOR DESIGN & BUILD — LONDON
      PAGE: PORTFOLIO DETAIL — NOTTING HILL PROJECT
      STYLES: style.css (scoped with .pfd- and .orc- prefixes)
+     WORDPRESS READY: Copy and paste directly into WordPress Custom HTML block
      ========================================================================== -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notting Hill Project | Luxury Interior Portfolio</title>
-  <meta name="description" content="A beautifully renovated 1940s Art Deco family home in Notting Hill, London. Balancing timeless interiors with bespoke craftsmanship and elegant family living.">
+<!-- 1. HERO SECTION (Screenshot 1) -->
+<section class="pfd-hero" id="hero">
+  <div class="pfd-hero-overlay"></div>
 
-  <!-- Google Fonts: Playfair Display & Inter (Brand Typography) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Project Stylesheet -->
-  <link rel="stylesheet" href="../style.css">
-
-  <!-- Immediate Zero-Margin & Zero-Overflow Defense -->
-  <style>
-    html, body {
-      margin: 0 !important;
-      padding: 0 !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      overflow-x: hidden !important;
-      box-sizing: border-box !important;
-    }
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- ==========================================================================
-       TOP BAR / NAVIGATION
-       ========================================================================== -->
-  <header class="pfd-header">
+  <!-- Hero Top Bar (Anchored safely inside hero, zero conflict with WP header) -->
+  <div class="pfd-header">
     <div class="pfd-brand">Portfolio</div>
     <a href="#" class="orc-btn orc-btn-outline" style="border-color: rgba(255, 255, 255, 0.4) !important; color: #FFFFFF !important; padding: 10px 22px !important; font-size: 11px !important;">
       <span class="orc-btn-label">All Projects</span>
     </a>
-  </header>
+  </div>
 
-  <main>
-    <!-- ==========================================================================
-         1. HERO SECTION (Screenshot 1)
-         ========================================================================== -->
-    <section class="pfd-hero" id="hero">
-      <div class="pfd-hero-overlay"></div>
-      
-      <div class="pfd-hero-content">
-        <div class="orc-eyebrow-wrap" style="justify-content: center; margin-bottom: 14px;">
-          <span class="orc-eyebrow" style="color: #FFFFFF !important; letter-spacing: 0.35em !important; font-size: 12px !important; text-shadow: 0 2px 10px rgba(0,0,0,0.6);">London</span>
-        </div>
-        <h1 class="pfd-hero-title">Notting Hill</h1>
-        <div class="orc-hero-actions orc-hero-actions-center">
-          <a class="orc-btn orc-btn-outline" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
-            <span class="orc-btn-label">Enquire About Your Project</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="pfd-scroll-hint">
-        <span>Scroll</span>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         2. DESCRIPTION SECTION (Screenshot 2)
-         ========================================================================== -->
-    <section class="pfd-description-section" id="overview">
-      <div class="pfd-container">
-        <div class="pfd-desc-grid">
-          <!-- Left Column: Editorial Heading with Brand Eyebrow & Accent Rule -->
-          <div class="pfd-desc-col">
-            <div class="orc-eyebrow-wrap">
-              <span class="orc-eyebrow">Notting Hill Residence</span>
-            </div>
-            <div class="orc-rule"></div>
-            <h2 class="pfd-desc-heading">
-              <em>an</em> <span class="pfd-caps">Art Deco family home</span> <em>reimagined with</em><br>
-              <span class="pfd-caps">timeless elegance</span>
-            </h2>
-          </div>
-
-          <!-- Right Column: Narrative Copy with Site-wide Font and Color -->
-          <div class="pfd-desc-col pfd-desc-text">
-            <p>
-              This beautifully renovated 1940s Art Deco family home in Notting Hill was designed for a young family, balancing timeless interiors with the practicalities of everyday living. Rich in colour, pattern and natural materials, the design celebrates craftsmanship and considered detailing, creating spaces that feel warm, inviting and made to stand the test of time.
-            </p>
-            <p>
-              A layered palette flows throughout the home, with bespoke joinery, thoughtful marble detailing and handcrafted finishes creating depth and character. The children’s bedrooms continue the home’s timeless aesthetic, allowing them to adapt naturally as the family grows.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         3. IMAGE BENTO SECTION (Screenshot 3)
-         ========================================================================== -->
-    <section class="pfd-bento-section" id="gallery">
-      <div class="pfd-container">
-        <div class="pfd-bento-grid">
-          
-          <!-- Left Column: Large Tall Hero Portrait Image -->
-          <div class="pfd-bento-card pfd-bento-tall">
-            <img 
-              src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/Website-Image-820-x-930.png" 
-              alt="Notting Hill Arched Hallway with sconces and seating" 
-              loading="lazy"
-            />
-          </div>
-
-          <!-- Center Column: Two Stacked Images -->
-          <div class="pfd-bento-stack">
-            <div class="pfd-bento-card pfd-bento-small">
-              <img 
-                src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/1.png" 
-                alt="Dining Room Corner with artwork and chandelier" 
-                loading="lazy"
-              />
-            </div>
-            <div class="pfd-bento-card pfd-bento-small">
-              <img 
-                src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/2.png" 
-                alt="Reading Nook with cushioned bench and botanical prints" 
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- Right Column: Two Stacked Images -->
-          <div class="pfd-bento-stack">
-            <div class="pfd-bento-card pfd-bento-small">
-              <img 
-                src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/3.png" 
-                alt="Arched dressing hallway with custom wardrobes" 
-                loading="lazy"
-              />
-            </div>
-            <div class="pfd-bento-card pfd-bento-small">
-              <img 
-                src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/4.png" 
-                alt="Artisan carved mirror with candle and floral arrangement" 
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         4. PURE CSS SLIDER SECTION — NO JS (Screenshot 4)
-         ========================================================================== -->
-    <section class="pfd-slider-section" id="slider">
-      <!-- 8 Radio buttons controlling active slide index -->
-      <input type="radio" name="pfd-slider-group" id="pfd-slide-1" class="pfd-slider-input" checked>
-      <input type="radio" name="pfd-slider-group" id="pfd-slide-2" class="pfd-slider-input">
-      <input type="radio" name="pfd-slider-group" id="pfd-slide-3" class="pfd-slider-input">
-      <input type="radio" name="pfd-slider-group" id="pfd-slide-4" class="pfd-slider-input">
-      <input type="radio" name="pfd-slider-group" id="pfd-slide-5" class="pfd-slider-input">
-      <input type="radio" name="pfd-slider-group" id="pfd-slide-6" class="pfd-slider-input">
-      <input type="radio" name="pfd-slider-group" id="pfd-slide-7" class="pfd-slider-input">
-      <input type="radio" name="pfd-slider-group" id="pfd-slide-8" class="pfd-slider-input">
-
-      <div class="pfd-slider-viewport">
-        <!-- Horizontal Sliding Track -->
-        <div class="pfd-slider-track">
-          
-          <!-- Slide 1: Principal Bathroom (Matches Screenshot 4) -->
-          <div class="pfd-slide pfd-slide-1">
-            <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/1-1800x1083.png');"></div>
-          </div>
-
-          <!-- Slide 2: Principal Bedroom -->
-          <div class="pfd-slide pfd-slide-2">
-            <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/2-1800x1083.png');"></div>
-          </div>
-
-          <!-- Slide 3: Living Room Fireplace -->
-          <div class="pfd-slide pfd-slide-3">
-            <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/4-1800x1083.png');"></div>
-          </div>
-
-          <!-- Slide 4: Dining Cabinetry -->
-          <div class="pfd-slide pfd-slide-4">
-            <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/3-1800x1083.png');"></div>
-          </div>
-
-          <!-- Slide 5: Kitchen Island & Marble Detail -->
-          <div class="pfd-slide pfd-slide-5">
-            <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/Website-hero-image-6-1800x1083.png');"></div>
-          </div>
-
-          <!-- Slide 6: Dressing Room Joinery -->
-          <div class="pfd-slide pfd-slide-6">
-            <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/5-1800x1083.png');"></div>
-          </div>
-
-          <!-- Slide 7: Children's Bedroom Canopy -->
-          <div class="pfd-slide pfd-slide-7">
-            <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/6-1800x1083.png');"></div>
-          </div>
-
-          <!-- Slide 8: Powder Room Texture & Fixtures -->
-          <div class="pfd-slide pfd-slide-8">
-            <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/8-1800x1083.png');"></div>
-          </div>
-
-        </div>
-
-        <!-- Centered Navigation Arrows (< and >) — 100% Pure CSS, Zero JS -->
-        <div class="pfd-slider-controls">
-          <!-- Active Slide 1: Prev -> 8, Next -> 2 -->
-          <div class="pfd-arrow-pair pfd-arrow-pair-1">
-            <label for="pfd-slide-8" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </label>
-            <label for="pfd-slide-2" class="pfd-arrow-btn next" aria-label="Next Slide">
-              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </label>
-          </div>
-
-          <!-- Active Slide 2: Prev -> 1, Next -> 3 -->
-          <div class="pfd-arrow-pair pfd-arrow-pair-2">
-            <label for="pfd-slide-1" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </label>
-            <label for="pfd-slide-3" class="pfd-arrow-btn next" aria-label="Next Slide">
-              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </label>
-          </div>
-
-          <!-- Active Slide 3: Prev -> 2, Next -> 4 -->
-          <div class="pfd-arrow-pair pfd-arrow-pair-3">
-            <label for="pfd-slide-2" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </label>
-            <label for="pfd-slide-4" class="pfd-arrow-btn next" aria-label="Next Slide">
-              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </label>
-          </div>
-
-          <!-- Active Slide 4: Prev -> 3, Next -> 5 -->
-          <div class="pfd-arrow-pair pfd-arrow-pair-4">
-            <label for="pfd-slide-3" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </label>
-            <label for="pfd-slide-5" class="pfd-arrow-btn next" aria-label="Next Slide">
-              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </label>
-          </div>
-
-          <!-- Active Slide 5: Prev -> 4, Next -> 6 -->
-          <div class="pfd-arrow-pair pfd-arrow-pair-5">
-            <label for="pfd-slide-4" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </label>
-            <label for="pfd-slide-6" class="pfd-arrow-btn next" aria-label="Next Slide">
-              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </label>
-          </div>
-
-          <!-- Active Slide 6: Prev -> 5, Next -> 7 -->
-          <div class="pfd-arrow-pair pfd-arrow-pair-6">
-            <label for="pfd-slide-5" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </label>
-            <label for="pfd-slide-7" class="pfd-arrow-btn next" aria-label="Next Slide">
-              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </label>
-          </div>
-
-          <!-- Active Slide 7: Prev -> 6, Next -> 8 -->
-          <div class="pfd-arrow-pair pfd-arrow-pair-7">
-            <label for="pfd-slide-6" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </label>
-            <label for="pfd-slide-8" class="pfd-arrow-btn next" aria-label="Next Slide">
-              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </label>
-          </div>
-
-          <!-- Active Slide 8: Prev -> 7, Next -> 1 -->
-          <div class="pfd-arrow-pair pfd-arrow-pair-8">
-            <label for="pfd-slide-7" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </label>
-            <label for="pfd-slide-1" class="pfd-arrow-btn next" aria-label="Next Slide">
-              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </label>
-          </div>
-        </div>
-
-        <!-- Pagination Dots Indicators (Bottom Right, matching Screenshot 4) -->
-        <div class="pfd-slider-dots">
-          <label for="pfd-slide-1" class="pfd-dot pfd-dot-1" title="Slide 1"></label>
-          <label for="pfd-slide-2" class="pfd-dot pfd-dot-2" title="Slide 2"></label>
-          <label for="pfd-slide-3" class="pfd-dot pfd-dot-3" title="Slide 3"></label>
-          <label for="pfd-slide-4" class="pfd-dot pfd-dot-4" title="Slide 4"></label>
-          <label for="pfd-slide-5" class="pfd-dot pfd-dot-5" title="Slide 5"></label>
-          <label for="pfd-slide-6" class="pfd-dot pfd-dot-6" title="Slide 6"></label>
-          <label for="pfd-slide-7" class="pfd-dot pfd-dot-7" title="Slide 7"></label>
-          <label for="pfd-slide-8" class="pfd-dot pfd-dot-8" title="Slide 8"></label>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         5. PROJECT DETAILS & CRAFTSMANSHIP (Below Slider)
-         ========================================================================== -->
-    <section class="pfd-details-section orc-section orc-bg-white orc-border-top" id="details">
-      <div class="pfd-container">
-        <div class="pfd-details-intro">
-          <div class="orc-eyebrow-wrap">
-            <span class="orc-eyebrow">Design Narrative &amp; Detailing</span>
-          </div>
-          <div class="orc-rule"></div>
-          <h2 class="orc-title">Artisan Detailing Tailored to Modern Family Life</h2>
-          <p class="orc-lead">
-            Beyond the architectural flow, every room in the Notting Hill home balances tactile refinement with the functional practicalities of busy family routines.
-          </p>
-          <div class="pfd-details-narrative">
-            <p class="orc-body">
-              From the principal ensuite featuring custom twin arched mirrors and handcrafted zellige tiling to the bespoke kitchen cabinetry and integrated reading nooks, each element was selected to age gracefully. Layered architectural and accent lighting emphasizes the bespoke fluted joinery, soft natural stone surfaces, and rich tactile textiles throughout.
-            </p>
-          </div>
-        </div>
-
-        <!-- 3-Column Highlights Grid -->
-        <div class="orc-cards-grid orc-grid-3col">
-          <div class="orc-card">
-            <div class="orc-card-top-tag">
-              <span class="orc-tag-num">01</span>
-              <span class="orc-tag-label">Principal Suite</span>
-            </div>
-            <h4 class="orc-card-title">Ensuite &amp; Millwork</h4>
-            <p class="orc-card-desc">
-              Bespoke twin arched mirrors, honed marble vanities, antique brass sanitaryware, and floor-to-ceiling joinery tailored for effortless storage.
-            </p>
-          </div>
-
-          <div class="orc-card">
-            <div class="orc-card-top-tag">
-              <span class="orc-tag-num">02</span>
-              <span class="orc-tag-label">Living Spaces</span>
-            </div>
-            <h4 class="orc-card-title">Art Deco Heritage</h4>
-            <p class="orc-card-desc">
-              Subtle archways and restored period proportions paired with tailored seating, a focal fireplace, and display cabinetry.
-            </p>
-          </div>
-
-          <div class="orc-card">
-            <div class="orc-card-top-tag">
-              <span class="orc-tag-num">03</span>
-              <span class="orc-tag-label">Materiality</span>
-            </div>
-            <h4 class="orc-card-title">Natural Finishes</h4>
-            <p class="orc-card-desc">
-              Tactile linen wallcoverings, hand-finished oak parquet, fluted glass, and warm organic textures crafted to stand the test of time.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         6. NEXT PROJECT / CLOSING SECTION
-         ========================================================================== -->
-    <section class="pfd-next-project" id="next">
-      <div class="pfd-next-overlay"></div>
-      <div class="pfd-next-content">
-        <span class="pfd-next-eyebrow">Next Project</span>
-        <h2 class="pfd-next-title">Peninsula Apartment</h2>
-        <div>
-          <a class="orc-btn orc-btn-primary" href="#">
-            <span class="orc-btn-label">Take A Look</span>
-            <span class="orc-btn-arrow">→</span>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ==========================================================================
-       FOOTER
-       ========================================================================== -->
-  <footer class="pfd-footer" id="contact">
-    <div>&copy; 2026 Oraanj Interior Design &bull; London &bull; All Rights Reserved</div>
-    <div style="display: flex; gap: 24px;">
-      <a href="#">Instagram</a>
-      <a href="#">Pinterest</a>
-      <a href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">Enquiries</a>
+  <div class="pfd-hero-content">
+    <div class="orc-eyebrow-wrap" style="justify-content: center; margin-bottom: 14px;">
+      <span class="orc-eyebrow" style="color: #FFFFFF !important; letter-spacing: 0.35em !important; font-size: 12px !important; text-shadow: 0 2px 10px rgba(0,0,0,0.6);">London</span>
     </div>
-  </footer>
+    <h1 class="pfd-hero-title">Notting Hill</h1>
+    <div class="orc-hero-actions orc-hero-actions-center">
+      <a class="orc-btn orc-btn-outline" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
+        <span class="orc-btn-label">Enquire About Your Project</span>
+      </a>
+    </div>
+  </div>
 
-</body>
-</html>
+  <div class="pfd-scroll-hint">
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- 2. DESCRIPTION SECTION (Screenshot 2) -->
+<section class="pfd-description-section" id="overview">
+  <div class="pfd-container">
+    <div class="pfd-desc-grid">
+      <!-- Left Column: Editorial Heading with Brand Eyebrow & Accent Rule -->
+      <div class="pfd-desc-col">
+        <div class="orc-eyebrow-wrap">
+          <span class="orc-eyebrow">Notting Hill Residence</span>
+        </div>
+        <div class="orc-rule"></div>
+        <h2 class="pfd-desc-heading">
+          <em>an</em> <span class="pfd-caps">Art Deco family home</span> <em>reimagined with</em><br>
+          <span class="pfd-caps">timeless elegance</span>
+        </h2>
+      </div>
+
+      <!-- Right Column: Narrative Copy with Site-wide Font and Color -->
+      <div class="pfd-desc-col pfd-desc-text">
+        <p>
+          This beautifully renovated 1940s Art Deco family home in Notting Hill was designed for a young family, balancing timeless interiors with the practicalities of everyday living. Rich in colour, pattern and natural materials, the design celebrates craftsmanship and considered detailing, creating spaces that feel warm, inviting and made to stand the test of time.
+        </p>
+        <p>
+          A layered palette flows throughout the home, with bespoke joinery, thoughtful marble detailing and handcrafted finishes creating depth and character. The children’s bedrooms continue the home’s timeless aesthetic, allowing them to adapt naturally as the family grows.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. IMAGE BENTO SECTION (Screenshot 3) -->
+<section class="pfd-bento-section" id="gallery">
+  <div class="pfd-container">
+    <div class="pfd-bento-grid">
+      
+      <!-- Left Column: Large Tall Hero Portrait Image -->
+      <div class="pfd-bento-card pfd-bento-tall">
+        <img 
+          src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/Website-Image-820-x-930.png" 
+          alt="Notting Hill Arched Hallway with sconces and seating" 
+          loading="lazy"
+        />
+      </div>
+
+      <!-- Center Column: Two Stacked Images -->
+      <div class="pfd-bento-stack">
+        <div class="pfd-bento-card pfd-bento-small">
+          <img 
+            src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/1.png" 
+            alt="Dining Room Corner with artwork and chandelier" 
+            loading="lazy"
+          />
+        </div>
+        <div class="pfd-bento-card pfd-bento-small">
+          <img 
+            src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/2.png" 
+            alt="Reading Nook with cushioned bench and botanical prints" 
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Right Column: Two Stacked Images -->
+      <div class="pfd-bento-stack">
+        <div class="pfd-bento-card pfd-bento-small">
+          <img 
+            src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/3.png" 
+            alt="Arched dressing hallway with custom wardrobes" 
+            loading="lazy"
+          />
+        </div>
+        <div class="pfd-bento-card pfd-bento-small">
+          <img 
+            src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/4.png" 
+            alt="Artisan carved mirror with candle and floral arrangement" 
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 4. PURE CSS SLIDER SECTION (Screenshot 4 — WordPress Immune) -->
+<section class="pfd-slider-section" id="slider">
+  <!-- 8 Radio buttons controlling active slide index (inline continuous block prevents wpautop wrappers) -->
+  <div class="pfd-slider-inputs-wrap" style="display: contents;">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-1" class="pfd-slider-input" checked><input type="radio" name="pfd-slider-group" id="pfd-slide-2" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-3" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-4" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-5" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-6" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-7" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-8" class="pfd-slider-input">
+  </div>
+
+  <div class="pfd-slider-viewport">
+    <!-- Horizontal Sliding Track -->
+    <div class="pfd-slider-track">
+      <div class="pfd-slide pfd-slide-1">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/1-1800x1083.png');"></div>
+      </div>
+      <div class="pfd-slide pfd-slide-2">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/2-1800x1083.png');"></div>
+      </div>
+      <div class="pfd-slide pfd-slide-3">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/4-1800x1083.png');"></div>
+      </div>
+      <div class="pfd-slide pfd-slide-4">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/3-1800x1083.png');"></div>
+      </div>
+      <div class="pfd-slide pfd-slide-5">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/Website-hero-image-6-1800x1083.png');"></div>
+      </div>
+      <div class="pfd-slide pfd-slide-6">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/5-1800x1083.png');"></div>
+      </div>
+      <div class="pfd-slide pfd-slide-7">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/6-1800x1083.png');"></div>
+      </div>
+      <div class="pfd-slide pfd-slide-8">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/8-1800x1083.png');"></div>
+      </div>
+    </div>
+
+    <!-- Centered Navigation Arrows (< and >) — Pure CSS + Robust Fallback -->
+    <div class="pfd-slider-controls">
+      <!-- Active Slide 1: Prev -> 8, Next -> 2 -->
+      <div class="pfd-arrow-pair pfd-arrow-pair-1">
+        <label for="pfd-slide-8" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </label>
+        <label for="pfd-slide-2" class="pfd-arrow-btn next" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </label>
+      </div>
+
+      <!-- Active Slide 2: Prev -> 1, Next -> 3 -->
+      <div class="pfd-arrow-pair pfd-arrow-pair-2">
+        <label for="pfd-slide-1" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </label>
+        <label for="pfd-slide-3" class="pfd-arrow-btn next" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </label>
+      </div>
+
+      <!-- Active Slide 3: Prev -> 2, Next -> 4 -->
+      <div class="pfd-arrow-pair pfd-arrow-pair-3">
+        <label for="pfd-slide-2" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </label>
+        <label for="pfd-slide-4" class="pfd-arrow-btn next" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </label>
+      </div>
+
+      <!-- Active Slide 4: Prev -> 3, Next -> 5 -->
+      <div class="pfd-arrow-pair pfd-arrow-pair-4">
+        <label for="pfd-slide-3" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </label>
+        <label for="pfd-slide-5" class="pfd-arrow-btn next" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </label>
+      </div>
+
+      <!-- Active Slide 5: Prev -> 4, Next -> 6 -->
+      <div class="pfd-arrow-pair pfd-arrow-pair-5">
+        <label for="pfd-slide-4" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </label>
+        <label for="pfd-slide-6" class="pfd-arrow-btn next" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </label>
+      </div>
+
+      <!-- Active Slide 6: Prev -> 5, Next -> 7 -->
+      <div class="pfd-arrow-pair pfd-arrow-pair-6">
+        <label for="pfd-slide-5" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </label>
+        <label for="pfd-slide-7" class="pfd-arrow-btn next" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </label>
+      </div>
+
+      <!-- Active Slide 7: Prev -> 6, Next -> 8 -->
+      <div class="pfd-arrow-pair pfd-arrow-pair-7">
+        <label for="pfd-slide-6" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </label>
+        <label for="pfd-slide-8" class="pfd-arrow-btn next" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </label>
+      </div>
+
+      <!-- Active Slide 8: Prev -> 7, Next -> 1 -->
+      <div class="pfd-arrow-pair pfd-arrow-pair-8">
+        <label for="pfd-slide-7" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </label>
+        <label for="pfd-slide-1" class="pfd-arrow-btn next" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </label>
+      </div>
+    </div>
+
+    <!-- Pagination Dots Indicators (Bottom Right, matching Screenshot 4) -->
+    <div class="pfd-slider-dots">
+      <label for="pfd-slide-1" class="pfd-dot pfd-dot-1" title="Slide 1"></label>
+      <label for="pfd-slide-2" class="pfd-dot pfd-dot-2" title="Slide 2"></label>
+      <label for="pfd-slide-3" class="pfd-dot pfd-dot-3" title="Slide 3"></label>
+      <label for="pfd-slide-4" class="pfd-dot pfd-dot-4" title="Slide 4"></label>
+      <label for="pfd-slide-5" class="pfd-dot pfd-dot-5" title="Slide 5"></label>
+      <label for="pfd-slide-6" class="pfd-dot pfd-dot-6" title="Slide 6"></label>
+      <label for="pfd-slide-7" class="pfd-dot pfd-dot-7" title="Slide 7"></label>
+      <label for="pfd-slide-8" class="pfd-dot pfd-dot-8" title="Slide 8"></label>
+    </div>
+
+  </div>
+</section>
+
+<!-- Non-intrusive WP click guard (ensures clicks always register even if WP theme hooks labels) -->
+<script>
+(function(){
+  var slider = document.getElementById('slider');
+  if (!slider) return;
+  slider.addEventListener('click', function(e) {
+    var label = e.target.closest('label[for]');
+    if (!label) return;
+    var targetId = label.getAttribute('for');
+    var radio = document.getElementById(targetId);
+    if (radio && !radio.checked) {
+      radio.checked = true;
+      try { radio.dispatchEvent(new Event('change', { bubbles: true })); } catch(err){}
+    }
+  });
+})();
+</script>
+
+<!-- 5. PROJECT DETAILS & CRAFTSMANSHIP (Below Slider) -->
+<section class="pfd-details-section orc-section orc-bg-white orc-border-top" id="details">
+  <div class="pfd-container">
+    <div class="pfd-details-intro">
+      <div class="orc-eyebrow-wrap">
+        <span class="orc-eyebrow">Design Narrative &amp; Detailing</span>
+      </div>
+      <div class="orc-rule"></div>
+      <h2 class="orc-title">Artisan Detailing Tailored to Modern Family Life</h2>
+      <p class="orc-lead">
+        Beyond the architectural flow, every room in the Notting Hill home balances tactile refinement with the functional practicalities of busy family routines.
+      </p>
+      <div class="pfd-details-narrative">
+        <p class="orc-body">
+          From the principal ensuite featuring custom twin arched mirrors and handcrafted zellige tiling to the bespoke kitchen cabinetry and integrated reading nooks, each element was selected to age gracefully. Layered architectural and accent lighting emphasizes the bespoke fluted joinery, soft natural stone surfaces, and rich tactile textiles throughout.
+        </p>
+      </div>
+    </div>
+
+    <!-- 3-Column Highlights Grid -->
+    <div class="orc-cards-grid orc-grid-3col">
+      <div class="orc-card">
+        <div class="orc-card-top-tag">
+          <span class="orc-tag-num">01</span>
+          <span class="orc-tag-label">Principal Suite</span>
+        </div>
+        <h4 class="orc-card-title">Ensuite &amp; Millwork</h4>
+        <p class="orc-card-desc">
+          Bespoke twin arched mirrors, honed marble vanities, antique brass sanitaryware, and floor-to-ceiling joinery tailored for effortless storage.
+        </p>
+      </div>
+
+      <div class="orc-card">
+        <div class="orc-card-top-tag">
+          <span class="orc-tag-num">02</span>
+          <span class="orc-tag-label">Living Spaces</span>
+        </div>
+        <h4 class="orc-card-title">Art Deco Heritage</h4>
+        <p class="orc-card-desc">
+          Subtle archways and restored period proportions paired with tailored seating, a focal fireplace, and display cabinetry.
+        </p>
+      </div>
+
+      <div class="orc-card">
+        <div class="orc-card-top-tag">
+          <span class="orc-tag-num">03</span>
+          <span class="orc-tag-label">Materiality</span>
+        </div>
+        <h4 class="orc-card-title">Natural Finishes</h4>
+        <p class="orc-card-desc">
+          Tactile linen wallcoverings, hand-finished oak parquet, fluted glass, and warm organic textures crafted to stand the test of time.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. NEXT PROJECT / CLOSING SECTION -->
+<section class="pfd-next-project" id="next">
+  <div class="pfd-next-overlay"></div>
+  <div class="pfd-next-content">
+    <span class="pfd-next-eyebrow">Next Project</span>
+    <h2 class="pfd-next-title">Peninsula Apartment</h2>
+    <div>
+      <a class="orc-btn orc-btn-primary" href="#">
+        <span class="orc-btn-label">Take A Look</span>
+        <span class="orc-btn-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
