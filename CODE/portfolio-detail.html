@@ -1,18 +1,937 @@
 <!-- ==========================================================================
      ORAANJ INTERIOR DESIGN & BUILD — LONDON
-     PAGE: PORTFOLIO DETAIL — NOTTING HILL PROJECT
-     STYLES: style.css (scoped with .pfd- and .orc- prefixes)
-     WORDPRESS READY: Copy and paste directly into WordPress Custom HTML block
+     PAGE: PORTFOLIO DETAIL — Knightsbridge Residence
+     WORDPRESS READY: Complete self-contained HTML + Scoped CSS
+     Paste directly into a WordPress Custom HTML block or Elementor HTML widget
      ========================================================================== -->
 
-<!-- 1. HERO SECTION (Screenshot 1) -->
-<section class="pfd-hero" id="hero">
-  <div class="pfd-hero-overlay"></div>
+<style id="pfd-portfolio-styles">
+  /* -------------------------------------------------------------
+     0. IMPORTS & SCOPED RESET DEFENSE
+     ------------------------------------------------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
 
+  /* Prevent page horizontal blowout in any theme */
+  html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .pfd-hero, .pfd-hero *,
+  .pfd-description-section, .pfd-description-section *,
+  .pfd-bento-section, .pfd-bento-section *,
+  .pfd-slider-section, .pfd-slider-section *,
+  .pfd-details-section, .pfd-details-section *,
+  .pfd-next-project, .pfd-next-project * {
+    box-sizing: border-box !important;
+  }
+
+  /* Anti-wpautop Protection: Hide empty WordPress paragraph wrappers */
+  .pfd-hero > p,
+  .pfd-hero p:empty,
+  .pfd-hero br,
+  .pfd-hero-content > p:empty,
+  .pfd-description-section p:empty,
+  .pfd-bento-section p:empty,
+  .pfd-bento-grid > p,
+  .pfd-bento-grid br,
+  .pfd-bento-stack > p,
+  .pfd-bento-stack br,
+  .pfd-slider-section p:empty,
+  .pfd-slider-section > p,
+  .pfd-slider-section br,
+  .pfd-slider-viewport > p,
+  .pfd-slider-viewport br,
+  .pfd-slider-track > p,
+  .pfd-slider-track br,
+  .pfd-details-section p:empty,
+  .pfd-desc-grid > p,
+  .pfd-desc-grid br,
+  .orc-cards-grid > p,
+  .orc-cards-grid br {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+  }
+
+  /* -------------------------------------------------------------
+     1. CONTAINER & GENERAL UTILITIES
+     ------------------------------------------------------------- */
+  .pfd-container {
+    width: 100% !important;
+    max-width: 1420px !important;
+    margin: 0 auto !important;
+    padding-left: clamp(16px, 4vw, 48px) !important;
+    padding-right: clamp(16px, 4vw, 48px) !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Shared Brand Eyebrows & Rules */
+  .orc-eyebrow-wrap {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .orc-eyebrow {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.25em !important;
+    text-transform: uppercase !important;
+    color: #B94E1A !important;
+    display: inline-block !important;
+  }
+
+  .orc-rule {
+    width: 42px !important;
+    height: 2px !important;
+    background-color: #B94E1A !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Buttons */
+  .orc-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 11.5px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    border-radius: 9999px !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    cursor: pointer !important;
+    line-height: 1 !important;
+    box-sizing: border-box !important;
+  }
+
+  .orc-btn-outline {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #FFFFFF !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    padding: 13px 30px !important;
+  }
+
+  .orc-btn-outline:hover {
+    background-color: #B94E1A !important;
+    border-color: #B94E1A !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px) !important;
+  }
+
+  .orc-btn-primary {
+    background-color: #B94E1A !important;
+    color: #FFFFFF !important;
+    border: 1.5px solid #B94E1A !important;
+    padding: 14px 32px !important;
+  }
+
+  .orc-btn-primary:hover {
+    background-color: #963D13 !important;
+    border-color: #963D13 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px) !important;
+  }
+
+  .orc-btn-arrow {
+    font-size: 13px !important;
+    transition: transform 0.25s ease !important;
+  }
+
+  .orc-btn:hover .orc-btn-arrow {
+    transform: translateX(4px) !important;
+  }
+
+  /* -------------------------------------------------------------
+     2. HERO SECTION (Screenshot 1)
+     ------------------------------------------------------------- */
+  .pfd-hero {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: clamp(480px, 72vh, 720px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-color: #1A1816 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    padding: 60px 20px 36px 20px !important;
+    margin: 0 !important;
+  }
+
+  .pfd-hero-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(
+      180deg,
+      rgba(26, 24, 22, 0.45) 0%,
+      rgba(26, 24, 22, 0.25) 40%,
+      rgba(26, 24, 22, 0.40) 75%,
+      rgba(26, 24, 22, 0.65) 100%
+    ) !important;
+    pointer-events: none !important;
+  }
+
+  .pfd-header {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 25 !important;
+    padding: 22px clamp(16px, 4vw, 48px) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .pfd-brand {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: 1.15rem !important;
+    letter-spacing: 0.22em !important;
+    text-transform: uppercase !important;
+    color: #FFFFFF !important;
+    font-weight: 400 !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .pfd-hero-content {
+    position: relative !important;
+    z-index: 10 !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 920px !important;
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .pfd-hero-title {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: clamp(28px, 5.2vw, 60px) !important;
+    font-weight: 400 !important;
+    line-height: 1.15 !important;
+    letter-spacing: 0.03em !important;
+    text-transform: uppercase !important;
+    color: #FFFFFF !important;
+    margin: 0 0 clamp(16px, 2.5vw, 26px) 0 !important;
+    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.55) !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .orc-hero-actions-center {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 16px auto 0 auto !important;
+  }
+
+  .pfd-scroll-hint {
+    position: absolute !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 10 !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.22em !important;
+    text-transform: uppercase !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 6px !important;
+    pointer-events: none !important;
+  }
+
+  .pfd-scroll-hint::after {
+    content: '' !important;
+    width: 1.5px !important;
+    height: 18px !important;
+    background-color: #B94E1A !important;
+  }
+
+  /* -------------------------------------------------------------
+     3. DESCRIPTION SECTION (Screenshot 2)
+     ------------------------------------------------------------- */
+  .pfd-description-section {
+    position: relative !important;
+    background-color: #FFFFFF !important;
+    padding: clamp(48px, 6vw, 90px) 0 !important;
+    width: 100% !important;
+  }
+
+  .pfd-desc-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: clamp(28px, 5vw, 72px) !important;
+    align-items: start !important;
+  }
+
+  .pfd-desc-col {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .pfd-desc-heading {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: clamp(24px, 2.6vw, 38px) !important;
+    font-weight: 400 !important;
+    line-height: 1.28 !important;
+    color: #1A1816 !important;
+    margin: 0 !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .pfd-desc-heading em {
+    font-style: italic !important;
+    font-weight: 400 !important;
+    color: #B94E1A !important;
+  }
+
+  .pfd-caps {
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    font-weight: 400 !important;
+  }
+
+  .pfd-desc-text {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: clamp(14.5px, 1.1vw, 16.5px) !important;
+    line-height: 1.8 !important;
+    color: #5E5953 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  /* -------------------------------------------------------------
+     4. BENTO GALLERY SECTION (Screenshot 3)
+     ------------------------------------------------------------- */
+  .pfd-bento-section {
+    position: relative !important;
+    background-color: #FFFFFF !important;
+    padding-bottom: clamp(48px, 6vw, 90px) !important;
+    width: 100% !important;
+  }
+
+  .pfd-bento-grid {
+    display: grid !important;
+    grid-template-columns: 1.35fr 1fr 1fr !important;
+    gap: clamp(12px, 1.8vw, 24px) !important;
+    align-items: stretch !important;
+  }
+
+  .pfd-bento-card {
+    position: relative !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    background-color: #F5EFEB !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06) !important;
+  }
+
+  .pfd-bento-card img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  .pfd-bento-card:hover img {
+    transform: scale(1.03) !important;
+  }
+
+  .pfd-bento-tall {
+    height: 620px !important;
+  }
+
+  .pfd-bento-stack {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: clamp(12px, 1.8vw, 24px) !important;
+    height: 620px !important;
+  }
+
+  .pfd-bento-small {
+    flex: 1 1 0 !important;
+    min-height: 0 !important;
+  }
+
+  /* -------------------------------------------------------------
+     5. PURE CSS SLIDER SECTION (Screenshot 4 — 6 Slides)
+     ------------------------------------------------------------- */
+  .pfd-slider-section {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: #1A1816 !important;
+    overflow: hidden !important;
+  }
+
+  .pfd-slider-input {
+    position: absolute !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+  }
+
+  .pfd-slider-viewport {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: clamp(380px, 68vh, 680px) !important;
+    overflow: hidden !important;
+  }
+
+  .pfd-slider-track {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: 600% !important;
+    min-width: 600% !important;
+    max-width: 600% !important;
+    height: 100% !important;
+    transition: transform 0.55s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    will-change: transform !important;
+  }
+
+  .pfd-slide {
+    width: 16.666667% !important;
+    min-width: 16.666667% !important;
+    max-width: 16.666667% !important;
+    flex: 0 0 16.666667% !important;
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+    height: 100% !important;
+    position: relative !important;
+  }
+
+  .pfd-slide-bg {
+    width: 100% !important;
+    height: 100% !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+
+  /* Slider Radio Translations (6 Slides: 0%, -16.666%, -33.333%, -50%, -66.666%, -83.333%) */
+  #pfd-slide-1:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(0%) !important; }
+  #pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-16.666667%) !important; }
+  #pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-33.333333%) !important; }
+  #pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-50%) !important; }
+  #pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-66.666667%) !important; }
+  #pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-83.333333%) !important; }
+
+  /* Navigation Arrows Overlay */
+  .pfd-slider-controls {
+    position: absolute !important;
+    bottom: 50px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 20 !important;
+    pointer-events: none !important;
+  }
+
+  .pfd-arrow-pair {
+    display: none !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  #pfd-slide-1:checked ~ .pfd-slider-viewport .pfd-arrow-pair-1 { display: flex !important; }
+  #pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-arrow-pair-2 { display: flex !important; }
+  #pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-arrow-pair-3 { display: flex !important; }
+  #pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-arrow-pair-4 { display: flex !important; }
+  #pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-arrow-pair-5 { display: flex !important; }
+  #pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-arrow-pair-6 { display: flex !important; }
+
+  .pfd-arrow-btn {
+    pointer-events: auto !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    background-color: rgba(26, 24, 22, 0.65) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+    user-select: none !important;
+    position: relative !important;
+  }
+
+  .pfd-arrow-btn:hover {
+    background-color: #B94E1A !important;
+    border-color: #B94E1A !important;
+    transform: scale(1.08) !important;
+  }
+
+  /* Built-in CSS Chevron Arrows (Render 100% even if WP strips SVG) */
+  .pfd-arrow-btn::before {
+    content: '' !important;
+    display: block !important;
+    width: 9px !important;
+    height: 9px !important;
+    border-top: 2px solid #FFFFFF !important;
+    border-right: 2px solid #FFFFFF !important;
+    position: absolute !important;
+  }
+
+  .pfd-arrow-btn.prev::before {
+    transform: rotate(-135deg) !important;
+    left: 18px !important;
+  }
+
+  .pfd-arrow-btn.next::before {
+    transform: rotate(45deg) !important;
+    right: 18px !important;
+  }
+
+  .pfd-arrow-btn svg {
+    display: none !important;
+  }
+
+  /* Pagination Dots */
+  .pfd-slider-dots {
+    position: absolute !important;
+    bottom: 18px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 20 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    background: rgba(26, 24, 22, 0.55) !important;
+    padding: 6px 14px !important;
+    border-radius: 9999px !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+  }
+
+  .pfd-dot {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    background-color: rgba(255, 255, 255, 0.45) !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+    display: block !important;
+  }
+
+  .pfd-dot:hover {
+    background-color: #FFFFFF !important;
+  }
+
+  #pfd-slide-1:checked ~ .pfd-slider-viewport .pfd-dot-1,
+  #pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-dot-2,
+  #pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-dot-3,
+  #pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-dot-4,
+  #pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-dot-5,
+  #pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-dot-6 {
+    background-color: #B94E1A !important;
+    transform: scale(1.3) !important;
+  }
+
+  /* -------------------------------------------------------------
+     6. PROJECT DETAILS & CRAFTSMANSHIP (Below Slider)
+     ------------------------------------------------------------- */
+  .pfd-details-section {
+    position: relative !important;
+    background-color: #FFFFFF !important;
+    padding: clamp(56px, 7vw, 96px) 0 !important;
+    width: 100% !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+  }
+
+  .pfd-details-intro {
+    max-width: 880px !important;
+    margin-bottom: clamp(32px, 4vw, 48px) !important;
+  }
+
+  .orc-title {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: clamp(24px, 3vw, 40px) !important;
+    font-weight: 400 !important;
+    line-height: 1.25 !important;
+    color: #1A1816 !important;
+    margin: 0 0 16px 0 !important;
+  }
+
+  .orc-lead {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: clamp(15.5px, 1.2vw, 18px) !important;
+    line-height: 1.7 !important;
+    color: #1A1816 !important;
+    font-weight: 500 !important;
+    margin: 0 0 16px 0 !important;
+  }
+
+  .pfd-details-narrative .orc-body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: clamp(14.5px, 1.05vw, 16px) !important;
+    line-height: 1.75 !important;
+    color: #5E5953 !important;
+    margin: 0 !important;
+  }
+
+  /* 3-Column Highlights Grid */
+  .orc-cards-grid,
+  .orc-grid-3col {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: clamp(16px, 2.5vw, 32px) !important;
+    margin-top: 36px !important;
+  }
+
+  .orc-card {
+    background-color: #FFF6F2 !important;
+    border: 1px solid rgba(185, 78, 26, 0.15) !important;
+    border-radius: 8px !important;
+    padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 30px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  .orc-card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 30px rgba(185, 78, 26, 0.12) !important;
+    border-color: #B94E1A !important;
+  }
+
+  .orc-card-top-tag {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .orc-tag-num {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #B94E1A !important;
+  }
+
+  .orc-tag-label {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.18em !important;
+    text-transform: uppercase !important;
+    color: #8C8882 !important;
+  }
+
+  .orc-card-title {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: clamp(18px, 1.5vw, 22px) !important;
+    font-weight: 500 !important;
+    line-height: 1.3 !important;
+    color: #1A1816 !important;
+    margin: 0 0 12px 0 !important;
+  }
+
+  .orc-card-desc {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+    color: #5E5953 !important;
+    margin: 0 !important;
+  }
+
+  /* -------------------------------------------------------------
+     7. NEXT PROJECT / CLOSING SECTION
+     ------------------------------------------------------------- */
+  .pfd-next-project {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: clamp(340px, 45vh, 460px) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-color: #1A1816 !important;
+    overflow: hidden !important;
+    padding: 60px 20px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .pfd-next-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: rgba(26, 24, 22, 0.6) !important;
+    pointer-events: none !important;
+  }
+
+  .pfd-next-content {
+    position: relative !important;
+    z-index: 10 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    max-width: 600px !important;
+  }
+
+  .pfd-next-eyebrow {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.28em !important;
+    text-transform: uppercase !important;
+    color: #FFFFFF !important;
+    margin-bottom: 12px !important;
+    display: block !important;
+    opacity: 0.9 !important;
+  }
+
+  .pfd-next-title {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: clamp(26px, 4.2vw, 48px) !important;
+    font-weight: 400 !important;
+    color: #FFFFFF !important;
+    margin: 0 0 24px 0 !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  /* -------------------------------------------------------------
+     8. RESPONSIVE MOBILE MEDIA QUERIES (@media <= 768px)
+     ------------------------------------------------------------- */
+  @media screen and (max-width: 768px) {
+    /* Hero: Compact top space, zero excessive padding */
+    .pfd-hero {
+      min-height: 480px !important;
+      padding: 56px 16px 28px 16px !important;
+    }
+
+    .pfd-header {
+      padding: 14px 16px !important;
+    }
+
+    .pfd-brand {
+      font-size: 1rem !important;
+      letter-spacing: 0.16em !important;
+    }
+
+    .pfd-header .orc-btn {
+      padding: 8px 16px !important;
+      font-size: 10px !important;
+    }
+
+    .pfd-hero-title {
+      font-size: clamp(24px, 7vw, 36px) !important;
+      margin-bottom: 16px !important;
+      line-height: 1.2 !important;
+    }
+
+    .pfd-hero .orc-btn-outline {
+      padding: 12px 22px !important;
+      font-size: 11px !important;
+      width: 100% !important;
+      max-width: 290px !important;
+      white-space: normal !important;
+      text-align: center !important;
+    }
+
+    .pfd-scroll-hint {
+      bottom: 12px !important;
+    }
+
+    /* Description Section */
+    .pfd-description-section {
+      padding: 44px 0 !important;
+    }
+
+    .pfd-desc-grid {
+      grid-template-columns: 1fr !important;
+      gap: 22px !important;
+    }
+
+    .pfd-desc-heading {
+      font-size: clamp(20px, 5.5vw, 28px) !important;
+      line-height: 1.35 !important;
+    }
+
+    .pfd-desc-text {
+      gap: 14px !important;
+      font-size: 15px !important;
+      line-height: 1.7 !important;
+    }
+
+    /* Bento Gallery: 1 large card on top, 2x2 grid below */
+    .pfd-bento-section {
+      padding-bottom: 44px !important;
+    }
+
+    .pfd-bento-grid {
+      grid-template-columns: 1fr 1fr !important;
+      gap: 10px !important;
+    }
+
+    .pfd-bento-tall {
+      grid-column: 1 / -1 !important;
+      height: clamp(220px, 58vw, 300px) !important;
+    }
+
+    .pfd-bento-stack {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 10px !important;
+      height: auto !important;
+    }
+
+    .pfd-bento-small {
+      flex: none !important;
+      width: 100% !important;
+      height: clamp(120px, 32vw, 160px) !important;
+      min-height: clamp(120px, 32vw, 160px) !important;
+    }
+
+    /* Pure CSS Slider */
+    .pfd-slider-viewport {
+      height: clamp(240px, 56vw, 340px) !important;
+      min-height: 240px !important;
+    }
+
+    .pfd-slider-controls {
+      bottom: 40px !important;
+    }
+
+    .pfd-arrow-pair {
+      gap: 14px !important;
+    }
+
+    .pfd-arrow-btn {
+      width: 38px !important;
+      height: 38px !important;
+    }
+
+    .pfd-arrow-btn.prev::before {
+      left: 15px !important;
+      width: 8px !important;
+      height: 8px !important;
+    }
+
+    .pfd-arrow-btn.next::before {
+      right: 15px !important;
+      width: 8px !important;
+      height: 8px !important;
+    }
+
+    .pfd-slider-dots {
+      bottom: 12px !important;
+      padding: 5px 12px !important;
+      gap: 7px !important;
+    }
+
+    .pfd-dot {
+      width: 6px !important;
+      height: 6px !important;
+    }
+
+    /* 3-Column Highlights Grid -> Stacks to 1 Col */
+    .pfd-details-section {
+      padding: 44px 0 !important;
+    }
+
+    .orc-cards-grid,
+    .orc-grid-3col {
+      grid-template-columns: 1fr !important;
+      gap: 16px !important;
+      margin-top: 24px !important;
+    }
+
+    .orc-card {
+      padding: 22px 18px !important;
+    }
+
+    /* Next Project Section */
+    .pfd-next-project {
+      min-height: 260px !important;
+      padding: 44px 16px !important;
+    }
+
+    .pfd-next-title {
+      font-size: clamp(22px, 6.5vw, 32px) !important;
+      margin-bottom: 18px !important;
+    }
+  }
+
+  /* -------------------------------------------------------------
+     9. SMALL MOBILE MEDIA QUERIES (@media <= 480px)
+     ------------------------------------------------------------- */
+  @media screen and (max-width: 480px) {
+    .pfd-hero {
+      min-height: 440px !important;
+      padding: 52px 14px 24px 14px !important;
+    }
+
+    .pfd-brand {
+      font-size: 0.92rem !important;
+      letter-spacing: 0.14em !important;
+    }
+
+    .pfd-header .orc-btn {
+      padding: 6px 12px !important;
+      font-size: 9.5px !important;
+    }
+
+    .pfd-bento-tall {
+      height: clamp(200px, 56vw, 260px) !important;
+    }
+
+    .pfd-bento-small {
+      height: clamp(110px, 30vw, 140px) !important;
+      min-height: clamp(110px, 30vw, 140px) !important;
+    }
+
+    .pfd-slider-viewport {
+      height: clamp(220px, 54vw, 300px) !important;
+      min-height: 220px !important;
+    }
+  }
+</style>
+
+<!-- 1. HERO SECTION (Screenshot 1 — Editable Background Image) -->
+<section id="hero" class="pfd-hero" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_taupe_paneling_and_velvet_seating.jpeg');">
+  <div class="pfd-hero-overlay"></div>
+  
   <!-- Hero Top Bar (Anchored safely inside hero, zero conflict with WP header) -->
   <div class="pfd-header">
     <div class="pfd-brand">Portfolio</div>
-    <a href="#" class="orc-btn orc-btn-outline" style="border-color: rgba(255, 255, 255, 0.4) !important; color: #FFFFFF !important; padding: 10px 22px !important; font-size: 11px !important;">
+    <a class="orc-btn orc-btn-outline" style="border-color: rgba(255, 255, 255, 0.4) !important; color: #FFFFFF !important; padding: 10px 22px !important; font-size: 11px !important;" href="https://www.oraanj-interiors.co.uk/portfolio">
       <span class="orc-btn-label">All Projects</span>
     </a>
   </div>
@@ -21,7 +940,7 @@
     <div class="orc-eyebrow-wrap" style="justify-content: center; margin-bottom: 14px;">
       <span class="orc-eyebrow" style="color: #FFFFFF !important; letter-spacing: 0.35em !important; font-size: 12px !important; text-shadow: 0 2px 10px rgba(0,0,0,0.6);">London</span>
     </div>
-    <h1 class="pfd-hero-title">Notting Hill</h1>
+    <h1 class="pfd-hero-title">Knightsbridge Residence</h1>
     <div class="orc-hero-actions orc-hero-actions-center">
       <a class="orc-btn orc-btn-outline" href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true">
         <span class="orc-btn-label">Enquire About Your Project</span>
@@ -35,256 +954,172 @@
 </section>
 
 <!-- 2. DESCRIPTION SECTION (Screenshot 2) -->
-<section class="pfd-description-section" id="overview">
+<section id="overview" class="pfd-description-section">
   <div class="pfd-container">
     <div class="pfd-desc-grid">
       <!-- Left Column: Editorial Heading with Brand Eyebrow & Accent Rule -->
       <div class="pfd-desc-col">
         <div class="orc-eyebrow-wrap">
-          <span class="orc-eyebrow">Notting Hill Residence</span>
+          <span class="orc-eyebrow">Knightsbridge Residence</span>
         </div>
         <div class="orc-rule"></div>
         <h2 class="pfd-desc-heading">
-          <em>an</em> <span class="pfd-caps">Art Deco family home</span> <em>reimagined with</em><br>
-          <span class="pfd-caps">timeless elegance</span>
+          <em>A</em> <span class="pfd-caps">refined contemporary home shaped by</span> <em>quiet luxury</em> <span class="pfd-caps">and considered detail</span>
         </h2>
       </div>
 
       <!-- Right Column: Narrative Copy with Site-wide Font and Color -->
       <div class="pfd-desc-col pfd-desc-text">
-        <p>
-          This beautifully renovated 1940s Art Deco family home in Notting Hill was designed for a young family, balancing timeless interiors with the practicalities of everyday living. Rich in colour, pattern and natural materials, the design celebrates craftsmanship and considered detailing, creating spaces that feel warm, inviting and made to stand the test of time.
-        </p>
-        <p>
-          A layered palette flows throughout the home, with bespoke joinery, thoughtful marble detailing and handcrafted finishes creating depth and character. The children’s bedrooms continue the home’s timeless aesthetic, allowing them to adapt naturally as the family grows.
-        </p>
+        <p>This sophisticated Knightsbridge residence was designed to create a calm and elegant home for modern family living. A restrained palette of taupe, warm timber and muted olive tones brings softness throughout the interiors, while carefully selected furnishings and statement lighting add depth, character and a sense of understated luxury.</p>
+        <p>Bespoke joinery, layered lighting and richly textured finishes create continuity from the living and dining spaces through to the kitchen, bedrooms and bathroom. Sculptural furniture, marble surfaces and subtle brass accents complete the scheme, balancing refined detailing with a welcoming and comfortable atmosphere.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- 3. IMAGE BENTO SECTION (Screenshot 3) -->
-<section class="pfd-bento-section" id="gallery">
+<section id="gallery" class="pfd-bento-section">
   <div class="pfd-container">
     <div class="pfd-bento-grid">
-      
       <!-- Left Column: Large Tall Hero Portrait Image -->
       <div class="pfd-bento-card pfd-bento-tall">
-        <img 
-          src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/Website-Image-820-x-930.png" 
-          alt="Notting Hill Arched Hallway with sconces and seating" 
-          loading="lazy"
-        />
+        <img src="https://cdn-ilelmon.nitrocdn.com/SNUkwGswmSJnfFAUaNrwiXoMZeQduRKo/assets/images/optimized/rev-8eac502/oraanj-interiors.co.uk/projects/wp-content/uploads/2025/09/Elegant-Material-Palette-for-Modern-Living-Spaces.webp" alt="Notting Hill Arched Hallway with sconces and seating" />
       </div>
 
       <!-- Center Column: Two Stacked Images -->
       <div class="pfd-bento-stack">
         <div class="pfd-bento-card pfd-bento-small">
-          <img 
-            src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/1.png" 
-            alt="Dining Room Corner with artwork and chandelier" 
-            loading="lazy"
-          />
+          <img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_corner_olive_green_and_taupe_accents.jpeg" alt="Dining Room Corner with artwork and chandelier" />
         </div>
         <div class="pfd-bento-card pfd-bento-small">
-          <img 
-            src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/2.png" 
-            alt="Reading Nook with cushioned bench and botanical prints" 
-            loading="lazy"
-          />
+          <img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_dining_table_with_marquina_marble_and_brass_vases.jpeg" alt="Reading Nook with cushioned bench and botanical prints" />
         </div>
       </div>
 
       <!-- Right Column: Two Stacked Images -->
       <div class="pfd-bento-stack">
         <div class="pfd-bento-card pfd-bento-small">
-          <img 
-            src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/3.png" 
-            alt="Arched dressing hallway with custom wardrobes" 
-            loading="lazy"
-          />
+          <img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_taupe_sofas_and_ottoman.jpeg" alt="Arched dressing hallway with custom wardrobes" />
         </div>
         <div class="pfd-bento-card pfd-bento-small">
-          <img 
-            src="https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/06/4.png" 
-            alt="Artisan carved mirror with candle and floral arrangement" 
-            loading="lazy"
-          />
+          <img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_bedroom_taupe_and_gold.jpeg" alt="Artisan carved mirror with candle and floral arrangement" />
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- 4. PURE CSS SLIDER SECTION (Screenshot 4 — WordPress Immune) -->
-<section class="pfd-slider-section" id="slider">
-  <!-- 8 Radio buttons controlling active slide index (inline continuous block prevents wpautop wrappers) -->
+<!-- 4. PURE CSS SLIDER SECTION (Screenshot 4 — WordPress Immune, 6 Slides) -->
+<section id="slider" class="pfd-slider-section">
+  <!-- 6 Radio buttons controlling active slide index -->
   <div class="pfd-slider-inputs-wrap" style="display: contents;">
-    <input type="radio" name="pfd-slider-group" id="pfd-slide-1" class="pfd-slider-input" checked><input type="radio" name="pfd-slider-group" id="pfd-slide-2" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-3" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-4" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-5" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-6" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-7" class="pfd-slider-input"><input type="radio" name="pfd-slider-group" id="pfd-slide-8" class="pfd-slider-input">
+    <input id="pfd-slide-1" class="pfd-slider-input" checked="checked" name="pfd-slider-group" type="radio" />
+    <input id="pfd-slide-2" class="pfd-slider-input" name="pfd-slider-group" type="radio" />
+    <input id="pfd-slide-3" class="pfd-slider-input" name="pfd-slider-group" type="radio" />
+    <input id="pfd-slide-4" class="pfd-slider-input" name="pfd-slider-group" type="radio" />
+    <input id="pfd-slide-5" class="pfd-slider-input" name="pfd-slider-group" type="radio" />
+    <input id="pfd-slide-6" class="pfd-slider-input" name="pfd-slider-group" type="radio" />
   </div>
 
-  <div class="pfd-slider-viewport">
-    <!-- Horizontal Sliding Track -->
-    <div class="pfd-slider-track" style="display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; width: 800% !important; min-width: 800% !important; max-width: 800% !important; height: 100% !important;">
-      <div class="pfd-slide pfd-slide-1" style="width: 12.5% !important; min-width: 12.5% !important; max-width: 12.5% !important; flex: 0 0 12.5% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/1-1800x1083.png');"></div>
+  <div class="pfd-slider-viewport" style="position: relative !important; width: 100% !important; max-width: 100% !important; overflow: hidden !important;">
+    <!-- Horizontal Sliding Track (6 Slides = 600% width, 16.666667% each) -->
+    <div class="pfd-slider-track" style="display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; width: 600% !important; min-width: 600% !important; max-width: 600% !important; height: 100% !important;">
+      <div class="pfd-slide pfd-slide-1" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_taupe_paneling_and_velvet_seating.jpeg');"></div>
       </div>
-      <div class="pfd-slide pfd-slide-2" style="width: 12.5% !important; min-width: 12.5% !important; max-width: 12.5% !important; flex: 0 0 12.5% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/2-1800x1083.png');"></div>
+      <div class="pfd-slide pfd-slide-2" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_master_bedroom_taupe_and_gold_with_wood_paneling.jpeg');"></div>
       </div>
-      <div class="pfd-slide pfd-slide-3" style="width: 12.5% !important; min-width: 12.5% !important; max-width: 12.5% !important; flex: 0 0 12.5% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/4-1800x1083.png');"></div>
+      <div class="pfd-slide pfd-slide-3" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_taupe_and_gold_bathroom_with_freestanding_tub.jpeg');"></div>
       </div>
-      <div class="pfd-slide pfd-slide-4" style="width: 12.5% !important; min-width: 12.5% !important; max-width: 12.5% !important; flex: 0 0 12.5% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/3-1800x1083.png');"></div>
+      <div class="pfd-slide pfd-slide-4" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_taupe_and_bronze_kitchen_with_marble_island_and_crystal_chandelier.jpeg');"></div>
       </div>
-      <div class="pfd-slide pfd-slide-5" style="width: 12.5% !important; min-width: 12.5% !important; max-width: 12.5% !important; flex: 0 0 12.5% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/Website-hero-image-6-1800x1083.png');"></div>
+      <div class="pfd-slide pfd-slide-5" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_formal_seating_taupe_and_olive.jpeg');"></div>
       </div>
-      <div class="pfd-slide pfd-slide-6" style="width: 12.5% !important; min-width: 12.5% !important; max-width: 12.5% !important; flex: 0 0 12.5% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/5-1800x1083.png');"></div>
-      </div>
-      <div class="pfd-slide pfd-slide-7" style="width: 12.5% !important; min-width: 12.5% !important; max-width: 12.5% !important; flex: 0 0 12.5% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/6-1800x1083.png');"></div>
-      </div>
-      <div class="pfd-slide pfd-slide-8" style="width: 12.5% !important; min-width: 12.5% !important; max-width: 12.5% !important; flex: 0 0 12.5% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.sophiepatersoninteriors.com/wp-content/uploads/2026/07/8-1800x1083.png');"></div>
+      <div class="pfd-slide pfd-slide-6" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
+        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_dining_open_plan_brass_screen.jpeg');"></div>
       </div>
     </div>
 
-    <!-- Centered Navigation Arrows (< and >) — Pure CSS + Robust Fallback -->
+    <!-- Centered Navigation Arrows (< and >) — Seamless 6-Slide Loop -->
     <div class="pfd-slider-controls">
-      <!-- Active Slide 1: Prev -> 8, Next -> 2 -->
+      <!-- Slide 1: Prev -> 6, Next -> 2 -->
       <div class="pfd-arrow-pair pfd-arrow-pair-1">
-        <label for="pfd-slide-8" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </label>
-        <label for="pfd-slide-2" class="pfd-arrow-btn next" aria-label="Next Slide">
-          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </label>
+        <label class="pfd-arrow-btn prev" for="pfd-slide-6" aria-label="Previous Slide"></label>
+        <label class="pfd-arrow-btn next" for="pfd-slide-2" aria-label="Next Slide"></label>
       </div>
-
-      <!-- Active Slide 2: Prev -> 1, Next -> 3 -->
+      <!-- Slide 2: Prev -> 1, Next -> 3 -->
       <div class="pfd-arrow-pair pfd-arrow-pair-2">
-        <label for="pfd-slide-1" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </label>
-        <label for="pfd-slide-3" class="pfd-arrow-btn next" aria-label="Next Slide">
-          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </label>
+        <label class="pfd-arrow-btn prev" for="pfd-slide-1" aria-label="Previous Slide"></label>
+        <label class="pfd-arrow-btn next" for="pfd-slide-3" aria-label="Next Slide"></label>
       </div>
-
-      <!-- Active Slide 3: Prev -> 2, Next -> 4 -->
+      <!-- Slide 3: Prev -> 2, Next -> 4 -->
       <div class="pfd-arrow-pair pfd-arrow-pair-3">
-        <label for="pfd-slide-2" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </label>
-        <label for="pfd-slide-4" class="pfd-arrow-btn next" aria-label="Next Slide">
-          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </label>
+        <label class="pfd-arrow-btn prev" for="pfd-slide-2" aria-label="Previous Slide"></label>
+        <label class="pfd-arrow-btn next" for="pfd-slide-4" aria-label="Next Slide"></label>
       </div>
-
-      <!-- Active Slide 4: Prev -> 3, Next -> 5 -->
+      <!-- Slide 4: Prev -> 3, Next -> 5 -->
       <div class="pfd-arrow-pair pfd-arrow-pair-4">
-        <label for="pfd-slide-3" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </label>
-        <label for="pfd-slide-5" class="pfd-arrow-btn next" aria-label="Next Slide">
-          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </label>
+        <label class="pfd-arrow-btn prev" for="pfd-slide-3" aria-label="Previous Slide"></label>
+        <label class="pfd-arrow-btn next" for="pfd-slide-5" aria-label="Next Slide"></label>
       </div>
-
-      <!-- Active Slide 5: Prev -> 4, Next -> 6 -->
+      <!-- Slide 5: Prev -> 4, Next -> 6 -->
       <div class="pfd-arrow-pair pfd-arrow-pair-5">
-        <label for="pfd-slide-4" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </label>
-        <label for="pfd-slide-6" class="pfd-arrow-btn next" aria-label="Next Slide">
-          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </label>
+        <label class="pfd-arrow-btn prev" for="pfd-slide-4" aria-label="Previous Slide"></label>
+        <label class="pfd-arrow-btn next" for="pfd-slide-6" aria-label="Next Slide"></label>
       </div>
-
-      <!-- Active Slide 6: Prev -> 5, Next -> 7 -->
+      <!-- Slide 6: Prev -> 5, Next -> 1 -->
       <div class="pfd-arrow-pair pfd-arrow-pair-6">
-        <label for="pfd-slide-5" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </label>
-        <label for="pfd-slide-7" class="pfd-arrow-btn next" aria-label="Next Slide">
-          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </label>
-      </div>
-
-      <!-- Active Slide 7: Prev -> 6, Next -> 8 -->
-      <div class="pfd-arrow-pair pfd-arrow-pair-7">
-        <label for="pfd-slide-6" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </label>
-        <label for="pfd-slide-8" class="pfd-arrow-btn next" aria-label="Next Slide">
-          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </label>
-      </div>
-
-      <!-- Active Slide 8: Prev -> 7, Next -> 1 -->
-      <div class="pfd-arrow-pair pfd-arrow-pair-8">
-        <label for="pfd-slide-7" class="pfd-arrow-btn prev" aria-label="Previous Slide">
-          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </label>
-        <label for="pfd-slide-1" class="pfd-arrow-btn next" aria-label="Next Slide">
-          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </label>
+        <label class="pfd-arrow-btn prev" for="pfd-slide-5" aria-label="Previous Slide"></label>
+        <label class="pfd-arrow-btn next" for="pfd-slide-1" aria-label="Next Slide"></label>
       </div>
     </div>
 
-    <!-- Pagination Dots Indicators (Bottom Right, matching Screenshot 4) -->
+    <!-- Centered Pagination Dots (6 Dots) -->
     <div class="pfd-slider-dots">
-      <label for="pfd-slide-1" class="pfd-dot pfd-dot-1" title="Slide 1"></label>
-      <label for="pfd-slide-2" class="pfd-dot pfd-dot-2" title="Slide 2"></label>
-      <label for="pfd-slide-3" class="pfd-dot pfd-dot-3" title="Slide 3"></label>
-      <label for="pfd-slide-4" class="pfd-dot pfd-dot-4" title="Slide 4"></label>
-      <label for="pfd-slide-5" class="pfd-dot pfd-dot-5" title="Slide 5"></label>
-      <label for="pfd-slide-6" class="pfd-dot pfd-dot-6" title="Slide 6"></label>
-      <label for="pfd-slide-7" class="pfd-dot pfd-dot-7" title="Slide 7"></label>
-      <label for="pfd-slide-8" class="pfd-dot pfd-dot-8" title="Slide 8"></label>
+      <label class="pfd-dot pfd-dot-1" for="pfd-slide-1" title="Slide 1"></label>
+      <label class="pfd-dot pfd-dot-2" for="pfd-slide-2" title="Slide 2"></label>
+      <label class="pfd-dot pfd-dot-3" for="pfd-slide-3" title="Slide 3"></label>
+      <label class="pfd-dot pfd-dot-4" for="pfd-slide-4" title="Slide 4"></label>
+      <label class="pfd-dot pfd-dot-5" for="pfd-slide-5" title="Slide 5"></label>
+      <label class="pfd-dot pfd-dot-6" for="pfd-slide-6" title="Slide 6"></label>
     </div>
-
   </div>
 </section>
 
 <!-- Non-intrusive WP click guard (ensures clicks always register even if WP theme hooks labels) -->
 <script>
-(function(){
-  var slider = document.getElementById('slider');
-  if (!slider) return;
-  slider.addEventListener('click', function(e) {
-    var label = e.target.closest('label[for]');
-    if (!label) return;
-    var targetId = label.getAttribute('for');
-    var radio = document.getElementById(targetId);
-    if (radio && !radio.checked) {
-      radio.checked = true;
-      try { radio.dispatchEvent(new Event('change', { bubbles: true })); } catch(err){}
-    }
-  });
-})();
+  (function () {
+    var slider = document.getElementById('slider');
+    if (!slider) return;
+    slider.addEventListener('click', function (e) {
+      var label = e.target.closest('label[for]');
+      if (!label) return;
+      var targetId = label.getAttribute('for');
+      var radio = document.getElementById(targetId);
+      if (radio && !radio.checked) {
+        radio.checked = true;
+        try { radio.dispatchEvent(new Event('change', { bubbles: true })); } catch (err) { }
+      }
+    });
+  })();
 </script>
 
 <!-- 5. PROJECT DETAILS & CRAFTSMANSHIP (Below Slider) -->
-<section class="pfd-details-section orc-section orc-bg-white orc-border-top" id="details">
+<section id="details" class="pfd-details-section">
   <div class="pfd-container">
     <div class="pfd-details-intro">
       <div class="orc-eyebrow-wrap">
         <span class="orc-eyebrow">Design Narrative &amp; Detailing</span>
       </div>
       <div class="orc-rule"></div>
-      <h2 class="orc-title">Artisan Detailing Tailored to Modern Family Life</h2>
-      <p class="orc-lead">
-        Beyond the architectural flow, every room in the Notting Hill home balances tactile refinement with the functional practicalities of busy family routines.
-      </p>
+      <h2 class="orc-title">Layered Luxury Designed for Contemporary Family Living</h2>
+      <p class="orc-lead">Every space within the Knightsbridge residence was considered as part of a cohesive interior, combining refined detailing with the comfort and practicality required for everyday family life.</p>
       <div class="pfd-details-narrative">
-        <p class="orc-body">
-          From the principal ensuite featuring custom twin arched mirrors and handcrafted zellige tiling to the bespoke kitchen cabinetry and integrated reading nooks, each element was selected to age gracefully. Layered architectural and accent lighting emphasizes the bespoke fluted joinery, soft natural stone surfaces, and rich tactile textiles throughout.
-        </p>
+        <p class="orc-body">From the sculptural lighting and bespoke wall panelling to the carefully integrated joinery and generous marble surfaces, each element contributes to a calm and sophisticated atmosphere. Warm timber, tactile fabrics, brushed brass accents and muted olive tones bring depth to the neutral palette, while carefully framed artwork and decorative objects add personality throughout.</p>
       </div>
     </div>
 
@@ -295,39 +1130,33 @@
           <span class="orc-tag-num">01</span>
           <span class="orc-tag-label">Principal Suite</span>
         </div>
-        <h4 class="orc-card-title">Ensuite &amp; Millwork</h4>
-        <p class="orc-card-desc">
-          Bespoke twin arched mirrors, honed marble vanities, antique brass sanitaryware, and floor-to-ceiling joinery tailored for effortless storage.
-        </p>
+        <h4 class="orc-card-title">Bespoke Joinery</h4>
+        <p class="orc-card-desc">Fluted wall panelling, integrated shelving and tailored cabinetry create architectural rhythm while providing practical storage throughout the home.</p>
       </div>
 
       <div class="orc-card">
         <div class="orc-card-top-tag">
           <span class="orc-tag-num">02</span>
-          <span class="orc-tag-label">Living Spaces</span>
+          <span class="orc-tag-label">Refined Living Spaces</span>
         </div>
         <h4 class="orc-card-title">Art Deco Heritage</h4>
-        <p class="orc-card-desc">
-          Subtle archways and restored period proportions paired with tailored seating, a focal fireplace, and display cabinetry.
-        </p>
+        <p class="orc-card-desc">Layered furnishings, statement lighting and considered proportions create welcoming spaces designed for both relaxed family moments and entertaining.</p>
       </div>
 
       <div class="orc-card">
         <div class="orc-card-top-tag">
           <span class="orc-tag-num">03</span>
-          <span class="orc-tag-label">Materiality</span>
+          <span class="orc-tag-label">Timeless Materiality</span>
         </div>
         <h4 class="orc-card-title">Natural Finishes</h4>
-        <p class="orc-card-desc">
-          Tactile linen wallcoverings, hand-finished oak parquet, fluted glass, and warm organic textures crafted to stand the test of time.
-        </p>
+        <p class="orc-card-desc">Natural stone, warm timber, textured fabrics and subtle metallic finishes create a sophisticated material palette designed to feel enduring rather than trend-led.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 6. NEXT PROJECT / CLOSING SECTION -->
-<section class="pfd-next-project" id="next">
+<!-- 6. NEXT PROJECT / CLOSING SECTION (Editable Background Image) -->
+<section id="next" class="pfd-next-project" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_dining_open_plan_brass_screen.jpeg');">
   <div class="pfd-next-overlay"></div>
   <div class="pfd-next-content">
     <span class="pfd-next-eyebrow">Next Project</span>
