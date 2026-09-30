@@ -448,20 +448,31 @@ html, body {
 }
 
 /* Slider Radio Translations (6 Slides: 0%, -16.666%, -33.333%, -50%, -66.666%, -83.333%) */
+.pfd-slider-section:has(#pfd-slide-1:checked) .pfd-slider-track,
 #pfd-slide-1:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(0%) !important; }
+
+.pfd-slider-section:has(#pfd-slide-2:checked) .pfd-slider-track,
 #pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-16.666667%) !important; }
+
+.pfd-slider-section:has(#pfd-slide-3:checked) .pfd-slider-track,
 #pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-33.333333%) !important; }
+
+.pfd-slider-section:has(#pfd-slide-4:checked) .pfd-slider-track,
 #pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-50%) !important; }
+
+.pfd-slider-section:has(#pfd-slide-5:checked) .pfd-slider-track,
 #pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-66.666667%) !important; }
+
+.pfd-slider-section:has(#pfd-slide-6:checked) .pfd-slider-track,
 #pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-slider-track { transform: translateX(-83.333333%) !important; }
 
-/* Navigation Arrows Overlay */
+/* Navigation Arrows Overlay (Centered horizontally) */
 .pfd-slider-controls {
   position: absolute !important;
-  bottom: 50px !important;
+  bottom: clamp(24px, 3.6vw, 42px) !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  z-index: 20 !important;
+  z-index: 25 !important;
   pointer-events: none !important;
 }
 
@@ -471,12 +482,29 @@ html, body {
   gap: 20px !important;
 }
 
-#pfd-slide-1:checked ~ .pfd-slider-viewport .pfd-arrow-pair-1 { display: flex !important; }
-#pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-arrow-pair-2 { display: flex !important; }
-#pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-arrow-pair-3 { display: flex !important; }
-#pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-arrow-pair-4 { display: flex !important; }
-#pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-arrow-pair-5 { display: flex !important; }
-#pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-arrow-pair-6 { display: flex !important; }
+.pfd-slider-section:has(#pfd-slide-1:checked) .pfd-arrow-pair-1,
+#pfd-slide-1:checked ~ .pfd-slider-viewport .pfd-arrow-pair-1,
+#pfd-slide-1:checked ~ * .pfd-arrow-pair-1 { display: flex !important; }
+
+.pfd-slider-section:has(#pfd-slide-2:checked) .pfd-arrow-pair-2,
+#pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-arrow-pair-2,
+#pfd-slide-2:checked ~ * .pfd-arrow-pair-2 { display: flex !important; }
+
+.pfd-slider-section:has(#pfd-slide-3:checked) .pfd-arrow-pair-3,
+#pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-arrow-pair-3,
+#pfd-slide-3:checked ~ * .pfd-arrow-pair-3 { display: flex !important; }
+
+.pfd-slider-section:has(#pfd-slide-4:checked) .pfd-arrow-pair-4,
+#pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-arrow-pair-4,
+#pfd-slide-4:checked ~ * .pfd-arrow-pair-4 { display: flex !important; }
+
+.pfd-slider-section:has(#pfd-slide-5:checked) .pfd-arrow-pair-5,
+#pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-arrow-pair-5,
+#pfd-slide-5:checked ~ * .pfd-arrow-pair-5 { display: flex !important; }
+
+.pfd-slider-section:has(#pfd-slide-6:checked) .pfd-arrow-pair-6,
+#pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-arrow-pair-6,
+#pfd-slide-6:checked ~ * .pfd-arrow-pair-6 { display: flex !important; }
 
 .pfd-arrow-btn {
   pointer-events: auto !important;
@@ -492,6 +520,8 @@ html, body {
   transition: all 0.25s ease !important;
   user-select: none !important;
   position: relative !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
 }
 
 .pfd-arrow-btn:hover {
@@ -525,45 +555,93 @@ html, body {
   display: none !important;
 }
 
-/* Pagination Dots */
+/* Pagination Dots (Desktop: anchored bottom-right; Mobile: centered bottom) */
 .pfd-slider-dots {
   position: absolute !important;
-  bottom: 18px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  z-index: 20 !important;
+  bottom: clamp(24px, 3.6vw, 40px) !important;
+  right: clamp(24px, 4vw, 56px) !important;
+  left: auto !important;
+  transform: none !important;
+  z-index: 25 !important;
   display: flex !important;
   align-items: center !important;
-  gap: 10px !important;
+  gap: 9px !important;
   background: rgba(26, 24, 22, 0.55) !important;
-  padding: 6px 14px !important;
+  padding: 7px 14px !important;
   border-radius: 9999px !important;
-  backdrop-filter: blur(6px) !important;
-  -webkit-backdrop-filter: blur(6px) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .pfd-dot {
   width: 8px !important;
   height: 8px !important;
   border-radius: 50% !important;
-  background-color: rgba(255, 255, 255, 0.45) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  background-color: transparent !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
   display: block !important;
 }
 
 .pfd-dot:hover {
-  background-color: #FFFFFF !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-color: #FFFFFF !important;
 }
 
+.pfd-slider-section:has(#pfd-slide-1:checked) .pfd-dot-1,
 #pfd-slide-1:checked ~ .pfd-slider-viewport .pfd-dot-1,
-#pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-dot-2,
-#pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-dot-3,
-#pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-dot-4,
-#pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-dot-5,
-#pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-dot-6 {
+#pfd-slide-1:checked ~ * .pfd-dot-1 {
   background-color: #B94E1A !important;
+  border-color: #B94E1A !important;
   transform: scale(1.3) !important;
+  box-shadow: 0 0 8px rgba(185, 78, 26, 0.85) !important;
+}
+
+.pfd-slider-section:has(#pfd-slide-2:checked) .pfd-dot-2,
+#pfd-slide-2:checked ~ .pfd-slider-viewport .pfd-dot-2,
+#pfd-slide-2:checked ~ * .pfd-dot-2 {
+  background-color: #B94E1A !important;
+  border-color: #B94E1A !important;
+  transform: scale(1.3) !important;
+  box-shadow: 0 0 8px rgba(185, 78, 26, 0.85) !important;
+}
+
+.pfd-slider-section:has(#pfd-slide-3:checked) .pfd-dot-3,
+#pfd-slide-3:checked ~ .pfd-slider-viewport .pfd-dot-3,
+#pfd-slide-3:checked ~ * .pfd-dot-3 {
+  background-color: #B94E1A !important;
+  border-color: #B94E1A !important;
+  transform: scale(1.3) !important;
+  box-shadow: 0 0 8px rgba(185, 78, 26, 0.85) !important;
+}
+
+.pfd-slider-section:has(#pfd-slide-4:checked) .pfd-dot-4,
+#pfd-slide-4:checked ~ .pfd-slider-viewport .pfd-dot-4,
+#pfd-slide-4:checked ~ * .pfd-dot-4 {
+  background-color: #B94E1A !important;
+  border-color: #B94E1A !important;
+  transform: scale(1.3) !important;
+  box-shadow: 0 0 8px rgba(185, 78, 26, 0.85) !important;
+}
+
+.pfd-slider-section:has(#pfd-slide-5:checked) .pfd-dot-5,
+#pfd-slide-5:checked ~ .pfd-slider-viewport .pfd-dot-5,
+#pfd-slide-5:checked ~ * .pfd-dot-5 {
+  background-color: #B94E1A !important;
+  border-color: #B94E1A !important;
+  transform: scale(1.3) !important;
+  box-shadow: 0 0 8px rgba(185, 78, 26, 0.85) !important;
+}
+
+.pfd-slider-section:has(#pfd-slide-6:checked) .pfd-dot-6,
+#pfd-slide-6:checked ~ .pfd-slider-viewport .pfd-dot-6,
+#pfd-slide-6:checked ~ * .pfd-dot-6 {
+  background-color: #B94E1A !important;
+  border-color: #B94E1A !important;
+  transform: scale(1.3) !important;
+  box-shadow: 0 0 8px rgba(185, 78, 26, 0.85) !important;
 }
 
 /* -------------------------------------------------------------
@@ -735,10 +813,10 @@ html, body {
    8. RESPONSIVE MOBILE MEDIA QUERIES (@media <= 768px)
    ------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
-  /* Hero: Compact top space, zero excessive padding */
+  /* Hero: Comfortable top breathing room on mobile below header */
   .pfd-hero {
-    min-height: 480px !important;
-    padding: 56px 16px 28px 16px !important;
+    min-height: 520px !important;
+    padding: 92px 18px 32px 18px !important;
   }
 
   .pfd-header {
@@ -906,8 +984,8 @@ html, body {
    ------------------------------------------------------------- */
 @media screen and (max-width: 480px) {
   .pfd-hero {
-    min-height: 440px !important;
-    padding: 52px 14px 24px 14px !important;
+    min-height: 480px !important;
+    padding: 86px 16px 28px 16px !important;
   }
 
   .pfd-brand {

@@ -6454,10 +6454,10 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  /* Hero (Compact padding, zero excessive top space) */
+  /* Hero (Comfortable top breathing room on mobile below header) */
   .pfd-hero {
-    min-height: 480px !important;
-    padding: 56px 16px 28px 16px !important;
+    min-height: 520px !important;
+    padding: 92px 18px 32px 18px !important;
   }
 
   .pfd-header {
@@ -6655,8 +6655,8 @@ html, body {
 
 @media (max-width: 480px) {
   .pfd-hero {
-    min-height: 440px !important;
-    padding: 52px 14px 24px 14px !important;
+    min-height: 480px !important;
+    padding: 86px 16px 28px 16px !important;
   }
 
   .pfd-header {
