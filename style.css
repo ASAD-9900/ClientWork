@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* ==========================================================================
    ORAANJ INTERIOR ARCHITECTURE & CONSTRUCTION â€” REUSABLE MASTER STYLESHEET
@@ -6632,3 +6632,24 @@ html, body {
     min-height: 220px !important;
   }
 }
+
+/* =============================================================
+   NITROPACK & LITESPEED PRELOADER SHIELD
+   Prevent caching plugins from hiding portfolio sections
+   ============================================================= */
+section.pfd-hero.nitro-offscreen,
+section.pfd-next-project.nitro-offscreen {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+section.pfd-description-section.nitro-offscreen,
+section.pfd-bento-section.nitro-offscreen,
+section.pfd-slider-section.nitro-offscreen,
+section.pfd-details-section.nitro-offscreen {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
