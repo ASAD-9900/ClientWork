@@ -1,0 +1,608 @@
+/* ==========================================================================
+   ORAANJ INTERIOR ARCHITECTURE & CONSTRUCTION — LONDON
+   PORTFOLIO OVERVIEW PAGE (orp-)
+   Categories: Residential, Commercial, Office, Cafe, Restaurant, Bar
+   Responsive: Mobile-First, Desktop-Optimized, NitroPack & wpautop Immune
+   ========================================================================== */
+
+/* -------------------------------------------------------------
+   1. RESET & SAFETY
+   ------------------------------------------------------------- */
+.orp-hero,
+.orp-hero *,
+.orp-portfolio-section,
+.orp-portfolio-section *,
+.orp-cta,
+.orp-cta * {
+  box-sizing: border-box !important;
+}
+
+/* Anti-wpautop: Prevent WordPress Gutenberg empty tags from corrupting layout */
+.orp-hero > p,
+.orp-hero p:empty,
+.orp-hero br,
+.orp-filter-bar > p,
+.orp-filter-bar p:empty,
+.orp-filter-bar br,
+.orp-category-section > p,
+.orp-category-section p:empty,
+.orp-category-section br,
+.orp-grid > p,
+.orp-grid p:empty,
+.orp-grid br,
+.orp-card > p:empty,
+.orp-card br,
+.orp-card-info > p:empty,
+.orp-card-info br,
+.orp-cta > p:empty,
+.orp-cta br {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+/* -------------------------------------------------------------
+   2. CONTAINER
+   ------------------------------------------------------------- */
+.orp-container {
+  width: 100% !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  padding-left: clamp(16px, 4vw, 48px) !important;
+  padding-right: clamp(16px, 4vw, 48px) !important;
+  box-sizing: border-box !important;
+}
+
+/* -------------------------------------------------------------
+   3. HERO SECTION (Matches Reference Image 1)
+   ------------------------------------------------------------- */
+.orp-hero {
+  position: relative !important;
+  width: 100% !important;
+  min-height: clamp(520px, 78vh, 760px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-color: #1A1816 !important;
+  overflow: hidden !important;
+  padding: 90px 20px 48px 20px !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+
+.orp-hero-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(22, 20, 18, 0.48) 0%,
+    rgba(22, 20, 18, 0.22) 35%,
+    rgba(22, 20, 18, 0.35) 65%,
+    rgba(22, 20, 18, 0.68) 100%
+  ) !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+.orp-hero-content {
+  position: relative !important;
+  z-index: 2 !important;
+  max-width: 980px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.orp-hero-eyebrow {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: clamp(10.5px, 1.2vw, 12px) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.32em !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  opacity: 0.95 !important;
+  margin-bottom: 14px !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6) !important;
+  display: inline-block !important;
+}
+
+.orp-hero-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(34px, 5.8vw, 68px) !important;
+  font-weight: 400 !important;
+  line-height: 1.15 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  margin: 0 0 26px 0 !important;
+  text-shadow: 0 4px 26px rgba(0, 0, 0, 0.65) !important;
+  max-width: 920px !important;
+}
+
+.orp-hero-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 13px 32px !important;
+  background: rgba(38, 34, 30, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  border-radius: 9999px !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color: #FFFFFF !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.24em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer !important;
+  margin-bottom: 28px !important;
+}
+
+.orp-hero-btn:hover {
+  background-color: #B94E1A !important;
+  border-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 28px rgba(185, 78, 26, 0.4) !important;
+}
+
+.orp-scroll-down {
+  position: absolute !important;
+  bottom: 24px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 2 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+  transition: opacity 0.25s ease, transform 0.25s ease !important;
+  cursor: pointer !important;
+}
+
+.orp-scroll-down:hover {
+  opacity: 0.75 !important;
+  transform: translateX(-50%) translateY(3px) !important;
+}
+
+.orp-scroll-arrow {
+  width: 22px !important;
+  height: 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  animation: orpBounce 2.2s infinite ease-in-out !important;
+}
+
+.orp-scroll-arrow svg {
+  width: 18px !important;
+  height: 18px !important;
+  stroke: #FFFFFF !important;
+  stroke-width: 2 !important;
+  fill: none !important;
+}
+
+@keyframes orpBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+/* -------------------------------------------------------------
+   4. FILTER BAR
+   ------------------------------------------------------------- */
+.orp-filter-section {
+  position: relative !important;
+  background-color: #FBF9F6 !important;
+  border-bottom: 1px solid #ECE8E1 !important;
+  padding: 24px 0 !important;
+  z-index: 10 !important;
+}
+
+.orp-filter-bar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+
+.orp-filter-btn {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  color: #55504A !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  padding: 9px 20px !important;
+  border-radius: 9999px !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  user-select: none !important;
+  text-decoration: none !important;
+}
+
+.orp-filter-btn:hover {
+  color: #1A1816 !important;
+  background-color: rgba(185, 78, 26, 0.08) !important;
+  border-color: rgba(185, 78, 26, 0.2) !important;
+}
+
+.orp-filter-btn.is-active {
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  border-color: #B94E1A !important;
+  box-shadow: 0 4px 14px rgba(185, 78, 26, 0.28) !important;
+}
+
+/* -------------------------------------------------------------
+   5. PORTFOLIO MAIN SECTION & CATEGORY SECTIONS
+   ------------------------------------------------------------- */
+.orp-portfolio-section {
+  position: relative !important;
+  background-color: #FFFFFF !important;
+  padding: clamp(50px, 6.5vw, 90px) 0 clamp(60px, 8vw, 110px) 0 !important;
+}
+
+.orp-category-section {
+  margin-bottom: clamp(60px, 8vw, 100px) !important;
+}
+
+.orp-category-section:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Category Header */
+.orp-category-header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin-bottom: clamp(32px, 4.2vw, 54px) !important;
+}
+
+.orp-category-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  margin-bottom: 8px !important;
+}
+
+.orp-category-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(24px, 3.4vw, 38px) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.03em !important;
+  color: #1A1816 !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.orp-category-rule {
+  width: 44px !important;
+  height: 2px !important;
+  background-color: #B94E1A !important;
+  margin: 0 auto !important;
+}
+
+/* -------------------------------------------------------------
+   6. 3-COLUMN CARDS GRID (Matches Reference Image 2)
+   ------------------------------------------------------------- */
+.orp-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: clamp(24px, 3.2vw, 44px) !important;
+  align-items: start !important;
+}
+
+/* Portfolio Card */
+.orp-card {
+  display: flex !important;
+  flex-direction: column !important;
+  text-decoration: none !important;
+  color: inherit !important;
+  cursor: pointer !important;
+  position: relative !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.orp-card:hover {
+  transform: translateY(-4px) !important;
+}
+
+/* Media Box (Matches Reference Image 2 Editorial Proportion) */
+.orp-card-media {
+  position: relative !important;
+  width: 100% !important;
+  aspect-ratio: 1 / 1.05 !important;
+  overflow: hidden !important;
+  border-radius: 2px !important;
+  background-color: #ECE8E1 !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05) !important;
+}
+
+.orp-card-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), filter 0.65s ease !important;
+}
+
+/* Hover Zoom & Luster */
+.orp-card:hover .orp-card-img {
+  transform: scale(1.06) !important;
+  filter: contrast(1.03) brightness(1.02) !important;
+}
+
+.orp-card-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 24, 22, 0) 60%,
+    rgba(26, 24, 22, 0.28) 100%
+  ) !important;
+  opacity: 0 !important;
+  transition: opacity 0.4s ease !important;
+  pointer-events: none !important;
+}
+
+.orp-card:hover .orp-card-overlay {
+  opacity: 1 !important;
+}
+
+/* Badge (Hidden by default to match clean editorial Reference Image 2) */
+.orp-card-badge {
+  display: none !important;
+}
+
+/* Info Below Media (Exact match to Image 2 typography) */
+.orp-card-info {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 18px 8px 6px 8px !important;
+}
+
+.orp-card-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(18px, 1.5vw, 23px) !important;
+  font-weight: 400 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  color: #1A1816 !important;
+  margin: 0 !important;
+  transition: color 0.25s ease !important;
+}
+
+.orp-card:hover .orp-card-title {
+  color: #B94E1A !important;
+}
+
+.orp-card-location {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0.26em !important;
+  text-transform: uppercase !important;
+  color: #8C827A !important;
+  margin: 6px 0 0 0 !important;
+  transition: color 0.25s ease !important;
+}
+
+.orp-card:hover .orp-card-location {
+  color: #4A4540 !important;
+}
+
+/* -------------------------------------------------------------
+   7. CALL TO ACTION BANNER (CONSULTATION)
+   ------------------------------------------------------------- */
+.orp-cta {
+  position: relative !important;
+  background-color: #1A1816 !important;
+  color: #FFFFFF !important;
+  padding: clamp(60px, 8vw, 100px) 20px !important;
+  text-align: center !important;
+  overflow: hidden !important;
+}
+
+.orp-cta-content {
+  position: relative !important;
+  z-index: 2 !important;
+  max-width: 820px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.orp-cta-eyebrow {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.32em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+  margin-bottom: 12px !important;
+}
+
+.orp-cta-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(28px, 4.4vw, 50px) !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 18px 0 !important;
+  letter-spacing: 0.02em !important;
+}
+
+.orp-cta-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: clamp(14px, 1.2vw, 16.5px) !important;
+  line-height: 1.7 !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  margin: 0 0 32px 0 !important;
+  max-width: 640px !important;
+}
+
+.orp-cta-actions {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 16px !important;
+}
+
+.orp-cta-btn-primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  border: 1px solid #B94E1A !important;
+  border-radius: 9999px !important;
+  padding: 13px 32px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+}
+
+.orp-cta-btn-primary:hover {
+  background-color: #963D13 !important;
+  border-color: #963D13 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(185, 78, 26, 0.4) !important;
+}
+
+.orp-cta-btn-outline {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: transparent !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 9999px !important;
+  padding: 13px 32px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+}
+
+.orp-cta-btn-outline:hover {
+  border-color: #FFFFFF !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+}
+
+/* -------------------------------------------------------------
+   8. RESPONSIVE MEDIA QUERIES
+   ------------------------------------------------------------- */
+@media screen and (max-width: 992px) {
+  .orp-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 28px !important;
+  }
+
+  .orp-hero {
+    min-height: 580px !important;
+    padding-top: 80px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .orp-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .orp-card-media {
+    aspect-ratio: 4 / 3.2 !important;
+  }
+
+  .orp-hero {
+    min-height: 500px !important;
+    padding-top: 84px !important;
+    padding-bottom: 36px !important;
+  }
+
+  .orp-hero-title {
+    font-size: clamp(28px, 8.2vw, 42px) !important;
+    margin-bottom: 20px !important;
+  }
+
+  .orp-filter-bar {
+    gap: 6px !important;
+    padding: 0 4px !important;
+  }
+
+  .orp-filter-btn {
+    padding: 7px 14px !important;
+    font-size: 10.5px !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  .orp-cta-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .orp-cta-btn-primary,
+  .orp-cta-btn-outline {
+    width: 100% !important;
+    max-width: 320px !important;
+    justify-content: center !important;
+  }
+}
+
+/* -------------------------------------------------------------
+   9. NITROPACK & LITESPEED PRELOADER SHIELD
+   ------------------------------------------------------------- */
+section.orp-hero.nitro-offscreen,
+section.orp-portfolio-section.nitro-offscreen,
+section.orp-cta.nitro-offscreen {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
