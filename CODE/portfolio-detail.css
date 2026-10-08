@@ -412,8 +412,10 @@ html, body {
   position: relative !important;
   width: 100% !important;
   max-width: 100% !important;
-  height: clamp(380px, 68vh, 680px) !important;
+  height: clamp(520px, 75vh, 760px) !important;
+  min-height: clamp(520px, 75vh, 760px) !important;
   overflow: hidden !important;
+  touch-action: pan-y !important;
 }
 
 .pfd-slider-track {
@@ -425,6 +427,9 @@ html, body {
   height: 100% !important;
   transition: transform 0.55s cubic-bezier(0.25, 1, 0.5, 1) !important;
   will-change: transform !important;
+  touch-action: pan-y !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
 }
 
 .pfd-slide {
@@ -436,6 +441,9 @@ html, body {
   flex-grow: 0 !important;
   height: 100% !important;
   position: relative !important;
+  touch-action: pan-y !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
 }
 
 .pfd-slide-bg {
@@ -444,6 +452,10 @@ html, body {
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+  touch-action: pan-y !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
 }
 
 /* Slider Radio Translations (Up to 24 Slides: 0% to -2300%) */
@@ -1212,49 +1224,168 @@ html, body {
     min-height: clamp(120px, 32vw, 160px) !important;
   }
 
-  /* Pure CSS Slider */
+  /* Pure CSS & Dynamic Slider on Mobile */
   .pfd-slider-viewport {
-    height: clamp(240px, 56vw, 340px) !important;
-    min-height: 240px !important;
+    height: clamp(450px, 70vh, 620px) !important;
+    min-height: clamp(450px, 70vh, 620px) !important;
+    touch-action: pan-y !important;
+    overflow: hidden !important;
   }
 
+  .pfd-slider-track {
+    touch-action: pan-y !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    -webkit-transform-style: preserve-3d !important;
+    transform-style: preserve-3d !important;
+  }
+
+  .pfd-slide,
+  .pfd-slide-bg {
+    touch-action: pan-y !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    -webkit-touch-callout: none !important;
+  }
+
+  /* Side-anchored intuitive navigation arrows on mobile */
   .pfd-slider-controls {
-    bottom: 40px !important;
+    position: absolute !important;
+    top: 50% !important;
+    bottom: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    transform: translateY(-50%) !important;
+    padding: 0 14px !important;
+    z-index: 25 !important;
+    pointer-events: none !important;
+    box-sizing: border-box !important;
   }
 
   .pfd-arrow-pair {
-    gap: 14px !important;
+    display: none !important;
+    width: 100% !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 0 !important;
   }
 
   .pfd-arrow-btn {
-    width: 38px !important;
-    height: 38px !important;
+    pointer-events: auto !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    border-radius: 50% !important;
+    background-color: rgba(26, 24, 22, 0.75) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45) !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    transition: transform 0.15s ease, background-color 0.2s ease !important;
+  }
+
+  .pfd-arrow-btn:active {
+    background-color: #B94E1A !important;
+    border-color: #B94E1A !important;
+    transform: scale(0.92) !important;
   }
 
   .pfd-arrow-btn.prev::before {
-    left: 15px !important;
-    width: 8px !important;
-    height: 8px !important;
+    left: 17px !important;
+    width: 9px !important;
+    height: 9px !important;
+    border-top: 2px solid #FFFFFF !important;
+    border-right: 2px solid #FFFFFF !important;
+    transform: rotate(-135deg) !important;
   }
 
   .pfd-arrow-btn.next::before {
-    right: 15px !important;
-    width: 8px !important;
-    height: 8px !important;
+    right: 17px !important;
+    width: 9px !important;
+    height: 9px !important;
+    border-top: 2px solid #FFFFFF !important;
+    border-right: 2px solid #FFFFFF !important;
+    transform: rotate(45deg) !important;
   }
 
+  /* Floating dots bar centered at bottom */
   .pfd-slider-dots {
     right: auto !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    bottom: 12px !important;
-    padding: 5px 12px !important;
-    gap: 7px !important;
+    bottom: 16px !important;
+    padding: 6px 14px !important;
+    gap: 8px !important;
+    background: rgba(26, 24, 22, 0.65) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    max-width: calc(100% - 32px) !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    z-index: 26 !important;
+    touch-action: pan-x !important;
+  }
+
+  .pfd-slider-dots::-webkit-scrollbar {
+    display: none !important;
   }
 
   .pfd-dot {
-    width: 6px !important;
-    height: 6px !important;
+    width: 7px !important;
+    height: 7px !important;
+    min-width: 7px !important;
+    min-height: 7px !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+    flex-shrink: 0 !important;
+  }
+
+  @media screen and (max-width: 480px) {
+    .pfd-slider-viewport {
+      height: clamp(400px, 66vh, 540px) !important;
+      min-height: clamp(400px, 66vh, 540px) !important;
+    }
+
+    .pfd-slider-controls {
+      padding: 0 10px !important;
+    }
+
+    .pfd-arrow-btn {
+      width: 40px !important;
+      height: 40px !important;
+      min-width: 40px !important;
+      min-height: 40px !important;
+    }
+
+    .pfd-arrow-btn.prev::before {
+      left: 15px !important;
+      width: 8px !important;
+      height: 8px !important;
+    }
+
+    .pfd-arrow-btn.next::before {
+      right: 15px !important;
+      width: 8px !important;
+      height: 8px !important;
+    }
+
+    .pfd-slider-dots {
+      bottom: 12px !important;
+      padding: 5px 12px !important;
+      gap: 6px !important;
+    }
+
+    .pfd-dot {
+      width: 6px !important;
+      height: 6px !important;
+      min-width: 6px !important;
+      min-height: 6px !important;
+    }
   }
 
   /* 3-Column Highlights Grid -> Stacks to 1 Col */
