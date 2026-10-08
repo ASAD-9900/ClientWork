@@ -90,102 +90,479 @@
   </div>
 </section>
 
-<!-- 4. PURE CSS SLIDER SECTION (Screenshot 4 — WordPress Immune, 6 Slides) -->
-<section id="slider" class="pfd-slider-section">
-  <!-- 6 Radio buttons controlling active slide index (direct siblings for pure CSS control) -->
-  <input id="pfd-slide-1" class="pfd-slider-input" checked="checked" name="pfd-slider-group" type="radio" />
-  <input id="pfd-slide-2" class="pfd-slider-input" name="pfd-slider-group" type="radio" />
-  <input id="pfd-slide-3" class="pfd-slider-input" name="pfd-slider-group" type="radio" />
-  <input id="pfd-slide-4" class="pfd-slider-input" name="pfd-slider-group" type="radio" />
-  <input id="pfd-slide-5" class="pfd-slider-input" name="pfd-slider-group" type="radio" />
-  <input id="pfd-slide-6" class="pfd-slider-input" name="pfd-slider-group" type="radio" />
+<!-- 4. PURE CSS SLIDER SECTION (Screenshot 4 — Up to 24 Slides, WordPress Immune) -->
+  <section id="slider" class="pfd-slider-section">
+    <!-- Radio buttons controlling active slide index (supports up to 24 slides) -->
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-1" class="pfd-slider-input" checked>
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-2" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-3" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-4" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-5" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-6" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-7" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-8" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-9" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-10" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-11" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-12" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-13" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-14" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-15" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-16" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-17" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-18" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-19" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-20" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-21" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-22" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-23" class="pfd-slider-input">
+    <input type="radio" name="pfd-slider-group" id="pfd-slide-24" class="pfd-slider-input">
 
-  <div class="pfd-slider-viewport" style="position: relative !important; width: 100% !important; max-width: 100% !important; overflow: hidden !important;">
-    <!-- Horizontal Sliding Track (6 Slides = 600% width, 16.666667% each) -->
-    <div class="pfd-slider-track" style="display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; width: 600% !important; min-width: 600% !important; max-width: 600% !important; height: 100% !important;">
-      <div class="pfd-slide pfd-slide-1" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_taupe_paneling_and_velvet_seating.jpeg');"></div>
+    <div class="pfd-slider-viewport">
+      <!-- Horizontal Sliding Track (100% width per slide, dynamic & flexible) -->
+      <div class="pfd-slider-track" style="display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; width: 100% !important; min-width: 100% !important; height: 100% !important;">
+        <div class="pfd-slide pfd-slide-1" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_taupe_paneling_and_velvet_seating.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-2" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/the-original-property.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-3" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Luxurious-Modern-Living-Room-Build-By-Oraanj-Interior-Design.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-4" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_taupe_and_bronze_kitchen_with_marble_island_and_crystal_chandelier.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-5" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_formal_seating_taupe_and_olive.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-6" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_dining_open_plan_brass_screen.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-7" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_bedroom_taupe_and_gold.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-8" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_corner_olive_green_and_taupe_accents.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-9" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_dining_table_with_marquina_marble_and_brass_vases.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-10" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_taupe_sofas_and_ottoman.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-11" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/bedroom-interior-closeup-shot.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-12" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/commercial-interiior-design.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-13" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/approved-cgl-design.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-14" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/renovation-in-progress.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-15" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Start-With-the-Project-Not-the-Package.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-16" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury-interior-designers.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-17" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/a-transformed-home.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-18" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/high-end-interior-designed-by-oraanj-interiors.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-19" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/period-properties-renovation.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-20" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/family-home-interior-designed-by-oraanj-interior-designers.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-21" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/open-plan-interior-designed-by-oraanj-interior-designers.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-22" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/large-property-interior-design-by-oraanj-interior-designers.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-23" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/technical-design-by-oraanj-interior-designers.jpeg');"></div>
+        </div>
+        <div class="pfd-slide pfd-slide-24" style="width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; flex-shrink: 0 !important; flex-grow: 0 !important; height: 100% !important;">
+          <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_curved_window_lounge_interior.jpeg');"></div>
+        </div>
       </div>
-      <div class="pfd-slide pfd-slide-2" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_master_bedroom_taupe_and_gold_with_wood_paneling.jpeg');"></div>
+
+      <!-- Centered Navigation Arrows (< and >) — SVG + Bulletproof Pure CSS Fallback -->
+      <div class="pfd-slider-controls">
+        <!-- Active Slide 1: Prev -> 24, Next -> 2 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-1">
+          <label for="pfd-slide-24" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-2" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 2: Prev -> 1, Next -> 3 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-2">
+          <label for="pfd-slide-1" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-3" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 3: Prev -> 2, Next -> 4 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-3">
+          <label for="pfd-slide-2" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-4" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 4: Prev -> 3, Next -> 5 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-4">
+          <label for="pfd-slide-3" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-5" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 5: Prev -> 4, Next -> 6 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-5">
+          <label for="pfd-slide-4" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-6" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 6: Prev -> 5, Next -> 7 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-6">
+          <label for="pfd-slide-5" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-7" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 7: Prev -> 6, Next -> 8 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-7">
+          <label for="pfd-slide-6" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-8" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 8: Prev -> 7, Next -> 9 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-8">
+          <label for="pfd-slide-7" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-9" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 9: Prev -> 8, Next -> 10 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-9">
+          <label for="pfd-slide-8" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-10" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 10: Prev -> 9, Next -> 11 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-10">
+          <label for="pfd-slide-9" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-11" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 11: Prev -> 10, Next -> 12 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-11">
+          <label for="pfd-slide-10" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-12" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 12: Prev -> 11, Next -> 13 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-12">
+          <label for="pfd-slide-11" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-13" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 13: Prev -> 12, Next -> 14 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-13">
+          <label for="pfd-slide-12" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-14" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 14: Prev -> 13, Next -> 15 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-14">
+          <label for="pfd-slide-13" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-15" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 15: Prev -> 14, Next -> 16 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-15">
+          <label for="pfd-slide-14" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-16" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 16: Prev -> 15, Next -> 17 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-16">
+          <label for="pfd-slide-15" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-17" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 17: Prev -> 16, Next -> 18 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-17">
+          <label for="pfd-slide-16" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-18" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 18: Prev -> 17, Next -> 19 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-18">
+          <label for="pfd-slide-17" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-19" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 19: Prev -> 18, Next -> 20 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-19">
+          <label for="pfd-slide-18" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-20" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 20: Prev -> 19, Next -> 21 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-20">
+          <label for="pfd-slide-19" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-21" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 21: Prev -> 20, Next -> 22 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-21">
+          <label for="pfd-slide-20" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-22" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 22: Prev -> 21, Next -> 23 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-22">
+          <label for="pfd-slide-21" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-23" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 23: Prev -> 22, Next -> 24 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-23">
+          <label for="pfd-slide-22" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-24" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
+        <!-- Active Slide 24: Prev -> 23, Next -> 1 -->
+        <div class="pfd-arrow-pair pfd-arrow-pair-24">
+          <label for="pfd-slide-23" class="pfd-arrow-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </label>
+          <label for="pfd-slide-1" class="pfd-arrow-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </label>
+        </div>
       </div>
-      <div class="pfd-slide pfd-slide-3" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_taupe_and_gold_bathroom_with_freestanding_tub.jpeg');"></div>
-      </div>
-      <div class="pfd-slide pfd-slide-4" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_taupe_and_bronze_kitchen_with_marble_island_and_crystal_chandelier.jpeg');"></div>
-      </div>
-      <div class="pfd-slide pfd-slide-5" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_formal_seating_taupe_and_olive.jpeg');"></div>
-      </div>
-      <div class="pfd-slide pfd-slide-6" style="width: 16.666667% !important; min-width: 16.666667% !important; max-width: 16.666667% !important; flex: 0 0 16.666667% !important; height: 100% !important;">
-        <div class="pfd-slide-bg" style="background-image: url('https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_dining_open_plan_brass_screen.jpeg');"></div>
+
+      <!-- Pagination Dots Indicators (Up to 24 Dots) -->
+      <div class="pfd-slider-dots">
+        <label for="pfd-slide-1" class="pfd-dot pfd-dot-1" title="Slide 1"></label>
+        <label for="pfd-slide-2" class="pfd-dot pfd-dot-2" title="Slide 2"></label>
+        <label for="pfd-slide-3" class="pfd-dot pfd-dot-3" title="Slide 3"></label>
+        <label for="pfd-slide-4" class="pfd-dot pfd-dot-4" title="Slide 4"></label>
+        <label for="pfd-slide-5" class="pfd-dot pfd-dot-5" title="Slide 5"></label>
+        <label for="pfd-slide-6" class="pfd-dot pfd-dot-6" title="Slide 6"></label>
+        <label for="pfd-slide-7" class="pfd-dot pfd-dot-7" title="Slide 7"></label>
+        <label for="pfd-slide-8" class="pfd-dot pfd-dot-8" title="Slide 8"></label>
+        <label for="pfd-slide-9" class="pfd-dot pfd-dot-9" title="Slide 9"></label>
+        <label for="pfd-slide-10" class="pfd-dot pfd-dot-10" title="Slide 10"></label>
+        <label for="pfd-slide-11" class="pfd-dot pfd-dot-11" title="Slide 11"></label>
+        <label for="pfd-slide-12" class="pfd-dot pfd-dot-12" title="Slide 12"></label>
+        <label for="pfd-slide-13" class="pfd-dot pfd-dot-13" title="Slide 13"></label>
+        <label for="pfd-slide-14" class="pfd-dot pfd-dot-14" title="Slide 14"></label>
+        <label for="pfd-slide-15" class="pfd-dot pfd-dot-15" title="Slide 15"></label>
+        <label for="pfd-slide-16" class="pfd-dot pfd-dot-16" title="Slide 16"></label>
+        <label for="pfd-slide-17" class="pfd-dot pfd-dot-17" title="Slide 17"></label>
+        <label for="pfd-slide-18" class="pfd-dot pfd-dot-18" title="Slide 18"></label>
+        <label for="pfd-slide-19" class="pfd-dot pfd-dot-19" title="Slide 19"></label>
+        <label for="pfd-slide-20" class="pfd-dot pfd-dot-20" title="Slide 20"></label>
+        <label for="pfd-slide-21" class="pfd-dot pfd-dot-21" title="Slide 21"></label>
+        <label for="pfd-slide-22" class="pfd-dot pfd-dot-22" title="Slide 22"></label>
+        <label for="pfd-slide-23" class="pfd-dot pfd-dot-23" title="Slide 23"></label>
+        <label for="pfd-slide-24" class="pfd-dot pfd-dot-24" title="Slide 24"></label>
       </div>
     </div>
+  </section>
 
-    <!-- Centered Navigation Arrows (< and >) — Seamless 6-Slide Loop -->
-    <div class="pfd-slider-controls">
-      <!-- Slide 1: Prev -> 6, Next -> 2 -->
-      <div class="pfd-arrow-pair pfd-arrow-pair-1">
-        <label class="pfd-arrow-btn prev" for="pfd-slide-6" aria-label="Previous Slide"></label>
-        <label class="pfd-arrow-btn next" for="pfd-slide-2" aria-label="Next Slide"></label>
-      </div>
-      <!-- Slide 2: Prev -> 1, Next -> 3 -->
-      <div class="pfd-arrow-pair pfd-arrow-pair-2">
-        <label class="pfd-arrow-btn prev" for="pfd-slide-1" aria-label="Previous Slide"></label>
-        <label class="pfd-arrow-btn next" for="pfd-slide-3" aria-label="Next Slide"></label>
-      </div>
-      <!-- Slide 3: Prev -> 2, Next -> 4 -->
-      <div class="pfd-arrow-pair pfd-arrow-pair-3">
-        <label class="pfd-arrow-btn prev" for="pfd-slide-2" aria-label="Previous Slide"></label>
-        <label class="pfd-arrow-btn next" for="pfd-slide-4" aria-label="Next Slide"></label>
-      </div>
-      <!-- Slide 4: Prev -> 3, Next -> 5 -->
-      <div class="pfd-arrow-pair pfd-arrow-pair-4">
-        <label class="pfd-arrow-btn prev" for="pfd-slide-3" aria-label="Previous Slide"></label>
-        <label class="pfd-arrow-btn next" for="pfd-slide-5" aria-label="Next Slide"></label>
-      </div>
-      <!-- Slide 5: Prev -> 4, Next -> 6 -->
-      <div class="pfd-arrow-pair pfd-arrow-pair-5">
-        <label class="pfd-arrow-btn prev" for="pfd-slide-4" aria-label="Previous Slide"></label>
-        <label class="pfd-arrow-btn next" for="pfd-slide-6" aria-label="Next Slide"></label>
-      </div>
-      <!-- Slide 6: Prev -> 5, Next -> 1 -->
-      <div class="pfd-arrow-pair pfd-arrow-pair-6">
-        <label class="pfd-arrow-btn prev" for="pfd-slide-5" aria-label="Previous Slide"></label>
-        <label class="pfd-arrow-btn next" for="pfd-slide-1" aria-label="Next Slide"></label>
-      </div>
-    </div>
-
-    <!-- Centered Pagination Dots (6 Dots) -->
-    <div class="pfd-slider-dots">
-      <label class="pfd-dot pfd-dot-1" for="pfd-slide-1" title="Slide 1"></label>
-      <label class="pfd-dot pfd-dot-2" for="pfd-slide-2" title="Slide 2"></label>
-      <label class="pfd-dot pfd-dot-3" for="pfd-slide-3" title="Slide 3"></label>
-      <label class="pfd-dot pfd-dot-4" for="pfd-slide-4" title="Slide 4"></label>
-      <label class="pfd-dot pfd-dot-5" for="pfd-slide-5" title="Slide 5"></label>
-      <label class="pfd-dot pfd-dot-6" for="pfd-slide-6" title="Slide 6"></label>
-    </div>
-  </div>
-</section>
-
-<!-- Non-intrusive WP click guard (ensures clicks always register even if WP theme hooks labels) -->
-<script>
-  (function () {
+  <!-- Non-intrusive WP click guard & Dynamic Slider Controller (supports any slide count up to 24, mobile swipe & keyboard) -->
+  <script>
+  (function(){
     var slider = document.getElementById('slider');
     if (!slider) return;
+
+    var track = slider.querySelector('.pfd-slider-track');
+    var slides = slider.querySelectorAll('.pfd-slide');
+    var total = slides.length;
+    if (!track || total === 0) return;
+
+    var dotsContainer = slider.querySelector('.pfd-slider-dots');
+    var dots = dotsContainer ? dotsContainer.querySelectorAll('.pfd-dot') : [];
+    var radios = slider.querySelectorAll('.pfd-slider-input');
+
+    // Auto-hide dots beyond total actual slides (if user has fewer than 24)
+    dots.forEach(function (dot, i) {
+      if (i >= total) {
+        dot.style.display = 'none';
+      } else {
+        dot.style.display = '';
+      }
+    });
+
+    var currentIndex = 0;
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        currentIndex = i;
+        break;
+      }
+    }
+    if (currentIndex >= total) currentIndex = 0;
+
+    function updateSlider(index) {
+      if (index < 0) index = total - 1;
+      if (index >= total) index = 0;
+      currentIndex = index;
+
+      track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+
+      var targetRadio = document.getElementById('pfd-slide-' + (currentIndex + 1));
+      if (targetRadio && !targetRadio.checked) {
+        targetRadio.checked = true;
+      }
+
+      dots.forEach(function (d, idx) {
+        if (idx === currentIndex) {
+          d.classList.add('is-active');
+        } else {
+          d.classList.remove('is-active');
+        }
+      });
+    }
+
     slider.addEventListener('click', function (e) {
       var label = e.target.closest('label[for]');
       if (!label) return;
-      var targetId = label.getAttribute('for');
-      var radio = document.getElementById(targetId);
-      if (radio && !radio.checked) {
-        radio.checked = true;
-        try { radio.dispatchEvent(new Event('change', { bubbles: true })); } catch (err) { }
+
+      var forId = label.getAttribute('for');
+      if (!forId) return;
+
+      var match = forId.match(/pfd-slide-(d+)/);
+      if (!match) return;
+
+      var targetSlideNum = parseInt(match[1], 10);
+      if (targetSlideNum > total) {
+        if (label.classList.contains('next')) {
+          targetSlideNum = 1;
+        } else if (label.classList.contains('prev')) {
+          targetSlideNum = total;
+        }
+      }
+
+      e.preventDefault();
+      updateSlider(targetSlideNum - 1);
+    });
+
+    radios.forEach(function (radio, idx) {
+      radio.addEventListener('change', function () {
+        if (radio.checked && idx < total) {
+          updateSlider(idx);
+        }
+      });
+    });
+
+    var startX = 0;
+    var startY = 0;
+    slider.addEventListener('touchstart', function (e) {
+      var t = e.touches[0] || e.changedTouches[0];
+      startX = t.pageX;
+      startY = t.pageY;
+    }, { passive: true });
+
+    slider.addEventListener('touchend', function (e) {
+      var t = e.touches[0] || e.changedTouches[0];
+      var distX = t.pageX - startX;
+      var distY = t.pageY - startY;
+      if (Math.abs(distX) > 45 && Math.abs(distX) > Math.abs(distY)) {
+        if (distX < 0) {
+          updateSlider(currentIndex + 1);
+        } else {
+          updateSlider(currentIndex - 1);
+        }
+      }
+    }, { passive: true });
+
+    window.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      var rect = slider.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        if (e.key === 'ArrowLeft') updateSlider(currentIndex - 1);
+        if (e.key === 'ArrowRight') updateSlider(currentIndex + 1);
       }
     });
+
+    updateSlider(currentIndex);
   })();
-</script>
+  </script>
 
 <!-- 5. PROJECT DETAILS & CRAFTSMANSHIP (Below Slider) -->
 <section id="details" class="pfd-details-section">

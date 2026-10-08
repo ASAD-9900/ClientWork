@@ -24,7 +24,7 @@ office interior - completed with images
 retail interior - completed with images
 hotel interior - completed with images
 space planning - completed with images
-portfolio detail (Notting Hill) - completed with images and pure CSS slider (no JS)
+portfolio detail (Knightsbridge) - completed with 24 images, pure CSS slider (up to 24 slides) & dynamic JS controller
 feng-shui - completed with images
 autocad - completed with images
 3d rendering - completed with images
