@@ -2259,7 +2259,7 @@
 }
 
 .orc-card-list li::before {
-  content: "â€¢" !important;
+  content: "\2022" !important;
   color: #B94E1A !important;
   position: absolute !important;
   left: 0 !important;
@@ -2580,7 +2580,7 @@
 }
 
 .orc-dual-list li::before {
-  content: "â€¢" !important;
+  content: "\2022" !important;
   color: #B94E1A !important;
   position: absolute !important;
   left: 0 !important;
@@ -7667,3 +7667,99 @@ section.orp-cta.nitro-offscreen {
   visibility: visible !important;
   opacity: 1 !important;
 }
+
+/* -------------------------------------------------------------
+   10. GRID COLUMN HELPERS SPECIFICITY REINFORCEMENT
+   ------------------------------------------------------------- */
+.orc-cards-grid.orc-grid-2col {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+.orc-cards-grid.orc-grid-4col {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+@media (max-width: 900px) {
+  .orc-cards-grid.orc-grid-4col {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .orc-cards-grid.orc-grid-2col,
+  .orc-cards-grid.orc-grid-4col {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* -------------------------------------------------------------
+   11. RESIDENTIAL-ALIGNMENT UTILITIES & COMPONENTS
+   ------------------------------------------------------------- */
+.orc-border-top {
+  border-top: 1px solid #ECE8E1 !important;
+}
+
+.orc-feature-checklist {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 10px !important;
+  margin: 20px 0 !important;
+}
+
+@media (max-width: 600px) {
+  .orc-feature-checklist {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.orc-contact-pill-list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-top: 24px !important;
+}
+
+.orc-contact-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 999px !important;
+  padding: 10px 18px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: #1A1816 !important;
+  transition: border-color 0.2s ease, transform 0.2s ease !important;
+}
+
+.orc-contact-pill:hover {
+  border-color: #B94E1A !important;
+  transform: translateY(-1px) !important;
+}
+
+.orc-common-wrapper {
+  width: 100% !important;
+}
+
+.orc-mb-24 { margin-bottom: 24px !important; }
+.orc-mt-24 { margin-top: 24px !important; }
+.orc-mt-64 { margin-top: 64px !important; }
+
+.orc-section .orc-btn-outline {
+  color: #B94E1A !important;
+  border: 1.5px solid #B94E1A !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.orc-section .orc-btn-outline:hover {
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  border-color: #B94E1A !important;
+}
+
+
+
