@@ -1,0 +1,781 @@
+<?php
+/* Template Name: Blog */
+/*
+ * ─────────────────────────────────────────────────────────────────────────────
+ * SEO METADATA: SET IN YOAST / RANK MATH OR EQUIVALENT PLUGIN
+ * ─────────────────────────────────────────────────────────────────────────────
+ * SEO Title:    Interior Design Blog London | Expert Tips & Insights | Oraanj
+ * H1:           Interior Design Blog London: Expert Advice & Project Insights
+ * Meta Desc:    Explore expert interior design advice from Oraanj's London
+ *               studio. Discover renovation guides, space planning ideas,
+ *               project insights, and design inspiration.
+ * Canonical:    https://www.oraanj-interiors.co.uk/interior-design-blog-london/
+ * NOTE:         Confirm /old-blogs/ is redirected (301) to canonical URL above.
+ *               Check Google Search Console for duplicate indexing issues.
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+get_header();
+?>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ==================================================
+   ORAANJ JOURNAL REVAMP (ojr-)
+   ================================================== */
+.ojr-wrap, .ojr-wrap *, .ojr-wrap *::before, .ojr-wrap *::after { box-sizing: border-box !important; }
+.ojr-wrap p:empty, .ojr-wrap br { display: none !important; margin: 0 !important; padding: 0 !important; width: 0 !important; height: 0 !important; }
+.ojr-wrap { width: 100% !important; background-color: #FFF6F2 !important; color: #1A1816 !important; overflow: hidden !important; }
+.ojr-container { max-width: 1380px !important; margin: 0 auto !important; padding: 0 32px !important; width: 100% !important; }
+
+/* Global Typography & Rules */
+.ojr-eyebrow { font-family: 'Inter', sans-serif !important; font-size: 11px !important; font-weight: 500 !important; letter-spacing: 0.22em !important; text-transform: uppercase !important; color: #8C8882 !important; display: inline-block !important; margin-bottom: 12px !important; }
+.ojr-rule { width: 36px !important; height: 1.5px !important; background-color: #B94E1A !important; margin-bottom: 22px !important; display: block !important; }
+.ojr-p { font-family: 'Inter', sans-serif !important; font-size: 14.5px !important; line-height: 1.68 !important; color: #5E5953 !important; margin: 0 0 16px 0 !important; }
+.ojr-section-title { font-family: 'El Messiri', serif !important; font-size: clamp(28px, 3vw, 44px) !important; font-weight: 500 !important; color: #1A1816 !important; line-height: 1.18 !important; margin: 0 0 6px 0 !important; }
+.ojr-section-sub { font-family: 'Inter', sans-serif !important; font-size: 14.5px !important; color: #8C8882 !important; margin: 0 0 36px 0 !important; }
+
+/* Meta Date Styling */
+.ojr-date-badge { display: inline-flex !important; align-items: center !important; gap: 6px !important; font-family: 'Inter', sans-serif !important; font-size: 11.5px !important; font-weight: 500 !important; color: #8C8882 !important; text-transform: uppercase !important; letter-spacing: 0.08em !important; margin-bottom: 8px !important; }
+.ojr-date-dot { width: 4px !important; height: 4px !important; border-radius: 50% !important; background-color: #B94E1A !important; display: inline-block !important; }
+
+/* Buttons & Links */
+.ojr-btn-primary { display: inline-flex !important; align-items: center !important; gap: 10px !important; background-color: #B94E1A !important; color: #FFFFFF !important; font-family: 'Inter', sans-serif !important; font-size: 11.5px !important; font-weight: 600 !important; letter-spacing: 0.12em !important; text-transform: uppercase !important; padding: 15px 32px !important; border-radius: 30px !important; text-decoration: none !important; transition: all 0.25s ease !important; border: none !important; }
+.ojr-btn-primary:hover { background-color: #670066 !important; color: #FFFFFF !important; transform: translateY(-1px) !important; }
+.ojr-btn-outline { display: inline-flex !important; align-items: center !important; gap: 10px !important; background-color: transparent !important; color: #B94E1A !important; font-family: 'Inter', sans-serif !important; font-size: 11.5px !important; font-weight: 600 !important; letter-spacing: 0.12em !important; text-transform: uppercase !important; padding: 13px 28px !important; border-radius: 30px !important; text-decoration: none !important; transition: all 0.25s ease !important; border: 1.5px solid #B94E1A !important; }
+.ojr-btn-outline:hover { background-color: #B94E1A !important; color: #FFFFFF !important; transform: translateY(-1px) !important; }
+.ojr-link-arrow { display: inline-flex !important; align-items: center !important; gap: 6px !important; font-family: 'Inter', sans-serif !important; font-size: 11px !important; font-weight: 600 !important; letter-spacing: 0.1em !important; text-transform: uppercase !important; color: #B94E1A !important; text-decoration: none !important; transition: all 0.2s ease !important; margin-top: auto !important; }
+.ojr-link-arrow:hover { color: #670066 !important; transform: translateX(3px) !important; }
+
+/* Masthead Hero */
+.ojr-masthead { padding: 90px 0 70px 0 !important; background-color: #FFF6F2 !important; border-bottom: 1px solid #DFDBD3 !important; }
+.ojr-masthead-inner { max-width: 860px !important; }
+.ojr-masthead-title { font-family: 'El Messiri', serif !important; font-size: clamp(34px, 4.2vw, 58px) !important; font-weight: 500 !important; line-height: 1.12 !important; letter-spacing: -0.018em !important; color: #1A1816 !important; margin: 0 0 20px 0 !important; }
+.ojr-masthead-lead { font-family: 'Inter', sans-serif !important; font-size: clamp(16px, 1.35vw, 19px) !important; font-weight: 500 !important; line-height: 1.55 !important; color: #1A1816 !important; margin: 0 0 14px 0 !important; }
+.ojr-masthead-desc { font-family: 'Inter', sans-serif !important; font-size: 15px !important; line-height: 1.68 !important; color: #5E5953 !important; margin: 0 0 32px 0 !important; }
+.ojr-masthead-cta-row { display: flex !important; flex-wrap: wrap !important; gap: 14px !important; align-items: center !important; }
+
+/* Section 1: Latest Blogs */
+.ojr-latest-section { padding: 85px 0 !important; background-color: #FFFFFF !important; border-bottom: 1px solid #DFDBD3 !important; }
+.ojr-latest-grid { display: flex !important; flex-wrap: wrap !important; gap: 24px !important; }
+.ojr-latest-card { flex: 0 0 calc(33.333% - 16px) !important; max-width: calc(33.333% - 16px) !important; background: #FFFFFF !important; border: 1px solid #ECE8E1 !important; border-radius: 6px !important; overflow: hidden !important; display: flex !important; flex-direction: column !important; transition: all 0.25s ease !important; }
+.ojr-latest-card:hover { transform: translateY(-2px) !important; border-color: #DFDBD3 !important; box-shadow: 0 8px 24px rgba(26,24,22,0.04) !important; }
+.ojr-latest-img-box { width: 100% !important; height: 220px !important; min-height: 220px !important; overflow: hidden !important; background: #ECE8E1 !important; position: relative !important; }
+.ojr-latest-img { width: 100% !important; height: 100% !important; object-fit: cover !important; transition: transform 0.45s ease !important; }
+.ojr-latest-card:hover .ojr-latest-img { transform: scale(1.03) !important; }
+.ojr-cat-pill { position: absolute !important; top: 12px !important; left: 12px !important; background: rgba(255,255,255,0.95) !important; padding: 4px 12px !important; border-radius: 20px !important; font-family: 'Inter', sans-serif !important; font-size: 10px !important; font-weight: 600 !important; text-transform: uppercase !important; color: #B94E1A !important; z-index: 2 !important; }
+.ojr-latest-body { padding: 22px !important; display: flex !important; flex-direction: column !important; flex-grow: 1 !important; }
+.ojr-latest-title { font-family: 'El Messiri', serif !important; font-size: 19px !important; font-weight: 500 !important; line-height: 1.32 !important; color: #1A1816 !important; margin: 0 0 10px 0 !important; text-decoration: none !important; display: block !important; }
+.ojr-latest-card:hover .ojr-latest-title { color: #B94E1A !important; }
+.ojr-latest-desc { font-family: 'Inter', sans-serif !important; font-size: 13.5px !important; line-height: 1.6 !important; color: #5E5953 !important; margin: 0 0 16px 0 !important; flex-grow: 1 !important; }
+
+/* Section 2: Founder Section */
+.ojr-founder-section { padding: 85px 0 !important; background-color: #FFF6F2 !important; border-bottom: 1px solid #DFDBD3 !important; }
+.ojr-founder-card { display: flex !important; flex-wrap: wrap !important; align-items: center !important; gap: 56px !important; background: #FFFFFF !important; border: 1px solid #DFDBD3 !important; border-radius: 8px !important; padding: 48px !important; }
+.ojr-founder-col-img { flex: 0 0 calc(38% - 28px) !important; max-width: calc(38% - 28px) !important; }
+.ojr-founder-img-frame { width: 100% !important; height: 480px !important; min-height: 480px !important; border-radius: 6px !important; overflow: hidden !important; background: #ECE8E1 !important; }
+.ojr-founder-img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: top center !important; display: block !important; }
+.ojr-founder-col-txt { flex: 0 0 calc(62% - 28px) !important; max-width: calc(62% - 28px) !important; }
+.ojr-founder-title { font-family: 'El Messiri', serif !important; font-size: clamp(26px, 2.6vw, 38px) !important; font-weight: 500 !important; line-height: 1.18 !important; color: #1A1816 !important; margin: 0 0 20px 0 !important; }
+.ojr-quote-line { font-size: 15.5px !important; font-style: italic !important; color: #1A1816 !important; padding-left: 18px !important; border-left: 2px solid #B94E1A !important; margin: 18px 0 !important; }
+
+/* Section 3: Questions Gateway */
+.ojr-intent-section { padding: 85px 0 !important; background-color: #FFFFFF !important; border-bottom: 1px solid #DFDBD3 !important; }
+.ojr-intent-grid { display: flex !important; flex-wrap: wrap !important; gap: 20px !important; }
+.ojr-intent-card { flex: 0 0 calc(33.333% - 14px) !important; max-width: calc(33.333% - 14px) !important; background: #FFF6F2 !important; border: 1px solid #DFDBD3 !important; border-top: 2px solid #DFDBD3 !important; border-radius: 4px !important; padding: 26px 22px !important; display: flex !important; flex-direction: column !important; transition: all 0.25s ease !important; }
+.ojr-intent-card:hover { transform: translateY(-2px) !important; border-top-color: #B94E1A !important; background: #FFFFFF !important; }
+.ojr-intent-num { font-family: 'Inter', sans-serif !important; font-size: 11px !important; font-weight: 600 !important; color: #B94E1A !important; margin-bottom: 8px !important; }
+.ojr-intent-title { font-family: 'El Messiri', serif !important; font-size: 19px !important; font-weight: 500 !important; color: #1A1816 !important; margin: 0 0 8px 0 !important; }
+.ojr-intent-desc { font-family: 'Inter', sans-serif !important; font-size: 13px !important; line-height: 1.58 !important; color: #5E5953 !important; margin: 0 0 12px 0 !important; flex-grow: 1 !important; }
+.ojr-intent-service-link { font-family: 'Inter', sans-serif !important; font-size: 11px !important; color: #8C8882 !important; text-decoration: none !important; border-bottom: 1px solid #DFDBD3 !important; padding-bottom: 2px !important; margin-bottom: 14px !important; display: inline-block !important; transition: color 0.2s ease !important; }
+.ojr-intent-service-link:hover { color: #B94E1A !important; border-bottom-color: #B94E1A !important; }
+
+/* Section 4: Residential Guides */
+.ojr-grid6-section { padding: 85px 0 !important; background-color: #FFF6F2 !important; border-bottom: 1px solid #DFDBD3 !important; }
+.ojr-grid-6 { display: flex !important; flex-wrap: wrap !important; gap: 24px !important; }
+.ojr-card-6 { flex: 0 0 calc(33.333% - 16px) !important; max-width: calc(33.333% - 16px) !important; background: #FFFFFF !important; border: 1px solid #ECE8E1 !important; border-radius: 6px !important; overflow: hidden !important; display: flex !important; flex-direction: column !important; transition: all 0.25s ease !important; }
+.ojr-card-6:hover { transform: translateY(-2px) !important; border-color: #DFDBD3 !important; box-shadow: 0 6px 20px rgba(26,24,22,0.03) !important; }
+.ojr-card-img-wrap { width: 100% !important; height: 215px !important; min-height: 215px !important; overflow: hidden !important; background: #ECE8E1 !important; position: relative !important; }
+.ojr-card-img { width: 100% !important; height: 100% !important; object-fit: cover !important; transition: transform 0.45s ease !important; }
+.ojr-card-6:hover .ojr-card-img { transform: scale(1.03) !important; }
+.ojr-card-body { padding: 22px !important; display: flex !important; flex-direction: column !important; flex-grow: 1 !important; }
+.ojr-card-title { font-family: 'El Messiri', serif !important; font-size: 18px !important; font-weight: 500 !important; line-height: 1.32 !important; color: #1A1816 !important; margin: 0 0 10px 0 !important; text-decoration: none !important; display: block !important; }
+.ojr-card-6:hover .ojr-card-title { color: #B94E1A !important; }
+.ojr-card-desc { font-family: 'Inter', sans-serif !important; font-size: 13.5px !important; line-height: 1.6 !important; color: #5E5953 !important; margin: 0 0 16px 0 !important; flex-grow: 1 !important; }
+
+/* Section 5: Real Project Insights - Redesigned */
+.ojr-pi-section { padding: 0 0 85px 0 !important; background-color: #FFFFFF !important; border-bottom: 1px solid #DFDBD3 !important; }
+/* Dark header banner */
+.ojr-pi-header { background-color: #1A1816 !important; padding: 72px 0 !important; margin-bottom: 0 !important; }
+.ojr-pi-header-inner { display: flex !important; flex-wrap: wrap !important; align-items: flex-end !important; justify-content: space-between !important; gap: 32px !important; }
+.ojr-pi-header-text { flex: 1 1 480px !important; }
+.ojr-pi-eyebrow { font-family: 'Inter', sans-serif !important; font-size: 11px !important; font-weight: 500 !important; letter-spacing: 0.22em !important; text-transform: uppercase !important; color: #B94E1A !important; display: inline-block !important; margin-bottom: 14px !important; }
+.ojr-pi-title { font-family: 'El Messiri', serif !important; font-size: clamp(28px, 3vw, 46px) !important; font-weight: 500 !important; line-height: 1.14 !important; color: #FFFFFF !important; margin: 0 0 16px 0 !important; }
+.ojr-pi-subtitle { font-family: 'Inter', sans-serif !important; font-size: 15px !important; line-height: 1.65 !important; color: #A09A93 !important; margin: 0 !important; max-width: 540px !important; }
+.ojr-pi-header-cta { flex-shrink: 0 !important; align-self: flex-end !important; }
+/* Process steps strip */
+.ojr-pi-steps-wrap { background: #F5F0EA !important; border-bottom: 1px solid #DFDBD3 !important; padding: 0 !important; overflow-x: auto !important; }
+.ojr-pi-steps { display: flex !important; min-width: max-content !important; }
+.ojr-pi-step { padding: 22px 28px !important; display: flex !important; align-items: center !important; gap: 14px !important; border-right: 1px solid #DFDBD3 !important; position: relative !important; transition: background 0.2s ease !important; }
+.ojr-pi-step:hover { background: #EDE7DF !important; }
+.ojr-pi-step-num { font-family: 'El Messiri', serif !important; font-size: 28px !important; font-weight: 500 !important; color: #DFDBD3 !important; line-height: 1 !important; flex-shrink: 0 !important; }
+.ojr-pi-step-txt { display: flex !important; flex-direction: column !important; }
+.ojr-pi-step-label { font-family: 'Inter', sans-serif !important; font-size: 10px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 0.12em !important; color: #B94E1A !important; margin-bottom: 3px !important; }
+.ojr-pi-step-q { font-family: 'Inter', sans-serif !important; font-size: 12.5px !important; color: #5E5953 !important; line-height: 1.45 !important; white-space: nowrap !important; }
+.ojr-pi-step-last { border-right: none !important; }
+.ojr-pi-step-hl .ojr-pi-step-num { color: #B94E1A !important; }
+.ojr-pi-step-hl .ojr-pi-step-label { color: #670066 !important; }
+/* Case study cards: large, below the process strip */
+.ojr-pi-cards-wrap { padding: 56px 0 0 0 !important; }
+.ojr-case-cards { display: flex !important; flex-wrap: wrap !important; gap: 24px !important; }
+.ojr-case-card { flex: 1 1 calc(25% - 18px) !important; min-width: 260px !important; background: #FFFFFF !important; border: 1px solid #ECE8E1 !important; border-radius: 8px !important; overflow: hidden !important; text-decoration: none !important; color: inherit !important; display: flex !important; flex-direction: column !important; transition: all 0.28s ease !important; }
+.ojr-case-card:hover { border-color: #B94E1A !important; transform: translateY(-3px) !important; box-shadow: 0 12px 32px rgba(26,24,22,0.07) !important; }
+.ojr-case-card-img-box { width: 100% !important; height: 220px !important; overflow: hidden !important; background: #ECE8E1 !important; position: relative !important; }
+.ojr-case-card-img { width: 100% !important; height: 100% !important; object-fit: cover !important; transition: transform 0.45s ease !important; display: block !important; }
+.ojr-case-card:hover .ojr-case-card-img { transform: scale(1.05) !important; }
+.ojr-case-card-badge { position: absolute !important; top: 12px !important; left: 12px !important; background: rgba(26,24,22,0.82) !important; backdrop-filter: blur(4px) !important; padding: 5px 12px !important; border-radius: 20px !important; font-family: 'Inter', sans-serif !important; font-size: 10px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 0.1em !important; color: #FFFFFF !important; }
+.ojr-case-card-body { padding: 22px !important; flex-grow: 1 !important; display: flex !important; flex-direction: column !important; }
+.ojr-case-card-label { font-family: 'Inter', sans-serif !important; font-size: 10px !important; font-weight: 600 !important; text-transform: uppercase !important; letter-spacing: 0.1em !important; color: #B94E1A !important; margin-bottom: 8px !important; display: block !important; }
+.ojr-case-card-title { font-family: 'El Messiri', serif !important; font-size: 19px !important; font-weight: 500 !important; color: #1A1816 !important; margin: 0 0 10px 0 !important; line-height: 1.28 !important; }
+.ojr-case-card:hover .ojr-case-card-title { color: #B94E1A !important; }
+.ojr-case-card-desc { font-family: 'Inter', sans-serif !important; font-size: 13px !important; color: #5E5953 !important; line-height: 1.6 !important; margin: 0 0 16px 0 !important; flex-grow: 1 !important; }
+@media screen and (max-width: 1080px) {
+  .ojr-case-card { flex: 1 1 calc(50% - 12px) !important; }
+}
+@media screen and (max-width: 680px) {
+  .ojr-case-card { flex: 1 1 100% !important; }
+  .ojr-pi-step-q { white-space: normal !important; }
+}
+
+/* Section 6: Renovation & Space */
+.ojr-banner5-section { padding: 85px 0 !important; background-color: #FFF6F2 !important; border-bottom: 1px solid #DFDBD3 !important; }
+.ojr-banner-lead { display: flex !important; flex-wrap: wrap !important; background: #FFFFFF !important; border: 1px solid #DFDBD3 !important; border-radius: 8px !important; overflow: hidden !important; margin-bottom: 24px !important; text-decoration: none !important; color: inherit !important; }
+.ojr-banner-lead-img-box { flex: 0 0 52% !important; max-width: 52% !important; height: 360px !important; min-height: 360px !important; overflow: hidden !important; background: #ECE8E1 !important; }
+.ojr-banner-lead-img { width: 100% !important; height: 100% !important; object-fit: cover !important; transition: transform 0.45s ease !important; }
+.ojr-banner-lead:hover .ojr-banner-lead-img { transform: scale(1.03) !important; }
+.ojr-banner-lead-body { flex: 0 0 48% !important; max-width: 48% !important; padding: 40px 36px !important; display: flex !important; flex-direction: column !important; justify-content: center !important; }
+.ojr-banner-lead-title { font-family: 'El Messiri', serif !important; font-size: 24px !important; font-weight: 500 !important; line-height: 1.25 !important; color: #1A1816 !important; margin: 0 0 10px 0 !important; }
+.ojr-grid-4 { display: flex !important; flex-wrap: wrap !important; gap: 20px !important; }
+.ojr-card-4 { flex: 0 0 calc(25% - 15px) !important; max-width: calc(25% - 15px) !important; background: #FFFFFF !important; border: 1px solid #ECE8E1 !important; border-radius: 6px !important; padding: 18px !important; display: flex !important; flex-direction: column !important; text-decoration: none !important; color: inherit !important; transition: all 0.25s ease !important; }
+.ojr-card-4:hover { border-color: #B94E1A !important; transform: translateY(-2px) !important; }
+.ojr-card-4-thumb-box { width: 100% !important; height: 150px !important; min-height: 150px !important; border-radius: 4px !important; overflow: hidden !important; background: #ECE8E1 !important; margin-bottom: 14px !important; }
+.ojr-card-4-thumb { width: 100% !important; height: 100% !important; object-fit: cover !important; }
+.ojr-card-4-title { font-family: 'El Messiri', serif !important; font-size: 16px !important; font-weight: 500 !important; line-height: 1.3 !important; color: #1A1816 !important; margin: 0 0 6px 0 !important; flex-grow: 1 !important; }
+.ojr-card-4:hover .ojr-card-4-title { color: #B94E1A !important; }
+
+/* Section 7: Commercial & Workplace */
+.ojr-commercial-section { padding: 85px 0 !important; background-color: #FFFFFF !important; border-bottom: 1px solid #DFDBD3 !important; }
+.ojr-commercial-top { display: flex !important; flex-wrap: wrap !important; gap: 24px !important; margin-bottom: 24px !important; }
+.ojr-comm-lead { flex: 0 0 calc(50% - 12px) !important; max-width: calc(50% - 12px) !important; background: #FFF6F2 !important; border: 1px solid #DFDBD3 !important; border-radius: 6px !important; overflow: hidden !important; display: flex !important; flex-direction: column !important; text-decoration: none !important; color: inherit !important; }
+.ojr-comm-lead-img-box { width: 100% !important; height: 240px !important; min-height: 240px !important; overflow: hidden !important; background: #ECE8E1 !important; }
+.ojr-comm-lead-img { width: 100% !important; height: 100% !important; object-fit: cover !important; transition: transform 0.45s ease !important; }
+.ojr-comm-lead:hover .ojr-comm-lead-img { transform: scale(1.03) !important; }
+.ojr-comm-lead-body { padding: 24px !important; display: flex !important; flex-direction: column !important; flex-grow: 1 !important; }
+.ojr-comm-lead-title { font-family: 'El Messiri', serif !important; font-size: 20px !important; font-weight: 500 !important; color: #1A1816 !important; margin: 0 0 8px 0 !important; }
+.ojr-comm-row-grid { display: flex !important; flex-wrap: wrap !important; gap: 20px !important; }
+.ojr-comm-row-item { flex: 0 0 calc(25% - 15px) !important; max-width: calc(25% - 15px) !important; background: #FFF6F2 !important; border: 1px solid #DFDBD3 !important; border-radius: 6px !important; overflow: hidden !important; display: flex !important; flex-direction: column !important; text-decoration: none !important; color: inherit !important; transition: all 0.25s ease !important; }
+.ojr-comm-row-item:hover { border-color: #B94E1A !important; transform: translateY(-2px) !important; background: #FFFFFF !important; }
+.ojr-comm-row-thumb-box { width: 100% !important; height: 155px !important; min-height: 155px !important; overflow: hidden !important; background: #ECE8E1 !important; }
+.ojr-comm-row-thumb { width: 100% !important; height: 100% !important; object-fit: cover !important; transition: transform 0.45s ease !important; }
+.ojr-comm-row-item:hover .ojr-comm-row-thumb { transform: scale(1.03) !important; }
+.ojr-comm-row-body { padding: 18px !important; display: flex !important; flex-direction: column !important; flex-grow: 1 !important; }
+.ojr-comm-row-title { font-family: 'El Messiri', serif !important; font-size: 16px !important; font-weight: 500 !important; color: #1A1816 !important; margin: 0 0 6px 0 !important; flex-grow: 1 !important; }
+
+/* Section 8: Consultation CTA */
+.ojr-consult-section { padding: 80px 0 !important; background-color: #1A1816 !important; }
+.ojr-consult-inner { display: flex !important; flex-wrap: wrap !important; align-items: center !important; justify-content: space-between !important; gap: 36px !important; }
+.ojr-consult-text { flex: 1 1 560px !important; }
+.ojr-consult-eyebrow { font-family: 'Inter', sans-serif !important; font-size: 11px !important; font-weight: 500 !important; letter-spacing: 0.22em !important; text-transform: uppercase !important; color: #B94E1A !important; display: inline-block !important; margin-bottom: 12px !important; }
+.ojr-consult-title { font-family: 'El Messiri', serif !important; font-size: clamp(26px, 2.8vw, 40px) !important; font-weight: 500 !important; line-height: 1.18 !important; color: #FFFFFF !important; margin: 0 0 14px 0 !important; }
+.ojr-consult-desc { font-family: 'Inter', sans-serif !important; font-size: 15px !important; line-height: 1.65 !important; color: #A09A93 !important; margin: 0 !important; }
+.ojr-consult-actions { display: flex !important; flex-wrap: wrap !important; gap: 14px !important; align-items: center !important; flex-shrink: 0 !important; }
+.ojr-consult-phone { font-family: 'Inter', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; color: #FFFFFF !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 8px !important; opacity: 0.8 !important; transition: opacity 0.2s !important; }
+.ojr-consult-phone:hover { opacity: 1 !important; color: #FFFFFF !important; }
+
+/* Responsive */
+@media screen and (max-width: 1080px) {
+  .ojr-founder-col-img, .ojr-founder-col-txt, .ojr-bts-col-info, .ojr-bts-col-list, .ojr-banner-lead-img-box, .ojr-banner-lead-body, .ojr-comm-lead { flex: 0 0 100% !important; max-width: 100% !important; }
+  .ojr-latest-card, .ojr-intent-card, .ojr-card-6 { flex: 0 0 calc(50% - 12px) !important; max-width: calc(50% - 12px) !important; }
+  .ojr-card-4, .ojr-comm-row-item { flex: 0 0 calc(50% - 10px) !important; max-width: calc(50% - 10px) !important; }
+  .ojr-case-card { flex: 1 1 100% !important; }
+}
+@media screen and (max-width: 680px) {
+  .ojr-container { padding: 0 18px !important; }
+  .ojr-latest-card, .ojr-intent-card, .ojr-card-6, .ojr-card-4, .ojr-comm-row-item { flex: 0 0 100% !important; max-width: 100% !important; }
+  .ojr-founder-card, .ojr-bts-box { padding: 24px !important; }
+  .ojr-founder-img-frame { height: 340px !important; min-height: 340px !important; }
+  .ojr-masthead-cta-row { flex-direction: column !important; align-items: flex-start !important; }
+}
+</style>
+
+<div class="ojr-wrap">
+
+	<!-- 1. MASTHEAD HERO -->
+	<header class="ojr-masthead">
+		<div class="ojr-container">
+			<div class="ojr-masthead-inner">
+				<span class="ojr-eyebrow">Interior Design Blog London</span>
+				<div class="ojr-rule"></div>
+				<!-- H1: Updated per SEO review recommendation -->
+				<h1 class="ojr-masthead-title">Interior Design Blog London: Expert Advice &amp; Project Insights</h1>
+				<p class="ojr-masthead-lead">Expert renovation advice, space planning guidance, material selection, and insights from real projects by Oraanj&rsquo;s London design team.</p>
+				<p class="ojr-masthead-desc">Drawing on more than 20 years of experience across residential, commercial, and hospitality interiors, we share what we&rsquo;ve learnt about space planning, renovations, lighting, materials, and the decisions that make a real difference to a finished space.</p>
+				<div class="ojr-masthead-cta-row">
+					<a href="#latest-blogs" class="ojr-btn-primary">Explore Latest Articles &darr;</a>
+					<a href="<?php echo esc_url( site_url('/interior-design-london/') ); ?>" class="ojr-btn-outline">View Our Services &rarr;</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- 2. LATEST BLOGS (6 NEWEST POSTS: EXCLUDES UNCATEGORISED / PORTFOLIO-DEMO) -->
+	<section id="latest-blogs" class="ojr-latest-section">
+		<div class="ojr-container">
+			<span class="ojr-eyebrow">Fresh From the Studio</span>
+			<div class="ojr-rule"></div>
+			<h2 class="ojr-section-title">Latest Articles &amp; Insights</h2>
+			<p class="ojr-section-sub">Recently published guides, architectural notes, and project lessons from across London.</p>
+			
+			<div class="ojr-latest-grid">
+				<?php
+				/*
+				 * FIX: Exclude the 'Uncategorised' category to hide Portfolio-Demo (dated 29 Sep 2026)
+				 * and any other draft/test content not intended for public listing.
+				 * Developer: Also set Portfolio-Demo post status to Draft or add a noindex meta tag.
+				 */
+				$uncategorised_id = get_cat_ID('Uncategorised');
+				$latest_unfiltered_q = new WP_Query( array(
+					'post_type'           => 'post',
+					'posts_per_page'      => 6,
+					'post_status'         => 'publish',
+					'orderby'             => 'date',
+					'order'               => 'DESC',
+					'ignore_sticky_posts' => true,
+					'category__not_in'    => array( $uncategorised_id ),
+				) );
+
+				if ( $latest_unfiltered_q->have_posts() ) : while ( $latest_unfiltered_q->have_posts() ) : $latest_unfiltered_q->the_post();
+					$thumb = get_the_post_thumbnail_url( get_the_ID(), 'medium_large' );
+					if ( ! $thumb ) { $thumb = 'https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Rachana-Gupta-Founder-of-Oraanj-Interiors.jpeg'; }
+					$cats = get_the_category();
+					$cat_label = ! empty($cats) ? $cats[0]->name : 'Design Guide';
+				?>
+				<article class="ojr-latest-card">
+					<div class="ojr-latest-img-box">
+						<a href="<?php the_permalink(); ?>">
+							<img src="<?php echo esc_url( $thumb ); ?>" alt="<?php the_title_attribute(); ?>" class="ojr-latest-img" loading="lazy" />
+						</a>
+						<span class="ojr-cat-pill"><?php echo esc_html( $cat_label ); ?></span>
+					</div>
+					<div class="ojr-latest-body">
+						<div class="ojr-date-badge">
+							<span class="ojr-date-dot"></span>
+							<span><?php echo get_the_date('F j, Y'); ?></span>
+						</div>
+						<!-- Title word count increased from 8 to 12 to prevent cut-off titles -->
+						<a href="<?php the_permalink(); ?>" class="ojr-latest-title"><?php echo wp_trim_words( get_the_title(), 12, '...' ); ?></a>
+						<p class="ojr-latest-desc"><?php echo wp_trim_words( get_the_excerpt(), 18, '...' ); ?></p>
+						<a href="<?php the_permalink(); ?>" class="ojr-link-arrow">Read Article &rarr;</a>
+					</div>
+				</article>
+				<?php endwhile; wp_reset_postdata(); endif; ?>
+			</div>
+		</div>
+	</section>
+
+	<!-- 3. MEET RACHANA: FOUNDER & CREATIVE DIRECTOR -->
+	<section class="ojr-founder-section">
+		<div class="ojr-container">
+			<div class="ojr-founder-card">
+				<div class="ojr-founder-col-img">
+					<div class="ojr-founder-img-frame">
+						<img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Rachana-Gupta-Founder-of-Oraanj-Interiors.jpeg" alt="Rachana Gupta, Founder and Creative Director of Oraanj Interior Design" class="ojr-founder-img" loading="lazy" />
+					</div>
+				</div>
+				<div class="ojr-founder-col-txt">
+					<span class="ojr-eyebrow">From Rachana</span>
+					<h2 class="ojr-founder-title">What Over 20 Years of Interior Design Has Taught Me</h2>
+					<p class="ojr-p">I&rsquo;m Rachana Gupta, <strong>Founder &amp; Creative Director of Oraanj Interior Design</strong>.</p>
+					<p class="ojr-p">Over the years, I&rsquo;ve learnt that good interior design is rarely about following a trend. It&rsquo;s about understanding the property, solving what isn&rsquo;t working, and making decisions that still feel right once the excitement of something new has passed.</p>
+					<p class="ojr-p">Through this journal, my team and I share lessons from real projects: the decisions that worked, the challenges we encountered, and the considerations that matter most before you start designing or renovating.</p>
+					<p class="ojr-p ojr-quote-line">I hope it helps you make better decisions for your own space.</p>
+					<div style="margin-top: 22px;">
+						<div style="font-family: 'El Messiri', serif; font-size: 21px; font-weight: 500;">Rachana Gupta</div>
+						<!-- Updated: 'Founder & Creative Director', not 'Interior designer and blogger' -->
+						<div style="font-family: 'Inter', sans-serif; font-size: 11px; color: #8C8882; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 18px;">Founder &amp; Creative Director, Oraanj Interior Design</div>
+						<a href="<?php echo esc_url( site_url('/about/') ); ?>" class="ojr-link-arrow">Meet the Oraanj Team &rarr;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 4. FIND ADVICE BY TOPIC: QUESTIONS INTENT GATEWAY -->
+	<section class="ojr-intent-section">
+		<div class="ojr-container">
+			<span class="ojr-eyebrow">Find Advice By Topic</span>
+			<div class="ojr-rule"></div>
+			<h2 class="ojr-section-title">Start With the Question You&rsquo;re Trying to Answer</h2>
+			<p class="ojr-section-sub">Direct access to the exact advice, layouts, and specifications you need, along with links to our relevant services.</p>
+			<div class="ojr-intent-grid">
+				<div class="ojr-intent-card">
+					<span class="ojr-intent-num">01</span>
+					<h3 class="ojr-intent-title">Planning a Renovation?</h3>
+					<p class="ojr-intent-desc">Understand what to consider before work starts, how to develop a realistic scope, and which design decisions are best made early.</p>
+					<a href="<?php echo esc_url( site_url('/interior-design-london/') ); ?>" class="ojr-intent-service-link">&#8594; Our Residential Design &amp; Build Service</a>
+					<a href="#renovation-cluster" class="ojr-link-arrow">Explore Renovation Advice &rarr;</a>
+				</div>
+				<div class="ojr-intent-card">
+					<span class="ojr-intent-num">02</span>
+					<h3 class="ojr-intent-title">Struggling With Your Layout?</h3>
+					<p class="ojr-intent-desc">Learn how furniture placement, circulation, storage, and space planning can transform how a property functions.</p>
+					<a href="<?php echo esc_url( site_url('/space-planning/') ); ?>" class="ojr-intent-service-link">&#8594; Our Space Planning Service</a>
+					<a href="#renovation-cluster" class="ojr-link-arrow">Explore Space Planning &rarr;</a>
+				</div>
+				<div class="ojr-intent-card">
+					<span class="ojr-intent-num">03</span>
+					<h3 class="ojr-intent-title">Choosing Lighting or Materials?</h3>
+					<p class="ojr-intent-desc">Practical guidance on lighting placement, proportions, surface finishes, and selecting materials that work cohesively across a scheme.</p>
+					<a href="<?php echo esc_url( site_url('/lighting-design/') ); ?>" class="ojr-intent-service-link">&#8594; Our Lighting Design Service</a>
+					<a href="<?php echo esc_url( site_url('/lighting-design/') ); ?>" class="ojr-link-arrow">Explore Lighting &amp; Materials &rarr;</a>
+				</div>
+				<div class="ojr-intent-card">
+					<span class="ojr-intent-num">04</span>
+					<h3 class="ojr-intent-title">Designing a Home?</h3>
+					<p class="ojr-intent-desc">Ideas and advice for kitchens, living spaces, bedrooms, bespoke joinery, colour palettes, and complete residential interiors.</p>
+					<a href="<?php echo esc_url( site_url('/residential-interior-design/') ); ?>" class="ojr-intent-service-link">&#8594; Our Residential Interior Design Service</a>
+					<a href="#residential-cluster" class="ojr-link-arrow">Explore Home Design &rarr;</a>
+				</div>
+				<div class="ojr-intent-card">
+					<span class="ojr-intent-num">05</span>
+					<h3 class="ojr-intent-title">Planning an Office?</h3>
+					<p class="ojr-intent-desc">Advice on workplace layouts, hybrid working, office fit-outs, meeting rooms, and creating better environments for employees.</p>
+					<a href="<?php echo esc_url( site_url('/office-interior-design/') ); ?>" class="ojr-intent-service-link">&#8594; Our Office Interior Design Service</a>
+					<a href="#commercial-cluster" class="ojr-link-arrow">Explore Office Design &rarr;</a>
+				</div>
+				<div class="ojr-intent-card">
+					<span class="ojr-intent-num">06</span>
+					<h3 class="ojr-intent-title">Opening a Restaurant or Caf&eacute;?</h3>
+					<p class="ojr-intent-desc">Explore advice on seating layouts, customer flow, service counters, lighting, atmosphere, and planning hospitality interiors.</p>
+					<a href="<?php echo esc_url( site_url('/restaurant-interior-design/') ); ?>" class="ojr-intent-service-link">&#8594; Our Restaurant Interior Design Service</a>
+					<a href="#commercial-cluster" class="ojr-link-arrow">Explore Hospitality Design &rarr;</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 5. RESIDENTIAL ARCHITECTURE (6 POSTS - 3x2 GALLERY GRID) -->
+	<section id="residential-cluster" class="ojr-grid6-section">
+		<div class="ojr-container">
+			<span class="ojr-eyebrow">Residential Guides</span>
+			<div class="ojr-rule"></div>
+			<h2 class="ojr-section-title">Interior Design for Homes</h2>
+			<p class="ojr-section-sub">Ideas that go beyond what&rsquo;s trending: layout, proportions, kitchens, joinery, and connected living.</p>
+			<div class="ojr-grid-6">
+				<?php
+				$res_q = new WP_Query( array(
+					'category_name'       => 'home-design,home-decor,interior-design-styles,renovation-planning',
+					'posts_per_page'      => 6,
+					'post_status'         => 'publish',
+					'ignore_sticky_posts' => true,
+					'category__not_in'    => array( $uncategorised_id ),
+				) );
+
+				if ( ! $res_q->have_posts() ) {
+					$res_q = new WP_Query( array(
+						'posts_per_page'   => 6,
+						'post_status'      => 'publish',
+						'offset'           => 1,
+						'category__not_in' => array( $uncategorised_id ),
+					) );
+				}
+
+				if ( $res_q->have_posts() ) : while ( $res_q->have_posts() ) : $res_q->the_post();
+					$thumb = get_the_post_thumbnail_url( get_the_ID(), 'medium_large' );
+					if ( ! $thumb ) { $thumb = 'https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Rachana-Gupta-Founder-of-Oraanj-Interiors.jpeg'; }
+				?>
+				<article class="ojr-card-6">
+					<div class="ojr-card-img-wrap">
+						<a href="<?php the_permalink(); ?>">
+							<img src="<?php echo esc_url( $thumb ); ?>" alt="<?php the_title_attribute(); ?>" class="ojr-card-img" loading="lazy" />
+						</a>
+					</div>
+					<div class="ojr-card-body">
+						<div class="ojr-date-badge">
+							<span class="ojr-date-dot"></span>
+							<span><?php echo get_the_date('F j, Y'); ?></span>
+						</div>
+						<a href="<?php the_permalink(); ?>" class="ojr-card-title"><?php echo wp_trim_words( get_the_title(), 12, '...' ); ?></a>
+						<p class="ojr-card-desc"><?php echo wp_trim_words( get_the_excerpt(), 18, '...' ); ?></p>
+						<a href="<?php the_permalink(); ?>" class="ojr-link-arrow">Read Guide &rarr;</a>
+					</div>
+				</article>
+				<?php endwhile; wp_reset_postdata(); endif; ?>
+			</div>
+			<!-- Contextual service link -->
+			<div style="margin-top: 36px;">
+				<a href="<?php echo esc_url( site_url('/residential-interior-design/') ); ?>" class="ojr-btn-outline">View Our Residential Interior Design Service &rarr;</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- 6. REAL PROJECT INSIGHTS: CASE STUDIES (REDESIGNED) -->
+	<section class="ojr-pi-section">
+
+		<!-- Dark header banner -->
+		<div class="ojr-pi-header">
+			<div class="ojr-container">
+				<div class="ojr-pi-header-inner">
+					<div class="ojr-pi-header-text">
+						<span class="ojr-pi-eyebrow">Real Project Insights</span>
+						<h2 class="ojr-pi-title">What We&rsquo;re Learning From Real Projects</h2>
+						<p class="ojr-pi-subtitle">A finished interior only shows the end of the story. The most useful lessons happen earlier, while testing floor plans, resolving awkward spaces, and making the decisions that never appear in the final photograph.</p>
+					</div>
+					<div class="ojr-pi-header-cta">
+						<a href="<?php echo esc_url( site_url('/portfolio/') ); ?>" class="ojr-btn-primary">Explore Our Portfolio &rarr;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 7-step process strip -->
+		<div class="ojr-pi-steps-wrap">
+			<div class="ojr-container">
+				<div class="ojr-pi-steps">
+					<div class="ojr-pi-step">
+						<span class="ojr-pi-step-num">01</span>
+						<div class="ojr-pi-step-txt">
+							<span class="ojr-pi-step-label">The Brief</span>
+							<span class="ojr-pi-step-q">What did the client need?</span>
+						</div>
+					</div>
+					<div class="ojr-pi-step">
+						<span class="ojr-pi-step-num">02</span>
+						<div class="ojr-pi-step-txt">
+							<span class="ojr-pi-step-label">The Problem</span>
+							<span class="ojr-pi-step-q">What wasn&rsquo;t working?</span>
+						</div>
+					</div>
+					<div class="ojr-pi-step">
+						<span class="ojr-pi-step-num">03</span>
+						<div class="ojr-pi-step-txt">
+							<span class="ojr-pi-step-label">The Options</span>
+							<span class="ojr-pi-step-q">What did we consider?</span>
+						</div>
+					</div>
+					<div class="ojr-pi-step">
+						<span class="ojr-pi-step-num">04</span>
+						<div class="ojr-pi-step-txt">
+							<span class="ojr-pi-step-label">The Decision</span>
+							<span class="ojr-pi-step-q">Why did we choose this approach?</span>
+						</div>
+					</div>
+					<div class="ojr-pi-step">
+						<span class="ojr-pi-step-num">05</span>
+						<div class="ojr-pi-step-txt">
+							<span class="ojr-pi-step-label">The Drawings</span>
+							<span class="ojr-pi-step-q">Plans and 3D development</span>
+						</div>
+					</div>
+					<div class="ojr-pi-step">
+						<span class="ojr-pi-step-num">06</span>
+						<div class="ojr-pi-step-txt">
+							<span class="ojr-pi-step-label">The Result</span>
+							<span class="ojr-pi-step-q">What changed in the finished space?</span>
+						</div>
+					</div>
+					<div class="ojr-pi-step ojr-pi-step-last ojr-pi-step-hl">
+						<span class="ojr-pi-step-num">07</span>
+						<div class="ojr-pi-step-txt">
+							<span class="ojr-pi-step-label">What We Learnt</span>
+							<span class="ojr-pi-step-q">Our key recommendations</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Dynamic case study cards from the 'case-studies' WordPress category -->
+		<div class="ojr-pi-cards-wrap">
+			<div class="ojr-container">
+
+			<?php
+			$cs_q = new WP_Query( array(
+				'category_name'       => 'case-studies',
+				'posts_per_page'      => 4,
+				'post_status'         => 'publish',
+				'orderby'             => 'date',
+				'order'               => 'DESC',
+				'ignore_sticky_posts' => true,
+			) );
+
+			if ( $cs_q->have_posts() ) : ?>
+			<div class="ojr-case-cards">
+				<?php while ( $cs_q->have_posts() ) : $cs_q->the_post();
+					$cs_thumb = get_the_post_thumbnail_url( get_the_ID(), 'medium_large' );
+					if ( ! $cs_thumb ) { $cs_thumb = 'https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Rachana-Gupta-Founder-of-Oraanj-Interiors.jpeg'; }
+					// Use a sub-category (any category other than 'case-studies') as the label
+					$cs_cats  = get_the_category();
+					$cs_label = 'Case Study';
+					foreach ( $cs_cats as $cs_cat ) {
+						if ( $cs_cat->slug !== 'case-studies' ) {
+							$cs_label = esc_html( $cs_cat->name ) . ' &middot; Case Study';
+							break;
+						}
+					}
+				?>
+				<a href="<?php the_permalink(); ?>" class="ojr-case-card">
+					<div class="ojr-case-card-img-box">
+						<img src="<?php echo esc_url( $cs_thumb ); ?>" alt="<?php the_title_attribute(); ?>" class="ojr-case-card-img" loading="lazy" />
+						<span class="ojr-case-card-badge"><?php echo $cs_label; ?></span>
+					</div>
+					<div class="ojr-case-card-body">
+						<span class="ojr-case-card-label"><?php echo $cs_label; ?></span>
+						<h3 class="ojr-case-card-title"><?php echo wp_trim_words( get_the_title(), 10, '...' ); ?></h3>
+						<p class="ojr-case-card-desc"><?php echo wp_trim_words( get_the_excerpt(), 16, '...' ); ?></p>
+						<span class="ojr-link-arrow" style="margin-top: 0;">Read Case Study &rarr;</span>
+					</div>
+				</a>
+				<?php endwhile; wp_reset_postdata(); ?>
+			</div>
+			<?php endif; ?>
+			</div><!-- /.ojr-container -->
+		</div><!-- /.ojr-pi-cards-wrap -->
+	</section><!-- /.ojr-pi-section -->
+
+	<!-- 7. RENOVATION & SPACE (5 POSTS - 1 HERO BANNER + 4 COLS) -->
+	<section id="renovation-cluster" class="ojr-banner5-section">
+		<div class="ojr-container">
+			<span class="ojr-eyebrow">Renovation &amp; Spatial Planning</span>
+			<div class="ojr-rule"></div>
+			<h2 class="ojr-section-title">Planning a Renovation? Make the Space Work Better</h2>
+			<p class="ojr-section-sub">Essential reading before construction begins: space planning, contractor briefs, and budgeting insights.</p>
+			
+			<?php
+			$reno_q = new WP_Query( array(
+				'category_name'       => 'renovation-planning,renovation,space-design,space-planning',
+				'posts_per_page'      => 5,
+				'post_status'         => 'publish',
+				'ignore_sticky_posts' => true,
+				'category__not_in'    => array( $uncategorised_id ),
+			) );
+
+			if ( ! $reno_q->have_posts() ) {
+				$reno_q = new WP_Query( array(
+					'posts_per_page'   => 5,
+					'post_status'      => 'publish',
+					'offset'           => 3,
+					'category__not_in' => array( $uncategorised_id ),
+				) );
+			}
+
+			if ( $reno_q->have_posts() ) :
+				$r_idx = 0;
+				while ( $reno_q->have_posts() ) : $reno_q->the_post();
+					$thumb = get_the_post_thumbnail_url( get_the_ID(), 'large' );
+					if ( ! $thumb ) { $thumb = 'https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Rachana-Gupta-Founder-of-Oraanj-Interiors.jpeg'; }
+
+					if ( $r_idx === 0 ) :
+			?>
+			<a href="<?php the_permalink(); ?>" class="ojr-banner-lead">
+				<div class="ojr-banner-lead-img-box">
+					<img src="<?php echo esc_url( $thumb ); ?>" alt="<?php the_title_attribute(); ?>" class="ojr-banner-lead-img" />
+				</div>
+				<div class="ojr-banner-lead-body">
+					<div class="ojr-date-badge">
+						<span class="ojr-date-dot"></span>
+						<span><?php echo get_the_date('F j, Y'); ?></span>
+					</div>
+					<h3 class="ojr-banner-lead-title"><?php the_title(); ?></h3>
+					<p class="ojr-p"><?php echo wp_trim_words( get_the_excerpt(), 24, '...' ); ?></p>
+					<span class="ojr-link-arrow">Read Detailed Guide &rarr;</span>
+				</div>
+			</a>
+			<div class="ojr-grid-4">
+			<?php else : ?>
+				<a href="<?php the_permalink(); ?>" class="ojr-card-4">
+					<div class="ojr-card-4-thumb-box">
+						<img src="<?php echo esc_url( $thumb ); ?>" alt="<?php the_title_attribute(); ?>" class="ojr-card-4-thumb" loading="lazy" />
+					</div>
+					<span class="ojr-date-badge" style="font-size: 10px; margin-bottom: 4px;"><?php echo get_the_date('M j, Y'); ?></span>
+					<h4 class="ojr-card-4-title"><?php echo wp_trim_words( get_the_title(), 10, '...' ); ?></h4>
+					<span class="ojr-link-arrow">Read &rarr;</span>
+				</a>
+			<?php
+				endif;
+				$r_idx++;
+				endwhile;
+				echo '</div>';
+				wp_reset_postdata();
+			endif;
+			?>
+			<!-- Contextual service link -->
+			<div style="margin-top: 32px;">
+				<a href="<?php echo esc_url( site_url('/interior-design-london/') ); ?>" class="ojr-btn-outline">Discuss Your Renovation With Oraanj &rarr;</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- 8. COMMERCIAL & WORKPLACE (6 POSTS - ALL 6 WITH IMAGES) -->
+	<section id="commercial-cluster" class="ojr-commercial-section">
+		<div class="ojr-container">
+			<span class="ojr-eyebrow">Workplace &amp; Hospitality</span>
+			<div class="ojr-rule"></div>
+			<h2 class="ojr-section-title">Commercial, Office &amp; Restaurant Design</h2>
+			<p class="ojr-section-sub">Designing for customer flow, employee ergonomics, lease checks, and operational success.</p>
+			
+			<?php
+			$comm_q = new WP_Query( array(
+				'category_name'       => 'office-design,hospitality-design,restaurant-interior-design,commercial-interior-design',
+				'posts_per_page'      => 6,
+				'post_status'         => 'publish',
+				'ignore_sticky_posts' => true,
+				'category__not_in'    => array( $uncategorised_id ),
+			) );
+
+			if ( ! $comm_q->have_posts() ) {
+				$comm_q = new WP_Query( array(
+					'posts_per_page'   => 6,
+					'post_status'      => 'publish',
+					'offset'           => 2,
+					'category__not_in' => array( $uncategorised_id ),
+				) );
+			}
+
+			if ( $comm_q->have_posts() ) :
+				$c_posts = $comm_q->posts;
+				$c_leads = array_slice( $c_posts, 0, 2 );
+				$c_rows  = array_slice( $c_posts, 2, 4 );
+			?>
+			<!-- 2 Dominant Lead Cards With Images -->
+			<div class="ojr-commercial-top">
+				<?php foreach ( $c_leads as $post ) : setup_postdata( $post );
+					$thumb = get_the_post_thumbnail_url( get_the_ID(), 'medium_large' );
+					if ( ! $thumb ) { $thumb = 'https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Rachana-Gupta-Founder-of-Oraanj-Interiors.jpeg'; }
+				?>
+				<a href="<?php the_permalink(); ?>" class="ojr-comm-lead">
+					<div class="ojr-comm-lead-img-box">
+						<img src="<?php echo esc_url( $thumb ); ?>" alt="<?php the_title_attribute(); ?>" class="ojr-comm-lead-img" loading="lazy" />
+					</div>
+					<div class="ojr-comm-lead-body">
+						<div class="ojr-date-badge">
+							<span class="ojr-date-dot"></span>
+							<span><?php echo get_the_date('F j, Y'); ?></span>
+						</div>
+						<h3 class="ojr-comm-lead-title"><?php the_title(); ?></h3>
+						<p class="ojr-p"><?php echo wp_trim_words( get_the_excerpt(), 16, '...' ); ?></p>
+						<span class="ojr-link-arrow">Read Article &rarr;</span>
+					</div>
+				</a>
+				<?php endforeach; wp_reset_postdata(); ?>
+			</div>
+
+			<!-- 4 Grid Cards With Images & Dates -->
+			<div class="ojr-comm-row-grid">
+				<?php foreach ( $c_rows as $post ) : setup_postdata( $post );
+					$thumb = get_the_post_thumbnail_url( get_the_ID(), 'medium' );
+					if ( ! $thumb ) { $thumb = 'https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Rachana-Gupta-Founder-of-Oraanj-Interiors.jpeg'; }
+				?>
+				<a href="<?php the_permalink(); ?>" class="ojr-comm-row-item">
+					<div class="ojr-comm-row-thumb-box">
+						<img src="<?php echo esc_url( $thumb ); ?>" alt="<?php the_title_attribute(); ?>" class="ojr-comm-row-thumb" loading="lazy" />
+					</div>
+					<div class="ojr-comm-row-body">
+						<div class="ojr-date-badge" style="font-size: 10px; margin-bottom: 4px;">
+							<span class="ojr-date-dot"></span>
+							<span><?php echo get_the_date('M j, Y'); ?></span>
+						</div>
+						<h4 class="ojr-comm-row-title"><?php echo wp_trim_words( get_the_title(), 10, '...' ); ?></h4>
+						<span class="ojr-link-arrow">Explore &rarr;</span>
+					</div>
+				</a>
+				<?php endforeach; wp_reset_postdata(); ?>
+			</div>
+			<?php endif; ?>
+			<!-- Contextual service links for commercial visitors -->
+			<div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px;">
+				<a href="<?php echo esc_url( site_url('/office-interior-design/') ); ?>" class="ojr-btn-outline">Office Interior Design &rarr;</a>
+				<a href="<?php echo esc_url( site_url('/restaurant-interior-design/') ); ?>" class="ojr-btn-outline">Restaurant Interior Design &rarr;</a>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+<!-- 9. CONSULTATION CTA: "Planning a Renovation or Commercial Interior?" -->
+<div class="ojr-wrap" style="background-color: #1A1816 !important; overflow: visible !important;">
+	<section class="ojr-consult-section">
+		<div class="ojr-container">
+			<div class="ojr-consult-inner">
+				<div class="ojr-consult-text">
+					<span class="ojr-consult-eyebrow">Free Initial Consultation</span>
+					<h2 class="ojr-consult-title">Planning a Renovation or Commercial Interior?</h2>
+					<p class="ojr-consult-desc">Whether you&rsquo;re redesigning a London home, fitting out an office, or creating a new hospitality space, Oraanj can help. Speak with Rachana&rsquo;s team for an initial consultation about your project.</p>
+				</div>
+				<div class="ojr-consult-actions">
+					<a href="<?php echo esc_url( site_url('/contact/') ); ?>" class="ojr-btn-primary">Book a Consultation &rarr;</a>
+					<a href="tel:4407448803051" class="ojr-consult-phone">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+						+44 (0) 7448 803051
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<!-- 10. DIRECT FORM INTEGRATION -->
+<div class="home_form_section">
+	<div class="container">
+		<div class="container_inner container_inner_white">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 text-center">
+					<h3 class="banner_bottom_section_heading">Ready to Transform Your Space?</h3>
+					<div class="home_form_section_text">Get expert guidance on residential, commercial, and hospitality interiors from Oraanj Interior Design.</div>
+					<div class="home_form_section_text"><a href="tel:4407448803051">+44 (0) 7448 803051</a></div>
+				</div>
+				<div class="col-lg-5 col-md-6 offset-lg-2 home_form">
+					<?php echo do_shortcode('[common_section]'); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 11. FAQ ACCORDION: Reduced from 8 broadly similar questions to 5 distinct, useful questions -->
+<div class="home_faq_section">
+	<div class="container">
+		<h4 class="about_common_section_heading text-white text-center">Frequently Asked Questions</h4>
+		<div class="row justify-content-center mt-4">
+			<div class="col-lg-7 home_faq_right">
+				<?php echo do_shortcode('[accordion]
+
+[toggle title="What topics does the Oraanj Interior Design blog cover?" state="opened"]
+The Oraanj blog covers residential interiors, commercial design, restaurant and hospitality design, office fit-outs, space planning, renovation guidance, and practical material and lighting advice. Each section is organised by project type so you can easily find advice relevant to your specific situation.
+[/toggle]
+
+[toggle title="Can I find renovation and space-planning advice here?"]
+Yes. The blog includes detailed guides on renovation planning, spatial layout, furniture positioning, storage solutions, and the sequencing of design decisions. These articles are written to help you understand what to consider before work begins, not just what looks good in a photograph.
+[/toggle]
+
+[toggle title="Does Oraanj share real project examples and case studies?"]
+Yes. The Real Project Insights section walks through completed projects using a seven-step structure: the brief, the problem, the options considered, the decision made, the design drawings, the finished result, and what we learnt. This gives you a transparent view of how Oraanj approaches design challenges.
+[/toggle]
+
+[toggle title="Is this blog useful for commercial clients including offices, restaurants, and hospitality spaces?"]
+Yes. A dedicated section covers workplace and hospitality design, including office layouts for hybrid working, restaurant seating and customer flow, caf&eacute; design, and the practical considerations of designing high-use commercial environments in London.
+[/toggle]
+
+[toggle title="How can I get professional design advice for my project?"]
+You can contact Oraanj Interior Design directly through the website or by calling +44 (0) 7448 803051. The studio offers tailored residential, commercial, and hospitality design services across London. An initial consultation is the best starting point for any project.
+[/toggle]
+
+[/accordion]'); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php get_footer(); ?>
