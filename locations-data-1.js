@@ -1,103 +1,105 @@
-// Locations Part 1: Locations 1 to 17
 module.exports = [
   {
     "slug": "hayes",
     "url": "https://www.oraanj-interiors.co.uk/hayes/",
     "name": "Hayes",
     "borough": "London Borough of Hillingdon",
-    "eyebrow": "Interior Architecture & Renovation in Hayes & Hillingdon",
-    "h1": "Interior Designers in Hayes | Residential Architecture & Bespoke Interiors",
-    "heroLead": "Specialist Interior Design for Spacious Multi-Generational Family Homes and Suburban Residences Across Hayes, Harlington, and Hillingdon.",
-    "heroBody1": "Oraanj provides tailored interior architecture, space planning, bespoke joinery, and complete design & build services for substantial properties across Hayes and West London. With Elizabeth line connectivity and thriving residential neighbourhoods, homes in Hayes require thoughtful layouts that balance generous family life with contemporary elegance.",
-    "heroBody2": "Our team understands the architectural nuances of Hayes properties, from expansive 1930s detached and semi-detached homes to new high-specification residential developments. We specialise in multi-generational floor plans, dedicated home offices, libraries, and boot rooms, and grand open-plan kitchen and dining zones designed for welcoming family and guests.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-living-room-warm-neutral.webp",
-    "heroAlt": "Spacious modern family living room interior design in Hayes by Oraanj",
-    "typologyTitle": "Property Typologies in Hayes & West London",
-    "typologySubtitle": "Designing for Multi-Generational Living, Large Floor Plans, and Suburban Expansions",
-    "typologyLead": "Hayes properties often possess substantial ground floor footprints and deep rear gardens, presenting exceptional opportunities for spatial expansion and family-centric interior architecture.",
+    "eyebrow": "Commercial Architecture & Corporate Fit-Outs in Hayes",
+    "h1": "Corporate Office Interior Design in Hayes | Commercial Fit-Outs",
+    "heroLead": "Specialist Corporate Office Interior Design and Turnkey Workplace Fit-Outs Across Hayes, Harlington, and the Heathrow Business Corridor.",
+    "heroBody1": "Oraanj provides turnkey commercial interior design, Cat A & Cat B fit-outs, space planning, and bespoke architectural joinery for corporate headquarters and business hubs across Hayes. With Elizabeth line connectivity driving commercial growth in Hillingdon, we engineer high-performance workplaces that attract top talent and reinforce corporate brand identity.",
+    "heroBody2": "Our flagship Hayes corporate headquarters scheme exemplifies our turnkey capabilities, featuring executive boardrooms with integrated AV, acoustic ceiling baffles, collaborative desk pods with biophilic planters, and bespoke reception joinery.",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-corporate-reception-interior.jpeg",
+    "heroAlt": "Luxury corporate reception interior and bespoke desk in Hayes by Oraanj",
+    "typologyTitle": "Workplace Typologies & Office Architecture in Hayes",
+    "typologySubtitle": "Designing for Hybrid Productivity, Corporate Brand Presence, and Team Well-Being",
+    "typologyLead": "Commercial floorplates in Hayes require dynamic space planning that accommodates focused work, cross-functional collaboration, and executive hosting.",
     "typologies": [
       {
         "num": "01",
-        "tag": "Family Living",
-        "title": "Spacious Multi-Generational Residences",
-        "desc": "Reconfiguring ground floors to accommodate multi-generational living with effortless acoustic privacy, ground-floor en-suite bedroom suites, and distinct formal vs. informal family lounges."
+        "tag": "Workplace",
+        "title": "Zoned Agile Workstations",
+        "desc": "Ergonomic desk clusters with biophilic partition planters, task lighting, and integrated wire management."
       },
       {
         "num": "02",
-        "tag": "Culinary Focus",
-        "title": "Chef's Kitchen & Walk-in Larder Architecture",
-        "desc": "Designing heavy-duty secondary prep kitchens alongside showpiece open-plan islands, integrating high-extraction ventilation, heat-resistant porcelain surfaces, and walk-in larders."
+        "tag": "Conference",
+        "title": "Tech-Enabled Boardrooms",
+        "desc": "Acoustic wall panelling, seamless hybrid video conferencing, and bespoke corporate conference tables."
       },
       {
         "num": "03",
-        "tag": "Harmony",
-        "title": "Architectural Flow & Aspect Planning",
-        "desc": "Seamlessly weaving architectural spatial planning space planning, orienting entrance axes, kitchen fire quadrants, and master suite resting directions, into refined contemporary aesthetics."
+        "tag": "Breakout",
+        "title": "Townhall & Social Tea Points",
+        "desc": "Monolithic kitchen islands, soft seating zones, and communal spaces fostering team connection."
       },
       {
         "num": "04",
-        "tag": "Expansions",
-        "title": "Wraparound & Rear Kitchen Extensions",
-        "desc": "Creating sunlit architectural open-plan living with structural steel frames, floor-to-ceiling glass sliding doors, and seamless indoor-outdoor transitions into landscaped private gardens."
+        "tag": "Quiet Zones",
+        "title": "Focus Pods & Phone Booths",
+        "desc": "Sound-attenuated private work booths and executive focus suites for confidential client calls."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-walnut-luxury-kitchen-island.webp",
-    "typologyImgAlt": "Open-plan kitchen and dining extension in Hayes with garden view",
-    "servicesTitle": "Our Interior Design Services in Hayes",
-    "servicesSubtitle": "From Architectural Concept to Contractor-Ready Technical Information",
-    "servicesLead": "Whether updating a single reception room or undertaking a whole-home transformation, our comprehensive services ensure complete precision.",
-    "servicesBody1": "As an experienced <a href=\"https://www.oraanj-interiors.co.uk/interior-designers-london/\">london based interior designers</a> practice, Oraanj bridges the gap between creative visual styling and structural execution. We coordinate closely with Hillingdon Council planning officers and building control to ensure all extensions, structural alterations, and joinery packages meet UK building regulations.",
-    "servicesBody2": "Our clients benefit from turnkey delivery. As a leading <a href=\"https://www.oraanj-interiors.co.uk/design-and-build/\">Design and build company in London</a> and established <a href=\"https://www.oraanj-interiors.co.uk/renovation-company-london/\">home renovation company london</a>, we take single-source responsibility for architectural plans, structural engineering, procurement, and physical execution on site.",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-open-office-workspace-interior.jpeg",
+    "typologyImgAlt": "Modern open-plan office workspace with acoustic ceiling baffles in Hayes",
+    "servicesTitle": "Turnkey Corporate Office Design & Build in Hayes",
+    "servicesSubtitle": "Cat A, Cat B, and Architectural Fit-Outs with Single-Source Accountability",
+    "servicesLead": "From concept floor plans to turnkey contractor handover, we manage every stage of your Hayes office project.",
+    "servicesBody1": "As a proven <a href=\"https://www.oraanj-interiors.co.uk/commercial-interior-design/\">commercial interior design</a> firm and licensed <a href=\"https://www.oraanj-interiors.co.uk/design-and-build/\">Design and build company in London</a>, Oraanj handles all mechanical, electrical, plumbing (MEP), fire alarms, and building control requirements.",
+    "servicesBody2": "Our dedicated workplace team ensures minimal business disruption, delivering fast-track Cat B fit-outs on schedule and on budget.",
     "servicesItems": [
       {
-        "title": "Interior Architecture & Space Planning",
-        "desc": "Our <a href=\"https://www.oraanj-interiors.co.uk/interior-architecture/\">interior architecture company</a> re-engineers compartmentalised 1930s floor plans into intuitive, flowing living spaces with high ceilings and natural light."
+        "title": "Workplace Strategy & Space Audit",
+        "desc": "Analysing team headcounts, collaboration ratios, and agile work patterns to optimise square footage."
       },
       {
-        "title": "Bespoke Joinery & Media Walls",
-        "desc": "Precision <a href=\"https://www.oraanj-interiors.co.uk/bespoke-joinery-design-london/\">Bespoke Joinery Design</a> including full-height media walls, bespoke shoe and cloaks storage, and walk-in dressing rooms."
+        "title": "Bespoke Reception & Joinery",
+        "desc": "Architectural reception desks, executive boardroom credenzas, and integrated storage walls."
       },
       {
-        "title": "Luxury Kitchen & Bathroom Renovations",
-        "desc": "Collaborate with our premier <a href=\"https://www.oraanj-interiors.co.uk/kitchen-renovation-company/\">kitchen renovation london</a> team and <a href=\"https://www.oraanj-interiors.co.uk/bathroom-renovation-company/\">bathroom renovation company in london</a> for spa-like ensuites and culinary mastersuites."
+        "title": "Acoustic Engineering & MEP First-Fix",
+        "desc": "Acoustic ceiling baffles, floor grommets, power distribution, and HVAC balancing for fresh air flow."
       },
       {
-        "title": "Architectural Lighting & MEP Layouts",
-        "desc": "Tailored <a href=\"https://www.oraanj-interiors.co.uk/lighting-design/\">Lighting design London</a> with 5-amp circuits, coffered LED ceiling details, architectural spotlights, and complete electrical AutoCAD schedules."
+        "title": "Turnkey Cat B Fit-Out Delivery",
+        "desc": "Full principal contractor management, landlord approvals, and building regulations certification."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-modern-dining-room-elegant-interior.webp",
-    "servicesImgAlt": "Bespoke joinery and modern living room interior design Hayes",
-    "guidanceTitle": "Planning, Permitted Development & Building Control in Hillingdon",
-    "guidanceSubtitle": "Navigating Local Authority Regulations for Hayes Homeowners",
-    "guidanceText1": "Many residential properties in Hayes benefit from generous Permitted Development rights for single-storey rear extensions up to 6 or 8 metres (under the Prior Approval scheme) and hip-to-gable loft conversions. However, properties near conservation zones or with previous extensions require careful planning assessment.",
-    "guidanceText2": "Our team prepares full architectural drawings, structural engineering calculations, and planning applications submitted directly to the London Borough of Hillingdon. From Thames Water build-over agreements to Party Wall notices, we manage every regulatory step so your build progresses smoothly without costly site delays.",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-office-meeting-room-detail.jpeg",
+    "servicesImgAlt": "Executive corporate meeting room and conference facility in Hayes",
+    "guidanceTitle": "Building Control & Landlord Licences in Hayes & Hillingdon",
+    "guidanceSubtitle": "Navigating Corporate Fit-Out Statutory Approvals in West London",
+    "guidanceText1": "Corporate workplace fit-outs in Hayes require formal Licence to Alter agreements from landlords, Hillingdon Council Building Control sign-offs, and compliance with British Council for Offices (BCO) guidelines.",
+    "guidanceText2": "Oraanj compiles all necessary technical information, including MEP schematics, fire safety strategies, and structural loads, ensuring prompt landlord approval and statutory sign-off.",
     "guidancePoints": [
-      "Prior Approval & Permitted Development applications in Hillingdon",
-      "Structural steel calculations for open-plan wall knock-throughs",
-      "Thames Water sewer build-over agreements for rear extensions",
-      "Party Wall Award coordination with neighbouring property owners"
+      "Commercial Licence to Alter (LTA) documentation and landlord negotiations",
+      "Hillingdon Building Control compliance for fire egress, Part B, and accessibility",
+      "BCO guidelines compliance for occupancy, ventilation, and lighting levels",
+      "Coordinated out-of-hours trade delivery and freight management"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-wood-joinery-detail.jpeg",
-    "guidanceImgAlt": "Architectural kitchen renovation in Hayes Hillingdon",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-office-workstation-decor-closeup.jpeg",
+    "guidanceImgAlt": "Workstation styling detail with warm timber accessories in Hayes",
     "faqs": [
       {
-        "q": "Do you design multi-generational family homes in Hayes?",
-        "a": "Yes, multi-generational layouts are one of our core specialisms in Hayes and Hillingdon. We design homes with dedicated ground-floor en-suite bedroom suites for elderly family members, separate formal and casual reception lounges, soundproofed home offices, and expansive open-plan kitchens suited for hosting large gatherings."
+        "q": "Do you handle Cat A and Cat B office fit-outs in Hayes?",
+        "a": "Yes. We deliver both Cat A base build transformations for landlords and complete Cat B tenant fit-outs including partitions, MEP, bespoke joinery, and furniture procurement."
       },
       {
-        "q": "How do you optimise natural light, space planning, and daily flow in our Hayes home?",
-        "a": "Absolutely. Many of our clients in Hayes and West London request architectural spatial planning space planning. We align entrance foyers, master bedroom directions, and kitchen hob orientations with traditional energetic principles while preserving an elegant, high-end contemporary aesthetic."
+        "q": "How do you manage office renovations while teams are working?",
+        "a": "We offer phased construction programmes and out-of-hours works (evenings and weekends) to ensure zero disruption to ongoing commercial operations."
       },
       {
-        "q": "How much does interior design cost for a property in Hayes?",
-        "a": "Our room-based design packages are transparently priced: One Design is £600 per room/zone, Unlimited Design is £900 per room/zone, and Design & Technical is £1,500 per room/zone. For whole-home architectural refurbishment and turnkey Design & Build projects, we provide an itemised, transparent proposal based on your floor plan and scope."
+        "q": "Can you assist with landlord Licence to Alter approvals in Hayes?",
+        "a": "Yes. We prepare full architectural drawings, structural calculations, and MEP specifications required by institutional landlords and managing agents."
       },
       {
-        "q": "Do you handle the building works and construction in Hayes?",
-        "a": "Yes. In addition to interior design, Oraanj operates as an integrated Design & Build practice. We can provide complete construction, structural wall removals, bespoke joinery fabrication, plumbing, electrical first-fix, and final white-glove dressing under single-point contract accountability."
+        "q": "Do you supply and install commercial office furniture?",
+        "a": "Yes. Through our exclusive trade networks, we supply ergonomic commercial workstations, executive seating, boardroom tables, and acoustic pods at substantial trade savings."
       }
-    ]
+    ],
+    "heroImgAlt": "Luxury corporate reception interior and bespoke desk in Hayes by Oraanj",
+    "seoTitle": "Corporate Office Interior Design in Hayes | Commercial Fit-Outs | Oraanj",
+    "metaDesc": "Turnkey corporate office interior design and commercial workplace fit-outs in Hayes and West London by Oraanj. Cat A/Cat B, ergonomic desks and AV boardrooms."
   },
   {
     "slug": "vauxhall",
@@ -108,9 +110,9 @@ module.exports = [
     "h1": "Interior Designers in Vauxhall | Luxury Apartments & High-Rise Living",
     "heroLead": "Tailored Interior Architecture, Turnkey Furnishing, and Licence to Alter Coordination for High-Rise Apartments, Riverside Towers, and Penthouses in Vauxhall and Nine Elms.",
     "heroBody1": "Vauxhall represents one of Central London’s most dynamic riverside architectural enclaves, home to striking towers like St George Wharf, Damac Tower, and the Nine Elms regeneration corridor. Oraanj delivers sophisticated interior design and turnkey fit-outs specifically crafted for international homeowners, buy-to-let investors, and city executives.",
-    "heroBody2": "High-rise apartment interiors demand a specialised approach: maximising panoramic city vistas, complying with rigorous building management logistics, engineering acoustic dampening, and creating bespoke furniture that fits through freight lifts. We turn cavernous glass boxes into warm, tactile, and highly functional urban sanctuaries.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/earthy-luxury-sectional-living-room.webp",
-    "heroAlt": "Luxury high-rise apartment living room interior design Vauxhall Nine Elms",
+    "heroBody2": "High-rise apartment interiors demand a specialised approach: maximising panoramic city vistas, complying with rigorous building management logistics, engineering acoustic dampening, and creating bespoke furniture that fits through freight lifts. We turn cavernous glass boxes into warm, tactile, and highly functional comfortable urban homes.",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/elegant-living-room-travertine-coffee-table.webp",
+    "heroAlt": "Vauxhall bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Vauxhall & Nine Elms Apartment Typologies",
     "typologySubtitle": "Designing for Riverside Light, Floor-to-Ceiling Glazing, and Compact Luxury",
     "typologyLead": "Living in a high-rise tower brings unique architectural conditions. We design spaces that complement expansive floor-to-ceiling windows while providing comfort, privacy, and acoustic warmth.",
@@ -131,7 +133,7 @@ module.exports = [
         "num": "03",
         "tag": "Acoustics",
         "title": "Acoustic Balancing & Soft Architecture",
-        "desc": "Mitigating hard surfaces (glass and polished concrete) with architectural wall paneling, acoustic drapery, fluted timber joinery, and sumptuous hand-knotted rugs."
+        "desc": "Mitigating hard surfaces (glass and polished concrete) with architectural wall panelling, acoustic drapery, fluted timber joinery, and sumptuous hand-knotted rugs."
       },
       {
         "num": "04",
@@ -140,8 +142,8 @@ module.exports = [
         "desc": "Integrated media units with concealed home-working stations, motorized bar cabinets, and floor-to-ceiling wardrobes maximizing every square foot of lateral space."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/stone-kitchen-island-brass-faucet-detail.webp",
-    "typologyImgAlt": "Refined apartment detailing and furniture curation in Vauxhall",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/marble-countertop-walnut-cabinet-detail.webp",
+    "typologyImgAlt": "Vauxhall property architectural space planning and kitchen layout",
     "servicesTitle": "Full-Service Interior Design for Vauxhall Residences",
     "servicesSubtitle": "Design, Technical Documentation & Smooth Building Management Approvals",
     "servicesLead": "From concept visualisations to final styling, we manage every facet of your Vauxhall apartment project.",
@@ -165,8 +167,8 @@ module.exports = [
         "desc": "Trade-discounted designer furniture, fabrics, and accessories managed through our dedicated <a href=\"https://www.oraanj-interiors.co.uk/procurement/\">procurement</a> department."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-dining-room-interior.jpeg",
-    "servicesImgAlt": "Contemporary apartment dining room interior design Vauxhall",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/travertine-coffee-table-living-room-detail.webp",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Vauxhall",
     "guidanceTitle": "Licence to Alter (LTA) & Building Regulations in Vauxhall Towers",
     "guidanceSubtitle": "Managing High-Rise Building Logistics with Zero Friction",
     "guidanceText1": "Renovating an apartment in buildings such as St George Wharf or Riverlight requires compliance with strict leasehold covenants. Landlords and management agents demand formal Licence to Alter approval prior to flooring replacement, structural adjustments, or MEP alterations.",
@@ -177,8 +179,8 @@ module.exports = [
       "Building management coordination for freight lifts and delivery slots",
       "Integrated HVAC, sprinkler, and comfort cooling system coordination"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-office-workstation-decor-closeup.jpeg",
-    "guidanceImgAlt": "Luxury apartment reading corner interior design Vauxhall",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/brass-wall-sconce-floral-decor.webp",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Vauxhall",
     "faqs": [
       {
         "q": "Do you help with Licence to Alter (LTA) approvals in Vauxhall apartment developments?",
@@ -190,13 +192,14 @@ module.exports = [
       },
       {
         "q": "How do you handle acoustic reverberation in glass-walled apartments?",
-        "a": "Glass, marble, and hard flooring create echo in modern apartments. We engineer acoustic comfort by integrating acoustic plaster, wall upholstery, slatted timber acoustic paneling, full-height wool drapery, and tactile hand-knotted rugs that absorb reverberation without compromising contemporary lines."
+        "a": "Glass, marble, and hard flooring create echo in modern apartments. We engineer acoustic comfort by integrating acoustic plaster, wall upholstery, slatted timber acoustic panelling, full-height wool drapery, and tactile hand-knotted rugs that absorb reverberation without compromising contemporary lines."
       },
       {
         "q": "What interior design packages do you offer for Vauxhall properties?",
         "a": "We offer One Design (£600 per room/zone), Unlimited Design (£900 per room/zone), and Design & Technical (£1,500 per room/zone). We also provide bespoke turnkey fit-out proposals for entire lateral flats and penthouses."
       }
-    ]
+    ],
+    "heroImgAlt": "Vauxhall bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "croydon",
@@ -208,8 +211,8 @@ module.exports = [
     "heroLead": "Transforming Victorian Terraces, 1930s Semi-Detached Houses, and Modern Residences Across Croydon, Purley, Addiscombe, and Shirley.",
     "heroBody1": "Croydon is home to some of South London’s most diverse and spacious housing stock. From handsome Victorian and Edwardian villas to generous 1930s family homes with expansive gardens, homeowners in Croydon have incredible scope to create contemporary, high-performing homes.",
     "heroBody2": "Oraanj provides complete interior design, architectural space planning, and Design & Build renovation services. Whether you are adding a modern rear kitchen extension in Addiscombe, updating an Edwardian villa in South Croydon, or reconfiguring a sprawling detached house in Purley, we create spaces that elevate daily family life.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-media-wall.jpeg",
-    "heroAlt": "Open plan family home interior design and rear extension in Croydon",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/elegant-hallway-staircase.webp",
+    "heroAlt": "Croydon bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Croydon Housing Typologies & Design Solutions",
     "typologySubtitle": "Maximising Spatial Flow, Natural Light, and Everyday Family Functionality",
     "typologyLead": "Many period and mid-century properties in Croydon suffer from dark, compartmentalised layouts. Our designs introduce light, open circulation, and generous storage.",
@@ -239,8 +242,8 @@ module.exports = [
         "desc": "Converting suburban roof spaces into private parental sanctuaries with bespoke dressing areas, dormer reading nooks, and luxury en-suite bathrooms."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-walnut-kitchen-island-closeup.webp",
-    "typologyImgAlt": "Bespoke walnut kitchen island design in Croydon residence",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/stone-kitchen-island-brass-faucet-detail.webp",
+    "typologyImgAlt": "Croydon property architectural space planning and kitchen layout",
     "servicesTitle": "Interior Design Services for Croydon Homeowners",
     "servicesSubtitle": "Design Only or Full Turnkey Renovation Management",
     "servicesLead": "We adapt our appointments to your project scope, from single-room design concepts to whole-house structural transformations.",
@@ -264,8 +267,8 @@ module.exports = [
         "desc": "Layered <a href=\"https://www.oraanj-interiors.co.uk/lighting-design/\">Lighting design London</a> that combines ambient cove lighting, directional task lights, and feature pendants."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/rust-dining-chairs-table-detail.webp",
-    "servicesImgAlt": "Luxury freestanding tub bathroom renovation in Croydon",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/terracotta-bathtub-brass-fixtures.webp",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Croydon",
     "guidanceTitle": "Planning Permissions & Permitted Development in Croydon",
     "guidanceSubtitle": "Navigating Local Authority Approvals for Extensions & Refurbishments",
     "guidanceText1": "Croydon Council supports high-quality residential additions that enhance streetscapes. Most single-storey rear extensions up to 6m on semi-detached homes can be completed under Permitted Development or the Prior Approval process.",
@@ -276,8 +279,8 @@ module.exports = [
       "Structural steel calculations and Building Control sign-offs",
       "Party Wall agreement notifications and schedule of conditions"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/front-view-cafe-wood-joinery-shelving.webp",
-    "guidanceImgAlt": "Warm terracotta bathroom renovation Croydon",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/sink-closeup-shot.webp",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Croydon",
     "faqs": [
       {
         "q": "Can you help us open up our 1930s Croydon semi-detached house?",
@@ -295,7 +298,8 @@ module.exports = [
         "q": "How long does a typical home interior design project take in Croydon?",
         "a": "Concept design and 3D visualisations typically take 3 to 5 weeks. If planning permission is required, the statutory council review takes around 8 weeks. Physical renovation timelines depend on scope, typically 8 to 16 weeks for a ground-floor extension and full interior fit-out."
       }
-    ]
+    ],
+    "heroImgAlt": "Croydon bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "barnet",
@@ -307,8 +311,8 @@ module.exports = [
     "heroLead": "Bespoke Interior Design, Heritage Architecture, and Complete Turnkey Renovation for Period Properties and Grand Residences in High Barnet, Hadley Wood, and Arkley.",
     "heroBody1": "The London Borough of Barnet offers a rare blend of leafy North London countryside charm and historic architectural grandeur. From Georgian and Victorian country houses around Hadley Green to expansive detached properties in Arkley and Mill Hill, Barnet’s residences call for an elevated level of design craftsmanship.",
     "heroBody2": "Oraanj delivers timeless luxury interiors tailored to discerning British homeowners. We celebrate original architectural proportions, ornate mouldings, and grand hearths, pairing them with handcrafted joinery, subtle natural stone, bespoke kitchens, and discreet smart-home technology that enhance modern family living without diminishing heritage warmth.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-sofa-interior.jpeg",
-    "heroAlt": "Stately period hallway and grand staircase interior design Barnet",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-modern-apartment-corridor.webp",
+    "heroAlt": "Barnet bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Barnet’s Premier Architectural Typologies",
     "typologySubtitle": "Honouring Heritage Character While Crafting Enduring Contemporary Comfort",
     "typologyLead": "From Grade II listed period properties to contemporary gated family estates, we treat each Barnet home with architectural reverence and tailored craftsmanship.",
@@ -317,7 +321,7 @@ module.exports = [
         "num": "01",
         "tag": "Heritage",
         "title": "Georgian & Victorian Estate Restorations",
-        "desc": "Meticulously restoring original cornices, ceiling roses, sash windows, and marble mantels while modernising floorplans for effortless contemporary living."
+        "desc": "carefully restoring original cornices, ceiling roses, sash windows, and marble mantels while modernising floorplans for effortless contemporary living."
       },
       {
         "num": "02",
@@ -329,7 +333,7 @@ module.exports = [
         "num": "03",
         "tag": "Joinery",
         "title": "Bespoke Libraries & Study Sanctuaries",
-        "desc": "Floor-to-ceiling fluted timber joinery, secret doors, integrated brass picture lighting, and warm acoustic paneling for refined home working and reading."
+        "desc": "Floor-to-ceiling fluted timber joinery, secret doors, integrated brass picture lighting, and warm acoustic panelling for refined home working and reading."
       },
       {
         "num": "04",
@@ -338,8 +342,8 @@ module.exports = [
         "desc": "Creating private master wings with bespoke walk-in wardrobes, velvet-lined jewellery drawers, freestanding soaking tubs, and bookmatched marble finishes."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-open-plan-kitchen-dining-garden-view.webp",
-    "typologyImgAlt": "Timeless luxury living room interior design in Barnet residence",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-dining-nook-closeup.webp",
+    "typologyImgAlt": "Barnet property architectural space planning and kitchen layout",
     "servicesTitle": "Our Comprehensive Services Across Barnet",
     "servicesSubtitle": "SBID Accredited Interior Design & Turnkey Project Delivery",
     "servicesLead": "We provide full architectural interior design services from initial sketch ideas to finished construction and white-glove dressing.",
@@ -363,8 +367,8 @@ module.exports = [
         "desc": "Conducted by our specialist <a href=\"https://www.oraanj-interiors.co.uk/kitchen-renovation-company/\">kitchen renovation london</a> team with custom chef islands and sub-zero appliance integration."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-dining-room-renovation-before-construction.webp",
-    "servicesImgAlt": "Luxury freestanding tub ensuite design in Barnet residence",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-media-shelving-detail.webp",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Barnet",
     "guidanceTitle": "Conservation Areas & Listed Buildings in the Borough of Barnet",
     "guidanceSubtitle": "Navigating Sensitive Planning Consents Around Hadley & Arkley",
     "guidanceText1": "Barnet features numerous designated Conservation Areas, including Monken Hadley, Hadley Green, and Totteridge. Altering properties in these enclaves requires a nuanced understanding of conservation policy, preserving streetscape frontages and historical fabric.",
@@ -375,8 +379,8 @@ module.exports = [
       "Sympathetic timber sash window and historic cornice restoration specifications",
       "Full building regulation compliance and structural engineering sign-off"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-salon-bespoke-metal-joinery-display.webp",
-    "guidanceImgAlt": "Bespoke stone island and brass details in Barnet residence",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-modern-kitchen-sink-detail.webp",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Barnet",
     "faqs": [
       {
         "q": "Do you work on listed properties and conservation area homes in Barnet?",
@@ -394,106 +398,110 @@ module.exports = [
         "q": "What pricing packages do you offer for Barnet homes?",
         "a": "We offer One Design (£600 per room/zone), Unlimited Design (£900 per room/zone), and Design & Technical (£1,500 per room/zone). For whole-home architectural restorations and bespoke additions, we provide detailed, tailored turnkey proposals."
       }
-    ]
+    ],
+    "heroImgAlt": "Barnet bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "tooting",
     "url": "https://www.oraanj-interiors.co.uk/tooting/",
     "name": "Tooting",
     "borough": "London Borough of Wandsworth",
-    "eyebrow": "Victorian Terraces & Apartment Interior Design in Tooting",
-    "h1": "Interior Designers in Tooting | Contemporary Living in South West London",
-    "heroLead": "Creative Interior Design, Side-Return Extensions, and Bespoke Space Planning for Victorian Terraces, Flats, and Commercial Boutiques Across Tooting Bec and Tooting Broadway.",
-    "heroBody1": "Tooting is one of South West London’s most vibrant cultural hubs, celebrated for its bustling markets, green commons, and charming Victorian and Edwardian housing stock. For young professionals, growing families, and independent business owners in Tooting, unlocking the true potential of Victorian terrace properties is essential.",
-    "heroBody2": "Oraanj brings fresh design energy and meticulous spatial planning to Tooting homes. We reconfigure narrow Victorian floorplans, introduce side-return kitchen extensions that flood living spaces with daylight, design clever alcove joinery, and craft bold, warm interiors that celebrate individual character while adding lasting property value.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/sage-paneled-living-room-hallway.webp",
-    "heroAlt": "Contemporary Victorian terrace living room interior design Tooting",
-    "typologyTitle": "Tooting Property Typologies & Modern Solutions",
-    "typologySubtitle": "Reimagining Victorian Terraces, Split-Level Flats & Commercial Spaces",
-    "typologyLead": "Victorian architecture in Tooting is full of charm but frequently compromised by cramped kitchens, dark middle reception rooms, and narrow hallway circulation.",
+    "eyebrow": "Boutique Commercial & Salon Interior Design in Tooting",
+    "h1": "Salon & Commercial Interior Design in Tooting | Boutique Retail Fit-Outs",
+    "heroLead": "Turnkey Interior Architecture for Hair Salons, Spas, and High Street Commercial Premises Across Tooting and SW17.",
+    "heroBody1": "Oraanj designs high-impact commercial interiors and turnkey retail spaces in Tooting. We understand that salon and beauty environments require a precise balance between client pampering, flawless task lighting, hygienic surfaces, and efficient stylist workflow.",
+    "heroBody2": "Our completed Tooting hair salon project features custom curved styling stations with backlit halo mirrors, tranquil ergonomic wash zones, biophilic interior planters, and welcoming reception desks designed to make an unforgettable brand statement.",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-salon-reception-entrance.jpeg",
+    "heroAlt": "Modern salon reception entrance with bespoke desk in Tooting by Oraanj",
+    "typologyTitle": "Commercial Typologies & Salon Formats in Tooting",
+    "typologySubtitle": "Optimising Client Journeys, Illumination, and Brand Presence on Tooting Parades",
+    "typologyLead": "Salon and boutique commercial premises in Tooting require durable materials, glare-free high-CRI lighting, and smart spatial zoning.",
     "typologies": [
       {
         "num": "01",
-        "tag": "Extensions",
-        "title": "Side-Return Kitchen Extensions",
-        "desc": "Transforming unused exterior side alleys into spacious, sunlit kitchen-dining hubs featuring structural glass roofs, Crittall doors, and central social islands."
+        "tag": "Styling Stations",
+        "title": "Backlit Halo Mirrors & Vanities",
+        "desc": "Custom floating vanities with shadow-free high-CRI illumination and concealed cable routing."
       },
       {
         "num": "02",
-        "tag": "Light Flow",
-        "title": "Solving the Dark Middle Reception Room",
-        "desc": "Re-engineering middle rooms with glazed internal Crittall partitions, concealed pocket doors, and reflective architectural lighting to eliminate dark dead zones."
+        "tag": "Wash Lounge",
+        "title": "Ergonomic Wash & Spa Suites",
+        "desc": "Sound-buffered backwash areas with reclining massage basins and soothing ambient lighting."
       },
       {
         "num": "03",
-        "tag": "Storage",
-        "title": "Bespoke Chimney Breast & Alcove Joinery",
-        "desc": "Custom-fitted shelving, integrated media units, and low-level cabinetry designed to fit the exact contours of historic Victorian chimney recesses."
+        "tag": "Reception",
+        "title": "Retail Display & Welcome Desks",
+        "desc": "Fluted timber welcome counters, illuminated product shelves, and boutique client waiting lounges."
       },
       {
         "num": "04",
-        "tag": "Commercial",
-        "title": "Boutique Commercial & Salon Interiors",
-        "desc": "Designing experiential commercial spaces and retail environments, like our acclaimed <a href=\"https://www.oraanj-interiors.co.uk/tooting-hair-salon/\">Tooting hair salon interior design</a> project on the high street."
+        "tag": "Biophilia",
+        "title": "Indoor Botanicals & Natural Finishes",
+        "desc": "Integrated indoor planters, warm timber accents, and clean architectural sightlines."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-taupe-kitchen-fluted-island-marble-backsplash.webp",
-    "typologyImgAlt": "Sunlit modern dining room in Victorian terrace Tooting",
-    "servicesTitle": "Our Interior Design Services in Tooting",
-    "servicesSubtitle": "Design Only or Full Design & Build Execution in Wandsworth",
-    "servicesLead": "We provide practical, stylish design solutions suited to busy modern lifestyles.",
-    "servicesBody1": "As leading <a href=\"https://www.oraanj-interiors.co.uk/interior-designers-london/\">interior designers in london</a>, we handle every detail from concept 3D visualisations to full technical drawings. We work within Wandsworth Council’s planning guidelines to ensure smooth approvals for rear extensions and loft conversions.",
-    "servicesBody2": "Looking for a reliable <a href=\"https://www.oraanj-interiors.co.uk/renovation-company-london/\">home renovation company london</a>? We can build and install your approved design under single-source management, ensuring exceptional quality control from first demolition to final paintwork.",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-hair-salon-interior.jpeg",
+    "typologyImgAlt": "Spacious modern hair salon interior floor plan in Tooting",
+    "servicesTitle": "Boutique Commercial & Salon Fit-Out Services in Tooting",
+    "servicesSubtitle": "Turnkey Design and Build from Concept to Client Handover",
+    "servicesLead": "We take single-source contract responsibility for commercial salon fit-outs across Wandsworth.",
+    "servicesBody1": "As proven <a href=\"https://www.oraanj-interiors.co.uk/interior-designers-london/\">london based interior designers</a>, Oraanj handles shopfront permissions, commercial plumbing first-fix, electrical load calculations, and building control.",
+    "servicesBody2": "Through our dedicated <a href=\"https://www.oraanj-interiors.co.uk/commercial-interior-design/\">commercial interior design</a> and <a href=\"https://www.oraanj-interiors.co.uk/design-and-build/\">Design and build company in London</a> services, we deliver turnkey commercial environments on fast schedules.",
     "servicesItems": [
       {
-        "title": "Kitchen & Dining Transformations",
-        "desc": "Expert <a href=\"https://www.oraanj-interiors.co.uk/kitchen-renovation-company/\">kitchen renovation london</a> designs engineered for busy social cooking and family gatherings."
+        "title": "Spatial Feasibility & Chair Zoning",
+        "desc": "Optimising stylist cutting stations, client circulation, and retail merchandise visibility."
       },
       {
-        "title": "Bespoke Joinery & Storage",
-        "desc": "Tailored <a href=\"https://www.oraanj-interiors.co.uk/bespoke-joinery-design-london/\">Bespoke Joinery Design</a> including wardrobe runs, study alcoves, and under-stair pullouts."
+        "title": "Bespoke Styling Joinery",
+        "desc": "Precision custom vanities, retail display shelving, and bespoke reception desks."
       },
       {
-        "title": "Boutique Commercial Interior Design",
-        "desc": "Experienced <a href=\"https://www.oraanj-interiors.co.uk/retail-interior-design/\">Shop interior design</a> and hospitality fit-outs tailored to Tooting’s bustling commercial high streets."
+        "title": "Plumbing & Electrical First-Fix",
+        "desc": "Dedicated high-flow water pressure balancing, instant heating systems, and high-CRI task lighting."
       },
       {
-        "title": "Bathroom & Wet Room Architecture",
-        "desc": "Space-saving layouts from our dedicated <a href=\"https://www.oraanj-interiors.co.uk/bathroom-renovation-company/\">bathroom renovation company in london</a>."
+        "title": "Turnkey Contractor Management",
+        "desc": "Wandsworth building control, trade management, and turnkey commercial handover."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/dining-room-electrical-lighting-layout-plan.webp",
-    "servicesImgAlt": "Bespoke joinery alcove reading nook in Tooting home",
-    "guidanceTitle": "Planning, Party Walls & Wandsworth Council Approvals",
-    "guidanceSubtitle": "Navigating Victorian Terrace Renovations with Confidence",
-    "guidanceText1": "Undertaking a side-return or rear extension on a Victorian terrace in Tooting requires careful navigation of the Party Wall Act 1996, as structural works directly impact shared boundary walls with both neighbours.",
-    "guidanceText2": "The London Borough of Wandsworth generally looks favorably on contemporary side-infill extensions, provided boundary parapet heights and daylight angles to adjoining properties are respected. Oraanj prepares complete architectural packages and manages building control sign-offs.",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-salon-styling-station.jpeg",
+    "servicesImgAlt": "Bespoke luxury styling station with arched backlit halo mirror in Tooting",
+    "guidanceTitle": "Planning, Shopfronts & Building Control in Tooting & Wandsworth",
+    "guidanceSubtitle": "Navigating Local Authority Regulations for Tooting Business Owners",
+    "guidanceText1": "Opening or renovating a salon or commercial boutique in Tooting requires shopfront advertising consent, commercial water discharge compliance, and Building Regulations approval.",
+    "guidanceText2": "Oraanj prepares complete drawing packages and submits applications directly to Wandsworth Council, managing every regulatory requirement smoothly.",
     "guidancePoints": [
-      "Wandsworth Council Permitted Development & Prior Approval compliance",
-      "Party Wall Award notifications and schedule of condition surveys",
-      "Structural steel calculations for open-plan rear and side infill extensions",
-      "Building Control sign-off for insulation, drainage, and thermal performance"
+      "Wandsworth Council shopfront design and illuminated fascia signage approvals",
+      "Commercial water supply and Thames Water drainage trade approvals",
+      "Mechanical fresh-air ventilation and air conditioning building regulations",
+      "Building Control certification for fire safety, emergency lighting, and accessibility"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-salon-joinery-decor-detail.jpeg",
-    "guidanceImgAlt": "Contemporary stone kitchen island in Tooting home",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-salon-interior-greenery.jpeg",
+    "guidanceImgAlt": "Salon interior with lush indoor botanical planters in Tooting",
     "faqs": [
       {
-        "q": "How do you fix dark middle reception rooms in Tooting Victorian terraces?",
-        "a": "We introduce internal glazed partitions (such as metal or timber Crittall screens), open up visual sightlines between the front living room and the rear garden, and install layered architectural lighting circuits to eliminate shadows and make the entire ground floor feel unified."
+        "q": "Do you design plumbing and electrical systems for hair salons in Tooting?",
+        "a": "Yes. Salon fit-outs require specialized high-capacity hot water cylinders, pump systems, chemical-resistant drainage, and shadow-free high-CRI task lighting, all of which our MEP team coordinates."
       },
       {
-        "q": "Do you also design commercial spaces in Tooting?",
-        "a": "Yes! We designed the acclaimed <a href=\"https://www.oraanj-interiors.co.uk/tooting-hair-salon/\">Tooting hair salon</a> project. We design bespoke retail, salon, cafe, and restaurant interiors that captivate local customers and optimize commercial workflow."
+        "q": "Can you assist with Wandsworth Council shopfront planning and signage?",
+        "a": "Yes. We prepare full architectural shopfront elevations, material specifications, and advertisement consent applications submitted directly to Wandsworth Council."
       },
       {
-        "q": "What are your package prices for Tooting homeowners?",
-        "a": "Our room-based packages are: One Design at £600 per room/zone, Unlimited Design at £900 per room/zone, and Design & Technical at £1,500 per room/zone. For full property renovations, we offer custom turnkey proposals."
+        "q": "How long does a commercial salon fit-out typically take?",
+        "a": "Concept design and equipment specifications typically take 3 to 6 weeks, followed by a fast-track 4 to 8-week on-site build programme."
       },
       {
-        "q": "Can you handle party wall awards and planning in Wandsworth?",
-        "a": "Yes. We prepare the complete architectural drawing packs needed for Party Wall surveyors and Wandsworth Council planning applications, coordinating closely with structural engineers to keep your project moving forward without delay."
+        "q": "Can you manufacture custom styling stations and retail displays?",
+        "a": "Yes. All styling stations, halo mirrors, product display shelving, and reception desks are custom-crafted in our joinery workshop."
       }
-    ]
+    ],
+    "heroImgAlt": "Modern salon reception entrance with bespoke desk in Tooting by Oraanj",
+    "seoTitle": "Salon & Commercial Interior Design in Tooting | Boutique Fit-Outs | Oraanj",
+    "metaDesc": "Turnkey interior design and fit-outs for hair salons and boutique commercial premises in Tooting SW17 by Oraanj. Styling stations and ergonomic wash zones."
   },
   {
     "slug": "barbican",
@@ -505,8 +513,8 @@ module.exports = [
     "heroLead": "Specialist Interior Design for Grade II* Listed Brutalist Apartments, City Penthouses, and Executive Boutique Offices in the Heart of the City of London.",
     "heroBody1": "The Barbican Estate is one of the world’s most celebrated examples of Brutalist architecture. Designed by Chamberlin, Powell and Bon, its distinctive bush-hammered concrete, dramatic balconies, and iconic layouts require an interior design practice with deep respect for architectural integrity and strict heritage guidelines.",
     "heroBody2": "Oraanj delivers sophisticated residential and commercial interiors in the Barbican and the surrounding City of London. Whether sensitive refurbishment of a highwalk flat, optimizing a studio apartment, or designing an agile executive office, we balance the raw texture of concrete with warm timber joinery, mid-century modern styling, and precision lighting.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/elegant-olive-living-room-fireplace.webp",
-    "heroAlt": "Mid-century modern aesthetic interior design in Barbican City of London",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/elegant-hallway-staircase.webp",
+    "heroAlt": "Barbican bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Barbican Typologies: Concrete, Geometry & Heritage",
     "typologySubtitle": "Navigating Grade II* Listed Building Consents & Iconic Mid-Century Layouts",
     "typologyLead": "Every element in a Barbican interior must dialogue with the bold brutalist concrete structure while adhering to stringent estate regulations.",
@@ -536,8 +544,8 @@ module.exports = [
         "desc": "Designing bespoke modular joinery that conceals desks, wardrobes, and Murphy beds to maximize living space in compact city apartments."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-kitchen-island-cream-upholstered-kitchen-stool.webp",
-    "typologyImgAlt": "Textured natural stone and mid-century detailing in Barbican interior",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/stone-kitchen-island-brass-faucet-detail.webp",
+    "typologyImgAlt": "Barbican property architectural space planning and kitchen layout",
     "servicesTitle": "Our Barbican & City of London Interior Services",
     "servicesSubtitle": "Tailored for Listed Residential Sanctuaries and Dynamic Corporate Workplaces",
     "servicesLead": "We understand the unique operational constraints of working in the City of London and the Barbican Estate.",
@@ -561,8 +569,8 @@ module.exports = [
         "desc": "Tailored spatial analysis from our <a href=\"https://www.oraanj-interiors.co.uk/interior-architecture/\">interior architecture company</a>."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_dining_table_with_marquina_marble_and_brass_vases.jpeg",
-    "servicesImgAlt": "Bespoke warm walnut joinery detail Barbican interior",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/terracotta-bathtub-brass-fixtures.webp",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Barbican",
     "guidanceTitle": "Estate Regulations & Listed Building Consent in the Barbican",
     "guidanceSubtitle": "Navigating City of London Guidelines and the Barbican Estate Office",
     "guidanceText1": "Because the entire Barbican complex is Grade II* listed, almost any interior alteration, including kitchen alterations, bathroom modernisations, and partition changes, requires Listed Building Consent from the City of London Planning Department.",
@@ -573,8 +581,8 @@ module.exports = [
       "Strict acoustic floor insulation compliance and approved underlays",
       "Logistical coordination with Barbican Estate car parks and highwalks"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/home-office-design-by-oraanj-interior-designers.jpeg",
-    "guidanceImgAlt": "Architectural finishes and stone detailing in Barbican interior",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/sink-closeup-shot.webp",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Barbican",
     "faqs": [
       {
         "q": "Do you need Listed Building Consent to renovate a Barbican flat?",
@@ -592,7 +600,8 @@ module.exports = [
         "q": "What packages are available for Barbican projects?",
         "a": "Our room-based packages are One Design (£600 per room/zone), Unlimited Design (£900 per room/zone), and Design & Technical (£1,500 per room/zone). Commercial offices and complete apartment renovations receive bespoke proposals."
       }
-    ]
+    ],
+    "heroImgAlt": "Barbican bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "highbury",
@@ -604,8 +613,8 @@ module.exports = [
     "heroLead": "Thoughtful Interior Architecture for Elegant Victorian Townhouses, Highbury Fields Conversions, and Distinctive Commercial & Retail Spaces in Islington.",
     "heroBody1": "Highbury is one of North London’s most sought-after enclaves, famed for the green expanses of Highbury Fields, handsome Victorian villas, and vibrant independent commercial life around Highbury Barn. Homeowners and independent businesses in Highbury value refined taste, architectural preservation, and artisanal craftsmanship.",
     "heroBody2": "Oraanj delivers bespoke interior design that honors the historic character of Highbury properties while providing effortless contemporary function. From converting grand Victorian rooms into light-filled family apartments to creating stylish boutique commercial spaces, cafes, and retail shops, our work is distinguished by calm material palettes and precision joinery.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/bohemian-jungle-lounge-interior.jpeg",
-    "heroAlt": "Elegant Victorian dining room interior design Highbury Islington",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-modern-apartment-corridor.webp",
+    "heroAlt": "Highbury bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Highbury Architectural Typologies & Design Strategy",
     "typologySubtitle": "Balancing Grand Proportions, Light, and Commercial Function in Islington",
     "typologyLead": "Highbury presents a harmonious mix of Italianate Victorian villas, mansion flats, and charming commercial shopfronts.",
@@ -635,8 +644,8 @@ module.exports = [
         "desc": "Creating bespoke shelving, writing bureaus, and pocket-door media units tailored to Highbury’s scholarly, creative community."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-kitchen-island-pendant-lighting.jpeg",
-    "typologyImgAlt": "Refined period dining room interior design Highbury",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-dining-nook-closeup.webp",
+    "typologyImgAlt": "Highbury property architectural space planning and kitchen layout",
     "servicesTitle": "Our Interior Design Services Across Highbury",
     "servicesSubtitle": "Residential Sanctuaries & Commercial Destination Design",
     "servicesLead": "We provide end-to-end design from concept visualisations to turnkey execution in the London Borough of Islington.",
@@ -660,8 +669,8 @@ module.exports = [
         "desc": "Layered schemes from our <a href=\"https://www.oraanj-interiors.co.uk/lighting-design/\">Lighting design London</a> team that highlight plasterwork and artwork."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-dining-room-interior-design-by-oraanj.jpeg",
-    "servicesImgAlt": "Quiet library reading nook with bespoke joinery Highbury",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-media-shelving-detail.webp",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Highbury",
     "guidanceTitle": "Islington Conservation Areas & Planning in Highbury",
     "guidanceSubtitle": "Navigating Sensitive Period Properties Around Highbury Fields",
     "guidanceText1": "Much of Highbury falls within designated Islington Conservation Areas, including the Highbury Fields Conservation Area. Stricter planning controls apply to external fenestration, rear extensions, and shopfront alterations.",
@@ -672,8 +681,8 @@ module.exports = [
       "Commercial shopfront and change-of-use planning applications",
       "Structural steel calculations for open-plan living reconfigurations"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/bespoke-joinery-design-by-oraanj-interior-designers.jpeg",
-    "guidanceImgAlt": "Highbury residential kitchen detailing and brass finishes",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-modern-kitchen-sink-detail.webp",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Highbury",
     "faqs": [
       {
         "q": "Do you design commercial spaces and cafes in Highbury?",
@@ -691,7 +700,8 @@ module.exports = [
         "q": "Can you build and renovate our Highbury home as well as design it?",
         "a": "Yes. Through our integrated Design & Build service, our master builders, joiners, plumbers, and decorators carry out the full construction, providing single-contract accountability from start to finish."
       }
-    ]
+    ],
+    "heroImgAlt": "Highbury bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "greenwich",
@@ -703,8 +713,8 @@ module.exports = [
     "heroLead": "Tailored Interior Design for Modern Riverside Apartments, Georgian Naval Townhouses, and Family Residences in Maritime Greenwich and the Peninsula.",
     "heroBody1": "The Royal Borough of Greenwich is world-renowned for its maritime history, Royal Observatory, and majestic architectural legacy. Today, Greenwich brings together elegant Georgian and Victorian townhouses on Royal Hill with cutting-edge riverside developments across Greenwich Millennium Village and the Peninsula.",
     "heroBody2": "Oraanj delivers timeless British interiors tailored to Greenwich’s architectural variety. Whether you are fitting out a modern apartment overlooking the River Thames or restoring an authentic period townhouse in the heart of Maritime Greenwich, we curate warm, tactile spaces that combine classical symmetry with modern ease.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/sunlit-bohemian-restaurant-lounge.jpeg",
-    "heroAlt": "Riverside apartment living room interior design in Greenwich by Oraanj",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-modern-apartment-corridor.webp",
+    "heroAlt": "Greenwich bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Greenwich Housing Typologies: Heritage & Modern Waterfront",
     "typologySubtitle": "Designing for River Views, Period Character, and Sophisticated British Living",
     "typologyLead": "Greenwich homes require an intuitive understanding of both sensitive heritage conservation and high-spec contemporary apartment living.",
@@ -734,8 +744,8 @@ module.exports = [
         "desc": "Providing complete furniture procurement, art curation, and installation for professionals and overseas investors on the Peninsula."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-luxury-kitchen-island-interior.jpeg",
-    "typologyImgAlt": "Natural stone and refined interior detailing Greenwich",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-dining-nook-closeup.webp",
+    "typologyImgAlt": "Greenwich property architectural space planning and kitchen layout",
     "servicesTitle": "Full-Service Interior Design Across Greenwich",
     "servicesSubtitle": "Design Only or Complete Design & Build Across the Royal Borough",
     "servicesLead": "We offer an adaptable, structured service tailored to your home and lifestyle.",
@@ -759,8 +769,8 @@ module.exports = [
         "desc": "Luxurious sanctuaries from our <a href=\"https://www.oraanj-interiors.co.uk/bathroom-renovation-company/\">bathroom renovation company in london</a>."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-walnut-dining-table-styling.jpeg",
-    "servicesImgAlt": "Refined modern dining room interior design Greenwich residence",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-media-shelving-detail.webp",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Greenwich",
     "guidanceTitle": "Planning, Conservation & Freeholder Licences in Greenwich",
     "guidanceSubtitle": "Navigating Royal Greenwich Regulations & Leasehold Consents",
     "guidanceText1": "Properties within the Maritime Greenwich World Heritage Site buffer zone and Ashburnham Triangle Conservation Area are subject to strict heritage planning controls regarding window replacements and external changes.",
@@ -771,8 +781,8 @@ module.exports = [
       "Acoustic flooring compliance and sound insulation certification",
       "Building regulations and structural engineering sign-offs"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/bespoke-joinery-design-by-oraanj-interiors.jpeg",
-    "guidanceImgAlt": "Crafted stone kitchen finishes in Greenwich residence",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-modern-kitchen-sink-detail.webp",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Greenwich",
     "faqs": [
       {
         "q": "Do you help with Licence to Alter (LTA) in Greenwich riverside apartments?",
@@ -790,7 +800,8 @@ module.exports = [
         "q": "Do you handle furniture procurement and delivery in Greenwich?",
         "a": "Yes. Our procurement team sources designer furniture, custom upholstery, lighting, and accessories with trade discounts, handling warehousing and white-glove delivery on site."
       }
-    ]
+    ],
+    "heroImgAlt": "Greenwich bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "chiswick",
@@ -802,8 +813,8 @@ module.exports = [
     "heroLead": "Bespoke Interior Design, Architectural Space Planning, and Complete Turnkey Renovation for Period Homes and Waterfront Villas in Bedford Park, Turnham Green, and Grove Park.",
     "heroBody1": "Chiswick is one of West London’s most prestigious riverside neighbourhoods, renowned for the pioneering Queen Anne revival architecture of Bedford Park, grand Edwardian family villas, and idyllic waterfront homes along Strand-on-the-Green. Homeowners in Chiswick expect refined aesthetics, bespoke craftsmanship, and thoughtful architectural harmony.",
     "heroBody2": "Oraanj delivers exceptional luxury interiors tailored to Chiswick’s discerning residents. We honour historic architectural features, decorative gables, stained glass, and authentic plaster mouldings, while creating generous open-plan kitchen-living spaces, bespoke dressing rooms, and serene garden-facing extensions designed for contemporary family life.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/bohemian-bar-lounge-rattan-seating.webp",
-    "heroAlt": "High-end living room interior design in Chiswick West London",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_living_room_fireplace_closeup_1x1.jpeg",
+    "heroAlt": "Chiswick bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Chiswick Architectural Typologies & Heritage Solutions",
     "typologySubtitle": "Honouring Bedford Park Heritage While Crafting Timeless Contemporary Luxury",
     "typologyLead": "From Grade II listed Norman Shaw houses to substantial detached Edwardian homes, we treat each Chiswick residence with architectural reverence.",
@@ -833,8 +844,8 @@ module.exports = [
         "desc": "Coordinating structural alterations, MEP first-fix, bathroom marble installation, and custom furnishing under single-source contract management."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-kitchen-interior-renovation-construction-before.webp",
-    "typologyImgAlt": "Bespoke walnut kitchen island design Chiswick residence",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_marble_island_detail_1x1.jpeg",
+    "typologyImgAlt": "Chiswick property architectural space planning and kitchen layout",
     "servicesTitle": "Our High-End Interior Design Services in Chiswick",
     "servicesSubtitle": "SBID Accredited Practice Delivering Turnkey West London Residences",
     "servicesLead": "We provide comprehensive design and build solutions tailored to high-value family properties.",
@@ -858,8 +869,8 @@ module.exports = [
         "desc": "Hotel-inspired sanctuaries from our <a href=\"https://www.oraanj-interiors.co.uk/bathroom-renovation-company/\">bathroom renovation company in london</a>."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-dining-nook-closeup.webp",
-    "servicesImgAlt": "Luxury freestanding bathtub ensuite design Chiswick villa",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_bedroom_built_in_shelves_4x5.jpeg",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Chiswick",
     "guidanceTitle": "Planning, Conservation & Listed Buildings in Chiswick",
     "guidanceSubtitle": "Navigating Bedford Park & Old Chiswick Conservation Policies",
     "guidanceText1": "Bedford Park is protected by strict conservation policies and numerous Grade II listings. Alterations to windows, rooflines, brickwork, and interior architectural fabric require meticulous planning applications and Listed Building Consent.",
@@ -870,8 +881,8 @@ module.exports = [
       "Sympathetic heritage timber window and decorative plaster restoration",
       "Full building regulation compliance and structural engineering calculations"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/joinery-elevation-plan.jpeg",
-    "guidanceImgAlt": "Crafted marble kitchen island and brass fittings Chiswick",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_spa_bathroom_freestanding_tub.jpeg",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Chiswick",
     "faqs": [
       {
         "q": "Do you work on Grade II listed homes in Bedford Park?",
@@ -889,7 +900,8 @@ module.exports = [
         "q": "Can you oversee the entire construction and fit-out in Chiswick?",
         "a": "Yes. Our integrated Design & Build service provides single-point accountability. We manage structural contractors, specialist joiners, plumbers, and decorators through to final white-glove dressing."
       }
-    ]
+    ],
+    "heroImgAlt": "Chiswick bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "kingston-upon-thames",
@@ -901,8 +913,8 @@ module.exports = [
     "heroLead": "Bespoke Interior Architecture, Space Planning, and Complete Turnkey Refurbishment for Prestigious Family Residences, Coombe Hill Estates, and Riverside Villas.",
     "heroBody1": "The Royal Borough of Kingston upon Thames offers an exceptional quality of life, defined by its historic market, tranquil riverfront, and leafy private estates such as Coombe Hill. Homeowners in Kingston enjoy generous architectural footprints, expansive gardens, and proximity to Richmond Park.",
     "heroBody2": "Oraanj delivers tranquil, high-end interior architecture and interior design for substantial properties across Kingston, Coombe, Surbiton, and Norbiton. We design spacious, family-focused homes with light-filled open-plan kitchen and living suites, bespoke media rooms, private master dressing wings, and seamless connections to lush landscaped gardens.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/boho-botanical-lounge-detail.jpeg",
-    "heroAlt": "Spacious riverside family residence interior design in Kingston upon Thames",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_living_room_fireplace_closeup_1x1.jpeg",
+    "heroAlt": "Kingston upon Thames bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Kingston Housing Typologies & Design Solutions",
     "typologySubtitle": "Designing for Riverside Tranquillity, Coombe Hill Estates, and Generous Family Living",
     "typologyLead": "Kingston’s substantial detached houses and riverside properties offer extraordinary canvas for expansive luxury interior architecture.",
@@ -932,8 +944,8 @@ module.exports = [
         "desc": "Tailored joinery suites, full-height walk-in wardrobes, study alcoves, and functional boot rooms designed for outdoor family life."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_kitchen_marble_backsplash_island.webp",
-    "typologyImgAlt": "Bespoke kitchen island and dining interior Kingston upon Thames",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_marble_island_detail_1x1.jpeg",
+    "typologyImgAlt": "Kingston upon Thames property architectural space planning and kitchen layout",
     "servicesTitle": "Our Interior Design Services in Kingston upon Thames",
     "servicesSubtitle": "Turnkey Architectural Design, Procurement & Project Management",
     "servicesLead": "We manage every stage of your Kingston property transformation with meticulous care.",
@@ -957,8 +969,8 @@ module.exports = [
         "desc": "Custom schemes from our <a href=\"https://www.oraanj-interiors.co.uk/lighting-design/\">Lighting design London</a> team that enhance architecture and atmosphere."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern_classic_dining_room.jpeg",
-    "servicesImgAlt": "Luxury living room interior design Kingston upon Thames",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_bedroom_built_in_shelves_4x5.jpeg",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Kingston upon Thames",
     "guidanceTitle": "Planning, Conservation & Permitted Development in Kingston",
     "guidanceSubtitle": "Navigating Royal Borough Approvals in Coombe Hill & Surbiton",
     "guidanceText1": "The Royal Borough of Kingston upon Thames values the architectural integrity of its riverside conservation areas and private residential enclaves like Coombe Hill. Substantial rear extensions, subterranean developments, and alterations require thoughtful planning design.",
@@ -969,8 +981,8 @@ module.exports = [
       "Structural steel calculations and Building Control sign-offs",
       "Tree Preservation Order (TPO) coordination on leafy Coombe estates"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-open-office-workspace-interior.jpeg",
-    "guidanceImgAlt": "Luxury freestanding tub bathroom renovation in Kingston",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_spa_bathroom_freestanding_tub.jpeg",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Kingston upon Thames",
     "faqs": [
       {
         "q": "Do you design private residences in Coombe Hill?",
@@ -988,7 +1000,8 @@ module.exports = [
         "q": "Can you handle the construction and building work in Kingston?",
         "a": "Yes. Our integrated Design & Build service manages all construction, structural steel installation, plumbing, electrics, and joinery fitting under a single contract with a dedicated project manager."
       }
-    ]
+    ],
+    "heroImgAlt": "Kingston upon Thames bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "muswell-hill",
@@ -1000,8 +1013,8 @@ module.exports = [
     "heroLead": "Specialist Interior Design, Period Architectural Preservation, and Contemporary Expansions for Substantial Edwardian Red-Brick Family Residences in North London.",
     "heroBody1": "Muswell Hill is celebrated for its remarkably cohesive Edwardian architecture, elevated views across London, and vibrant village high street. Its red-brick family homes, built largely by James Edmondson and William J Collins, boast generous room proportions, decorative stained glass, and authentic plasterwork.",
     "heroBody2": "Oraanj delivers thoughtful interior architecture for homeowners in Muswell Hill. We celebrate the unique Edwardian heritage of these properties while adapting them for contemporary family living, opening up rear ground floors for open-plan kitchens, designing bespoke boot rooms, and crafting calm, light-filled bedrooms with handcrafted joinery.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/bohemian-luxury-restaurant-lounge.jpeg",
-    "heroAlt": "Elegant Edwardian family home dining room interior design Muswell Hill",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-media-wall.jpeg",
+    "heroAlt": "Muswell Hill bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Muswell Hill Edwardian Typologies & Design Solutions",
     "typologySubtitle": "Preserving Distinctive Edwardian Character While Adapting for Modern Family Life",
     "typologyLead": "Muswell Hill’s housing stock consists predominantly of handsome detached and semi-detached Edwardian family houses with deep gardens.",
@@ -1027,12 +1040,12 @@ module.exports = [
       {
         "num": "04",
         "tag": "Loft Suites",
-        "title": "Parental Sanctuary Loft Conversions",
+        "title": "Parental retreat Loft Conversions",
         "desc": "Converting generous Edwardian roof spaces into quiet master bedroom suites with bespoke dressing rooms and luxury en-suite bathrooms."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/kitchen-island-for-a-luxury-home.webp",
-    "typologyImgAlt": "Bespoke walnut kitchen island in Muswell Hill family home",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-elegant-hallway-foyer-interior.jpeg",
+    "typologyImgAlt": "Muswell Hill property architectural space planning and kitchen layout",
     "servicesTitle": "Our Interior Design Services Across Muswell Hill",
     "servicesSubtitle": "Design Only or Full Turnkey Renovation in Haringey",
     "servicesLead": "We provide structured interior architecture tailored to period family residences.",
@@ -1056,8 +1069,8 @@ module.exports = [
         "desc": "Luxurious family wet rooms from our <a href=\"https://www.oraanj-interiors.co.uk/bathroom-renovation-company/\">bathroom renovation company in london</a>."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/dining_table_closeup.jpeg",
-    "servicesImgAlt": "Cozy Edwardian reading nook with bespoke joinery Muswell Hill",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-dressing-room-vanity.jpeg",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Muswell Hill",
     "guidanceTitle": "Haringey Conservation Areas & Planning in Muswell Hill",
     "guidanceSubtitle": "Navigating Local Authority Policies for Edwardian Properties",
     "guidanceText1": "The Muswell Hill Conservation Area is one of the largest in London, covering almost the entire Edwardian retail and residential core. Haringey Council enforces strict Article 4 Directions controlling alterations to front elevations, timber windows, and roof coverings.",
@@ -1068,8 +1081,8 @@ module.exports = [
       "Restoration of Edwardian timber sash windows and decorative ironwork",
       "Structural steel calculations and Building Control certifications"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-open-plan-office-workspace.jpeg",
-    "guidanceImgAlt": "Crafted stone kitchen island detailing Muswell Hill",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-bedroom-built-in-wardrobe.jpeg",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Muswell Hill",
     "faqs": [
       {
         "q": "How do you open up an Edwardian house while preserving its period charm?",
@@ -1087,7 +1100,8 @@ module.exports = [
         "q": "Can you manage both the design and the building work in Muswell Hill?",
         "a": "Yes. Our complete Design & Build service manages the entire process from concept design and council approvals to structural engineering, construction, bespoke joinery, and final interior styling."
       }
-    ]
+    ],
+    "heroImgAlt": "Muswell Hill bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "whitechapel",
@@ -1099,8 +1113,8 @@ module.exports = [
     "heroLead": "Innovative Interior Architecture for Commercial Tech Offices, Creative Studios, Converted Warehouses, and Contemporary Residential Lofts in East London.",
     "heroBody1": "Whitechapel is an energetic East London cultural and commercial hotspot, fueled by Elizabeth line connectivity, expanding tech hubs, and a rich industrial heritage. From converted textile warehouses and historic brick buildings to modern commercial towers, Whitechapel attracts forward-thinking businesses and design-conscious urban professionals.",
     "heroBody2": "Oraanj delivers dynamic commercial and residential interior design across Whitechapel, Aldgate, and Spitalfields borders. We specialize in industrial-chic aesthetics, agile workplace environments, and loft space planning, balancing exposed brick and structural steel with warm acoustic finishes, bespoke cabinetry, and tailored lighting.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/boho-cafe-lounge-interior.jpeg",
-    "heroAlt": "Warehouse loft interior design Whitechapel East London",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/elegant-living-room-travertine-coffee-table.webp",
+    "heroAlt": "Whitechapel bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Whitechapel Commercial & Residential Typologies",
     "typologySubtitle": "Designing for Creative Tech Workplaces, Agile Offices & Industrial Lofts",
     "typologyLead": "Whitechapel’s architectural landscape combines Victorian industrial brick warehouses with state-of-the-art commercial developments.",
@@ -1130,8 +1144,8 @@ module.exports = [
         "desc": "Maximizing space in modern urban apartments with bespoke multifunctional storage and concealed home offices."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-kitchen-marble-sink-brass-faucet-closeup.webp",
-    "typologyImgAlt": "Industrial-chic natural textures and furniture curation Whitechapel",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/marble-countertop-walnut-cabinet-detail.webp",
+    "typologyImgAlt": "Whitechapel property architectural space planning and kitchen layout",
     "servicesTitle": "Our Interior Design Services Across Whitechapel",
     "servicesSubtitle": "Commercial Fit-Outs & Creative Residential Sanctuaries",
     "servicesLead": "We manage every stage from architectural 3D visualisation to turnkey commercial handover.",
@@ -1155,8 +1169,8 @@ module.exports = [
         "desc": "Vibrant spaces designed by our <a href=\"https://www.oraanj-interiors.co.uk/retail-interior-design/\">Shop interior design</a> team."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-elegant-dining-room-interior.jpeg",
-    "servicesImgAlt": "Modern open-plan studio interior design Whitechapel",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/travertine-coffee-table-living-room-detail.webp",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Whitechapel",
     "guidanceTitle": "Planning, Building Regulations & Landlord Approvals in Tower Hamlets",
     "guidanceSubtitle": "Navigating Commercial Approvals in Whitechapel & Aldgate",
     "guidanceText1": "Whether refurbishing a commercial office on Whitechapel High Street or converting a residential loft in a former warehouse, compliance with Tower Hamlets planning policies and commercial lease covenants is essential.",
@@ -1167,8 +1181,8 @@ module.exports = [
       "Building Regulations Part B (Fire Safety) and Part M (Accessibility) compliance",
       "Acoustic separation testing and HVAC integration in warehouse conversions"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-open-plan-office-interior.jpeg",
-    "guidanceImgAlt": "Contemporary stone finishes and brass detailing Whitechapel",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/brass-wall-sconce-floral-decor.webp",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Whitechapel",
     "faqs": [
       {
         "q": "Do you design commercial offices in Whitechapel?",
@@ -1186,7 +1200,8 @@ module.exports = [
         "q": "Can you handle commercial landlord approvals and licences to alter?",
         "a": "Yes. We prepare full technical packages, AutoCAD layouts, M&E schematics, acoustic specifications, and contractor documentation, required by commercial freeholders and managing agents."
       }
-    ]
+    ],
+    "heroImgAlt": "Whitechapel bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "hornchurch",
@@ -1198,8 +1213,8 @@ module.exports = [
     "heroLead": "Tailored Interior Design, Open-Plan Extensions, and Bespoke Joinery for 1930s Semi-Detached and Detached Family Residences Across Hornchurch and Emerson Park.",
     "heroBody1": "Hornchurch offers a tranquil suburban lifestyle within easy reach of Central London, distinguished by generous 1930s semi-detached properties, large detached houses in prestigious Emerson Park, and verdant private gardens. Homeowners in Hornchurch frequently seek to modernise traditional layouts to accommodate growing families.",
     "heroBody2": "Oraanj delivers comprehensive interior architecture and Design & Build services throughout Hornchurch and Havering. We transform compartmentalised ground floors into open-plan kitchen-living hubs, design practical family boot rooms, add sunlit rear extensions, and craft bespoke joinery that brings enduring elegance to everyday family living.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/travertine-coffee-table-living-room-detail-1.webp",
-    "heroAlt": "Modern open-plan kitchen and family dining extension in Hornchurch",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-modern-apartment-corridor.webp",
+    "heroAlt": "Hornchurch bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Hornchurch Housing Typologies & Design Solutions",
     "typologySubtitle": "Maximising Natural Light, Generous Footprints, and Everyday Family Flow",
     "typologyLead": "Suburban Hornchurch homes feature wide frontages and deep gardens, providing tremendous potential for ground-floor expansions.",
@@ -1229,8 +1244,8 @@ module.exports = [
         "desc": "Creating calm parental retreats with walk-in rainfall showers, freestanding bathtubs, and dual vanity units."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-taupe-kitchen-base-cabinets-brass-handles-marble-backsplash.webp",
-    "typologyImgAlt": "Bespoke walnut kitchen island design Hornchurch residence",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-dining-nook-closeup.webp",
+    "typologyImgAlt": "Hornchurch property architectural space planning and kitchen layout",
     "servicesTitle": "Our Interior Design Services in Hornchurch",
     "servicesSubtitle": "Design Only or Full Turnkey Delivery in Havering",
     "servicesLead": "We manage every aspect of your home transformation from initial sketch ideas to finished construction.",
@@ -1254,8 +1269,8 @@ module.exports = [
         "desc": "Layered schemes from our <a href=\"https://www.oraanj-interiors.co.uk/lighting-design/\">Lighting design London</a> team that enhance daily living."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/elegant-walnut-dining-room-vase.webp",
-    "servicesImgAlt": "Freestanding bathtub ensuite bathroom renovation Hornchurch",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-media-shelving-detail.webp",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Hornchurch",
     "guidanceTitle": "Planning Permissions & Building Regulations in Havering",
     "guidanceSubtitle": "Navigating Permitted Development for Hornchurch Homeowners",
     "guidanceText1": "Many Hornchurch properties benefit from Permitted Development rights for single-storey rear extensions up to 6m on semi-detached homes (or 8m under Prior Approval) and loft conversions. In Emerson Park, special residential covenants often apply.",
@@ -1266,12 +1281,12 @@ module.exports = [
       "Structural steel calculations for open-plan wall removals",
       "Thames Water sewer build-over approvals and Party Wall notices"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-office-glass-corridor-interior.jpeg",
-    "guidanceImgAlt": "Stone kitchen island detailing and brass hardware Hornchurch",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-modern-kitchen-sink-detail.webp",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Hornchurch",
     "faqs": [
       {
         "q": "How do you modernize 1930s semi-detached homes in Hornchurch?",
-        "a": "We typically re-engineer the ground floor by removing the rear dividing walls between the kitchen, dining, and small scullery to create a large open-plan kitchen-living space with garden doors. We also reconfigure the front lounge into a cozy retreat and add bespoke storage."
+        "a": "We typically re-engineer the ground floor by removing the rear dividing walls between the kitchen, dining, and small scullery to create a large open-plan kitchen-living space with garden doors. We also reconfigure the front lounge into a cosy retreat and add bespoke storage."
       },
       {
         "q": "Do you work on large detached properties in Emerson Park?",
@@ -1285,7 +1300,8 @@ module.exports = [
         "q": "Can you handle the building works as well as the design in Hornchurch?",
         "a": "Yes. Our integrated Design & Build service manages all construction, structural steel installation, plumbing, electrics, and joinery fitting under a single contract with a dedicated project manager."
       }
-    ]
+    ],
+    "heroImgAlt": "Hornchurch bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "lambeth",
@@ -1297,8 +1313,8 @@ module.exports = [
     "heroLead": "Creative Interior Design, Architectural Space Planning, and Turnkey Renovation for Georgian Squares, Victorian Conversions, and Modern Apartments Across Lambeth, Brixton, Kennington, and Waterloo.",
     "heroBody1": "The London Borough of Lambeth stretches from the South Bank and Waterloo down through historic Kennington and vibrant Brixton to Streatham. It is one of London’s most culturally rich and architecturally varied boroughs, featuring elegant Georgian garden squares, Victorian artisan cottages, and striking contemporary developments.",
     "heroBody2": "Oraanj brings thoughtful, character-driven interior design to Lambeth homes. We embrace the borough’s eclectic energy and historic charm, restoring period cornices, reconfiguring awkward flat conversions, designing bespoke storage, and crafting rich, textural palettes that reflect the personalities of its diverse homeowners.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-living-room-interior-renovation-before-construction.webp",
-    "heroAlt": "Contemporary living room interior design in Lambeth South London",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_living_room_fireplace_closeup_1x1.jpeg",
+    "heroAlt": "Lambeth bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Lambeth Property Typologies & Design Solutions",
     "typologySubtitle": "Balancing Historic Character, Cultural Vibrancy, and Space Optimization",
     "typologyLead": "From grand four-storey townhouses in Kennington to creative loft apartments in Brixton, Lambeth homes require creative spatial thinking.",
@@ -1328,8 +1344,8 @@ module.exports = [
         "desc": "Designing sleek, space-optimised interiors for contemporary apartments with integrated acoustic solutions and custom fitted cabinetry."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-kitchen-fluted-taupe-island-marble-countertop.webp",
-    "typologyImgAlt": "Natural stone and warm neutral textures Lambeth residence",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_marble_island_detail_1x1.jpeg",
+    "typologyImgAlt": "Lambeth property architectural space planning and kitchen layout",
     "servicesTitle": "Our Interior Design Services in Lambeth",
     "servicesSubtitle": "Design Only or Full Turnkey Refurbishment Across the Borough",
     "servicesLead": "We provide practical, stylish design solutions suited to busy modern lifestyles.",
@@ -1353,8 +1369,8 @@ module.exports = [
         "desc": "Bespoke layouts from our <a href=\"https://www.oraanj-interiors.co.uk/bathroom-renovation-company/\">bathroom renovation company in london</a>."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-cafe-bar-and-dining-interior.jpeg",
-    "servicesImgAlt": "Warm modern dining room interior design in Lambeth",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_bedroom_built_in_shelves_4x5.jpeg",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Lambeth",
     "guidanceTitle": "Planning, Conservation & Building Regulations in Lambeth",
     "guidanceSubtitle": "Navigating Local Authority Policies in Kennington & Brixton",
     "guidanceText1": "Lambeth features numerous designated conservation areas, including the Kennington, Albert Square, and Brixton Conservation Areas. Stricter planning controls apply to alterations affecting historic streetscapes and period frontages.",
@@ -1365,8 +1381,8 @@ module.exports = [
       "Structural steel calculations for open-plan wall knock-throughs",
       "Building Control sign-off for insulation, fire safety, and drainage"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-office-interior.jpeg",
-    "guidanceImgAlt": "Stone kitchen island and brass fittings Lambeth",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_spa_bathroom_freestanding_tub.jpeg",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Lambeth",
     "faqs": [
       {
         "q": "Do you work on listed Georgian houses in Kennington?",
@@ -1384,205 +1400,212 @@ module.exports = [
         "q": "Can you manage both the design and the renovation work in Lambeth?",
         "a": "Yes. Our integrated Design & Build service manages the entire process from concept design and council approvals to structural engineering, construction, bespoke joinery, and final interior styling."
       }
-    ]
+    ],
+    "heroImgAlt": "Lambeth bespoke residential interior architecture by Oraanj"
   },
   {
     "slug": "bromley",
     "url": "https://www.oraanj-interiors.co.uk/bromley/",
     "name": "Bromley",
     "borough": "London Borough of Bromley",
-    "eyebrow": "Suburban Grandeur & Family Residences in Bromley & Chislehurst",
-    "h1": "Interior Designers in Bromley | Period Villas & Detached Family Homes",
-    "heroLead": "Bespoke Interior Architecture, Space Planning, and Complete Turnkey Refurbishment for Substantial Family Homes in Bromley South, Chislehurst, Bickley, and Beckenham.",
-    "heroBody1": "As London’s largest borough by area, Bromley is synonymous with leafy green avenues, prestigious private estates, and substantial detached housing stock. From handsome Victorian and Edwardian villas in Bickley and Chislehurst to sprawling 1930s family homes in Beckenham, Bromley offers extraordinary scope for luxurious family living.",
-    "heroBody2": "Oraanj delivers tranquil, timeless interior architecture for discerning families across Bromley. We reconfigure generous footprints to create flowing open-plan kitchen-living hubs, private master dressing wings, home spas, and bespoke joinery suites that reflect British craftsmanship and elevate everyday life.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-living-room-fireplace-renovation-before-construction.webp",
-    "heroAlt": "Spacious detached family home living room interior design Bromley",
-    "typologyTitle": "Bromley Property Typologies & Family Solutions",
-    "typologySubtitle": "Designing for Expansive Footprints, Generous Gardens, and Modern Family Flow",
-    "typologyLead": "Bromley’s substantial detached homes and period villas provide an expansive canvas for high-end interior architecture.",
+    "eyebrow": "Hospitality Architecture & Restaurant Fit-Outs in Bromley",
+    "h1": "Restaurant Interior Design in Bromley | Hospitality Fit-Outs & Bars",
+    "heroLead": "Turnkey Restaurant, Café, and Bar Interior Architecture in Bromley, Creating Memorable Dining Atmospheres with End-to-End Build Delivery.",
+    "heroBody1": "Oraanj provides specialist hospitality interior design, commercial spatial planning, bespoke bar joinery, and complete design & build services for restaurants and cafés across Bromley and South East London. From atmospheric dining rooms to high-efficiency open kitchens, we craft commercial venues that elevate the guest experience and maximize covers.",
+    "heroBody2": "Our hospitality portfolio includes signature projects such as the contemporary Bromley restaurant fit-out, featuring custom olive leather banquettes, fluted timber bar joinery, open-kitchen pass layouts, and durable terrazzo finishes designed for heavy commercial service.",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-cafe-entrance-interior.jpeg",
+    "heroAlt": "Modern restaurant and cafe entrance interior in Bromley by Oraanj",
+    "typologyTitle": "Hospitality Typologies & Restaurant Formats in Bromley",
+    "typologySubtitle": "Optimising Flow, Acoustic Ambiance, and Covers for Bromley High Streets",
+    "typologyLead": "Hospitality venues in Bromley require intelligent spatial zoning, durable trade finishes, and compliant mechanical ventilation to deliver exceptional dining experiences.",
     "typologies": [
       {
         "num": "01",
-        "tag": "Detached Estates",
-        "title": "Chislehurst & Bickley Private Residences",
-        "desc": "Designing grand double-height entrance halls, expansive open-plan entertaining wings, bespoke chef kitchens, and luxury home offices."
+        "tag": "Dining Layout",
+        "title": "Bespoke Banquette & Booth Seating",
+        "desc": "Maximizing covers with tailored fluted timber banquettes and tactile olive leather seating for comfortable conversation."
       },
       {
         "num": "02",
-        "tag": "Period Villas",
-        "title": "Victorian & Edwardian Renovations",
-        "desc": "Restoring authentic period character while opening up compartmentalised ground floors for modern kitchen-dining connections."
+        "tag": "Bar Architecture",
+        "title": "Cocktail & Coffee Bar Counters",
+        "desc": "Front-of-house bar counters with integrated glass gantries, speed rails, and commercial terrazzo surfaces."
       },
       {
         "num": "03",
-        "tag": "Joinery",
-        "title": "Bespoke Fitted Cabinetry & Boot Rooms",
-        "desc": "Crafting tailored boot room benches, laundry suites, full-height walk-in wardrobes, and media walls with concealed acoustic fabric."
+        "tag": "Kitchen Pass",
+        "title": "Open-Kitchen Flow & Pass Sightlines",
+        "desc": "Seamless coordination between the culinary pass, acoustic ceiling baffles, and heavy-duty extraction."
       },
       {
         "num": "04",
-        "tag": "Commercial",
-        "title": "Boutique Hospitality & Restaurant Design",
-        "desc": "Designing welcoming local dining spaces, like our acclaimed <a href=\"https://www.oraanj-interiors.co.uk/restaurant-interior-design-london/\">Bromley restaurant interior design</a> project."
+        "tag": "Ambiance",
+        "title": "Zoned Ambient & Task Lighting",
+        "desc": "Layered lighting schemes combining low-glare table pendants with warm linear LED illumination along joinery."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-taupe-kitchen-bespoke-pantry-joinery-brass-handles.webp",
-    "typologyImgAlt": "Open-plan kitchen extension and dining room in Bromley",
-    "servicesTitle": "Our Interior Design Services Across Bromley",
-    "servicesSubtitle": "Design Only or Full Turnkey Refurbishment Across the Borough",
-    "servicesLead": "We manage every aspect of your home transformation from initial sketch ideas to finished construction.",
-    "servicesBody1": "As an experienced <a href=\"https://www.oraanj-interiors.co.uk/interior-designers-london/\">interior design company</a> with over 20 years across London, we understand how to unlock maximum property value and livability. We work closely with Bromley Council’s planning and building control teams to ensure all structural changes are fully approved.",
-    "servicesBody2": "For homeowners seeking a seamless experience, our <a href=\"https://www.oraanj-interiors.co.uk/design-and-build/\">Design and build company in London</a> service delivers structural work, kitchen installation, plastering, decorating, and joinery under one roof.",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-cafe-bar-and-dining-interior.jpeg",
+    "typologyImgAlt": "Contemporary restaurant bar and dining area interior in Bromley",
+    "servicesTitle": "Hospitality Interior Architecture & Fit-Out Services in Bromley",
+    "servicesSubtitle": "From Feasibility Planning to Contractor Handover and Opening Night",
+    "servicesLead": "We take single-point contract responsibility for restaurant and bar interior fit-outs across Bromley.",
+    "servicesBody1": "As an accredited <a href=\"https://www.oraanj-interiors.co.uk/interior-designers-london/\">london based interior designers</a> and commercial contractor, Oraanj manages Bromley Council licensing floor plans, Building Regulations compliance, and environmental health standards.",
+    "servicesBody2": "Through our dedicated <a href=\"https://www.oraanj-interiors.co.uk/commercial-interior-design/\">commercial interior design</a> and <a href=\"https://www.oraanj-interiors.co.uk/design-and-build/\">Design and build company in London</a> services, we provide complete MEP coordination, bespoke commercial joinery, and fast-track on-site delivery.",
     "servicesItems": [
       {
-        "title": "Kitchen & Family Living Transformations",
-        "desc": "Expert <a href=\"https://www.oraanj-interiors.co.uk/kitchen-renovation-company/\">kitchen renovation london</a> designs engineered for busy social cooking and family gatherings."
+        "title": "Spatial Feasibility & Cover Planning",
+        "desc": "Optimising restaurant table configurations, DDA accessibility, and customer circulation routes."
       },
       {
-        "title": "Bespoke Joinery & Storage",
-        "desc": "Tailored <a href=\"https://www.oraanj-interiors.co.uk/bespoke-joinery-design-london/\">Bespoke Joinery Design</a> including wardrobe runs, study alcoves, and boot rooms."
+        "title": "Bespoke Bar Joinery & Counters",
+        "desc": "Precision commercial bar counters, back-bar bottle shelving, and durable stone countertops."
       },
       {
-        "title": "Hospitality & Restaurant Interior Design",
-        "desc": "Experienced <a href=\"https://www.oraanj-interiors.co.uk/restaurant-interior-design-london/\">restaurant interior designers</a> solutions for local venues."
+        "title": "Acoustic Engineering & MEP",
+        "desc": "Acoustic ceiling rafts and discrete HVAC ducting balancing lively dining energy with acoustic clarity."
       },
       {
-        "title": "Bathroom Architecture & En-Suites",
-        "desc": "Bespoke bathroom design from our specialist <a href=\"https://www.oraanj-interiors.co.uk/bathroom-renovation-company/\">bathroom renovation company in london</a>."
+        "title": "Turnkey Contractor Management",
+        "desc": "Full trade supervision, building control certification, and fast-track completion before launch."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/terracotta-arched-dining-nook-olive-banquette.jpeg",
-    "servicesImgAlt": "Luxury freestanding tub bathroom renovation in Bromley residence",
-    "guidanceTitle": "Planning, Conservation & Building Control in Bromley",
-    "guidanceSubtitle": "Navigating Local Authority Policies in Chislehurst & Bickley",
-    "guidanceText1": "The London Borough of Bromley features 45 Conservation Areas, including historic Chislehurst, Bickley Park, and Garden Suburbs. Alterations in these areas require sympathetic architectural detailing and sensitive materials.",
-    "guidanceText2": "Oraanj produces complete planning drawing packages, heritage impact statements, and structural calculations submitted directly to Bromley Council.",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/olive-green-cafe-bar-open-kitchen-interior.jpeg",
+    "servicesImgAlt": "Open-kitchen pass and dining counter design in Bromley",
+    "guidanceTitle": "Planning Permission, Licensing & Building Regulations in Bromley",
+    "guidanceSubtitle": "Navigating Local Authority Approvals for Bromley Restaurateurs",
+    "guidanceText1": "Opening or refurbishing a restaurant or bar in Bromley requires navigating Class E to drinking establishment permissions, premises licensing drawings, outdoor dining consent, and commercial extraction ductwork approvals.",
+    "guidanceText2": "Oraanj prepares all architectural plans, acoustic reports, and planning submissions directly to the London Borough of Bromley, ensuring total statutory compliance and zero opening delays.",
     "guidancePoints": [
-      "Bromley Council Conservation Area approvals for Chislehurst & Bickley",
-      "Permitted Development & Prior Approval submissions for rear extensions",
-      "Tree Preservation Order (TPO) coordination on expansive garden plots",
-      "Structural steel calculations and Building Control sign-offs"
+      "Bromley Council commercial planning applications and shopfront alterations",
+      "Premises licensing layout plans and occupant capacity calculations",
+      "Kitchen extraction ducting and environmental health odour control compliance",
+      "Building Regulations sign-off for fire egress, emergency lighting, and DDA accessibility"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-luxury-office-lobby-green-wall.jpeg",
-    "guidanceImgAlt": "Stone kitchen island detailing and brass hardware Bromley",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/olive-green-cafe-bar-stools-joinery-detail.jpeg",
+    "guidanceImgAlt": "Bespoke bar stools and handcrafted timber bar front joinery detail in Bromley",
     "faqs": [
       {
-        "q": "Do you design private family homes in Chislehurst and Bickley?",
-        "a": "Yes! We regularly design substantial detached properties in Chislehurst, Bickley, and Bromley South, creating open-plan kitchen and living suites, bespoke boot rooms, walk-in dressing wings, and home cinemas."
+        "q": "Do you design both the dining area and the commercial kitchen in Bromley?",
+        "a": "Yes. We design the entire front-of-house customer journey and dining spaces, and coordinate directly with commercial kitchen suppliers to ensure seamless pass ergonomics, extraction, and building services compliance."
       },
       {
-        "q": "Do you also design commercial venues in Bromley?",
-        "a": "Yes. We designed the acclaimed Bromley restaurant project. We provide complete interior architecture and fit-outs for restaurants, bars, cafes, and boutique retail across the borough."
+        "q": "Can you assist with Bromley Council licensing plans and planning permission?",
+        "a": "Absolutely. Our architectural team produces detailed licensing drawings, fire strategy layouts, and planning applications submitted directly to the London Borough of Bromley."
       },
       {
-        "q": "What packages do you offer for Bromley homes?",
-        "a": "We offer One Design (£600 per room/zone), Unlimited Design (£900 per room/zone), and Design & Technical (£1,500 per room/zone). Whole-house architectural transformations receive tailored turnkey proposals."
+        "q": "How long does a typical restaurant fit-out take in Bromley?",
+        "a": "Design concepts and statutory approvals typically take 4 to 8 weeks, followed by a fast-track 6 to 12-week construction and fit-out programme, scheduled to minimise commercial downtime."
       },
       {
-        "q": "Can you handle both the design and the building work in Bromley?",
-        "a": "Yes. Our integrated Design & Build service manages all construction, structural steel installation, plumbing, electrics, and joinery fitting under a single contract with a dedicated project manager."
+        "q": "Can you manufacture bespoke banquette seating and bar counters?",
+        "a": "Yes. We custom-manufacture all banquette seating, upholstered booths, bar fronts, and service counters using commercial-grade fabrics and durable hardwoods."
       }
-    ]
+    ],
+    "heroImgAlt": "Modern restaurant and cafe entrance interior in Bromley by Oraanj",
+    "seoTitle": "Restaurant Interior Design in Bromley | Hospitality Fit-Outs | Oraanj",
+    "metaDesc": "Specialist restaurant, café and bar interior design in Bromley by Oraanj. Turnkey fit-outs, bespoke banquette seating and commercial kitchen planning."
   },
   {
     "slug": "shoreditch",
     "url": "https://www.oraanj-interiors.co.uk/shoreditch/",
     "name": "Shoreditch",
     "borough": "London Borough of Hackney",
-    "eyebrow": "Hospitality, Bars, Restaurants & Warehouse Lofts in Shoreditch",
-    "h1": "Interior Designers in Shoreditch | Hospitality Venues & Warehouse Lofts",
-    "heroLead": "Specialist Interior Design for Cocktail Bars, Destination Restaurants, Trendy Cafes, Creative Offices, and Converted Industrial Lofts in East London’s Design Capital.",
-    "heroBody1": "Shoreditch is London’s creative beating heart, a trend-defining epicenter of hospitality, dining, fashion, and tech innovation centered around Old Street, Redchurch Street, and Hoxton Square. From buzzing cocktail lounges and experiential dining destinations to converted Victorian industrial warehouses, Shoreditch sets the benchmark for bold, sensory interiors.",
-    "heroBody2": "Oraanj delivers captivating hospitality and residential interior design across Shoreditch. As experienced <a href=\"https://www.oraanj-interiors.co.uk/restaurant-interior-design-london/\">restaurant interior designers</a> and <a href=\"https://www.oraanj-interiors.co.uk/bar-interior-designer/\">Bar Interior Designer</a> specialists, we design high-performing commercial spaces that drive covers and social buzz, while our residential team transforms raw industrial lofts into warm, tactile sanctuaries.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_living_dining_3d_render.webp",
-    "heroAlt": "Industrial warehouse loft interior design Shoreditch East London",
-    "typologyTitle": "Shoreditch Typologies: Hospitality, Lofts & Creative Tech",
-    "typologySubtitle": "Mastering Commercial Operations, Sensory Atmosphere, and Industrial Character",
-    "typologyLead": "Shoreditch interiors require a confident dialogue with industrial architecture, commercial flow, and magnetic mood lighting.",
+    "eyebrow": "Hospitality Architecture & Cocktail Lounge Design in Shoreditch",
+    "h1": "Bar & Hospitality Interior Design in Shoreditch | Turnkey Fit-Outs",
+    "heroLead": "Atmospheric Cocktail Lounges, Bespoke Bar Counters, and Destination Hospitality Venues Across Shoreditch and East London.",
+    "heroBody1": "Oraanj provides turnkey hospitality interior design, commercial space planning, licensing support, and bespoke bar manufacture in Shoreditch. We create immersive venues where material textures, layered ambient lighting, and acoustic control drive evening dwell time.",
+    "heroBody2": "Our Shoreditch bar project highlights this approach, pairing tactile bohemian lounge upholstery, organic rattan and macramé lighting fixtures, warm lime-washed walls, and handcrafted architectural joinery.",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/bohemian-jungle-lounge-interior.jpeg",
+    "heroAlt": "Atmospheric cocktail bar and bohemian lounge interior in Shoreditch by Oraanj",
+    "typologyTitle": "Hospitality Typologies & Nightlife Concepts in Shoreditch",
+    "typologySubtitle": "Crafting Destination Venues with Flawless Service Ergonomics in EC1 & EC2",
+    "typologyLead": "Hospitality design in Shoreditch requires distinct identity, tactile materials, and high-efficiency bar workstations designed for speed of service.",
     "typologies": [
       {
         "num": "01",
-        "tag": "Bars & Lounges",
-        "title": "Cocktail Bars & Speakeasies",
-        "desc": "Designing atmospheric bar layouts with our specialist <a href=\"https://www.oraanj-interiors.co.uk/bar-interior-designer/\">Bar Interior Designer</a> team, featuring backlit stone, fluted glass, and ergonomic speed rails."
+        "tag": "Bar Architecture",
+        "title": "Sculpted Cocktail Bars & Gantries",
+        "desc": "Antiqued brass counters, integrated ice wells, draft lines, and illuminated overhead bottle displays."
       },
       {
         "num": "02",
-        "tag": "Restaurants",
-        "title": "Destination Restaurant Interiors",
-        "desc": "Creating experiential dining venues via our <a href=\"https://www.oraanj-interiors.co.uk/restaurant-interior-design-london/\">restaurant interior designers</a> team with optimized cover layouts and commercial kitchen flow."
+        "tag": "Lounge Seating",
+        "title": "Tactile Velvet & Bohemian Lounges",
+        "desc": "Curved banquette booths, bohemian organic textures, and intimate conversational clusters."
       },
       {
         "num": "03",
-        "tag": "Cafes",
-        "title": "Artisanal Cafes & Casual Dining",
-        "desc": "Crafting welcoming neighborhood spots designed by our dedicated <a href=\"https://www.oraanj-interiors.co.uk/cafe-interior-designer/\">Cafe Interior Designer</a> specialists."
+        "tag": "Lighting Design",
+        "title": "Low-Glare Mood Lighting Schemes",
+        "desc": "Artisanal pendant lights, concealed LED plinth illumination, and warm architectural spot accents."
       },
       {
         "num": "04",
-        "tag": "Loft Living",
-        "title": "Converted Industrial Warehouse Lofts",
-        "desc": "Balancing exposed brickwork, steel beams, and Crittall glazing with rich velvet upholstery, bespoke walnut cabinetry, and warm layered lighting."
+        "tag": "Acoustics",
+        "title": "Acoustic Separation & Soundproofing",
+        "desc": "Acoustic wall panelling and ceiling treatments preventing noise bleed into neighbouring urban properties."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-taupe-kitchen-brushed-brass-cabinet-handles-closeup.webp",
-    "typologyImgAlt": "Tactile materials and atmospheric interior detailing Shoreditch",
-    "servicesTitle": "Our Shoreditch Interior Design Services",
-    "servicesSubtitle": "Commercial Hospitality Concepts & Distinctive Urban Living",
-    "servicesLead": "We deliver comprehensive design solutions from initial concept to commercial opening night.",
-    "servicesBody1": "As leading <a href=\"https://www.oraanj-interiors.co.uk/commercial-interior-design/\">commercial interior designers</a>, we understand the operational rigor needed in Shoreditch hospitality, acoustic dampening, ventilation pathways, licensing requirements, and durable contract-grade finishes that withstand heavy footfall.",
-    "servicesBody2": "Our team acts as a single point of accountability through our proven <a href=\"https://www.oraanj-interiors.co.uk/design-and-build/\">Design and build company in London</a> service.",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/sunlit-bohemian-restaurant-lounge.jpeg",
+    "typologyImgAlt": "Sunlit bohemian dining lounge with rattan lighting in Shoreditch",
+    "servicesTitle": "Hospitality Design & Build Services in Shoreditch",
+    "servicesSubtitle": "Comprehensive Architectural Design, Fabrication, and Site Delivery",
+    "servicesLead": "From concept narrative to licensing sign-off, we bring hospitality venues to life with precision.",
+    "servicesBody1": "As experienced <a href=\"https://www.oraanj-interiors.co.uk/interior-designers-london/\">london based interior designers</a>, Oraanj navigates Hackney and Tower Hamlets licensing constraints, commercial building control, and acoustic regulations.",
+    "servicesBody2": "Our comprehensive <a href=\"https://www.oraanj-interiors.co.uk/commercial-interior-design/\">commercial interior design</a> and <a href=\"https://www.oraanj-interiors.co.uk/design-and-build/\">Design and build company in London</a> service delivers turnkey venues on fast-track schedules.",
     "servicesItems": [
       {
-        "title": "Bar & Lounge Architecture",
-        "desc": "Magnetic spaces created by our <a href=\"https://www.oraanj-interiors.co.uk/bar-interior-designer/\">Bar Interior Designer</a> team with bespoke joinery."
+        "title": "Bar Workstation & Flow Planning",
+        "desc": "Ergonomic bartender wells, speed racks, glasswash placement, and customer queue zoning."
       },
       {
-        "title": "Restaurant & Dining Design",
-        "desc": "High-performing venues from our <a href=\"https://www.oraanj-interiors.co.uk/restaurant-interior-design-london/\">restaurant interior designers</a> specialists."
+        "title": "Bespoke Joinery & Metalwork",
+        "desc": "Custom brass gantries, fluted timber bar fronts, and bespoke upholstered booth seating."
       },
       {
-        "title": "Cafe & Casual Hospitality Fit-Outs",
-        "desc": "Welcoming day-to-night concepts from our <a href=\"https://www.oraanj-interiors.co.uk/cafe-interior-designer/\">Cafe Interior Designer</a> team."
+        "title": "Acoustic & MEP Engineering",
+        "desc": "Specialist sound insulation, commercial ventilation, and cellar cooler coordination."
       },
       {
-        "title": "Creative Office & Studio Spaces",
-        "desc": "Innovative workplaces designed by our <a href=\"https://www.oraanj-interiors.co.uk/office-interior-design-london/\">Office interior designer</a> team."
+        "title": "Turnkey Fit-Out Management",
+        "desc": "Single-source site delivery, building control approvals, and fast-track completion."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-terra-cotta-luxury-bathroom.webp",
-    "servicesImgAlt": "Bespoke bar joinery and walnut detailing Shoreditch",
-    "guidanceTitle": "Planning, Licensing & Building Control in Hackney",
-    "guidanceSubtitle": "Navigating Commercial Hospitality Permissions in Shoreditch",
-    "guidanceText1": "Opening or refurbishing a bar, restaurant, or commercial space in Shoreditch requires navigating Hackney Council’s Special Policy Area (SPA) licensing rules, planning permissions for extraction ductwork, and strict acoustic criteria.",
-    "guidanceText2": "Oraanj produces complete planning drawings, acoustic impact assessments, kitchen ventilation schematics, and building control packs to ensure smooth approvals.",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/bohemian-cafe-lounge-interior.jpeg",
+    "servicesImgAlt": "Bohemian bar lounge seating corner with tactile fabrics in Shoreditch",
+    "guidanceTitle": "Licensing, Planning & Acoustic Compliance in Hackney & Tower Hamlets",
+    "guidanceSubtitle": "Navigating Local Authority Regulations for Shoreditch Operators",
+    "guidanceText1": "Developing a bar or lounge in Shoreditch requires navigating Special Policy Areas (cumulative impact zones), premises licences, acoustic transfer testing, and Listed building consents.",
+    "guidanceText2": "Oraanj prepares complete licensing layout packages, acoustic noise management plans, and planning documentation to ensure seamless statutory approvals.",
     "guidancePoints": [
-      "Hackney Council planning applications for Class E and Sui Generis uses",
-      "Commercial kitchen extract, odor abatement, and ventilation compliance",
-      "Acoustic soundproofing design and boundary decibel limit compliance",
-      "Building Regulations Part B (Fire Safety) and Part M (Accessibility) sign-offs"
+      "Hackney and Tower Hamlets premises licence application drawing packages",
+      "Acoustic impact assessments and sound insulation certification",
+      "Kitchen extraction and cellar cooling planning approvals",
+      "Building Regulations sign-off for fire evacuation, occupancy, and DDA compliance"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-office-workstation-interior.jpeg",
-    "guidanceImgAlt": "Industrial stone finishes and brass detailing Shoreditch",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/boho-macrame-pendant-light-detail.jpeg",
+    "guidanceImgAlt": "Artisanal cocktail bar nook with hanging botanicals in Shoreditch",
     "faqs": [
       {
-        "q": "Do you design bars, restaurants, and cafes in Shoreditch?",
-        "a": "Yes! Hospitality is one of our primary specialisms in Shoreditch. We have designed acclaimed bars, restaurants, and boutique cafes, managing the full process from spatial flow and lighting design to commercial equipment layout and fit-out delivery."
+        "q": "Do you design custom cocktail bar stations and gantries in Shoreditch?",
+        "a": "Yes. We custom-engineer cocktail workstations, brass overhead gantries, integrated ice wells, and speed rails to ensure rapid bar service during peak hours."
       },
       {
-        "q": "What is the key to designing a successful Shoreditch venue?",
-        "a": "The secret is blending operational efficiency with sensory drama. Back-of-house circulation and speed-of-service must be flawless, while front-of-house lighting, tactile surfaces, acoustic balance, and statement design create an irresistible atmosphere that drives covers."
+        "q": "Can you assist with premises licensing applications in Hackney and Tower Hamlets?",
+        "a": "Yes. We prepare all architectural floor plans, fire egress drawings, and occupancy schedules required for local authority premises licensing."
       },
       {
-        "q": "Do you also design private residential lofts in Shoreditch?",
-        "a": "Yes. We regularly design converted warehouse apartments, pairing exposed structural brick and ironwork with warm timber joinery, bespoke kitchens, and luxurious en-suite bathrooms."
+        "q": "How do you handle acoustic control in mixed-use Shoreditch buildings?",
+        "a": "We design resilient acoustic wall and ceiling assemblies, acoustic doors, and decoupled flooring to ensure zero sound transference to residential neighbours above."
       },
       {
-        "q": "What packages are available for Shoreditch projects?",
-        "a": "Our room packages are: One Design (£600 per room/zone), Unlimited Design (£900 per room/zone), and Design & Technical (£1,500 per room/zone). Commercial venues receive bespoke turnkey proposals."
+        "q": "What is the typical timeframe for a bar fit-out in Shoreditch?",
+        "a": "Concept design and licensing typically require 6 to 10 weeks, followed by an intensive 8 to 14-week construction and fit-out programme."
       }
-    ]
+    ],
+    "heroImgAlt": "Atmospheric cocktail bar and bohemian lounge interior in Shoreditch by Oraanj",
+    "seoTitle": "Bar & Hospitality Interior Design in Shoreditch | Cocktail Lounges | Oraanj",
+    "metaDesc": "Atmospheric cocktail lounge and bar interior design in Shoreditch by Oraanj. Turnkey hospitality fit-outs, bespoke bar counters and low-glare lighting."
   },
   {
     "slug": "northwood",
@@ -1594,8 +1617,8 @@ module.exports = [
     "heroLead": "Bespoke Interior Architecture, Heritage Craftsmanship, and Turnkey Renovation for Gated Mansions, Detached Residences, and Private Estates in Northwood and Moor Park.",
     "heroBody1": "Northwood is one of North West London’s most prestigious residential enclaves, celebrated for the exclusive gated estate of Moor Park, tree-lined private avenues, and grand detached residences. Homeowners in Northwood command generous acreage and substantial floorplans, demanding the highest level of architectural finish and bespoke luxury.",
     "heroBody2": "Oraanj delivers timeless luxury interior design tailored to discerning Northwood families. We craft grand double-height entrance halls, bespoke chef kitchens with secondary spice pantries, subterranean cinema and wellness suites, and luxurious primary dressing rooms that embody discreet, old-money elegance and exceptional contemporary comfort.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/living_dining_interior_floor_plan.jpeg",
-    "heroAlt": "Grand double-height entrance hall interior design in Northwood mansion",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-media-wall.jpeg",
+    "heroAlt": "Northwood bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Northwood & Moor Park Architectural Typologies",
     "typologySubtitle": "Designing for Gated Estates, Expansive Square Footage, and Enduring Luxury",
     "typologyLead": "Northwood properties offer grand architectural proportions that reward sophisticated spatial planning and bespoke materiality.",
@@ -1616,7 +1639,7 @@ module.exports = [
         "num": "03",
         "tag": "Joinery",
         "title": "Bespoke Libraries & Executive Studies",
-        "desc": "Floor-to-ceiling fluted timber joinery, secret doors, integrated brass picture lighting, and warm acoustic paneling for high-level home working."
+        "desc": "Floor-to-ceiling fluted timber joinery, secret doors, integrated brass picture lighting, and warm acoustic panelling for high-level home working."
       },
       {
         "num": "04",
@@ -1625,8 +1648,8 @@ module.exports = [
         "desc": "Creating private master wings with bespoke walk-in wardrobes, velvet-lined jewellery drawers, freestanding soaking tubs, and bookmatched marble finishes."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-kitchen-pendant-lighting-taupe-cabinetry.webp",
-    "typologyImgAlt": "Timeless luxury living room interior design in Northwood estate",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-elegant-hallway-foyer-interior.jpeg",
+    "typologyImgAlt": "Northwood property architectural space planning and kitchen layout",
     "servicesTitle": "Our Comprehensive Services Across Northwood",
     "servicesSubtitle": "SBID Accredited Interior Design & Turnkey Project Delivery",
     "servicesLead": "We provide full architectural interior design services from initial sketch ideas to finished construction and white-glove dressing.",
@@ -1650,8 +1673,8 @@ module.exports = [
         "desc": "Conducted by our specialist <a href=\"https://www.oraanj-interiors.co.uk/kitchen-renovation-company/\">kitchen renovation london</a> team with custom chef islands and sub-zero appliance integration."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-spa-bathroom-freestanding-tub.webp",
-    "servicesImgAlt": "Luxury freestanding tub ensuite design in Northwood residence",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-dressing-room-vanity.jpeg",
+    "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Northwood",
     "guidanceTitle": "Estate Guidelines & Planning Approvals in Northwood",
     "guidanceSubtitle": "Navigating Moor Park Estate Covenants & Hillingdon Regulations",
     "guidanceText1": "Homes within the Moor Park Estate and Northwood conservation areas are subject to private estate covenants that govern rooflines, materials, and front facades alongside statutory planning regulations.",
@@ -1662,8 +1685,8 @@ module.exports = [
       "Structural steel calculations for subterranean and open-plan expansions",
       "Full building regulation compliance and MEP service coordination"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-office-meeting-room-detail.jpeg",
-    "guidanceImgAlt": "Bespoke stone island and brass details in Northwood residence",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-bedroom-built-in-wardrobe.jpeg",
+    "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Northwood",
     "faqs": [
       {
         "q": "Do you work on properties in the private Moor Park Estate?",
@@ -1681,6 +1704,7 @@ module.exports = [
         "q": "What pricing packages do you offer for Northwood homes?",
         "a": "We offer One Design (£600 per room/zone), Unlimited Design (£900 per room/zone), and Design & Technical (£1,500 per room/zone). For whole-home architectural restorations and bespoke additions, we provide detailed, tailored turnkey proposals."
       }
-    ]
+    ],
+    "heroImgAlt": "Northwood bespoke residential interior architecture by Oraanj"
   }
 ];

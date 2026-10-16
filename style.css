@@ -345,7 +345,9 @@
 .orc-hero-image-frame {
   position: relative !important;
   width: 100% !important;
-  height: 660px !important;
+  aspect-ratio: 1 / 1 !important;
+  height: auto !important;
+  max-height: none !important;
   border-radius: 8px !important;
   overflow: hidden !important;
   background-color: #ECE8E1 !important;
@@ -421,7 +423,9 @@
 .orc-media-frame {
   position: relative !important;
   width: 100% !important;
-  height: 560px !important;
+  aspect-ratio: 1 / 1 !important;
+  height: auto !important;
+  max-height: none !important;
   border-radius: 8px !important;
   overflow: hidden !important;
   background-color: #ECE8E1 !important;
@@ -430,7 +434,9 @@
 .orc-split-img {
   width: 100% !important;
   height: 100% !important;
+  aspect-ratio: 1 / 1 !important;
   object-fit: cover !important;
+  object-position: center !important;
   display: block !important;
 }
 
@@ -5500,14 +5506,14 @@
     width: 100% !important;
   }
 
-  /* Fluid, responsive media frame */
+  /* Fluid, responsive media frame (strict 1:1 square) */
   .orc-media-frame {
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    aspect-ratio: 16 / 10 !important;
-    min-height: 280px !important;
-    max-height: 440px !important;
+    aspect-ratio: 1 / 1 !important;
+    min-height: 0 !important;
+    max-height: none !important;
   }
 
   /* Fluid, responsive hero image frame (<= 1080px) */
@@ -5544,9 +5550,9 @@
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    aspect-ratio: 16 / 10 !important;
-    min-height: 260px !important;
-    max-height: 460px !important;
+    aspect-ratio: 1 / 1 !important;
+    min-height: 0 !important;
+    max-height: none !important;
     border-radius: 8px !important;
     overflow: hidden !important;
   }
@@ -5554,6 +5560,7 @@
   .orc-hero-img {
     width: 100% !important;
     height: 100% !important;
+    aspect-ratio: 1 / 1 !important;
     object-fit: cover !important;
     object-position: center !important;
     display: block !important;
@@ -5563,9 +5570,10 @@
 /* Mobile Screens (<= 640px) */
 @media screen and (max-width: 640px) {
   .orc-media-frame {
-    aspect-ratio: 4 / 3 !important;
-    min-height: 220px !important;
-    max-height: 320px !important;
+    aspect-ratio: 1 / 1 !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    height: auto !important;
   }
 
   .orc-media-frame .orc-stamp-badge {
@@ -5600,9 +5608,9 @@
   }
 
   .orc-hero-image-frame {
-    aspect-ratio: 4 / 3 !important;
-    min-height: 220px !important;
-    max-height: 340px !important;
+    aspect-ratio: 1 / 1 !important;
+    min-height: 0 !important;
+    max-height: none !important;
     height: auto !important;
   }
 
