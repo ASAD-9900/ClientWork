@@ -6,7 +6,7 @@ get_header();
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* ==========================================================================
-   ORAANJ INTERIOR ARCHITECTURE & CONSTRUCTION — LONDON
+   ORAANJ INTERIOR ARCHITECTURE & CONSTRUCTION - LONDON
    PORTFOLIO OVERVIEW PAGE (orp-)
    WordPress Template Integration: get_header() & get_footer()
    ========================================================================== */
@@ -98,7 +98,7 @@ get_header();
 .orp-hero-content {
   position: relative !important;
   z-index: 2 !important;
-  max-width: 960px !important;
+  max-width: 900px !important;
   margin: 0 auto !important;
   display: flex !important;
   flex-direction: column !important;
@@ -106,165 +106,154 @@ get_header();
 }
 
 .orp-hero-eyebrow {
+  display: inline-block !important;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: clamp(10px, 1.1vw, 11.5px) !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.3em !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.35em !important;
   text-transform: uppercase !important;
   color: #FFFFFF !important;
-  opacity: 0.95 !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 14px !important;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
-  display: inline-block !important;
 }
 
 .orp-hero-title {
   font-family: 'Playfair Display', Georgia, serif !important;
-  font-size: clamp(30px, 4.8vw, 54px) !important;
+  font-size: clamp(34px, 5.2vw, 64px) !important;
   font-weight: 400 !important;
-  line-height: 1.18 !important;
-  letter-spacing: 0.03em !important;
-  text-transform: uppercase !important;
+  line-height: 1.15 !important;
   color: #FFFFFF !important;
-  margin: 0 0 18px 0 !important;
-  text-shadow: 0 4px 22px rgba(0, 0, 0, 0.65) !important;
-  max-width: 900px !important;
+  margin: 0 0 24px 0 !important;
+  letter-spacing: 0.02em !important;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.65) !important;
 }
 
 .orp-hero-btn {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 8px !important;
-  padding: 11px 28px !important;
-  background: rgba(38, 34, 30, 0.65) !important;
-  border: 1px solid rgba(255, 255, 255, 0.45) !important;
-  border-radius: 9999px !important;
+  padding: 12px 30px !important;
+  border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  background: rgba(22, 20, 18, 0.25) !important;
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
   color: #FFFFFF !important;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: 10.5px !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.22em !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.24em !important;
   text-transform: uppercase !important;
   text-decoration: none !important;
+  border-radius: 9999px !important;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  cursor: pointer !important;
-  margin-bottom: 18px !important;
 }
 
 .orp-hero-btn:hover {
-  background-color: #B94E1A !important;
-  border-color: #B94E1A !important;
-  color: #FFFFFF !important;
+  background: #FFFFFF !important;
+  color: #1A1816 !important;
+  border-color: #FFFFFF !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 24px rgba(185, 78, 26, 0.4) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) !important;
 }
 
 .orp-scroll-down {
   position: absolute !important;
-  bottom: 16px !important;
+  bottom: 22px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
   z-index: 2 !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  color: #FFFFFF !important;
   text-decoration: none !important;
-  transition: opacity 0.25s ease, transform 0.25s ease !important;
-  cursor: pointer !important;
+  color: #FFFFFF !important;
+  opacity: 0.8 !important;
+  transition: opacity 0.25s ease !important;
 }
 
 .orp-scroll-down:hover {
-  opacity: 0.75 !important;
-  transform: translateX(-50%) translateY(3px) !important;
+  opacity: 1 !important;
 }
 
 .orp-scroll-arrow {
-  width: 20px !important;
-  height: 20px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  animation: orpBounce 2.2s infinite ease-in-out !important;
+  width: 24px !important;
+  height: 24px !important;
+  animation: orpBounce 2s infinite !important;
 }
 
 .orp-scroll-arrow svg {
-  width: 16px !important;
-  height: 16px !important;
+  width: 100% !important;
+  height: 100% !important;
   stroke: #FFFFFF !important;
-  stroke-width: 2 !important;
+  stroke-width: 1.5 !important;
   fill: none !important;
 }
 
 @keyframes orpBounce {
-  0%, 100% {
+  0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
-  50% {
+  40% {
     transform: translateY(6px);
+  }
+  60% {
+    transform: translateY(3px);
   }
 }
 
 /* -------------------------------------------------------------
-   4. MAIN PORTFOLIO SECTIONS (Tightened Spacing)
+   4. PORTFOLIO MAIN BODY & CATEGORY SECTIONS
    ------------------------------------------------------------- */
 .orp-portfolio-section {
   position: relative !important;
   background-color: #FFFFFF !important;
-  padding: clamp(30px, 3.8vw, 48px) 0 clamp(36px, 4.5vw, 56px) 0 !important;
+  padding: clamp(36px, 4.5vw, 60px) 0 clamp(48px, 6vw, 84px) 0 !important;
 }
 
 .orp-category-section {
-  margin-bottom: clamp(36px, 4.2vw, 56px) !important;
+  margin-bottom: clamp(48px, 6vw, 76px) !important;
 }
 
-.orp-category-section:last-child {
+.orp-category-section:last-of-type {
   margin-bottom: 0 !important;
 }
 
-/* Category Header */
 .orp-category-header {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
   text-align: center !important;
-  margin-bottom: clamp(16px, 2.2vw, 26px) !important;
+  max-width: 720px !important;
+  margin: 0 auto clamp(24px, 3.2vw, 38px) auto !important;
 }
 
 .orp-category-eyebrow {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 10px !important;
+  display: block !important;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: 10.5px !important;
+  font-size: 11px !important;
   font-weight: 600 !important;
   letter-spacing: 0.28em !important;
   text-transform: uppercase !important;
   color: #B94E1A !important;
-  margin-bottom: 5px !important;
+  margin-bottom: 8px !important;
 }
 
 .orp-category-title {
   font-family: 'Playfair Display', Georgia, serif !important;
-  font-size: clamp(22px, 3vw, 34px) !important;
+  font-size: clamp(24px, 3.2vw, 38px) !important;
   font-weight: 400 !important;
-  letter-spacing: 0.025em !important;
+  line-height: 1.25 !important;
   color: #1A1816 !important;
-  margin: 0 0 10px 0 !important;
+  margin: 0 0 14px 0 !important;
+  letter-spacing: 0.01em !important;
 }
 
 .orp-category-rule {
-  width: 40px !important;
+  width: 44px !important;
   height: 2px !important;
   background-color: #B94E1A !important;
   margin: 0 auto !important;
 }
 
 /* -------------------------------------------------------------
-   5. 3-COLUMN CARDS GRID (Tailored for Bento Tall Photography)
+   5. THREE-COLUMN PORTFOLIO GRID & CARDS
    ------------------------------------------------------------- */
 .orp-grid {
   display: grid !important;
@@ -348,8 +337,6 @@ get_header();
   opacity: 0 !important;
   visibility: hidden !important;
   transition: opacity 0.38s ease, visibility 0.38s ease !important;
-  pointer-events: none !important;
-  z-index: 2 !important;
 }
 
 .orp-card:hover .orp-card-overlay,
@@ -358,45 +345,35 @@ get_header();
   visibility: visible !important;
 }
 
-/* Inner Frame inside the Card */
 .orp-card-frame {
-  position: absolute !important;
-  inset: 16px !important;
+  width: calc(100% - 32px) !important;
+  height: calc(100% - 32px) !important;
   border: 1px solid rgba(255, 255, 255, 0.78) !important;
-  border-radius: 2px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  pointer-events: none !important;
   box-sizing: border-box !important;
   transform: scale(0.96) !important;
-  opacity: 0 !important;
-  transition: transform 0.42s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, border-color 0.35s ease !important;
+  transition: transform 0.42s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .orp-card:hover .orp-card-frame,
 .orp-card:focus-visible .orp-card-frame {
   transform: scale(1) !important;
-  opacity: 1 !important;
-  border-color: rgba(255, 255, 255, 0.95) !important;
 }
 
-/* Inner View Project Text */
 .orp-card-view-text {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: clamp(11.5px, 1.1vw, 13px) !important;
+  font-size: 11.5px !important;
   font-weight: 600 !important;
-  letter-spacing: 0.2em !important;
+  letter-spacing: 0.22em !important;
   text-transform: uppercase !important;
   color: #FFFFFF !important;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 6px 14px !important;
   border-bottom: 1px solid transparent !important;
+  padding-bottom: 2px !important;
   transform: translateY(6px) !important;
-  opacity: 0 !important;
+  opacity: 0.85 !important;
   transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, border-color 0.25s ease !important;
 }
 
@@ -731,9 +708,9 @@ section.orp-cta.nitro-offscreen {
   <div class="orp-hero-overlay"></div>
   <div class="orp-hero-content">
     <span class="orp-hero-eyebrow">Curated Portfolio</span>
-    <h1 class="orp-hero-title">Architectural Interiors & Tailored Luxury</h1>
+    <h1 class="orp-hero-title">Architectural Interiors &amp; Tailored Luxury</h1>
     <a class="orp-hero-btn" href="#residential">
-      <span>— Explore Projects —</span>
+      <span>Explore Projects</span>
     </a>
   </div>
   <a class="orp-scroll-down" href="#residential" aria-label="Scroll to Projects">
@@ -753,7 +730,7 @@ section.orp-cta.nitro-offscreen {
     <section id="residential" class="orp-category-section" data-category="residential">
       <div class="orp-category-header">
         <span class="orp-category-eyebrow">01 / Residential</span>
-        <h2 class="orp-category-title">Private Residences & Penthouses</h2>
+        <h2 class="orp-category-title">Private Residences &amp; Penthouses</h2>
         <div class="orp-category-rule"></div>
       </div>
       <div class="orp-grid">
@@ -773,8 +750,56 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 2. Hampstead Apartment -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/hampstead-apartment-interior-design/">
+        <!-- 2. Barbican Family Residence (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/barbican-residence-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/barbican-london-open-plan-living-dining-room-interior.webp" alt="Barbican Family Residence" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Barbican Residence</h3>
+            <span class="orp-card-location">Barbican, City of London</span>
+          </div>
+        </a>
+
+        <!-- 3. Barnet Family Residence (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/barnet-residence-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/barnet-london-modern-classic-living-room-fireplace-design.webp" alt="Barnet Family Residence" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Barnet Residence</h3>
+            <span class="orp-card-location">Barnet, North London</span>
+          </div>
+        </a>
+
+        <!-- 4. Muswell Hill Edwardian Residence (NEW - Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/muswell-hill-residence-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/muswell-hill-north-london-edwardian-living-room-interior-design.webp" alt="Muswell Hill Edwardian Residence" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Muswell Hill Residence</h3>
+            <span class="orp-card-location">Muswell Hill, North London</span>
+          </div>
+        </a>
+
+        <!-- 5. Hampstead Apartment (Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/hampstead-apartment-interior-design/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-modern-living-room.webp" alt="Hampstead Apartment" loading="lazy" />
             <div class="orp-card-overlay">
@@ -789,8 +814,8 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 3. Richmond House -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/richmond-house-interior-design/">
+        <!-- 6. Richmond House (Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/richmond-house-interior-design/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/elegant-earthy-living-room.webp" alt="Richmond House" loading="lazy" />
             <div class="orp-card-overlay">
@@ -805,7 +830,7 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 4. Marylebone Full House (Hidden Initially) -->
+        <!-- 7. Marylebone Full House (Hidden Initially) -->
         <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/marylebone-full-house-interior/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/elegant_modern_classic_living_room_16x9.jpeg" alt="Marylebone Full House" loading="lazy" />
@@ -821,7 +846,7 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 5. Wimbledon Townhouse Residence (Hidden Initially) -->
+        <!-- 8. Wimbledon Townhouse Residence (Hidden Initially) -->
         <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/mayfair-townhouse-residence/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-sofa-interior.jpeg" alt="Wimbledon Townhouse Residence" loading="lazy" />
@@ -837,7 +862,7 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 6. Knightsbridge Residence (Hidden Initially) -->
+        <!-- 9. Knightsbridge Residence (Hidden Initially) -->
         <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/knightsbridge-residence-interior-design/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/luxury_living_room_taupe_paneling_and_velvet_seating.jpeg" alt="Knightsbridge Residence" loading="lazy" />
@@ -869,14 +894,14 @@ section.orp-cta.nitro-offscreen {
     <section id="bar" class="orp-category-section" data-category="bar">
       <div class="orp-category-header">
         <span class="orp-category-eyebrow">02 / Bar</span>
-        <h2 class="orp-category-title">Luxury Bars & Cocktail Lounges</h2>
+        <h2 class="orp-category-title">Luxury Bars &amp; Cocktail Lounges</h2>
         <div class="orp-category-rule"></div>
       </div>
       <div class="orp-grid">
         <!-- 1. Hampstead Lounge & Bar -->
         <a class="orp-card" href="https://www.oraanj-interiors.co.uk/hampstead-lounge-bar/">
           <div class="orp-card-media">
-            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/bohemian-luxury-restaurant-lounge.jpeg" alt="Hampstead Lounge & Bar" loading="lazy" />
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/bohemian-luxury-restaurant-lounge.jpeg" alt="Hampstead Lounge &amp; Bar" loading="lazy" />
             <div class="orp-card-overlay">
               <div class="orp-card-frame">
                 <span class="orp-card-view-text">View Project</span>
@@ -884,7 +909,7 @@ section.orp-cta.nitro-offscreen {
             </div>
           </div>
           <div class="orp-card-info">
-            <h3 class="orp-card-title">Hampstead Lounge & Bar</h3>
+            <h3 class="orp-card-title">Hampstead Lounge &amp; Bar</h3>
             <span class="orp-card-location">Hampstead, London</span>
           </div>
         </a>
@@ -892,7 +917,7 @@ section.orp-cta.nitro-offscreen {
         <!-- 2. Covent Garden Bar & Lounge -->
         <a class="orp-card" href="https://www.oraanj-interiors.co.uk/covent-garden-bar-lounge/">
           <div class="orp-card-media">
-            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-hotel-bar-lounge-wide-interior.jpeg" alt="Covent Garden Bar & Lounge" loading="lazy" />
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-hotel-bar-lounge-wide-interior.jpeg" alt="Covent Garden Bar &amp; Lounge" loading="lazy" />
             <div class="orp-card-overlay">
               <div class="orp-card-frame">
                 <span class="orp-card-view-text">View Project</span>
@@ -900,7 +925,7 @@ section.orp-cta.nitro-offscreen {
             </div>
           </div>
           <div class="orp-card-info">
-            <h3 class="orp-card-title">Covent Garden Bar & Lounge</h3>
+            <h3 class="orp-card-title">Covent Garden Bar &amp; Lounge</h3>
             <span class="orp-card-location">Covent Garden, London</span>
           </div>
         </a>
@@ -908,7 +933,7 @@ section.orp-cta.nitro-offscreen {
         <!-- 3. Kensington Lounge & Bar -->
         <a class="orp-card" href="https://www.oraanj-interiors.co.uk/kensington-lounge-bar/">
           <div class="orp-card-media">
-            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-cocktail-bar-interior-design.jpeg" alt="Kensington Lounge & Bar" loading="lazy" />
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-cocktail-bar-interior-design.jpeg" alt="Kensington Lounge &amp; Bar" loading="lazy" />
             <div class="orp-card-overlay">
               <div class="orp-card-frame">
                 <span class="orp-card-view-text">View Project</span>
@@ -916,7 +941,7 @@ section.orp-cta.nitro-offscreen {
             </div>
           </div>
           <div class="orp-card-info">
-            <h3 class="orp-card-title">Kensington Lounge & Bar</h3>
+            <h3 class="orp-card-title">Kensington Lounge &amp; Bar</h3>
             <span class="orp-card-location">Kensington, London</span>
           </div>
         </a>
@@ -926,12 +951,28 @@ section.orp-cta.nitro-offscreen {
     <!-- CATEGORY: RETAIL -->
     <section id="retail" class="orp-category-section" data-category="retail">
       <div class="orp-category-header">
-        <span class="orp-category-eyebrow">03 / Retail</span>
-        <h2 class="orp-category-title">Boutiques, Salons & Wellness Clinics</h2>
+        <span class="orp-category-eyebrow">03 / Retail &amp; Healthcare</span>
+        <h2 class="orp-category-title">Boutiques, Salons &amp; Wellness Clinics</h2>
         <div class="orp-category-rule"></div>
       </div>
       <div class="orp-grid">
-        <!-- 1. Tooting Hair Salon -->
+        <!-- 1. Harrow Healthcare Clinic (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/harrow-clinic-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/harrow-london-private-healthcare-clinic-curved-reception-desk.webp" alt="Harrow Clinic Interior Design" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Harrow Clinic</h3>
+            <span class="orp-card-location">Harrow, North West London</span>
+          </div>
+        </a>
+
+        <!-- 2. Tooting Hair Salon -->
         <a class="orp-card" href="https://www.oraanj-interiors.co.uk/tooting-hair-salon/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-salon-interior1.jpeg" alt="Tooting Hair Salon" loading="lazy" />
@@ -947,7 +988,7 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 2. Westminster Dental Clinic -->
+        <!-- 3. Westminster Dental Clinic -->
         <a class="orp-card" href="https://www.oraanj-interiors.co.uk/westminster-dental-clinic/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-dental-clinic-operatory.jpeg" alt="Westminster Dental Clinic" loading="lazy" />
@@ -963,10 +1004,10 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 3. Fitzrovia Retail Boutique & Salon -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/fitzrovia-retail-boutique-salon/">
+        <!-- 4. Fitzrovia Retail Boutique & Salon (Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/fitzrovia-retail-boutique-salon/">
           <div class="orp-card-media">
-            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_salon_full_interior_design.jpeg" alt="Fitzrovia Retail Boutique & Salon" loading="lazy" />
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_salon_full_interior_design.jpeg" alt="Fitzrovia Retail Boutique &amp; Salon" loading="lazy" />
             <div class="orp-card-overlay">
               <div class="orp-card-frame">
                 <span class="orp-card-view-text">View Project</span>
@@ -974,12 +1015,12 @@ section.orp-cta.nitro-offscreen {
             </div>
           </div>
           <div class="orp-card-info">
-            <h3 class="orp-card-title">Fitzrovia Retail Boutique & Salon</h3>
+            <h3 class="orp-card-title">Fitzrovia Retail Boutique &amp; Salon</h3>
             <span class="orp-card-location">Fitzrovia, London</span>
           </div>
         </a>
 
-        <!-- 4. Ilford Wellness Spa Boutique (Hidden Initially) -->
+        <!-- 5. Ilford Wellness Spa Boutique (Hidden Initially) -->
         <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/ilford-wellness-retail-spa-boutique/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-salon-interior-greenery.jpeg" alt="Ilford Wellness Spa Boutique" loading="lazy" />
@@ -1011,12 +1052,60 @@ section.orp-cta.nitro-offscreen {
     <section id="restaurant" class="orp-category-section" data-category="restaurant">
       <div class="orp-category-header">
         <span class="orp-category-eyebrow">04 / Restaurant</span>
-        <h2 class="orp-category-title">Fine Dining & Culinary Spaces</h2>
+        <h2 class="orp-category-title">Fine Dining &amp; Culinary Spaces</h2>
         <div class="orp-category-rule"></div>
       </div>
       <div class="orp-grid">
-        <!-- 1. Notting Hill Restaurant -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/notting-hill-restaurant/">
+        <!-- 1. Dalston Restaurant & Bar (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/dalston-restaurant-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/dalston-london-contemporary-restaurant-dining-area-terracotta-seating.webp" alt="Dalston Restaurant &amp; Bar" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Dalston Restaurant &amp; Bar</h3>
+            <span class="orp-card-location">Dalston, East London</span>
+          </div>
+        </a>
+
+        <!-- 2. Greenwich Riverside Restaurant (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/greenwich-restaurant-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/greenwich-london-riverside-restaurant-dining-area.webp" alt="Greenwich Restaurant Interior Design" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Greenwich Restaurant</h3>
+            <span class="orp-card-location">Greenwich, South East London</span>
+          </div>
+        </a>
+
+        <!-- 3. Kingston Riverside Restaurant & Bar (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/kingston-restaurant-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/kingston-upon-thames-london-riverside-restaurant-bar-stools-square.webp" alt="Kingston Restaurant Interior Design" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Kingston Restaurant</h3>
+            <span class="orp-card-location">Kingston upon Thames, London</span>
+          </div>
+        </a>
+
+        <!-- 4. Notting Hill Restaurant (Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/notting-hill-restaurant/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/arched-window-mediterranean-restaurant-wide.jpeg" alt="Notting Hill Restaurant" loading="lazy" />
             <div class="orp-card-overlay">
@@ -1031,8 +1120,8 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 2. Marylebone Open Kitchen Restaurant -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/nottingham-restaurant-open-kitchen/">
+        <!-- 5. Marylebone Open Kitchen Restaurant (Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/nottingham-restaurant-open-kitchen/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/warm-modern-restaurant-interior-open-kitchen.jpeg" alt="Marylebone Open Kitchen Restaurant" loading="lazy" />
             <div class="orp-card-overlay">
@@ -1047,10 +1136,10 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 3. Angel Restaurant & Café Bar -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/restaurant-design-in-angel/">
+        <!-- 6. Angel Restaurant & Café Bar (Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/restaurant-design-in-angel/">
           <div class="orp-card-media">
-            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-restaurant-interior.jpeg" alt="Angel Restaurant & Café Bar" loading="lazy" />
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-restaurant-interior.jpeg" alt="Angel Restaurant &amp; Café Bar" loading="lazy" />
             <div class="orp-card-overlay">
               <div class="orp-card-frame">
                 <span class="orp-card-view-text">View Project</span>
@@ -1058,22 +1147,64 @@ section.orp-cta.nitro-offscreen {
             </div>
           </div>
           <div class="orp-card-info">
-            <h3 class="orp-card-title">Angel Restaurant & Café Bar</h3>
+            <h3 class="orp-card-title">Angel Restaurant &amp; Café Bar</h3>
             <span class="orp-card-location">Angel, London</span>
           </div>
         </a>
+      </div>
+
+      <!-- View More Button for Restaurant -->
+      <div class="orp-load-more-wrap" id="wrap-restaurant">
+        <button type="button" class="orp-load-more-btn" data-target="restaurant" onclick="orpLoadMore('restaurant', this); return false;">
+          <span>View More</span>
+          <svg viewBox="0 0 24 24" class="orp-load-more-icon" aria-hidden="true">
+            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </div>
     </section>
 
     <!-- CATEGORY: OFFICE -->
     <section id="office" class="orp-category-section" data-category="office">
       <div class="orp-category-header">
-        <span class="orp-category-eyebrow">05 / Office</span>
-        <h2 class="orp-category-title">Executive Workplaces & Headquarters</h2>
+        <span class="orp-category-eyebrow">05 / Office &amp; Commercial</span>
+        <h2 class="orp-category-title">Executive Workplaces &amp; Headquarters</h2>
         <div class="orp-category-rule"></div>
       </div>
       <div class="orp-grid">
-        <!-- 1. Holborn Corporate Headquarters -->
+        <!-- 1. London Bridge Commercial Workplace (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/london-bridge-office-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/london-bridge-central-london-premium-office-client-lounge.webp" alt="London Bridge Commercial Workplace" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">London Bridge Workplace</h3>
+            <span class="orp-card-location">London Bridge, Central London</span>
+          </div>
+        </a>
+
+        <!-- 2. Croydon Commercial Workplace (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/croydon-commercial-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/croydon-london-private-office-olive-green-joinery-and-display-shelving.webp" alt="Croydon Commercial Interior Design" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Croydon Workplace</h3>
+            <span class="orp-card-location">Croydon, South London</span>
+          </div>
+        </a>
+
+        <!-- 3. Holborn Corporate Headquarters -->
         <a class="orp-card" href="https://www.oraanj-interiors.co.uk/holborn-corporate-headquarters/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/mayfords-capital-modern-office-lobby.jpeg" alt="Holborn Corporate Headquarters" loading="lazy" />
@@ -1089,8 +1220,8 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 2. Soho Executive Office -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/soho-executive-office/">
+        <!-- 4. Soho Executive Office (Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/soho-executive-office/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-luxury-office-lobby-green-wall.jpeg" alt="Soho Executive Office" loading="lazy" />
             <div class="orp-card-overlay">
@@ -1105,8 +1236,8 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 3. City of London Contemporary Workplace -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/contemporary-workplace-in-city-of-london/">
+        <!-- 5. City of London Contemporary Workplace (Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/contemporary-workplace-in-city-of-london/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/Open-Plan-Office-Layout-with-Thoughtful-Zoning.jpeg" alt="City of London Contemporary Workplace" loading="lazy" />
             <div class="orp-card-overlay">
@@ -1116,10 +1247,20 @@ section.orp-cta.nitro-offscreen {
             </div>
           </div>
           <div class="orp-card-info">
-            <h3 class="orp-card-title">City of London Contemporary Workplace</h3>
+            <h3 class="orp-card-title">City of London Workplace</h3>
             <span class="orp-card-location">City of London</span>
           </div>
         </a>
+      </div>
+
+      <!-- View More Button for Office -->
+      <div class="orp-load-more-wrap" id="wrap-office">
+        <button type="button" class="orp-load-more-btn" data-target="office" onclick="orpLoadMore('office', this); return false;">
+          <span>View More</span>
+          <svg viewBox="0 0 24 24" class="orp-load-more-icon" aria-hidden="true">
+            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </div>
     </section>
 
@@ -1145,7 +1286,7 @@ section.orp-cta.nitro-offscreen {
   </div>
 </section>
 
-<!-- 4. FOOLPROOF VIEW MORE JAVASCRIPT CONTROLLER -->
+<!-- 4. FOOLPROOF BATCH VIEW MORE (3 CARDS PER CLICK) CONTROLLER -->
 <script>
 function orpLoadMore(category, btn) {
   try {
@@ -1155,8 +1296,11 @@ function orpLoadMore(category, btn) {
     }
     if (!section) return;
 
-    var hiddenCards = section.querySelectorAll('.orp-card-hidden');
-    for (var i = 0; i < hiddenCards.length; i++) {
+    var hiddenCards = section.querySelectorAll('.orp-card.orp-card-hidden');
+    var batchSize = 3;
+    var toShow = Math.min(batchSize, hiddenCards.length);
+
+    for (var i = 0; i < toShow; i++) {
       var card = hiddenCards[i];
       card.classList.remove('orp-card-hidden');
       card.classList.add('is-revealed');
@@ -1165,6 +1309,7 @@ function orpLoadMore(category, btn) {
       card.style.setProperty('opacity', '1', 'important');
     }
 
+    var remaining = section.querySelectorAll('.orp-card.orp-card-hidden').length;
     var wrap = null;
     if (btn && typeof btn.closest === 'function') {
       wrap = btn.closest('.orp-load-more-wrap');
@@ -1172,10 +1317,13 @@ function orpLoadMore(category, btn) {
     if (!wrap) {
       wrap = document.getElementById('wrap-' + category) || section.querySelector('.orp-load-more-wrap');
     }
-    if (wrap) {
-      wrap.style.setProperty('display', 'none', 'important');
-    } else if (btn) {
-      btn.style.setProperty('display', 'none', 'important');
+
+    if (remaining === 0) {
+      if (wrap) {
+        wrap.style.setProperty('display', 'none', 'important');
+      } else if (btn) {
+        btn.style.setProperty('display', 'none', 'important');
+      }
     }
   } catch (err) {
     console.error('orpLoadMore error:', err);
