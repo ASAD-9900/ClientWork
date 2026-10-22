@@ -1,344 +1,772 @@
-
-
 /* ==================================================
-   ORAANJ LONDON HERO SECTION (olh-)
+   ORAANJ LUXURY CONTACT PAGE STYLES (opc-)
+   Add to WordPress: Appearance > Customize > Additional CSS
    ================================================== */
 
-.olh-wrap,
-.olh-wrap *,
-.olh-wrap *::before,
-.olh-wrap *::after {
+/* Reset entry-content / block-editor margins that break layout */
+.entry-content .opc-wrap, .wp-block-group .opc-wrap { margin: 0 !important; padding: 0 !important; }
+/* Kill Gutenberg-injected block wrappers inside our flex grids */
+.opc-main-grid > *:not(.opc-col-form):not(.opc-col-studios) { display: none !important; }
+.opc-process-grid > *:not(.opc-step-card) { display: none !important; }
+/* Reset heading margin-block added by Gutenberg */
+.opc-wrap h1, .opc-wrap h2, .opc-wrap h3, .opc-wrap h4 { margin-block-start: 0 !important; margin-block-end: 0 !important; }
+/* Box-sizing on everything inside our wrapper */
+.opc-wrap, .opc-wrap *, .opc-wrap *::before, .opc-wrap *::after { box-sizing: border-box !important; }
+
+.opc-wrap { width: 100% !important; background-color: #FFF6F2 !important; color: #1A1816 !important; overflow: visible !important; font-family: 'Inter', -apple-system, sans-serif !important; }
+.opc-container { max-width: 1380px !important; margin: 0 auto !important; padding: 0 32px !important; width: 100% !important; }
+
+/* Global Elements */
+.opc-eyebrow { font-family: 'Inter', sans-serif !important; font-size: 11px !important; font-weight: 600 !important; letter-spacing: 0.22em !important; text-transform: uppercase !important; color: #8C8882 !important; display: inline-block !important; margin-bottom: 12px !important; }
+.opc-rule { width: 36px !important; height: 1.5px !important; background-color: #B94E1A !important; margin-bottom: 22px !important; display: block !important; }
+.opc-lead { font-family: 'Inter', sans-serif !important; font-size: 18px !important; font-weight: 500 !important; line-height: 1.55 !important; color: #1A1816 !important; margin: 0 0 14px 0 !important; }
+.opc-p { font-family: 'Inter', sans-serif !important; font-size: 15px !important; line-height: 1.68 !important; color: #5E5953 !important; margin: 0 0 16px 0 !important; }
+
+/* 1. Masthead Hero */
+.opc-masthead { padding: 80px 0 60px 0 !important; border-bottom: 1px solid #DFDBD3 !important; background: #FFF6F2 !important; }
+.opc-masthead-title { font-family: 'El Messiri', serif !important; font-size: clamp(32px, 3.8vw, 54px) !important; font-weight: 500 !important; line-height: 1.14 !important; color: #1A1816 !important; margin: 0 0 18px 0 !important; letter-spacing: -0.015em !important; }
+.opc-masthead-desc-wrap { max-width: 900px !important; }
+
+/* Direct Contact Bar */
+.opc-contact-chips { display: flex !important; flex-wrap: wrap !important; gap: 14px !important; margin-top: 26px !important; }
+.opc-chip { display: inline-flex !important; align-items: center !important; gap: 10px !important; background: #FFFFFF !important; border: 1px solid #DFDBD3 !important; border-radius: 30px !important; padding: 10px 20px !important; color: #1A1816 !important; text-decoration: none !important; font-family: 'Inter', sans-serif !important; font-size: 13px !important; font-weight: 600 !important; transition: all 0.25s ease !important; }
+.opc-chip:hover { border-color: #B94E1A !important; color: #B94E1A !important; transform: translateY(-1px) !important; box-shadow: 0 4px 14px rgba(26,24,22,0.06) !important; }
+.opc-chip-icon { width: 16px !important; height: 16px !important; color: #B94E1A !important; flex-shrink: 0 !important; }
+
+/* 2. Main Layout (Form + Studios) */
+.opc-main-section { padding: 80px 0 !important; background-color: #FFFFFF !important; border-bottom: 1px solid #DFDBD3 !important; }
+.opc-main-grid { display: flex !important; flex-wrap: wrap !important; gap: 48px !important; }
+.opc-col-form { flex: 0 0 calc(54% - 24px) !important; max-width: calc(54% - 24px) !important; }
+.opc-col-studios { flex: 0 0 calc(46% - 24px) !important; max-width: calc(46% - 24px) !important; }
+
+/* Form Header */
+.opc-card-header-title { font-family: 'El Messiri', serif !important; font-size: 28px !important; font-weight: 500 !important; color: #1A1816 !important; line-height: 1.2 !important; margin: 0 0 10px 0 !important; }
+.opc-form-box { background: #FFF6F2 !important; border: 1px solid #DFDBD3 !important; border-radius: 8px !important; padding: 36px !important; }
+.opc-form-intro { font-family: 'Inter', sans-serif !important; font-size: 13.5px !important; line-height: 1.6 !important; color: #5E5953 !important; margin-bottom: 24px !important; }
+
+/* Form Visibility Fix – ensure WPForms renders inside opc-wrap */
+.opc-wrap .home_form,
+.opc-wrap .contact_page_form { display: block !important; visibility: visible !important; overflow: visible !important; }
+.opc-wrap .home_form *,
+.opc-wrap .contact_page_form * { visibility: visible !important; }
+.opc-wrap .wpforms-container,
+.opc-wrap .wpforms-form,
+.opc-wrap .wpforms-field-container,
+.opc-wrap .wpforms-submit-container { display: block !important; visibility: visible !important; overflow: visible !important; }
+.opc-wrap .wpforms-field { display: block !important; visibility: visible !important; margin-bottom: 16px !important; }
+.opc-wrap .wpforms-field label { display: block !important; visibility: visible !important; font-family: 'Inter', sans-serif !important; font-size: 13px !important; color: #5E5953 !important; margin-bottom: 5px !important; }
+.opc-wrap .wpforms-field input,
+.opc-wrap .wpforms-field textarea,
+.opc-wrap .wpforms-field select { display: block !important; visibility: visible !important; width: 100% !important; border: 1px solid #DFDBD3 !important; border-radius: 5px !important; padding: 11px 14px !important; font-family: 'Inter', sans-serif !important; font-size: 14px !important; color: #1A1816 !important; background: #FFFFFF !important; box-sizing: border-box !important; }
+.opc-wrap .wpforms-field p { display: block !important; visibility: visible !important; }
+.opc-wrap .wpforms-submit { background-color: #B94E1A !important; color: #fff !important; border: none !important; padding: 13px 32px !important; border-radius: 5px !important; font-family: 'Inter', sans-serif !important; font-size: 14px !important; font-weight: 600 !important; cursor: pointer !important; display: inline-block !important; visibility: visible !important; }
+
+/* Trust Signals Section */
+.opc-trust-box { margin-top: 32px !important; background: #FFFFFF !important; border: 1px solid #ECE8E1 !important; border-left: 3px solid #B94E1A !important; border-radius: 6px !important; padding: 26px 28px !important; }
+.opc-trust-heading { font-family: 'El Messiri', serif !important; font-size: 20px !important; font-weight: 500 !important; color: #1A1816 !important; margin: 0 0 14px 0 !important; }
+.opc-trust-list { list-style: none !important; margin: 0 !important; padding: 0 !important; display: flex !important; flex-direction: column !important; gap: 10px !important; }
+.opc-trust-item { display: flex !important; align-items: center !important; gap: 12px !important; font-family: 'Inter', sans-serif !important; font-size: 14px !important; color: #423E3A !important; font-weight: 500 !important; }
+.opc-trust-icon { width: 18px !important; height: 18px !important; color: #B94E1A !important; flex-shrink: 0 !important; }
+
+/* Studio Locations */
+.opc-studios-wrap { display: flex !important; flex-direction: column !important; gap: 32px !important; }
+.opc-location-card { background: #FFF6F2 !important; border: 1px solid #DFDBD3 !important; border-radius: 8px !important; overflow: hidden !important; transition: border-color 0.25s ease !important; }
+.opc-location-card:hover { border-color: #B94E1A !important; }
+.opc-location-header { padding: 24px 28px 18px 28px !important; }
+.opc-location-badge-row { display: flex !important; align-items: center !important; justify-content: space-between !important; margin-bottom: 8px !important; }
+.opc-location-badge { font-family: 'Inter', sans-serif !important; font-size: 10.5px !important; font-weight: 700 !important; text-transform: uppercase !important; letter-spacing: 0.12em !important; color: #B94E1A !important; }
+.opc-location-badge-sub { font-family: 'Inter', sans-serif !important; font-size: 11px !important; color: #8C8882 !important; font-weight: 500 !important; }
+.opc-location-title { font-family: 'El Messiri', serif !important; font-size: 22px !important; font-weight: 500 !important; color: #1A1816 !important; margin: 0 0 8px 0 !important; }
+.opc-location-address { font-family: 'Inter', sans-serif !important; font-size: 14px !important; line-height: 1.6 !important; color: #5E5953 !important; margin: 0 0 12px 0 !important; }
+.opc-location-advisory { font-family: 'Inter', sans-serif !important; font-size: 12.5px !important; line-height: 1.5 !important; color: #B94E1A !important; font-weight: 500 !important; display: flex !important; align-items: center !important; gap: 6px !important; margin-bottom: 12px !important; }
+.opc-location-map { width: 100% !important; height: 260px !important; border-top: 1px solid #DFDBD3 !important; overflow: hidden !important; background: #ECE8E1 !important; }
+.opc-location-map iframe { width: 100% !important; height: 100% !important; border: 0 !important; display: block !important; }
+
+/* 3. Bottom Section: What Happens Next? */
+.opc-process-section { padding: 85px 0 !important; background-color: #FFF6F2 !important; border-bottom: 1px solid #DFDBD3 !important; }
+.opc-process-header { max-width: 720px !important; margin-bottom: 46px !important; }
+.opc-process-title { font-family: 'El Messiri', serif !important; font-size: clamp(28px, 3vw, 42px) !important; font-weight: 500 !important; line-height: 1.2 !important; color: #1A1816 !important; margin: 0 0 10px 0 !important; }
+.opc-process-sub { font-family: 'Inter', sans-serif !important; font-size: 15px !important; color: #8C8882 !important; margin: 0 !important; }
+.opc-process-grid { display: flex !important; flex-wrap: wrap !important; gap: 24px !important; }
+.opc-step-card { flex: 1 1 calc(25% - 18px) !important; min-width: 250px !important; background: #FFFFFF !important; border: 1px solid #ECE8E1 !important; border-radius: 8px !important; padding: 32px 24px !important; display: flex !important; flex-direction: column !important; position: relative !important; transition: all 0.25s ease !important; }
+.opc-step-card:hover { transform: translateY(-3px) !important; border-color: #B94E1A !important; box-shadow: 0 10px 24px rgba(26,24,22,0.05) !important; }
+.opc-step-num { font-family: 'El Messiri', serif !important; font-size: 36px !important; font-weight: 600 !important; color: #DFDBD3 !important; line-height: 1 !important; margin-bottom: 16px !important; transition: color 0.25s ease !important; }
+.opc-step-card:hover .opc-step-num { color: #B94E1A !important; }
+.opc-step-title { font-family: 'El Messiri', serif !important; font-size: 18px !important; font-weight: 500 !important; line-height: 1.3 !important; color: #1A1816 !important; margin: 0 0 10px 0 !important; }
+.opc-step-desc { font-family: 'Inter', sans-serif !important; font-size: 13.5px !important; line-height: 1.6 !important; color: #5E5953 !important; margin: 0 !important; }
+
+/* Responsive */
+@media screen and (max-width: 1080px) {
+  .opc-col-form, .opc-col-studios { flex: 0 0 100% !important; max-width: 100% !important; }
+  .opc-step-card { flex: 1 1 calc(50% - 12px) !important; }
+}
+@media screen and (max-width: 680px) {
+  .opc-container { padding: 0 20px !important; }
+  .opc-step-card { flex: 1 1 100% !important; }
+  .opc-form-box { padding: 24px 18px !important; }
+  .opc-masthead { padding: 60px 0 45px 0 !important; }
+  .opc-location-map { height: 220px !important; }
+}
+
+/* ==========================================================================
+   ORAANJ ABOUT PAGE RESPONSIVE & MOBILE STYLES (orc-)
+   Add to WordPress: Appearance > Customize > Additional CSS
+   ========================================================================== */
+
+/* -------------------------------------------------------------
+   1. TABLET SCREENS (max-width: 991px)
+   ------------------------------------------------------------- */
+@media screen and (max-width: 991px) {
+  .orc-hero-wrap .orc-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 36px !important;
+  }
+  .orc-hero-content,
+  .orc-hero-visual-col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .orc-hero-image-frame {
+    height: 360px !important;
+    width: 100% !important;
+  }
+  .orc-split,
+  .orc-split-reverse {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+    width: 100% !important;
+  }
+  .orc-split .orc-col-content,
+  .orc-split-reverse .orc-col-content,
+  .orc-split .orc-col-media,
+  .orc-split-reverse .orc-col-media {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .orc-media-frame {
+    width: 100% !important;
+    height: 340px !important;
+  }
+  .orc-cards-grid,
+  .orc-cards-grid.orc-grid-3col,
+  .orc-grid-3col {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+  .orc-cards-grid.orc-grid-4col,
+  .orc-grid-4col {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+  .orc-timeline-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+}
+
+/* -------------------------------------------------------------
+   2. MOBILE SCREENS & TABLETS (max-width: 768px)
+   Unconditional 1-column full-width vertical stack on all mobile viewports
+   ------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  /* Force ALL Grids to 1 Single Full-Width Column */
+  .orc-cards-grid,
+  .orc-cards-grid.orc-grid-3col,
+  .orc-cards-grid.orc-grid-4col,
+  .orc-cards-grid.orc-grid-2col,
+  .orc-grid-3col,
+  .orc-grid-4col,
+  .orc-grid-2col,
+  .orc-timeline-grid,
+  .orc-points-grid,
+  .oab-people-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 20px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* All Grid Children & Cards Take 100% Full Width */
+  .orc-cards-grid > *,
+  .orc-timeline-grid > *,
+  .orc-points-grid > *,
+  .oab-people-grid > *,
+  .orc-card,
+  .orc-visual-card,
+  .orc-timeline-item,
+  .orc-decision-card,
+  .orc-point-item,
+  .oab-people-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: 0 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .orc-point-item-span2 {
+    grid-column: span 1 !important;
+    width: 100% !important;
+  }
+
+  /* Card Interior Padding & Proportions */
+  .orc-card {
+    padding: 24px 20px !important;
+  }
+  .orc-visual-card .orc-card-body {
+    padding: 20px 18px 24px 18px !important;
+  }
+  .orc-card-img-frame {
+    height: 220px !important;
+    width: 100% !important;
+  }
+  .orc-timeline-img-frame {
+    height: 210px !important;
+    width: 100% !important;
+  }
+  .orc-timeline-body {
+    padding: 20px 18px !important;
+  }
+  .orc-decision-card {
+    padding: 24px 20px !important;
+  }
+
+  /* Hero Section Stacking */
+  .orc-hero-wrap {
+    padding: 60px 18px 45px 18px !important;
+  }
+  .orc-hero-wrap .orc-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+    width: 100% !important;
+  }
+  .orc-hero-content,
+  .orc-hero-visual-col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .orc-hero-image-frame {
+    height: 280px !important;
+    width: 100% !important;
+  }
+  .orc-hero-heading {
+    font-size: clamp(26px, 7vw, 38px) !important;
+    line-height: 1.2 !important;
+  }
+  .orc-hero-lead {
+    font-size: 16.5px !important;
+    line-height: 1.55 !important;
+  }
+  .orc-hero-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+  .orc-hero-actions .orc-btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .orc-hero-trust-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  /* Split Sections Stacking */
+  .orc-split,
+  .orc-split-reverse {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 28px !important;
+    width: 100% !important;
+  }
+  .orc-split .orc-col-content,
+  .orc-split-reverse .orc-col-content,
+  .orc-split .orc-col-media,
+  .orc-split-reverse .orc-col-media {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .orc-media-frame {
+    width: 100% !important;
+    height: 250px !important;
+    aspect-ratio: auto !important;
+  }
+  #meet-rachana .orc-media-frame,
+  .orc-split-reverse .orc-media-frame,
+  .orc-media-frame-square {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+  }
+  #meet-rachana .orc-split-img,
+  .orc-split-reverse .orc-split-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+  }
+
+  /* Section Containers & Headers */
+  .orc-section {
+    padding: 50px 18px !important;
+  }
+  .orc-header {
+    margin-bottom: 30px !important;
+  }
+  .orc-title {
+    font-size: clamp(24px, 6vw, 32px) !important;
+    line-height: 1.25 !important;
+  }
+  .orc-subtitle {
+    font-size: 13.5px !important;
+  }
+  .orc-lead {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Support Banner */
+  .orc-support-banner {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 24px 20px !important;
+    gap: 20px !important;
+  }
+  .orc-support-action,
+  .orc-support-action .orc-btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .orc-center-action .orc-btn {
+    width: 100% !important;
+  }
+}
+
+/* -------------------------------------------------------------
+   3. SMALL MOBILE PHONES (max-width: 480px)
+   ------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+  .orc-section,
+  .oab-people-section,
+  .orc-hero-wrap {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+  .orc-card,
+  .orc-decision-card {
+    padding: 20px 16px !important;
+  }
+  .orc-card-img-frame,
+  .orc-timeline-img-frame {
+    height: 190px !important;
+  }
+  .orc-media-frame {
+    height: 220px !important;
+  }
+  #meet-rachana .orc-media-frame,
+  .orc-split-reverse .orc-media-frame,
+  .orc-media-frame-square {
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+  .orc-hero-image-frame {
+    height: 240px !important;
+  }
+}
+
+/* ==========================================================================
+   THE PEOPLE BEHIND ORAANJ & HOW WE WORK TOGETHER (oab-)
+   Dedicated, responsive components for desktop & mobile
+   Add to WordPress: Appearance > Customize > Additional CSS
+   ========================================================================== */
+
+/* 1. Global Box-Sizing & Anti-wpautop Protection */
+.oab-people-section,
+.oab-people-section *,
+.oab-people-section *::before,
+.oab-people-section *::after {
   box-sizing: border-box !important;
 }
 
-/* Anti-wpautop Protection */
-.olh-wrap p:empty,
-.olh-wrap br,
-.olh-container > p,
-.olh-content > p:empty,
-.olh-visual-col > p {
+.oab-people-section p:empty,
+.oab-people-grid > p:empty,
+.oab-people-grid > p,
+.oab-collab-wrap > p:empty,
+.oab-collab-wrap > p {
   display: none !important;
   margin: 0 !important;
   padding: 0 !important;
-  width: 0 !important;
-  height: 0 !important;
 }
 
-/* Section Wrapper */
-.olh-wrap {
+.oab-people-grid > *:not(.oab-people-card) {
+  display: none !important;
+}
+
+.oab-collab-wrap > *:not(.oab-collab-content):not(.oab-collab-media) {
+  display: none !important;
+}
+
+/* 2. Section Wrapper & Container */
+.oab-people-section {
   position: relative !important;
-  background-color: #FFF6F2 !important;
-  padding: 100px 32px 95px 32px !important;
+  background-color: #FFFFFF !important;
+  padding: 90px 24px !important;
   width: 100% !important;
   overflow: hidden !important;
 }
 
-/* Content Container */
-.olh-container {
-  max-width: 1380px !important;
+.oab-people-container {
+  max-width: 1320px !important;
   margin: 0 auto !important;
+  width: 100% !important;
+}
+
+/* 3. Section Header */
+.oab-people-header {
+  text-align: center !important;
+  max-width: 840px !important;
+  margin: 0 auto 50px auto !important;
+}
+
+.oab-people-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(34px, 4vw, 50px) !important;
+  font-weight: 500 !important;
+  color: #1A1816 !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1.2 !important;
+}
+
+.oab-people-eyebrow {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #5E5953 !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.oab-people-intro {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 15px !important;
+  color: #5E5953 !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+/* 4. Disciplines 6-Card Grid (Desktop: 3 columns) */
+.oab-people-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 42px 32px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.oab-people-card {
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.oab-people-img-wrap {
+  width: 100% !important;
+  height: 220px !important;
+  border-radius: 4px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+}
+
+.oab-people-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.4s ease !important;
+}
+
+.oab-people-card:hover .oab-people-img {
+  transform: scale(1.04) !important;
+}
+
+.oab-people-card-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #1A1816 !important;
+  margin: 18px 0 8px 0 !important;
+  line-height: 1.4 !important;
+}
+
+.oab-people-card-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+/* 5. How We Work Together Split (Desktop: 2 columns) */
+.oab-collab-wrap {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: space-between !important;
   gap: 60px !important;
+  margin-top: 70px !important;
+  padding-top: 50px !important;
+  border-top: 1px solid #ECE8E1 !important;
+  width: 100% !important;
 }
 
-/* Left Content Column */
-.olh-content {
-  flex: 0 0 calc(53% - 30px) !important;
-  max-width: calc(53% - 30px) !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
+.oab-collab-content {
+  flex: 0 0 calc(52% - 30px) !important;
+  max-width: calc(52% - 30px) !important;
+  width: 100% !important;
 }
 
-/* Eyebrow & Architectural Accent Line */
-.olh-eyebrow-wrap {
-  display: block !important;
-  margin: 0 0 14px 0 !important;
-}
-
-.olh-eyebrow {
+.oab-collab-eyebrow {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-size: 11px !important;
   font-weight: 500 !important;
-  line-height: 1.4 !important;
-  color: #8C8882 !important;
-  text-transform: uppercase !important;
   letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  color: #8C8882 !important;
   display: inline-block !important;
+  margin-bottom: 12px !important;
 }
 
-.olh-rule {
-  width: 38px !important;
+.oab-collab-rule {
+  width: 36px !important;
   height: 1.5px !important;
   background-color: #B94E1A !important;
-  margin: 0 0 24px 0 !important;
+  margin-bottom: 22px !important;
   display: block !important;
 }
 
-/* Main Display Heading (El Messiri) */
-.olh-heading {
+.oab-collab-title {
   font-family: 'El Messiri', 'Playfair Display', Georgia, serif !important;
-  font-size: clamp(34px, 3.8vw, 56px) !important;
+  font-size: clamp(28px, 3.2vw, 42px) !important;
   font-weight: 500 !important;
-  line-height: 1.14 !important;
-  letter-spacing: -0.015em !important;
+  line-height: 1.2 !important;
   color: #1A1816 !important;
-  margin: 0 0 22px 0 !important;
-  text-align: left !important;
+  margin: 0 0 18px 0 !important;
 }
 
-/* Lead Paragraph */
-.olh-lead {
+.oab-collab-lead {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: clamp(16px, 1.35vw, 18px) !important;
+  font-size: 18px !important;
   font-weight: 500 !important;
-  line-height: 1.6 !important;
+  line-height: 1.55 !important;
   color: #1A1816 !important;
-  margin: 0 0 16px 0 !important;
-  max-width: 580px !important;
-  text-align: left !important;
+  margin: 0 0 14px 0 !important;
 }
 
-/* Narrative Body Paragraphs */
-.olh-body {
+.oab-collab-body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-size: 15px !important;
-  font-weight: 400 !important;
   line-height: 1.68 !important;
   color: #5E5953 !important;
   margin: 0 0 14px 0 !important;
-  max-width: 580px !important;
-  text-align: left !important;
 }
 
-.olh-body-highlight {
-  color: #1A1816 !important;
-  font-weight: 450 !important;
-  margin: 0 0 34px 0 !important;
+.oab-collab-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 18px 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
 }
 
-/* Primary CTA Button */
-.olh-action {
+.oab-collab-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14.5px !important;
+  line-height: 1.55 !important;
+  color: #5E5953 !important;
   margin: 0 !important;
-  display: block !important;
 }
 
-.olh-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 12px !important;
-  background-color: #B94E1A !important;
-  color: #FFFFFF !important;
-  padding: 16px 34px !important;
-  border-radius: 30px !important;
-  text-decoration: none !important;
-  transition: background-color 0.25s ease, transform 0.25s ease !important;
-  cursor: pointer !important;
-  border: none !important;
-}
-
-.olh-btn-label {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif ;
-  font-size: 13.5px !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.14em !important;
-  text-transform: uppercase !important;
-  color: #FFFFFF !important;
-  line-height: 1 !important;
-}
-
-.olh-btn-icon {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  color: #FFFFFF !important;
-  transition: transform 0.25s ease !important;
-  line-height: 1 !important;
-}
-
-.olh-btn:hover {
-  background-color: #670066 !important;
-  transform: translateY(-1px) !important;
-}
-
-.olh-btn:hover .olh-btn-icon {
-  transform: translateX(4px) !important;
-}
-
-/* Right Visual Column */
-.olh-visual-col {
-  flex: 0 0 calc(47% - 30px) !important;
-  max-width: calc(47% - 30px) !important;
-  display: block !important;
-}
-
-.olh-image-frame {
-  position: relative !important;
-  width: 100% !important;
-  height: 680px !important;
-  min-height: 680px !important;
-  border-radius: 8px !important;
-  overflow: hidden !important;
-  background-color: #ECE8E1 !important;
-}
-
-.olh-img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-  transition: transform 0.5s ease !important;
-}
-
-.olh-image-frame:hover .olh-img {
-  transform: scale(1.03) !important;
-}
-
-/* Architectural Inset Tag */
-.olh-badge {
-  position: absolute !important;
-  bottom: 22px !important;
-  left: 22px !important;
-  background-color: rgba(255, 255, 255, 0.94) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  border: 1px solid #DFDBD3 !important;
-  border-radius: 30px !important;
-  padding: 8px 18px 8px 14px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  z-index: 2 !important;
-}
-
-.olh-badge-dot {
-  width: 6px !important;
-  height: 6px !important;
-  background-color: #B94E1A !important;
-  border-radius: 50% !important;
+.oab-collab-bullet {
+  color: #B94E1A !important;
+  font-size: 18px !important;
+  line-height: 1.2 !important;
   flex-shrink: 0 !important;
 }
 
-.olh-badge-text {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: 11px !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.08em !important;
-  text-transform: uppercase !important;
-  color: #1A1816 !important;
-  line-height: 1 !important;
+.oab-collab-media {
+  flex: 0 0 calc(48% - 30px) !important;
+  max-width: calc(48% - 30px) !important;
+  width: 100% !important;
 }
 
-/* ==================================================
-   RESPONSIVE ADAPTATIONS
-   ================================================== */
+.oab-collab-img-frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 460px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: #ECE8E1 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06) !important;
+}
 
-@media screen and (max-width: 1080px) {
-  .olh-wrap {
-    padding: 75px 24px 70px 24px !important;
+.oab-collab-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* 6. Tablet Responsiveness (<= 991px) */
+@media screen and (max-width: 991px) {
+  .oab-people-section {
+    padding: 60px 20px !important;
   }
-
-  .olh-container {
+  .oab-people-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px 20px !important;
+  }
+  .oab-collab-wrap {
+    display: flex !important;
     flex-direction: column !important;
-    gap: 48px !important;
+    gap: 36px !important;
+    margin-top: 50px !important;
+    padding-top: 40px !important;
   }
-
-  .olh-content {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-  }
-
-  .olh-lead,
-  .olh-body {
-    max-width: 100% !important;
-  }
-
-  .olh-visual-col {
+  .oab-collab-content,
+  .oab-collab-media {
     flex: 0 0 100% !important;
     max-width: 100% !important;
     width: 100% !important;
   }
-
-  .olh-image-frame {
-    height: 480px !important;
-    min-height: 480px !important;
+  .oab-collab-img-frame {
+    height: 380px !important;
+    width: 100% !important;
   }
 }
 
-@media screen and (max-width: 680px) {
-  .olh-wrap {
-    padding: 55px 18px 50px 18px !important;
+/* 7. Mobile Responsiveness (<= 768px) */
+@media screen and (max-width: 768px) {
+  .oab-people-section {
+    padding: 50px 18px !important;
+  }
+  .oab-people-header {
+    margin-bottom: 28px !important;
+  }
+  .oab-people-title {
+    font-size: clamp(26px, 6.5vw, 36px) !important;
+    line-height: 1.2 !important;
+  }
+  .oab-people-eyebrow {
+    font-size: 12px !important;
+    letter-spacing: 0.14em !important;
+    margin-bottom: 12px !important;
+  }
+  .oab-people-intro {
+    font-size: 14.5px !important;
+    line-height: 1.55 !important;
   }
 
-  .olh-container {
-    gap: 38px !important;
+  /* Disciplines stack to 1 column on mobile */
+  .oab-people-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+  .oab-people-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .oab-people-img-wrap {
+    height: 210px !important;
+    width: 100% !important;
+  }
+  .oab-people-card-title {
+    font-size: 13.5px !important;
+    margin: 14px 0 6px 0 !important;
+  }
+  .oab-people-card-desc {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
   }
 
-  .olh-eyebrow {
-    font-size: 10px !important;
-    letter-spacing: 0.18em !important;
+  /* Collab Section on mobile */
+  .oab-collab-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 36px !important;
+    padding-top: 30px !important;
+    gap: 26px !important;
+    width: 100% !important;
   }
-
-  .olh-rule {
-    margin: 0 0 18px 0 !important;
+  .oab-collab-content,
+  .oab-collab-media {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
   }
-
-  .olh-heading {
-    font-size: 31px !important;
-    line-height: 1.16 !important;
-    margin: 0 0 18px 0 !important;
+  .oab-collab-title {
+    font-size: clamp(24px, 5.5vw, 30px) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 14px !important;
   }
-
-  .olh-lead {
-    font-size: 15px !important;
-    margin: 0 0 14px 0 !important;
+  .oab-collab-lead {
+    font-size: 16.5px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 12px !important;
   }
-
-  .olh-body {
+  .oab-collab-body {
     font-size: 14px !important;
-    line-height: 1.62 !important;
-    margin: 0 0 12px 0 !important;
+    line-height: 1.6 !important;
   }
-
-  .olh-body-highlight {
-    margin: 0 0 28px 0 !important;
+  .oab-collab-list {
+    gap: 12px !important;
+    margin: 14px 0 !important;
   }
-
-  .olh-action {
+  .oab-collab-item {
+    font-size: 13.5px !important;
+    line-height: 1.5 !important;
+  }
+  .oab-collab-img-frame {
+    height: 250px !important;
     width: 100% !important;
-  }
-
-  .olh-btn {
-    width: 100% !important;
-    justify-content: center !important;
-    padding: 15px 22px !important;
-  }
-
-  .olh-btn-label {
-    font-size: 11px !important;
-  }
-
-  .olh-image-frame {
-    height: 340px !important;
-    min-height: 340px !important;
-  }
-
-  .olh-badge {
-    bottom: 14px !important;
-    left: 14px !important;
-    padding: 7px 14px !important;
-  }
-
-  .olh-badge-text {
-    font-size: 10px !important;
   }
 }
 
-
-
-
+/* 8. Extra Small Mobile Screens (<= 480px) */
+@media screen and (max-width: 480px) {
+  .oab-people-img-wrap {
+    height: 190px !important;
+  }
+  .oab-collab-img-frame {
+    height: 220px !important;
+  }
+}

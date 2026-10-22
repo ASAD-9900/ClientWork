@@ -750,10 +750,10 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 2. Barbican Family Residence (NEW) -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/barbican-residence-interior-design/">
+        <!-- 2. Northwood Luxury Detached Residence (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/northwood-residence-interior-design/">
           <div class="orp-card-media">
-            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/barbican-london-open-plan-living-dining-room-interior.webp" alt="Barbican Family Residence" loading="lazy" />
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/northwood-north-west-london-modern-classic-luxury-living-room.webp" alt="Northwood Luxury Residence" loading="lazy" />
             <div class="orp-card-overlay">
               <div class="orp-card-frame">
                 <span class="orp-card-view-text">View Project</span>
@@ -761,8 +761,8 @@ section.orp-cta.nitro-offscreen {
             </div>
           </div>
           <div class="orp-card-info">
-            <h3 class="orp-card-title">Barbican Residence</h3>
-            <span class="orp-card-location">Barbican, City of London</span>
+            <h3 class="orp-card-title">Northwood Residence</h3>
+            <span class="orp-card-location">Northwood, North West London</span>
           </div>
         </a>
 
@@ -782,7 +782,23 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 4. Muswell Hill Edwardian Residence (NEW - Hidden Initially) -->
+        <!-- 4. Barbican Family Residence (NEW - Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/barbican-residence-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/barbican-london-open-plan-living-dining-room-interior.webp" alt="Barbican Family Residence" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Barbican Residence</h3>
+            <span class="orp-card-location">Barbican, City of London</span>
+          </div>
+        </a>
+
+                <!-- 4. Muswell Hill Edwardian Residence (NEW - Hidden Initially) -->
         <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/muswell-hill-residence-interior-design/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/muswell-hill-north-london-edwardian-living-room-interior-design.webp" alt="Muswell Hill Edwardian Residence" loading="lazy" />
@@ -972,6 +988,22 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
+        <!-- 2. Newham Private Healthcare Clinic (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/newham-clinic-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/newham-east-london-healthcare-clinic-reception.webp" alt="Newham Healthcare Clinic" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Newham Healthcare Clinic</h3>
+            <span class="orp-card-location">Newham, East London</span>
+          </div>
+        </a>
+
         <!-- 2. Tooting Hair Salon -->
         <a class="orp-card" href="https://www.oraanj-interiors.co.uk/tooting-hair-salon/">
           <div class="orp-card-media">
@@ -988,8 +1020,8 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 3. Westminster Dental Clinic -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/westminster-dental-clinic/">
+        <!-- 4. Westminster Dental Clinic (Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/westminster-dental-clinic/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-dental-clinic-operatory.jpeg" alt="Westminster Dental Clinic" loading="lazy" />
             <div class="orp-card-overlay">
@@ -1056,6 +1088,22 @@ section.orp-cta.nitro-offscreen {
         <div class="orp-category-rule"></div>
       </div>
       <div class="orp-grid">
+        <!-- 1. Stanmore Contemporary Restaurant & Café (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/stanmore-restaurant-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/stanmore-north-west-london-restaurant-cafe-central-dining-aisle.webp" alt="Stanmore Restaurant &amp; Café" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Stanmore Restaurant &amp; Café</h3>
+            <span class="orp-card-location">Stanmore, North West London</span>
+          </div>
+        </a>
+
         <!-- 1. Dalston Restaurant & Bar (NEW) -->
         <a class="orp-card" href="https://www.oraanj-interiors.co.uk/dalston-restaurant-interior-design/">
           <div class="orp-card-media">
@@ -1088,8 +1136,8 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 3. Kingston Riverside Restaurant & Bar (NEW) -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/kingston-restaurant-interior-design/">
+        <!-- 4. Kingston Riverside Restaurant & Bar (Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/kingston-restaurant-interior-design/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/kingston-upon-thames-london-riverside-restaurant-bar-stools-square.webp" alt="Kingston Restaurant Interior Design" loading="lazy" />
             <div class="orp-card-overlay">
@@ -1172,6 +1220,22 @@ section.orp-cta.nitro-offscreen {
         <div class="orp-category-rule"></div>
       </div>
       <div class="orp-grid">
+        <!-- 1. Whitechapel Creative Office (NEW) -->
+        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/whitechapel-office-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/whitechapel-east-london-office-reception.webp" alt="Whitechapel Creative Office" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Whitechapel Creative Office</h3>
+            <span class="orp-card-location">Whitechapel, East London</span>
+          </div>
+        </a>
+
         <!-- 1. London Bridge Commercial Workplace (NEW) -->
         <a class="orp-card" href="https://www.oraanj-interiors.co.uk/london-bridge-office-interior-design/">
           <div class="orp-card-media">
@@ -1204,8 +1268,8 @@ section.orp-cta.nitro-offscreen {
           </div>
         </a>
 
-        <!-- 3. Holborn Corporate Headquarters -->
-        <a class="orp-card" href="https://www.oraanj-interiors.co.uk/holborn-corporate-headquarters/">
+        <!-- 4. Holborn Corporate Headquarters (Hidden Initially) -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/holborn-corporate-headquarters/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/mayfords-capital-modern-office-lobby.jpeg" alt="Holborn Corporate Headquarters" loading="lazy" />
             <div class="orp-card-overlay">
@@ -1268,6 +1332,13 @@ section.orp-cta.nitro-offscreen {
 </main>
 
 <!-- 3. CALL TO ACTION BANNER -->
+  <!-- Portfolio Overview Cross-Links -->
+  <div class="orp-container" style="padding: 30px 20px; text-align: center;">
+    <p class="orc-body" style="margin: 0 auto; max-width: 820px; font-size: 13.5px; color: #5E5953; line-height: 1.6;">
+      Explore our award-winning <a href="https://www.oraanj-interiors.co.uk/residential-interior-design-london/">residential interior design projects</a> and bespoke <a href="https://www.oraanj-interiors.co.uk/commercial-interior-design/">commercial interior design projects</a> across London, including our celebrated <a href="https://www.oraanj-interiors.co.uk/hampstead-apartment-interior-design/">Hampstead apartment project</a> and the distinguished <a href="https://www.oraanj-interiors.co.uk/wimbledon-residence-interior-design/">Wimbledon residence project</a>.
+    </p>
+  </div>
+
 <section id="consultation" class="orp-cta">
   <div class="orp-container">
     <div class="orp-cta-content">
