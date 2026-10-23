@@ -340,8 +340,8 @@ if ( ! function_exists( 'ojr_get_article_badge' ) ) {
 				<div class="ojr-rule"></div>
 				<!-- H1: Exact client recommended structure -->
 				<h1 class="ojr-masthead-title">Interior Design Blog London &ndash; Expert Advice &amp; Project Insights</h1>
-				<p class="ojr-masthead-lead">Expert renovation advice, space planning, materials and insights from real projects by Oraanj&rsquo;s London design team, covering spatial planning, material curation and <a href="https://www.oraanj-interiors.co.uk/residential-interior-decor-london/">residential interior decor</a>.</p>
-				<p class="ojr-masthead-desc">Learn more about our <a href="https://www.oraanj-interiors.co.uk/services/">interior design services</a> or explore Drawing on more than 20 years of experience across residential, commercial and hospitality interiors, we share what we&rsquo;ve learnt about space planning, renovations, lighting, materials and the decisions that make a real difference to a finished space.</p>
+				<p class="ojr-masthead-lead">Expert renovation advice, space planning, materials and insights from real projects by Oraanj&rsquo;s London design team.</p>
+				<p class="ojr-masthead-desc">Drawing on more than 20 years of experience across residential, commercial and hospitality interiors, we share what we&rsquo;ve learnt about space planning, renovations, lighting, materials and the decisions that make a real difference to a finished space. Learn more about our comprehensive suite of <a href="https://www.oraanj-interiors.co.uk/services/">interior design services</a>.</p>
 				<div class="ojr-masthead-cta-row">
 					<a href="#latest-blogs" class="ojr-btn-primary">Explore Latest Articles &darr;</a>
 					<a href="<?php echo esc_url( site_url('/interior-design-london/') ); ?>" class="ojr-btn-outline">View Our Services &rarr;</a>
@@ -498,7 +498,7 @@ if ( ! function_exists( 'ojr_get_article_badge' ) ) {
 			<span class="ojr-eyebrow">Residential Guides</span>
 			<div class="ojr-rule"></div>
 			<h2 class="ojr-section-title">Interior Design for Homes</h2>
-			<p class="ojr-section-sub">Ideas that go beyond what&rsquo;s trending. Layout, proportions, kitchens, joinery, and connected living.</p>
+			<p class="ojr-section-sub">Ideas that go beyond what&rsquo;s trending: layout, proportions, kitchens, joinery, and tailored <a href="https://www.oraanj-interiors.co.uk/residential-interior-decor-london/">residential interior decor</a>.</p>
 			<div class="ojr-grid-6">
 				<?php
 				$res_q = new WP_Query( array(
@@ -977,7 +977,7 @@ if ( ! function_exists( 'ojr_get_article_badge' ) ) {
 				<div class="ojr-consult-text">
 					<span class="ojr-consult-eyebrow">Free Initial Consultation</span>
 					<h2 class="ojr-consult-title">Planning a Renovation or Commercial Interior?</h2>
-					<p class="ojr-consult-desc">Whether you&rsquo;re redesigning a London home, fitting out an office or creating a new hospitality space, Oraanj can help. Speak to Rachana&rsquo;s team or <a href="https://www.oraanj-interiors.co.uk/contact/">talk to our designers</a> for an initial consultation about your project.</p>
+					<p class="ojr-consult-desc">Whether you&rsquo;re redesigning a London home, fitting out an office or creating a new hospitality space, Oraanj can help. Feel free to <a href="https://www.oraanj-interiors.co.uk/contact/">talk to our designers</a> for an initial consultation about your project.</p>
 				</div>
 				<div class="ojr-consult-actions">
 					<a href="<?php echo esc_url( site_url('/contact/') ); ?>" class="ojr-btn-primary">Book a Consultation &rarr;</a>
