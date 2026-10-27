@@ -187,16 +187,18 @@ get_header();
 
 <section class="hro-section">
 <div class="hro-bg-frame">
-<img class="hro-bg-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Interior-Designers-in-London-Creating-Bespoke-Design-Build-for-Beautiful-Living-1.png" alt="Luxury London interior design and living space by Oraanj Interiors" loading="lazy">
+<img class="hro-bg-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/Interior-Designers-in-London-Creating-Bespoke-Design-Build-for-Beautiful-Living-1.png" alt="Luxury London interior design and living space by Oraanj Interiors" fetchpriority="high">
 </div>
 <div class="hro-white-blur"></div>
 <div class="hro-wrap">
 <div class="hro-content-col">
-<h1 class="hro-title">Interior Design Company in London &ndash; Bespoke Residential &amp; Commercial Design &amp; Build</h1>
+<h1 class="hro-title">Interior Design Company in London Bespoke Residential &amp; Commercial Interior Design and Build</h1>
 <p class="hro-lead">Oraanj designs exceptional interiors and manages the entire renovation and delivery process, from concept through to completion, for homes and commercial spaces across London.</p>
 <div class="hro-actions">
 <a class="hro-btn hro-btn-primary"
-   href="https://www.oraanj-interiors.co.uk/contact/"
+   href="https://brand.oraanj-interiors.co.uk/widget/booking/MdZ4TIbvCtyLERAN00H5"
+   target="_blank"
+   rel="noopener noreferrer"
    onclick="clarity('event', 'discuss_project')">
   <span>Discuss Your Project</span>
 </a>
@@ -251,9 +253,9 @@ get_header();
 <div class="awc-wrap">
 <div class="awc-card">
 <div class="awc-col-content">
-<h2 class="awc-title">Award-Winning Interior Design &amp; Build Company</h2>
+<h2 class="awc-title">Award-Winning Interior Design Company in London</h2>
 <div class="awc-intro-block">
-<p class="awc-intro-p">For more than 20 years, Oraanj has designed interiors around the people who use them.</p>
+<p class="awc-intro-p">For more than 20 years, Oraanj has been a leading <a href="https://www.oraanj-interiors.co.uk/interior-designers-london/">interior design company in London</a>, creating bespoke luxury spaces tailored around the people who use them.</p>
 <p class="awc-intro-p">Some clients come to us for interior design alone. Others want us to take responsibility for the wider renovation, procurement and project delivery.</p>
 <p class="awc-intro-p">Our approach brings creative design and practical planning together from the beginning, so the finished interior isn't considered separately from how it will actually be delivered.</p>
 </div>
@@ -296,7 +298,7 @@ get_header();
     </div>
     <div class="swp-grid">
       <div class="swp-card">
-        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_living_room_dining_area.jpeg" alt="Living room sofa interior design" class="swp-card-img" loading="lazy" /></div>
+        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_living_room_dining_area.jpeg" alt="Luxury residential living room interior design in London" class="swp-card-img" loading="lazy" /></div>
         <div class="swp-card-content">
           <h3 class="swp-card-title">I Want to Design My Home</h3>
           <p class="swp-card-desc">For clients who want help with layouts, materials, lighting, furniture, joinery and the overall interior.</p>
@@ -304,7 +306,7 @@ get_header();
         </div>
       </div>
       <div class="swp-card">
-        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_dining_room.jpeg" alt="Modern kitchen renovation with island" class="swp-card-img" loading="lazy" /></div>
+        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_dining_room.jpeg" alt="Luxury dining room interior design and renovation London" class="swp-card-img" loading="lazy" /></div>
         <div class="swp-card-content">
           <h3 class="swp-card-title">I'm Renovating a Property</h3>
           <p class="swp-card-desc">For houses and apartments that need more substantial changes, from kitchens and bathrooms to complete interior refurbishment.</p>
@@ -312,7 +314,7 @@ get_header();
         </div>
       </div>
       <div class="swp-card">
-        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/living-room-media-wall-closeup.jpeg" alt="Architectural drawings and material samples" class="swp-card-img" loading="lazy" /></div>
+        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/living-room-media-wall-closeup.jpeg" alt="Bespoke living room media wall and joinery design London" class="swp-card-img" loading="lazy" /></div>
         <div class="swp-card-content">
           <h3 class="swp-card-title">I Want Design &amp; Build</h3>
           <p class="swp-card-desc">For clients who want Oraanj to design the interior and continue into technical planning, renovation and project delivery.</p>
@@ -320,7 +322,7 @@ get_header();
         </div>
       </div>
       <div class="swp-card">
-        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/mayfords-capital-modern-office-lobby.jpeg" alt="Technical plans and construction documentation" class="swp-card-img" loading="lazy" /></div>
+        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/mayfords-capital-modern-office-lobby.jpeg" alt="Modern commercial office interior design London" class="swp-card-img" loading="lazy" /></div>
         <div class="swp-card-content">
           <h3 class="swp-card-title">I've Already Got the Design</h3>
           <p class="swp-card-desc">For projects where drawings and specifications are substantially developed and you need interior construction or refurbishment.</p>
@@ -328,7 +330,7 @@ get_header();
         </div>
       </div>
       <div class="swp-card">
-        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_bathroom_design_by_oraanj_interiors.jpeg" alt="Styled hallway console table with mirror" class="swp-card-img" loading="lazy" /></div>
+        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_bathroom_design_by_oraanj_interiors.jpeg" alt="Luxury turnkey bathroom interior design London" class="swp-card-img" loading="lazy" /></div>
         <div class="swp-card-content">
           <h3 class="swp-card-title">I Want Everything Managed</h3>
           <p class="swp-card-desc">For clients who want a more complete turnkey service extending into procurement, furniture, installation and final styling.</p>
@@ -336,7 +338,7 @@ get_header();
         </div>
       </div>
       <div class="swp-card">
-        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-hotel-bar-lounge-wide-interior.jpeg" alt="Commercial restaurant interior" class="swp-card-img" loading="lazy" /></div>
+        <div class="swp-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-hotel-bar-lounge-wide-interior.jpeg" alt="Luxury hospitality and restaurant interior design London" class="swp-card-img" loading="lazy" /></div>
         <div class="swp-card-content">
           <h3 class="swp-card-title">I'm Designing a Business</h3>
           <p class="swp-card-desc">For offices, restaurants, cafés and other commercial interiors.</p>
@@ -363,9 +365,9 @@ get_header();
 <div class="sdw-pro-intro-col">
 <span class="sdw-pro-eyebrow">INTERIOR DESIGN</span>
 <div class="sdw-pro-accent-line"></div>
-<h2 class="sdw-pro-title">Spaces Designed Around the Way You Live</h2>
-<p class="sdw-pro-lead">A good interior starts with understanding the property and the people using it.</p>
-<p class="sdw-pro-body">We consider how rooms connect, where furniture should sit, how lighting will work, what storage is needed and how materials should come together.</p>
+<h2 class="sdw-pro-title">London Interior Design Tailored to How You Live</h2>
+<p class="sdw-pro-lead">As a dedicated interior design company in London, we believe exceptional design starts with understanding your property and lifestyle.</p>
+<p class="sdw-pro-body">We consider how rooms connect, where furniture should sit, how lighting will work, what storage is needed and how materials should come together across every <a href="https://www.oraanj-interiors.co.uk/residential-interior-design-london/">residential interior design</a> project.</p>
 <p class="sdw-pro-list-label">Our interior design services can include:</p>
 <div class="sdw-pro-icon-list">
 <div class="sdw-pro-icon-item">
@@ -514,7 +516,7 @@ get_header();
 </div>
 <div class="dnb-col-center">
 <div class="dnb-hero-box">
-<img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-hotel-lounge-arched-entrance.jpeg" alt="Luxury modern kitchen island and dining area" class="dnb-hero-img" loading="lazy" />
+<img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-hotel-lounge-arched-entrance.jpeg" alt="Luxury interior design and build delivery in London" class="dnb-hero-img" loading="lazy" />
 </div>
 </div>
 <div class="dnb-col-right">
@@ -774,7 +776,7 @@ get_header();
 <!--</div>-->
 <!--</div>-->
 </div>
-<div class="fep-btn-wrap"><a href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true" class="fep-cta-btn GlobalFontFamily">Discuss Your Project</a></div>
+<div class="fep-btn-wrap"><a href="https://brand.oraanj-interiors.co.uk/widget/booking/MdZ4TIbvCtyLERAN00H5" target="_blank" rel="noopener noreferrer" class="fep-cta-btn GlobalFontFamily">Discuss Your Project</a></div>
 </div>
 </div>
 </section>
@@ -793,7 +795,7 @@ get_header();
 <div class="oraanj-expertise-container">
   <div class="oraanj-expertise-header">
     <div class="oraanj-expertise-line"></div>
-    <h3 class="oraanj-expertise-title">Interior Design Across Every Sector</h3>
+    <h2 class="oraanj-expertise-title">Interior Design Services Across London</h2>
     <div class="oraanj-expertise-line"></div>
   </div>
   <div class="oraanj-expertise-row">
@@ -1123,7 +1125,7 @@ get_header();
 <div class="wcs-container">
 <header class="wcs-header">
 <span class="wcs-eyebrow">WHAT OUR CLIENTS SAY</span>
-<h2 class="wcs-title">Real People. Real Experiences.</h2>
+<h2 class="wcs-title">What Our Interior Design Clients in London Say</h2>
 <div class="wcs-title-accent-line"></div>
 <p class="wcs-lead-text">From homes to workplaces and hospitality spaces, our clients’ feedback reflects what it's like to work with Oraanj.</p>
 </header>
@@ -1255,8 +1257,8 @@ get_header();
 <div class="wco-header">
 <span class="wco-eyebrow">WHY CLIENTS CHOOSE ORAANJ</span>
 <div class="wco-accent-line"></div>
-<h2 class="wco-main-title">Experience. Expertise. Real Results.</h2>
-<p class="wco-subtitle">A trusted interior design studio delivering exceptional interiors across London for over 20 years.</p>
+<h2 class="wco-main-title">Why Choose Our London Interior Design Company</h2>
+<p class="wco-subtitle">A trusted interior design company in London delivering exceptional bespoke interiors across prime residential and commercial properties for over 20 years.</p>
 </div>
 <div class="wco-features-grid">
 <div class="wco-feature-item">
@@ -1335,7 +1337,7 @@ get_header();
 <div class="wco-footer-row">
 <span class="wco-footer-tagline">INTERIORS THAT WORK IN REAL LIFE</span>
 <div class="wco-footer-line"></div>
-<a href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true" target="_blank" rel="noopener noreferrer" class="wco-discuss-link">DISCUSS YOUR PROJECT <span>&rarr;</span></a>
+<a href="https://brand.oraanj-interiors.co.uk/widget/booking/MdZ4TIbvCtyLERAN00H5" target="_blank" rel="noopener noreferrer" class="wco-discuss-link">DISCUSS YOUR PROJECT <span>&rarr;</span></a>
 </div>
 </div>
 </section>
@@ -1414,7 +1416,7 @@ get_header();
 
 <div class="home_faq_section">
 	<div class="container">
-<div class="banner_bottom_section_heading text-center" style="color: #FFFFFF !important;">FAQs About Interior Design & Design and Build in London</div>		
+<h2 class="banner_bottom_section_heading text-center" style="color: #FFFFFF !important;">FAQs About Our Interior Design Company in London</h2>		
 		<div class="row justify-content-center mt-4">
 			<div class="col-lg-7 home_faq_right">
                 <?php echo do_shortcode('[accordion]
@@ -1457,319 +1459,234 @@ Start by discussing your property, requirements, approximate scope and intended 
 
 
 
-<!--<script type="application/ld+json">-->
-<!--{-->
-<!--  "@context": "https://schema.org",-->
-<!--  "@graph": [-->
-<!--    {-->
-<!--      "@type": ["WebSite"],-->
-<!--      "@id": "https://www.oraanj-interiors.co.uk/#website",-->
-<!--      "url": "https://www.oraanj-interiors.co.uk/",-->
-<!--      "name": "Oraanj Interior Design",-->
-<!--      "inLanguage": "en-GB",-->
-<!--      "publisher": {-->
-<!--        "@id": "https://www.oraanj-interiors.co.uk/#organization"-->
-<!--      },-->
-<!--      "potentialAction": [-->
-<!--        {-->
-<!--          "@type": "SearchAction",-->
-<!--          "target": {-->
-<!--            "@type": "EntryPoint",-->
-<!--            "urlTemplate": "https://www.oraanj-interiors.co.uk/?s={search_term_string}"-->
-<!--          },-->
-<!--          "query-input": "required name=search_term_string"-->
-<!--        }-->
-<!--      ]-->
-<!--    },-->
-<!--    {-->
-<!--      "@type": ["WebPage"],-->
-<!--      "@id": "https://www.oraanj-interiors.co.uk/#webpage",-->
-<!--      "url": "https://www.oraanj-interiors.co.uk/",-->
-<!--      "name": "Interior Designer London | Leading London Interior Design",-->
-<!--      "description": "London interior design studio specialising in interior design, renovation, and full project management for homes, offices, and restaurants.",-->
-<!--      "inLanguage": "en-GB",-->
-<!--      "isPartOf": {-->
-<!--        "@id": "https://www.oraanj-interiors.co.uk/#website"-->
-<!--      },-->
-<!--      "about": {-->
-<!--        "@id": "https://www.oraanj-interiors.co.uk/#organization"-->
-<!--      }-->
-<!--    },-->
-<!--    {-->
-<!--      "@type": ["Organization"],-->
-<!--      "@id": "https://www.oraanj-interiors.co.uk/#organization",-->
-<!--      "name": "Oraanj Interior Design",-->
-<!--      "url": "https://www.oraanj-interiors.co.uk/",-->
-<!--      "email": "info@oraanj-interiors.co.uk",-->
-<!--      "logo": {-->
-<!--        "@type": "ImageObject",-->
-<!--        "@id": "https://www.oraanj-interiors.co.uk/#logo",-->
-<!--        "url": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2024/09/logo.png",-->
-<!--        "contentUrl": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2024/09/logo.png"-->
-<!--      },-->
-<!--      "sameAs": [-->
-<!--        "https://www.linkedin.com/company/oraanj-interior-design/",-->
-<!--        "https://www.instagram.com/oraanjinteriordesigns/",-->
-<!--        "https://www.facebook.com/Oraanjinteriordesigns",-->
-<!--        "https://www.youtube.com/@oraanjinteriordesign7524",-->
-<!--        "https://www.tiktok.com/@oraanjinteriordesign",-->
-<!--        "https://www.pinterest.co.uk/OraanjInteriorDesign/",-->
-<!--        "https://twitter.com/oraanjinteriors",-->
-<!--        "https://www.linkedin.com/in/rachana-oraanj/"-->
-<!--      ],-->
-<!--      "contactPoint": [-->
-<!--        {-->
-<!--          "@type": "ContactPoint",-->
-<!--          "contactType": "customer service",-->
-<!--          "email": "info@oraanj-interiors.co.uk",-->
-<!--          "availableLanguage": ["en-GB"],-->
-<!--          "areaServed": ["GB"]-->
-<!--        }-->
-<!--      ]-->
-<!--    },-->
-<!--    {-->
-<!--      "@type": ["LocalBusiness", "ProfessionalService"],-->
-<!--      "@id": "https://www.oraanj-interiors.co.uk/#localbusiness",-->
-<!--      "name": "Oraanj Interior Design",-->
-<!--      "url": "https://www.oraanj-interiors.co.uk/",-->
-<!--      "email": "info@oraanj-interiors.co.uk",-->
-<!--      "telephone": "+44 7448 803051",-->
-<!--      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2024/09/logo.png",-->
-<!--      "address": {-->
-<!--        "@type": "PostalAddress",-->
-<!--        "streetAddress": "2nd Floor, Hygeia House, 66 College Road",-->
-<!--        "addressLocality": "Harrow",-->
-<!--        "postalCode": "HA1 1BE",-->
-<!--        "addressCountry": "GB"-->
-<!--      },-->
-<!--      "areaServed": [-->
-<!--        {-->
-<!--          "@type": "AdministrativeArea",-->
-<!--          "name": "London"-->
-<!--        },-->
-<!--        {-->
-<!--          "@type": "Country",-->
-<!--          "name": "United Kingdom"-->
-<!--        }-->
-<!--      ],-->
-<!--      "sameAs": [-->
-<!--        "https://www.linkedin.com/company/oraanj-interior-design/",-->
-<!--        "https://www.instagram.com/oraanjinteriordesigns/",-->
-<!--        "https://www.facebook.com/Oraanjinteriordesigns",-->
-<!--        "https://www.youtube.com/@oraanjinteriordesign7524",-->
-<!--        "https://www.tiktok.com/@oraanjinteriordesign",-->
-<!--        "https://www.pinterest.co.uk/OraanjInteriorDesign/",-->
-<!--        "https://twitter.com/oraanjinteriors",-->
-<!--        "https://www.yelp.co.uk/biz/oraanj-interior-design-harrow-2"-->
-<!--      ]-->
-<!--    },-->
-<!--    {-->
-<!--      "@type": "Person",-->
-<!--      "@id": "https://www.oraanj-interiors.co.uk/#person-rachana-gupta",-->
-<!--      "name": "Rachana Gupta",-->
-<!--      "url": "https://www.linkedin.com/in/rachana-oraanj/",-->
-<!--      "sameAs": [-->
-<!--        "https://www.linkedin.com/in/rachana-oraanj/"-->
-<!--      ],-->
-<!--      "worksFor": {-->
-<!--        "@id": "https://www.oraanj-interiors.co.uk/#organization"-->
-<!--      }-->
-<!--    }-->
-<!--  ]-->
-<!--}-->
-<!--</script>-->
-<!--	<script type="application/ld+json">-->
-<!--{-->
-<!--  "@context": "https://schema.org",-->
-<!--  "@type": "FAQPage",-->
-<!--  "@id": "https://www.oraanj-interiors.co.uk/#faq",-->
-<!--  "mainEntity": [-->
-<!--    {-->
-<!--      "@type": "Question",-->
-<!--      "name": "How much does an Interior Designer in London cost?",-->
-<!--      "acceptedAnswer": {-->
-<!--        "@type": "Answer",-->
-<!--        "text": "Interior design costs in London depend on the scope of work. At Oraanj Interior Design, design & planning services start from £600 per room, while full-service interior design is typically charged as a fixed fee or 10–15% of the overall project budget. Hourly interior design consultations are also available from £150–£300 per hour."-->
-<!--      }-->
-<!--    },-->
-<!--    {-->
-<!--      "@type": "Question",-->
-<!--      "name": "What services does an Interior Design Company in London provide?",-->
-<!--      "acceptedAnswer": {-->
-<!--        "@type": "Answer",-->
-<!--        "text": "A professional interior design company in London provides space planning, layout design, lighting design, material selection, bespoke furniture, procurement, and project coordination. Full-service studios also manage suppliers, contractors, and installations from concept to completion."-->
-<!--      }-->
-<!--    },-->
-<!--    {-->
-<!--      "@type": "Question",-->
-<!--      "name": "What is the difference between an Interior Designer and an Interior Decorator?",-->
-<!--      "acceptedAnswer": {-->
-<!--        "@type": "Answer",-->
-<!--        "text": "An Interior Decorator focuses on visual styling such as furniture, colour palettes, and soft furnishings. An Interior Designer handles both aesthetics and technical planning, including spatial layouts, lighting schemes, and renovation coordination. Oraanj offers both, depending on your project needs."-->
-<!--      }-->
-<!--    },-->
-<!--    {-->
-<!--      "@type": "Question",-->
-<!--      "name": "Do you offer full-service interior design in London?",-->
-<!--      "acceptedAnswer": {-->
-<!--        "@type": "Answer",-->
-<!--        "text": "Yes. We provide full-service interior design across London, covering design development, procurement, contractor coordination, and final installation. This service is ideal for home renovations, apartment refurbishments, offices, and hospitality projects."-->
-<!--      }-->
-<!--    },-->
-<!--    {-->
-<!--      "@type": "Question",-->
-<!--      "name": "Do you work on residential and commercial interior design projects?",-->
-<!--      "acceptedAnswer": {-->
-<!--        "@type": "Answer",-->
-<!--        "text": "Yes. We work on residential interior design for houses and apartments, as well as commercial interior design for offices, restaurants, and retail spaces across London and the surrounding areas."-->
-<!--      }-->
-<!--    },-->
-<!--    {-->
-<!--      "@type": "Question",-->
-<!--      "name": "Can you manage my renovation project as well as the design?",-->
-<!--      "acceptedAnswer": {-->
-<!--        "@type": "Answer",-->
-<!--        "text": "Yes. Our full-service interior design includes project coordination alongside trusted contractors, ensuring the design intent is delivered accurately on site. This is particularly valuable for London properties where access, planning, and sequencing are critical."-->
-<!--      }-->
-<!--    },-->
-<!--    {-->
-<!--      "@type": "Question",-->
-<!--      "name": "Do you work with international clients buying property in London?",-->
-<!--      "acceptedAnswer": {-->
-<!--        "@type": "Answer",-->
-<!--        "text": "Yes. We regularly support international and overseas clients purchasing property in London. Our remote service includes design development, procurement, renovation coordination, and installation, with progress shared through regular updates and video calls."-->
-<!--      }-->
-<!--    },-->
-<!--    {-->
-<!--      "@type": "Question",-->
-<!--      "name": "How do I choose the best Interior Designer in London for my project?",-->
-<!--      "acceptedAnswer": {-->
-<!--        "@type": "Answer",-->
-<!--        "text": "To choose the best interior designer in London, review real project portfolios, check for transparent pricing, and confirm whether the studio offers both design and procurement support. A clear process and proven experience with London properties are key indicators of quality."-->
-<!--      }-->
-<!--    }-->
-<!--  ]-->
-<!--}-->
-<!--</script>-->
-
-<!--<script type="application/ld+json">-->
-<!--{-->
-<!--  "@context": "https://schema.org",-->
-<!--  "@type": "LocalBusiness",-->
-<!--  "@id": "https://www.oraanj-interiors.co.uk/#business",-->
-<!--  "name": "Oraanj Interior Design",-->
-<!--  "url": "https://www.oraanj-interiors.co.uk/",-->
-<!--  "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/logo.png",-->
-<!--  "telephone": "+447448803051",-->
-<!--  "address": {-->
-<!--    "@type": "PostalAddress",-->
-<!--    "streetAddress": "2nd Floor Hygeia House, 66 College Road",-->
-<!--    "addressLocality": "Harrow",-->
-<!--    "postalCode": "HA1 1BE",-->
-<!--    "addressCountry": "GB"-->
-<!--  },-->
-<!--  "award": "Interior Designer of the Year - Eastern Eye Property Awards 2025",-->
-<!--  "founder": {-->
-<!--    "@type": "Person",-->
-<!--    "name": "Rachana Gupta"-->
-<!--  },-->
-<!--  "description": "Award-winning interior design studio in London specializing in luxury residential, commercial, and hospitality spaces. Winner of the 2025 Eastern Eye Interior Designer of the Year award.",-->
-<!--  "aggregateRating": {-->
-<!--    "@type": "AggregateRating",-->
-<!--    "ratingValue": "4.8",-->
-<!--    "reviewCount": "99",-->
-<!--    "bestRating": "5",-->
-<!--    "worstRating": "1"-->
-<!--  },-->
-<!--  "review": [-->
-<!--    {-->
-<!--      "@type": "Review",-->
-<!--      "reviewRating": {-->
-<!--        "@type": "Rating",-->
-<!--        "ratingValue": "5",-->
-<!--        "bestRating": "5",-->
-<!--        "worstRating": "1"-->
-<!--      },-->
-<!--      "author": {-->
-<!--        "@type": "Organization",-->
-<!--        "name": "Verified Customer"-->
-<!--      }-->
-<!--    }-->
-<!--  ]-->
-<!--}-->
-<!--</script>-->
-
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": "https://www.oraanj-interiors.co.uk/#faq",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How much does it cost to hire an interior designer in London?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Interior design costs in London vary depending on the size and complexity of the project. At Oraanj Interior Design, design services typically start from £600 per room. Full-service interior design projects are commonly structured as a fixed fee or around 10–15% of the total project budget. Consultation sessions are also available for homeowners and businesses planning residential, office, or hospitality interior design projects in London."
+      "@type": "WebSite",
+      "@id": "https://www.oraanj-interiors.co.uk/#website",
+      "url": "https://www.oraanj-interiors.co.uk/",
+      "name": "Oraanj Interior Design",
+      "description": "Award-Winning Luxury Interior Design Company in London",
+      "inLanguage": "en-GB",
+      "publisher": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
+      },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.oraanj-interiors.co.uk/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.oraanj-interiors.co.uk/#webpage",
+      "url": "https://www.oraanj-interiors.co.uk/",
+      "name": "Interior Design Company London | Oraanj Interior Design",
+      "description": "Oraanj is an award-winning interior design company in London specialising in bespoke residential and commercial interior design, turnkey renovation, and build projects.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@id": "https://www.oraanj-interiors.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
       }
     },
     {
-      "@type": "Question",
-      "name": "What interior design services does Oraanj Interior Design provide in London?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oraanj Interior Design provides luxury residential interior design, office interior design, restaurant and hospitality interior design, interior architecture, space planning, lighting design, technical drawings, procurement coordination, and turnkey interior design project management."
+      "@type": "Organization",
+      "@id": "https://www.oraanj-interiors.co.uk/#organization",
+      "name": "Oraanj Interior Design",
+      "url": "https://www.oraanj-interiors.co.uk/",
+      "email": "info@oraanj-interiors.co.uk",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.oraanj-interiors.co.uk/#logo",
+        "url": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2024/09/logo.png",
+        "contentUrl": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2024/09/logo.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/oraanj-interior-design/",
+        "https://www.instagram.com/oraanjinteriordesigns/",
+        "https://www.facebook.com/Oraanjinteriordesigns",
+        "https://www.youtube.com/@oraanjinteriordesign7524",
+        "https://www.tiktok.com/@oraanjinteriordesign",
+        "https://www.pinterest.co.uk/OraanjInteriorDesign/",
+        "https://twitter.com/oraanjinteriors",
+        "https://www.linkedin.com/in/rachana-oraanj/"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "info@oraanj-interiors.co.uk",
+          "telephone": "+447448803051",
+          "availableLanguage": [
+            "en-GB"
+          ],
+          "areaServed": [
+            "GB"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
+      "@id": "https://www.oraanj-interiors.co.uk/#localbusiness",
+      "name": "Oraanj Interior Design",
+      "url": "https://www.oraanj-interiors.co.uk/",
+      "email": "info@oraanj-interiors.co.uk",
+      "telephone": "+447448803051",
+      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2024/09/logo.png",
+      "priceRange": "££££",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2nd Floor, Hygeia House, 66 College Road",
+        "addressLocality": "Harrow",
+        "postalCode": "HA1 1BE",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.5806,
+        "longitude": -0.337
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "London"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Greater London"
+        },
+        {
+          "@type": "Country",
+          "name": "United Kingdom"
+        }
+      ],
+      "award": "Interior Designer of the Year - Eastern Eye Property Awards 2025",
+      "founder": {
+        "@type": "Person",
+        "name": "Rachana Gupta"
+      },
+      "description": "Award-winning interior design company in London specialising in luxury residential, commercial, and hospitality spaces.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "99",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/oraanj-interior-design/",
+        "https://www.instagram.com/oraanjinteriordesigns/",
+        "https://www.facebook.com/Oraanjinteriordesigns",
+        "https://www.youtube.com/@oraanjinteriordesign7524",
+        "https://www.tiktok.com/@oraanjinteriordesign",
+        "https://www.pinterest.co.uk/OraanjInteriorDesign/",
+        "https://twitter.com/oraanjinteriors",
+        "https://www.yelp.co.uk/biz/oraanj-interior-design-harrow-2"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.oraanj-interiors.co.uk/#person-rachana-gupta",
+      "name": "Rachana Gupta",
+      "jobTitle": "Founder & Creative Director",
+      "url": "https://www.linkedin.com/in/rachana-oraanj/",
+      "sameAs": [
+        "https://www.linkedin.com/in/rachana-oraanj/"
+      ],
+      "worksFor": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
       }
     },
     {
-      "@type": "Question",
-      "name": "Which areas of London do you cover for interior design projects?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oraanj Interior Design works across Greater London including Mayfair, Kensington, Chelsea, Richmond, Shoreditch, Canary Wharf, Highbury, Hampstead, and surrounding prime residential and commercial areas. The studio supports residential and commercial interior design projects throughout London."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer turnkey interior design services in London?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Oraanj Interior Design offers a comprehensive turnkey interior design service in London. This includes concept design, space planning, interior architecture, technical drawings, procurement of furniture and materials, contractor coordination, and project management to deliver completed residential or commercial interiors from concept to installation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long do interior design projects usually take in London?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Interior design timelines depend on the size and complexity of the project. A single room interior design project may take approximately 6–10 weeks, while larger residential interior design or commercial interior design projects in London can take several months including design development, procurement, and installation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you work with international or overseas clients who own property in London?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Oraanj Interior Design regularly works with international homeowners and overseas property investors who own homes in London. The studio provides remote interior design planning, procurement coordination, and turnkey interior design services for London properties owned by clients based in the Middle East, Europe, Asia, and North America."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I choose the best interior designer in London?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "When choosing the best interior designer in London it is important to consider design experience, technical expertise, project management capability, and the ability to deliver build-ready drawings and procurement coordination. Working with an established London interior design studio helps ensure projects are professionally planned and delivered from concept to completion."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why choose Oraanj Interior Design for a London interior design project?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oraanj Interior Design is an award-winning London interior design studio recognised at the Eastern Eye Property Awards 2025. The studio specialises in luxury residential, office, and hospitality interiors and combines creative design, technical planning, procurement expertise, and structured project coordination to deliver refined spaces across London."
-      }
+      "@type": "FAQPage",
+      "@id": "https://www.oraanj-interiors.co.uk/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does it cost to hire an interior designer in London?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Interior design costs in London vary depending on the size and complexity of the project. At Oraanj Interior Design, design services typically start from £600 per room. Full-service interior design projects are commonly structured as a fixed fee or around 10–15% of the total project budget. Consultation sessions are also available for homeowners and businesses planning residential, office, or hospitality interior design projects in London."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What services does an Interior Design Company in London provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A professional interior design company in London provides comprehensive space planning, layout design, lighting design, material selection, bespoke furniture, FF&E procurement, and project coordination. Full-service studios also manage contractors, suppliers, and turnkey installations from concept to completion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What interior design services does Oraanj Interior Design provide in London?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oraanj Interior Design provides luxury residential interior design, office interior design, restaurant and hospitality interior design, interior architecture, space planning, lighting design, technical drawings, procurement coordination, and turnkey interior design project management."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which areas of London do you cover for interior design projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oraanj Interior Design works across Greater London including Mayfair, Kensington, Chelsea, Richmond, Shoreditch, Canary Wharf, Highbury, Hampstead, and surrounding prime residential and commercial areas. The studio supports residential and commercial interior design projects throughout London."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer turnkey interior design services in London?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Oraanj Interior Design offers a comprehensive turnkey interior design service in London. This includes concept design, space planning, interior architecture, technical drawings, procurement of furniture and materials, contractor coordination, and project management to deliver completed residential or commercial interiors from concept to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long do interior design projects usually take in London?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Interior design timelines depend on the size and complexity of the project. A single room interior design project may take approximately 6–10 weeks, while larger residential interior design or commercial interior design projects in London can take several months including design development, procurement, and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with international or overseas clients who own property in London?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Oraanj Interior Design regularly works with international homeowners and overseas property investors who own homes in London. The studio provides remote interior design planning, procurement coordination, and turnkey interior design services for London properties owned by clients based in the Middle East, Europe, Asia, and North America."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I choose the best interior designer in London?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When choosing the best interior designer in London it is important to consider design experience, technical expertise, project management capability, and the ability to deliver build-ready drawings and procurement coordination. Working with an established London interior design studio helps ensure projects are professionally planned and delivered from concept to completion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose Oraanj Interior Design for a London interior design project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oraanj Interior Design is an award-winning London interior design studio recognised at the Eastern Eye Property Awards 2025. The studio specialises in luxury residential, office, and hospitality interiors and combines creative design, technical planning, procurement expertise, and structured project coordination to deliver refined spaces across London."
+          }
+        }
+      ]
     }
   ]
 }

@@ -192,11 +192,13 @@ get_header();
 <div class="hro-white-blur"></div>
 <div class="hro-wrap">
 <div class="hro-content-col">
-<h1 class="hro-title">Interior Design Company in London<br>Bespoke Residential &amp; Commercial Interior Design and Build</h1>
+<h1 class="hro-title">Interior Designers in London<br>Bespoke Residential &amp; Commercial Interior Design and Build</h1>
 <p class="hro-lead">Oraanj designs exceptional interiors and manages the entire renovation and delivery process, from concept through to completion, for homes and commercial spaces across London.</p>
 <div class="hro-actions">
 <a class="hro-btn hro-btn-primary"
-   href="https://www.oraanj-interiors.co.uk/contact/"
+   href="https://brand.oraanj-interiors.co.uk/widget/booking/MdZ4TIbvCtyLERAN00H5"
+   target="_blank"
+   rel="noopener noreferrer"
    onclick="clarity('event', 'discuss_project')">
   <span>Discuss Your Project</span>
 </a>
@@ -300,7 +302,7 @@ get_header();
         <div class="swp-card-content">
           <h3 class="swp-card-title">I Want to Design My Home</h3>
           <p class="swp-card-desc">For clients who want help with layouts, materials, lighting, furniture, joinery and the overall interior.</p>
-          <a href="https://www.oraanj-interiors.co.uk/residential-interior-design-london/" class="swp-card-link">EXPLORE RESIDENTIAL INTERIOR DESIGN <span class="swp-arrow">&rarr;</span></a>
+          <a href="https://www.oraanj-interiors.co.uk/residential-interior-design-london/" class="swp-card-link">EXPLORE RESIDENTIAL INTERIOR DESIGN </a>
         </div>
       </div>
       <div class="swp-card">
@@ -324,7 +326,7 @@ get_header();
         <div class="swp-card-content">
           <h3 class="swp-card-title">I've Already Got the Design</h3>
           <p class="swp-card-desc">For projects where drawings and specifications are substantially developed and you need interior construction or refurbishment.</p>
-          <a href="https://www.oraanj-interiors.co.uk/construction-company/" class="swp-card-link">EXPLORE CONSTRUCTION &amp; REFURBISHMENT <span class="swp-arrow">&rarr;</span></a>
+          <a href="https://www.oraanj-interiors.co.uk/construction-company/" class="swp-card-link">EXPLORE CONSTRUCTION &amp; REFURBISHMENT</a>
         </div>
       </div>
       <div class="swp-card">
@@ -332,7 +334,7 @@ get_header();
         <div class="swp-card-content">
           <h3 class="swp-card-title">I Want Everything Managed</h3>
           <p class="swp-card-desc">For clients who want a more complete turnkey service extending into procurement, furniture, installation and final styling.</p>
-          <a href="https://www.oraanj-interiors.co.uk/turnkey-interior-design-london/" class="swp-card-link GlobalFontFamily">EXPLORE TURNKEY INTERIOR DESIGN <span class="swp-arrow">&rarr;</span></a>
+          <a href="https://www.oraanj-interiors.co.uk/turnkey-interior-design-london/" class="swp-card-link GlobalFontFamily">EXPLORE TURNKEY INTERIOR DESIGN </a>
         </div>
       </div>
       <div class="swp-card">
@@ -340,7 +342,7 @@ get_header();
         <div class="swp-card-content">
           <h3 class="swp-card-title">I'm Designing a Business</h3>
           <p class="swp-card-desc">For offices, restaurants, cafés and other commercial interiors.</p>
-          <a href="https://www.oraanj-interiors.co.uk/commercial-interior-design/" class="swp-card-link">EXPLORE COMMERCIAL INTERIOR DESIGN <span class="swp-arrow">&rarr;</span></a>
+          <a href="https://www.oraanj-interiors.co.uk/commercial-interior-design/" class="swp-card-link">EXPLORE COMMERCIAL INTERIOR DESIGN </a>
         </div>
       </div>
     </div>
@@ -774,7 +776,7 @@ get_header();
 <!--</div>-->
 <!--</div>-->
 </div>
-<div class="fep-btn-wrap"><a href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true" class="fep-cta-btn GlobalFontFamily">Discuss Your Project</a></div>
+<div class="fep-btn-wrap"><a href="https://brand.oraanj-interiors.co.uk/widget/booking/MdZ4TIbvCtyLERAN00H5" target="_blank" rel="noopener noreferrer" class="fep-cta-btn GlobalFontFamily">Discuss Your Project</a></div>
 </div>
 </div>
 </section>
@@ -1335,7 +1337,7 @@ get_header();
 <div class="wco-footer-row">
 <span class="wco-footer-tagline">INTERIORS THAT WORK IN REAL LIFE</span>
 <div class="wco-footer-line"></div>
-<a href="https://brand.oraanj-interiors.co.uk/widget/form/TN1pXOQSDmeYSychF8Ni?notrack=true" target="_blank" rel="noopener noreferrer" class="wco-discuss-link">DISCUSS YOUR PROJECT <span>&rarr;</span></a>
+<a href="https://brand.oraanj-interiors.co.uk/widget/booking/MdZ4TIbvCtyLERAN00H5" target="_blank" rel="noopener noreferrer" class="wco-discuss-link">DISCUSS YOUR PROJECT <span>&rarr;</span></a>
 </div>
 </div>
 </section>
@@ -1720,7 +1722,7 @@ Start by discussing your property, requirements, approximate scope and intended 
       "name": "What interior design services does Oraanj Interior Design provide in London?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oraanj Interior Design as a leading interior design company providing luxury residential interior design, office interior design, restaurant and hospitality interior design, interior architecture, space planning, lighting design, technical drawings, bespoke interior design, procurement coordination, and turnkey interior design project management."
+        "text": "Oraanj Interior Design provides luxury residential interior design, office interior design, restaurant and hospitality interior design, interior architecture, space planning, lighting design, technical drawings, procurement coordination, and turnkey interior design project management."
       }
     },
     {
@@ -1736,7 +1738,7 @@ Start by discussing your property, requirements, approximate scope and intended 
       "name": "Do you offer turnkey interior design services in London?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Oraanj Interior Design offers high end interior design services in London. This includes concept design, space planning, interior architecture, technical drawings, procurement of furniture and materials, contractor coordination, and project management to deliver completed residential or commercial interiors from concept to installation."
+        "text": "Yes. Oraanj Interior Design offers a comprehensive turnkey interior design service in London. This includes concept design, space planning, interior architecture, technical drawings, procurement of furniture and materials, contractor coordination, and project management to deliver completed residential or commercial interiors from concept to installation."
       }
     },
     {
