@@ -515,8 +515,9 @@ get_header();
    ------------------------------------------------------------- */
 .orp-cta {
   position: relative !important;
-  background-color: #1A1816 !important;
-  color: #FFFFFF !important;
+  background-color: #FAF8F5 !important;
+  border-top: 1px solid #EAE6DE !important;
+  color: #1A1816 !important;
   padding: clamp(42px, 5.5vw, 68px) 20px !important;
   text-align: center !important;
   overflow: hidden !important;
@@ -547,7 +548,7 @@ get_header();
   font-size: clamp(26px, 3.8vw, 44px) !important;
   font-weight: 400 !important;
   line-height: 1.2 !important;
-  color: #FFFFFF !important;
+  color: #1A1816 !important;
   margin: 0 0 14px 0 !important;
   letter-spacing: 0.02em !important;
 }
@@ -556,7 +557,7 @@ get_header();
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-size: clamp(13.5px, 1.1vw, 15.5px) !important;
   line-height: 1.65 !important;
-  color: rgba(255, 255, 255, 0.78) !important;
+  color: #555555 !important;
   margin: 0 0 24px 0 !important;
   max-width: 620px !important;
 }
@@ -575,7 +576,7 @@ get_header();
   gap: 10px !important;
   background-color: #B94E1A !important;
   color: #FFFFFF !important;
-  border: 1px solid #B94E1A !important;
+  border: 1.5px solid #B94E1A !important;
   border-radius: 9999px !important;
   padding: 12px 28px !important;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
@@ -592,7 +593,7 @@ get_header();
   border-color: #963D13 !important;
   color: #FFFFFF !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 6px 20px rgba(185, 78, 26, 0.38) !important;
+  box-shadow: 0 6px 20px rgba(185, 78, 26, 0.28) !important;
 }
 
 .orp-cta-btn-outline {
@@ -600,8 +601,8 @@ get_header();
   align-items: center !important;
   gap: 10px !important;
   background: transparent !important;
-  color: #FFFFFF !important;
-  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  color: #1A1816 !important;
+  border: 1.5px solid #1A1816 !important;
   border-radius: 9999px !important;
   padding: 12px 28px !important;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
@@ -614,10 +615,11 @@ get_header();
 }
 
 .orp-cta-btn-outline:hover {
-  border-color: #FFFFFF !important;
-  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: #B94E1A !important;
+  background-color: #B94E1A !important;
   color: #FFFFFF !important;
   transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(185, 78, 26, 0.2) !important;
 }
 
 /* -------------------------------------------------------------
@@ -708,7 +710,7 @@ section.orp-cta.nitro-offscreen {
   <div class="orp-hero-overlay"></div>
   <div class="orp-hero-content">
     <span class="orp-hero-eyebrow">Curated Portfolio</span>
-    <h1 class="orp-hero-title">Architectural Interiors &amp; Tailored Luxury</h1>
+    <h1 class="orp-hero-title">Interior Design &amp; Build Portfolio &mdash; London Homes &amp; Commercial Spaces</h1>
     <a class="orp-hero-btn" href="#residential">
       <span>Explore Projects</span>
     </a>
@@ -1078,6 +1080,21 @@ section.orp-cta.nitro-offscreen {
         </a>
 
         <!-- 4. Westminster Dental Clinic (Hidden Initially) -->
+                <!-- Project Card: Westminster Boutique Hotel -->
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/westminster-boutique-hotel-interior-design/">
+          <div class="orp-card-media">
+            <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-hotel-bar-lounge-wide-interior.jpeg" alt="Westminster Boutique Hotel Interior Design" loading="lazy" />
+            <div class="orp-card-overlay">
+              <div class="orp-card-frame">
+                <span class="orp-card-view-text">View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="orp-card-info">
+            <h3 class="orp-card-title">Westminster Boutique Hotel</h3>
+            <span class="orp-card-location">Westminster, Central London</span>
+          </div>
+        </a>
         <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/westminster-dental-clinic/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-dental-clinic-operatory.jpeg" alt="Westminster Dental Clinic" loading="lazy" />
@@ -1141,7 +1158,7 @@ section.orp-cta.nitro-offscreen {
     <section id="restaurant" class="orp-category-section" data-category="restaurant">
       <div class="orp-category-header">
         <span class="orp-category-eyebrow">04 / Restaurant</span>
-        <h2 class="orp-category-title">Fine Dining &amp; Culinary Spaces</h2>
+        <h2 class="orp-category-title">Restaurants &amp; Caf&eacute;s</h2>
         <div class="orp-category-rule"></div>
       </div>
       <div class="orp-grid">
@@ -1273,7 +1290,7 @@ section.orp-cta.nitro-offscreen {
     <section id="office" class="orp-category-section" data-category="office">
       <div class="orp-category-header">
         <span class="orp-category-eyebrow">05 / Office &amp; Commercial</span>
-        <h2 class="orp-category-title">Executive Workplaces &amp; Headquarters</h2>
+        <h2 class="orp-category-title">Offices &amp; Workplaces</h2>
         <div class="orp-category-rule"></div>
       </div>
       <div class="orp-grid">
@@ -1469,6 +1486,107 @@ document.addEventListener('click', function(e) {
     }
   }
 });
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#webpage",
+      "url": "https://www.oraanj-interiors.co.uk/portfolio/",
+      "name": "Interior Design & Build Portfolio — London Homes & Commercial Spaces",
+      "isPartOf": {
+        "@id": "https://www.oraanj-interiors.co.uk/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.oraanj-interiors.co.uk/portfolio/#breadcrumb"
+      },
+      "about": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.oraanj-interiors.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://www.oraanj-interiors.co.uk/portfolio/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#itemlist",
+      "name": "Featured Interior Architecture & Design Projects",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Canary Wharf Penthouse Interior Design",
+          "url": "https://www.oraanj-interiors.co.uk/canary-wharf-penthouse-interior-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Richmond House Interior Design",
+          "url": "https://www.oraanj-interiors.co.uk/richmond-house-interior-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ruislip Luxury Design & Build Residence",
+          "url": "https://www.oraanj-interiors.co.uk/ruislip-luxury-design-build-residence/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Mayfair Cocktail Lounge & Bar",
+          "url": "https://www.oraanj-interiors.co.uk/mayfair-bar-lounge/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Dalston Contemporary Restaurant & Bar",
+          "url": "https://www.oraanj-interiors.co.uk/dalston-restaurant-interior-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "London Bridge Commercial Workplace",
+          "url": "https://www.oraanj-interiors.co.uk/london-bridge-office-interior-design/"
+        }
+      ]
+    },
+    {
+      "@type": ["InteriorDesigner", "ProfessionalService", "HomeAndConstructionBusiness"],
+      "@id": "https://www.oraanj-interiors.co.uk/#organization",
+      "name": "Oraanj Interiors",
+      "url": "https://www.oraanj-interiors.co.uk/",
+      "logo": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/logo.png",
+      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-sofa-interior.jpeg",
+      "telephone": "+44 7448 803051",
+      "email": "info@oraanj-interiors.co.uk",
+      "priceRange": "££££",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "GB"
+      }
+    }
+  ]
+}
 </script>
 
 <?php get_footer(); ?>

@@ -40,6 +40,27 @@ Canonical URL:    https://www.oraanj-interiors.co.uk/about/
 .oab-collab-media { flex: 0 0 calc(48% - 30px) !important; max-width: calc(48% - 30px) !important; width: 100% !important; }
 .oab-collab-img-frame { position: relative !important; width: 100% !important; height: 460px !important; border-radius: 8px !important; overflow: hidden !important; background-color: #ECE8E1 !important; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06) !important; }
 .oab-collab-img { width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important; }
+
+/* Meet Rachana Gupta Profile Image: Fully Contained & Uncropped */
+#meet-rachana .orc-media-frame {
+  width: 100% !important;
+  max-width: 480px !important;
+  margin: 0 auto !important;
+  height: auto !important;
+  aspect-ratio: 700 / 785 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: transparent !important;
+}
+#meet-rachana .orc-split-img {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+  display: block !important;
+}
+
 @media screen and (max-width: 991px) {
   .orc-hero-wrap .orc-container { display: flex !important; flex-direction: column !important; gap: 36px !important; }
   .orc-hero-content, .orc-hero-visual-col { flex: 0 0 100% !important; max-width: 100% !important; width: 100% !important; }
@@ -113,8 +134,10 @@ Canonical URL:    https://www.oraanj-interiors.co.uk/about/
   .orc-split, .orc-split-reverse { display: flex !important; flex-direction: column !important; gap: 28px !important; width: 100% !important; }
   .orc-split .orc-col-content, .orc-split-reverse .orc-col-content, .orc-split .orc-col-media, .orc-split-reverse .orc-col-media { flex: 0 0 100% !important; max-width: 100% !important; width: 100% !important; }
   .orc-media-frame { width: 100% !important; height: 250px !important; aspect-ratio: auto !important; }
-  #meet-rachana .orc-media-frame, .orc-split-reverse .orc-media-frame, .orc-media-frame-square { width: 100% !important; height: auto !important; aspect-ratio: 1 / 1 !important; border-radius: 8px !important; overflow: hidden !important; }
-  #meet-rachana .orc-split-img, .orc-split-reverse .orc-split-img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: top center !important; }
+  .orc-split-reverse .orc-media-frame, .orc-media-frame-square { width: 100% !important; height: auto !important; aspect-ratio: 1 / 1 !important; border-radius: 8px !important; overflow: hidden !important; }
+  #meet-rachana .orc-media-frame { width: 100% !important; max-width: 400px !important; height: auto !important; aspect-ratio: 700 / 785 !important; margin: 0 auto !important; }
+  .orc-split-reverse .orc-split-img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: top center !important; }
+  #meet-rachana .orc-split-img { width: 100% !important; height: 100% !important; aspect-ratio: auto !important; object-fit: contain !important; object-position: center top !important; }
   .oab-people-section { padding: 50px 18px !important; }
   .oab-people-header { margin-bottom: 28px !important; }
   .oab-people-title { font-size: clamp(26px, 6.5vw, 36px) !important; line-height: 1.2 !important; }
@@ -144,7 +167,8 @@ Canonical URL:    https://www.oraanj-interiors.co.uk/about/
   .orc-card, .orc-decision-card { padding: 20px 16px !important; }
   .orc-card-img-frame, .orc-timeline-img-frame, .oab-people-img-wrap { height: 190px !important; }
   .orc-media-frame { height: 220px !important; }
-  #meet-rachana .orc-media-frame, .orc-split-reverse .orc-media-frame, .orc-media-frame-square { height: auto !important; aspect-ratio: 1 / 1 !important; }
+  .orc-split-reverse .orc-media-frame, .orc-media-frame-square { height: auto !important; aspect-ratio: 1 / 1 !important; }
+  #meet-rachana .orc-media-frame { height: auto !important; aspect-ratio: 700 / 785 !important; max-width: 320px !important; }
   .oab-collab-img-frame { height: 220px !important; }
   .orc-hero-image-frame { height: 240px !important; }
 }
@@ -251,6 +275,7 @@ Canonical URL:    https://www.oraanj-interiors.co.uk/about/
         <p class="orc-body">From there, we develop the layout, materials, lighting, joinery, furniture and details around the individual project.</p>
         <p class="orc-body">Over the years, our work has grown from interior design into a wider studio offering interior architecture, technical design, renovation, procurement and project delivery.</p>
         <p class="orc-body">Today, Oraanj works across homes, workplaces and hospitality interiors, while keeping the same personal approach that shaped the studio from the beginning.</p>
+      <p class="orc-body">Learn more <a href="https://www.oraanj-interiors.co.uk/about/">about our studio</a>, discover our bespoke <a href="https://www.oraanj-interiors.co.uk/services/">interior design services</a>, and explore <a href="https://www.oraanj-interiors.co.uk/areas-we-cover/">areas we cover across London</a> and regional commissions in <a href="https://www.oraanj-interiors.co.uk/interior-designer-nottingham/">Nottingham</a>.</p>
       </div>
     </div>
   </div>
@@ -261,8 +286,8 @@ Canonical URL:    https://www.oraanj-interiors.co.uk/about/
   <div class="orc-container">
     <div class="orc-split orc-split-reverse">
       <div class="orc-col-media">
-        <div class="orc-media-frame orc-media-frame-square">
-          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2025/09/main_img.jpg" alt="Rachana Gupta, Founder and CEO of Oraanj Interiors, receiving industry award for excellence in interior design" loading="lazy" />
+        <div class="orc-media-frame" style="aspect-ratio: 700 / 785 !important; max-width: 480px !important; margin: 0 auto !important; background-color: transparent !important; border-radius: 8px !important; overflow: hidden !important;">
+          <img class="orc-split-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2025/09/main_img.jpg" style="width: 100% !important; height: 100% !important; object-fit: contain !important; object-position: center top !important; display: block !important;" alt="Rachana Gupta, Founder and CEO of Oraanj Interiors, receiving industry award for excellence in interior design" loading="lazy" />
         </div>
       </div>
 
@@ -312,6 +337,7 @@ Canonical URL:    https://www.oraanj-interiors.co.uk/about/
         <p class="orc-body">A period property may call for a completely different response from a contemporary apartment. A restaurant has different priorities from a family home. An office needs to work differently again.</p>
         <p class="orc-body">Our role is to understand those differences and create an interior that feels right for the property and the people using it.</p>
         <p class="orc-body">That means listening first, questioning where necessary and making design decisions for a reason rather than simply following what is fashionable.</p>
+      <p class="orc-body">We provide flexible packages from <a href="https://www.oraanj-interiors.co.uk/design-only/">design-only support</a> to full turnkey delivery. As leading <a href="https://www.oraanj-interiors.co.uk/interior-designers-london/">interior designers in London</a>, we invite you to <a href="https://www.oraanj-interiors.co.uk/contact/">contact our team</a> or read our <a href="https://www.oraanj-interiors.co.uk/interior-design-blog-london/">interior design blog London</a>.</p>
 
         <div class="orc-points-grid orc-mt-20">
           <div class="orc-point-item">

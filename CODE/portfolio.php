@@ -708,7 +708,7 @@ section.orp-cta.nitro-offscreen {
   <div class="orp-hero-overlay"></div>
   <div class="orp-hero-content">
     <span class="orp-hero-eyebrow">Curated Portfolio</span>
-    <h1 class="orp-hero-title">Architectural Interiors &amp; Tailored Luxury</h1>
+    <h1 class="orp-hero-title">Interior Design &amp; Build Portfolio &mdash; London Homes &amp; Commercial Spaces</h1>
     <a class="orp-hero-btn" href="#residential">
       <span>Explore Projects</span>
     </a>
@@ -1141,7 +1141,7 @@ section.orp-cta.nitro-offscreen {
     <section id="restaurant" class="orp-category-section" data-category="restaurant">
       <div class="orp-category-header">
         <span class="orp-category-eyebrow">04 / Restaurant</span>
-        <h2 class="orp-category-title">Fine Dining &amp; Culinary Spaces</h2>
+        <h2 class="orp-category-title">Restaurants &amp; Caf&eacute;s</h2>
         <div class="orp-category-rule"></div>
       </div>
       <div class="orp-grid">
@@ -1273,7 +1273,7 @@ section.orp-cta.nitro-offscreen {
     <section id="office" class="orp-category-section" data-category="office">
       <div class="orp-category-header">
         <span class="orp-category-eyebrow">05 / Office &amp; Commercial</span>
-        <h2 class="orp-category-title">Executive Workplaces &amp; Headquarters</h2>
+        <h2 class="orp-category-title">Offices &amp; Workplaces</h2>
         <div class="orp-category-rule"></div>
       </div>
       <div class="orp-grid">
@@ -1474,6 +1474,107 @@ document.addEventListener('click', function(e) {
     }
   }
 });
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#webpage",
+      "url": "https://www.oraanj-interiors.co.uk/portfolio/",
+      "name": "Interior Design & Build Portfolio — London Homes & Commercial Spaces",
+      "isPartOf": {
+        "@id": "https://www.oraanj-interiors.co.uk/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.oraanj-interiors.co.uk/portfolio/#breadcrumb"
+      },
+      "about": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.oraanj-interiors.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://www.oraanj-interiors.co.uk/portfolio/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#itemlist",
+      "name": "Featured Interior Architecture & Design Projects",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Canary Wharf Penthouse Interior Design",
+          "url": "https://www.oraanj-interiors.co.uk/canary-wharf-penthouse-interior-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Richmond House Interior Design",
+          "url": "https://www.oraanj-interiors.co.uk/richmond-house-interior-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ruislip Luxury Design & Build Residence",
+          "url": "https://www.oraanj-interiors.co.uk/ruislip-luxury-design-build-residence/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Mayfair Cocktail Lounge & Bar",
+          "url": "https://www.oraanj-interiors.co.uk/mayfair-bar-lounge/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Dalston Contemporary Restaurant & Bar",
+          "url": "https://www.oraanj-interiors.co.uk/dalston-restaurant-interior-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "London Bridge Commercial Workplace",
+          "url": "https://www.oraanj-interiors.co.uk/london-bridge-office-interior-design/"
+        }
+      ]
+    },
+    {
+      "@type": ["InteriorDesigner", "ProfessionalService", "HomeAndConstructionBusiness"],
+      "@id": "https://www.oraanj-interiors.co.uk/#organization",
+      "name": "Oraanj Interiors",
+      "url": "https://www.oraanj-interiors.co.uk/",
+      "logo": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/logo.png",
+      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-sofa-interior.jpeg",
+      "telephone": "+44 7448 803051",
+      "email": "info@oraanj-interiors.co.uk",
+      "priceRange": "££££",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "GB"
+      }
+    }
+  ]
+}
 </script>
 
 <?php get_footer(); ?>
