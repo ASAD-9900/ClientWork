@@ -9,7 +9,7 @@ module.exports = [
     "heroLead": "Bespoke Interior Architecture, Space Planning, and Complete Turnkey Refurbishment for 1930s Mock-Tudor Residences, Detached Family Homes, and Manor Farm Enclaves.",
     "heroBody1": "Ruislip offers a distinctive village character bordered by ancient woodlands, the Lido, and historic Manor Farm heritage sites. Its architectural fabric is characterized by picturesque 1930s mock-Tudor semi-detached and detached residences, wide tree-lined avenues, and generous private gardens.",
     "heroBody2": "Oraanj delivers tranquil, timeless interior design throughout Ruislip. We respect the charming external half-timbered gables and leaded windows while modernizing compartmentalised interiors, opening up rear ground floors to create flowing open-plan kitchen-living hubs, bespoke media walls, and serene family sanctuaries.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-media-wall.jpeg",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/ruislip-luxury-living-room-sectional-sofa-marble-coffee-table-interior-design.webp",
     "heroAlt": "Ruislip bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Ruislip Housing Typologies & Family Solutions",
     "typologySubtitle": "Balancing Mock-Tudor Heritage, Generous Footprints, and Modern Living Flow",
@@ -40,7 +40,7 @@ module.exports = [
         "desc": "Creating calm parental retreats with walk-in rainfall showers, freestanding bathtubs, and dual vanity units."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-elegant-hallway-foyer-interior.jpeg",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/ruislip-luxury-double-height-entrance-hall-staircase-interior-design.webp",
     "typologyImgAlt": "Ruislip property architectural space planning and kitchen layout",
     "servicesTitle": "Our Interior Design Services in Ruislip",
     "servicesSubtitle": "Design Only or Full Turnkey Delivery in Hillingdon",
@@ -65,7 +65,7 @@ module.exports = [
         "desc": "Layered schemes from our <a href=\"https://www.oraanj-interiors.co.uk/lighting-design/\">Lighting design London</a> team that enhance daily living."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-dressing-room-vanity.jpeg",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/ruislip-luxury-kitchen-marble-island-pendant-lighting-interior-design.webp",
     "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Ruislip",
     "guidanceTitle": "Planning Permissions & Building Regulations in Hillingdon",
     "guidanceSubtitle": "Navigating Permitted Development for Ruislip Homeowners",
@@ -77,7 +77,7 @@ module.exports = [
       "Structural steel calculations for open-plan wall removals",
       "Thames Water sewer build-over approvals and Party Wall notices"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-bedroom-built-in-wardrobe.jpeg",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/ruislip-luxury-bathroom-freestanding-bathtub-window-interior-design.webp",
     "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Ruislip",
     "faqs": [
       {
@@ -613,7 +613,7 @@ module.exports = [
     "heroLead": "Bespoke Interior Architecture, Space Planning, and Complete Turnkey Refurbishment for Substantial Gated Mansions, Detached Properties, and Multi-Generational Family Homes in Stanmore Hill and Aylmer Drive.",
     "heroBody1": "Stanmore is one of North West London’s most prestigious residential enclaves, celebrated for grand detached gated residences, rolling green hills, and exceptional connectivity. Homeowners in Stanmore command expansive floorplans, large private plots, and require tailored designs that balance grand formal entertaining with multi-generational family comfort.",
     "heroBody2": "Oraanj delivers tranquil, timeless luxury interior architecture throughout Stanmore. We specialize in expansive living layouts, dedicated walk-in pantry and prep kitchen, architectural spatial planning space planning, private prayer sanctuaries, and bespoke joinery that embodies enduring quality and contemporary refinement.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/elegant-living-room-travertine-coffee-table.webp",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/totteridge-clinic-interior-design-reception-desk.webp",
     "heroAlt": "Stanmore bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Stanmore Architectural Typologies & Family Solutions",
     "typologySubtitle": "Designing for Gated Estates, Generous Acreage, and Multi-Generational Living",
@@ -644,7 +644,7 @@ module.exports = [
         "desc": "Creating private master wings with bespoke walk-in wardrobes, velvet-lined jewellery drawers, freestanding soaking tubs, and bookmatched marble finishes."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/marble-countertop-walnut-cabinet-detail.webp",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/totteridge-clinic-interior-design-waiting-area-seating.webp",
     "typologyImgAlt": "Stanmore property architectural space planning and kitchen layout",
     "servicesTitle": "Our Interior Design Services Across Stanmore",
     "servicesSubtitle": "Design Only or Full Turnkey Refurbishment in Harrow",
@@ -669,7 +669,7 @@ module.exports = [
         "desc": "Layered <a href=\"https://www.oraanj-interiors.co.uk/lighting-design/\">Lighting design London</a> that combines ambient cove lighting, directional task lights, and feature pendants."
       }
     ],
-    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/travertine-coffee-table-living-room-detail.webp",
+    "servicesImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/totteridge-clinic-interior-design-dental-treatment-room-by-oraanj.webp",
     "servicesImgAlt": "Bespoke joinery, dressing room and interior design in Stanmore",
     "guidanceTitle": "Planning Permissions & Conservation in Stanmore",
     "guidanceSubtitle": "Navigating Harrow Council Approvals Around Stanmore Hill",
@@ -681,7 +681,7 @@ module.exports = [
       "Structural steel calculations and Building Control sign-offs",
       "Tree Preservation Order (TPO) coordination on leafy private estates"
     ],
-    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/brass-wall-sconce-floral-decor.webp",
+    "guidanceImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/totteridge-clinic-interior-design-terrazzo-sink-brass-tap-closeup.webp",
     "guidanceImgAlt": "Architectural renovation and bathroom interior detailing in Stanmore",
     "faqs": [
       {
@@ -815,7 +815,7 @@ module.exports = [
     "heroLead": "Contemporary Interior Architecture, Turnkey Fit-Outs, and Period Renovations for Modern Waterfront Apartments and Victorian Homes in Stratford, Royal Docks, and Forest Gate.",
     "heroBody1": "The London Borough of Newham is at the forefront of East London’s urban regeneration, home to Queen Elizabeth Olympic Park, Westfield Stratford City, and the expanding Royal Docks waterfront. Bringing together sleek contemporary apartment towers and charming Victorian terraced streets, Newham attracts young professionals, families, and investors.",
     "heroBody2": "Oraanj delivers innovative interior design across Newham. We specialize in space-efficient contemporary apartment layouts, turnkey furnishing for buy-to-let investments, and full architectural renovations for Victorian terraced properties, maximizing natural light, storage, and long-term property value.",
-    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-media-wall.jpeg",
+    "heroImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/mayfair-bar-backlit-bar-interior.webp",
     "heroAlt": "Newham bespoke residential interior architecture by Oraanj",
     "typologyTitle": "Newham Property Typologies & Modern Solutions",
     "typologySubtitle": "Designing for Waterfront High-Rises, Urban Lofts, and Victorian Terraces",
@@ -1450,7 +1450,7 @@ module.exports = [
         "desc": "Designing prestigious <a href=\"https://www.oraanj-interiors.co.uk/office-interior-design-london/\">Office interior designer</a> suites, private family offices, and boardrooms in Prime Central London."
       }
     ],
-    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-bedroom-built-in-wardrobe.jpeg",
+    "typologyImg": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/mayfair-bar-marble-counter-burgundy-stools.webp",
     "typologyImgAlt": "Mayfair master bedroom suite with bespoke built-in wardrobes and neutral panelling",
     "servicesTitle": "Our Super-Prime Interior Design Services in Mayfair",
     "servicesSubtitle": "Design Only or Full Turnkey Refurbishment Across Mayfair",
