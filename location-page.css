@@ -1,0 +1,394 @@
+/* ==========================================================================
+   ORAANJ INTERIOR DESIGN & BUILD - LONDON
+   LOCATION LANDING PAGES STYLESHEET (location-page.css)
+   Palette:
+     - Pure White: #FFFFFF
+     - Warm Cream Tint: #FAF8F5
+     - Dark Charcoal Text: #1A1816
+     - Warm Neutral Body: #5E5953
+     - Rust / Ochre Accent: #B94E1A / #b89047
+     - Delicate Border: #ECE8E1
+   ========================================================================== */
+
+/* Universal Box Sizing */
+.orc-location-page,
+.orc-location-page *,
+.orc-hero-wrap,
+.orc-hero-wrap *,
+.orc-section,
+.orc-section * {
+  box-sizing: border-box !important;
+}
+
+/* Sections & Containers */
+.orc-hero-wrap {
+  width: 100% !important;
+  background-color: #FFFFFF !important;
+  padding: 55px 24px !important;
+  border-bottom: 1px solid #ECE8E1 !important;
+}
+
+.orc-section {
+  width: 100% !important;
+  padding: 55px 24px !important;
+  position: relative !important;
+}
+
+.orc-bg-white {
+  background-color: #FFFFFF !important;
+}
+
+.orc-bg-tint {
+  background-color: #FAF8F5 !important;
+}
+
+.orc-border-top {
+  border-top: 1px solid #ECE8E1 !important;
+}
+
+.orc-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 16px !important;
+  position: relative !important;
+}
+
+/* Hero Content Grid */
+.orc-hero-grid {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 50px !important;
+}
+
+.orc-hero-content {
+  flex: 0 0 calc(55% - 25px) !important;
+  max-width: calc(55% - 25px) !important;
+}
+
+.orc-hero-visual-col {
+  flex: 0 0 calc(45% - 25px) !important;
+  max-width: calc(45% - 25px) !important;
+}
+
+.orc-hero-image-frame,
+.orc-media-frame,
+.orc-media-frame-sq {
+  width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 4px !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06) !important;
+  background-color: #FAF8F5 !important;
+}
+
+.orc-hero-img,
+.orc-split-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  transition: transform 0.4s ease !important;
+}
+
+.orc-split-img:hover {
+  transform: scale(1.02) !important;
+}
+
+/* Alternating Zig-Zag Split Layout */
+.orc-split {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 55px !important;
+}
+
+/* Reverse Split: Content LEFT, Media RIGHT */
+.orc-split-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.orc-col-media {
+  flex: 0 0 calc(45% - 28px) !important;
+  max-width: calc(45% - 28px) !important;
+}
+
+.orc-col-content {
+  flex: 0 0 calc(55% - 28px) !important;
+  max-width: calc(55% - 28px) !important;
+}
+
+/* Typography & Headings */
+.orc-eyebrow-wrap {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 8px !important;
+}
+
+.orc-eyebrow {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #B94E1A !important;
+}
+
+.orc-rule {
+  width: 40px !important;
+  height: 2px !important;
+  background-color: #b89047 !important;
+  margin-bottom: 14px !important;
+}
+
+.orc-hero-heading {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(28px, 2.8vw, 42px) !important;
+  font-weight: 500 !important;
+  line-height: 1.25 !important;
+  color: #1A1816 !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.orc-hero-lead {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  color: #1A1816 !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.orc-hero-body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 400 !important;
+  line-height: 1.68 !important;
+  color: #5E5953 !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.orc-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(24px, 2.3vw, 34px) !important;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+  color: #1A1816 !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.orc-subtitle {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #b89047 !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.orc-body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 400 !important;
+  line-height: 1.68 !important;
+  color: #5E5953 !important;
+  margin: 0 0 14px 0 !important;
+}
+
+/* Call to Action Buttons */
+.orc-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 12px 26px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  border-radius: 2px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+}
+
+.orc-btn-primary {
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+  border: 1px solid #B94E1A !important;
+}
+
+.orc-btn-primary:hover {
+  background-color: #9c3f13 !important;
+  border-color: #9c3f13 !important;
+}
+
+.orc-btn-outline {
+  background-color: transparent !important;
+  color: #B94E1A !important;
+  border: 1px solid #B94E1A !important;
+}
+
+.orc-btn-outline:hover {
+  background-color: #B94E1A !important;
+  color: #FFFFFF !important;
+}
+
+.orc-btn-arrow {
+  display: inline-block !important;
+  transition: transform 0.25s ease !important;
+}
+
+.orc-btn:hover .orc-btn-arrow {
+  transform: translateX(4px) !important;
+}
+
+/* Trust Bar & Feature Tags */
+.orc-hero-trust-bar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 18px !important;
+  margin-top: 28px !important;
+  padding-top: 20px !important;
+  border-top: 1px solid #ECE8E1 !important;
+  font-size: 12px !important;
+  color: #5E5953 !important;
+}
+
+.orc-trust-item,
+.orc-feature-tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: #FAF8F5 !important;
+  border: 1px solid #ECE8E1 !important;
+  padding: 8px 14px !important;
+  border-radius: 3px !important;
+  font-size: 12px !important;
+  color: #1A1816 !important;
+  font-weight: 500 !important;
+}
+
+/* Split Card Grid (2 Columns) */
+.orc-split-grid-2 {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px !important;
+  margin-top: 20px !important;
+}
+
+.orc-split-card {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-radius: 4px !important;
+  padding: 16px 18px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02) !important;
+}
+
+.orc-split-card-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.orc-split-card-num {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #B94E1A !important;
+  letter-spacing: 0.1em !important;
+}
+
+.orc-split-card-tag {
+  font-size: 10.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #777777 !important;
+}
+
+.orc-split-card-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 15.5px !important;
+  font-weight: 600 !important;
+  color: #1A1816 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.orc-split-card-desc {
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  color: #5E5953 !important;
+  margin: 0 !important;
+}
+
+/* Testimonial Quote Box */
+.orc-testimonial-box {
+  background: #FFFFFF !important;
+  border: 1px solid #ECE8E1 !important;
+  border-left: 4px solid #B94E1A !important;
+  padding: 20px 22px !important;
+  margin: 22px 0 !important;
+  border-radius: 4px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02) !important;
+}
+
+.orc-testimonial-quote {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 15.5px !important;
+  font-style: italic !important;
+  line-height: 1.6 !important;
+  color: #1A1816 !important;
+  margin: 0 0 10px 0 !important;
+}
+
+.orc-testimonial-author {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #777777 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+/* Spacing Utilities */
+.orc-mt-16 { margin-top: 16px !important; }
+.orc-mt-20 { margin-top: 20px !important; }
+.orc-mt-24 { margin-top: 24px !important; }
+
+/* Responsive Media Queries */
+@media (max-width: 900px) {
+  .orc-hero-grid,
+  .orc-split,
+  .orc-split-reverse {
+    flex-direction: column !important;
+    gap: 36px !important;
+  }
+  .orc-hero-content,
+  .orc-hero-visual-col,
+  .orc-col-media,
+  .orc-col-content {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .orc-split-grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .orc-section,
+  .orc-hero-wrap {
+    padding: 40px 16px !important;
+  }
+  .orc-hero-heading {
+    font-size: 26px !important;
+  }
+  .orc-title {
+    font-size: 22px !important;
+  }
+}

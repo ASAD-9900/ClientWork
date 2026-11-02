@@ -879,7 +879,7 @@ section.orp-cta.nitro-offscreen {
         </a>
 
         <!-- 8. Wimbledon Townhouse Residence (Hidden Initially) -->
-        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/mayfair-townhouse-residence/">
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/wimbledon-residence-interior-design/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-sofa-interior.jpeg" alt="Wimbledon Townhouse Residence" loading="lazy" />
             <div class="orp-card-overlay">
@@ -1194,7 +1194,7 @@ section.orp-cta.nitro-offscreen {
         </a>
 
         <!-- 4. Kingston Riverside Restaurant & Bar (Hidden Initially) -->
-        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/kingston-restaurant-interior-design/">
+        <a class="orp-card orp-card-hidden" href="https://www.oraanj-interiors.co.uk/kingston-upon-thames-restaurant-interior-design/">
           <div class="orp-card-media">
             <img class="orp-card-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/kingston-upon-thames-london-riverside-restaurant-bar-stools-square.webp" alt="Kingston Restaurant Interior Design" loading="lazy" />
             <div class="orp-card-overlay">
@@ -1389,12 +1389,7 @@ section.orp-cta.nitro-offscreen {
 </main>
 
 <!-- 3. CALL TO ACTION BANNER -->
-  <!-- Portfolio Overview Cross-Links -->
-  <div class="orp-container" style="padding: 30px 20px; text-align: center;">
-    <p class="orc-body" style="margin: 0 auto; max-width: 820px; font-size: 13.5px; color: #5E5953; line-height: 1.6;">
-      Explore our award-winning <a href="https://www.oraanj-interiors.co.uk/residential-interior-design-london/">residential interior design projects</a> and bespoke <a href="https://www.oraanj-interiors.co.uk/commercial-interior-design/">commercial interior design projects</a> across London, including our celebrated <a href="https://www.oraanj-interiors.co.uk/hampstead-apartment-interior-design/">Hampstead apartment project</a> and the distinguished <a href="https://www.oraanj-interiors.co.uk/wimbledon-residence-interior-design/">Wimbledon residence project</a>.
-    </p>
-  </div>
+
 
 <section id="consultation" class="orp-cta">
   <div class="orp-container">
