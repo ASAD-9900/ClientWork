@@ -1,5 +1,99 @@
-<?php
+﻿<?php
 /* Template Name: Portfolio */
+
+// Output page-specific JSON-LD schema in <head> via wp_head hook
+add_action( 'wp_head', 'oraanj_portfolio_schema' );
+function oraanj_portfolio_schema() {
+?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#webpage",
+      "url": "https://www.oraanj-interiors.co.uk/portfolio/",
+      "name": "Interior Design \u0026 Build Portfolio \u2014 London Homes \u0026 Commercial Spaces",
+      "isPartOf": {
+        "@id": "https://www.oraanj-interiors.co.uk/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.oraanj-interiors.co.uk/portfolio/#breadcrumb"
+      },
+      "about": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://www.oraanj-interiors.co.uk/portfolio/#itemlist"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.oraanj-interiors.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://www.oraanj-interiors.co.uk/portfolio/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#itemlist",
+      "name": "Featured Interior Architecture \u0026 Design Projects",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Canary Wharf Penthouse Interior Design",
+          "url": "https://www.oraanj-interiors.co.uk/canary-wharf-penthouse-interior-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Richmond House Interior Design",
+          "url": "https://www.oraanj-interiors.co.uk/richmond-house-interior-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ruislip Luxury Design \u0026 Build Residence",
+          "url": "https://www.oraanj-interiors.co.uk/ruislip-luxury-design-build-residence/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Mayfair Cocktail Lounge \u0026 Bar",
+          "url": "https://www.oraanj-interiors.co.uk/mayfair-bar-lounge/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Dalston Contemporary Restaurant \u0026 Bar",
+          "url": "https://www.oraanj-interiors.co.uk/dalston-restaurant-interior-design/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "London Bridge Commercial Workplace",
+          "url": "https://www.oraanj-interiors.co.uk/london-bridge-office-interior-design/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<?php
+}
+
 get_header();
 ?>
 <style>
@@ -1486,94 +1580,6 @@ document.addEventListener('click', function(e) {
     }
   }
 });
-</script>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "CollectionPage",
-      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#webpage",
-      "url": "https://www.oraanj-interiors.co.uk/portfolio/",
-      "name": "Interior Design & Build Portfolio — London Homes & Commercial Spaces",
-      "isPartOf": {
-        "@id": "https://www.oraanj-interiors.co.uk/#website"
-      },
-      "breadcrumb": {
-        "@id": "https://www.oraanj-interiors.co.uk/portfolio/#breadcrumb"
-      },
-      "about": {
-        "@id": "https://www.oraanj-interiors.co.uk/#organization"
-      },
-      "mainEntity": {
-        "@id": "https://www.oraanj-interiors.co.uk/portfolio/#itemlist"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.oraanj-interiors.co.uk/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Portfolio",
-          "item": "https://www.oraanj-interiors.co.uk/portfolio/"
-        }
-      ]
-    },
-    {
-      "@type": "ItemList",
-      "@id": "https://www.oraanj-interiors.co.uk/portfolio/#itemlist",
-      "name": "Featured Interior Architecture & Design Projects",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Canary Wharf Penthouse Interior Design",
-          "url": "https://www.oraanj-interiors.co.uk/canary-wharf-penthouse-interior-design/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Richmond House Interior Design",
-          "url": "https://www.oraanj-interiors.co.uk/richmond-house-interior-design/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Ruislip Luxury Design & Build Residence",
-          "url": "https://www.oraanj-interiors.co.uk/ruislip-luxury-design-build-residence/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Mayfair Cocktail Lounge & Bar",
-          "url": "https://www.oraanj-interiors.co.uk/mayfair-bar-lounge/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Dalston Contemporary Restaurant & Bar",
-          "url": "https://www.oraanj-interiors.co.uk/dalston-restaurant-interior-design/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "name": "London Bridge Commercial Workplace",
-          "url": "https://www.oraanj-interiors.co.uk/london-bridge-office-interior-design/"
-        }
-      ]
-    }
-  ]
-}
 </script>
 
 <?php get_footer(); ?>
