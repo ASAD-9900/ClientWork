@@ -491,9 +491,6 @@ Send us the complete floor plan before purchasing individual room packages. We c
       },
       "breadcrumb": {
         "@id": "https://www.oraanj-interiors.co.uk/interior-design-packages/#breadcrumb"
-      },
-      "about": {
-        "@id": "https://www.oraanj-interiors.co.uk/interior-design-packages/#service"
       }
     },
     {
@@ -522,24 +519,7 @@ Send us the complete floor plan before purchasing individual room packages. We c
       "description": "Transparent, fixed-fee interior design packages tailored for London homeowners and investors, covering concept design, 3D CGI visuals, technical drawings, and turnkey procurement.",
       "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/ruislip-luxury-living-room-fireplace-interior-design.webp",
       "provider": {
-        "@type": [
-          "InteriorDesigner",
-          "ProfessionalService",
-          "HomeAndConstructionBusiness"
-        ],
-        "@id": "https://www.oraanj-interiors.co.uk/#organization",
-        "name": "Oraanj Interiors",
-        "url": "https://www.oraanj-interiors.co.uk/",
-        "logo": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/logo.png",
-        "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-sofa-interior.jpeg",
-        "telephone": "+44 7448 803051",
-        "email": "info@oraanj-interiors.co.uk",
-        "priceRange": "££££",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "London",
-          "addressCountry": "GB"
-        }
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
       },
       "areaServed": [
         {
@@ -569,27 +549,60 @@ Send us the complete floor plan before purchasing individual room packages. We c
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Fixed-Fee Packages",
+        "name": "Fixed-Fee Interior Design Packages",
         "itemListElement": [
           {
             "@type": "Offer",
+            "name": "One Design Package",
+            "description": "One final 3D design concept, basic furniture layout, one round of revisions, and overall visual direction per room or functional zone.",
+            "price": "600",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "600",
+              "priceCurrency": "GBP",
+              "unitText": "room/functional zone"
+            },
             "itemOffered": {
               "@type": "Service",
-              "name": "Concept & Spatial Planning Package"
+              "name": "One Design Package",
+              "serviceType": "Interior Design Concept Package"
             }
           },
           {
             "@type": "Offer",
+            "name": "Unlimited Design Package",
+            "description": "3D visualisation, unlimited design revisions within the agreed brief, refined furniture layout, furniture and styling guidance, and colour, material, and finish direction per room or functional zone.",
+            "price": "900",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "900",
+              "priceCurrency": "GBP",
+              "unitText": "room/functional zone"
+            },
             "itemOffered": {
               "@type": "Service",
-              "name": "3D CGI Visualisation & Technical Spec Package"
+              "name": "Unlimited Design Package",
+              "serviceType": "Comprehensive Interior Design Package"
             }
           },
           {
             "@type": "Offer",
+            "name": "Design & Technical Package",
+            "description": "3D design, detailed space planning, wall elevations, lighting and electrical layouts, bespoke joinery design, and technical interior documentation per room or functional zone.",
+            "price": "1500",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "1500",
+              "priceCurrency": "GBP",
+              "unitText": "room/functional zone"
+            },
             "itemOffered": {
               "@type": "Service",
-              "name": "Turnkey Design, Build & Procurement Package"
+              "name": "Design & Technical Package",
+              "serviceType": "Interior Design & Technical Drawing Package"
             }
           }
         ]

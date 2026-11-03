@@ -424,32 +424,46 @@ Yes, where the scope allows. An overall design direction helps the phases connec
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.oraanj-interiors.co.uk/mayfair/",
+      "@id": "https://www.oraanj-interiors.co.uk/mayfair/#webpage",
       "url": "https://www.oraanj-interiors.co.uk/mayfair/",
       "name": "Interior Designers in Mayfair – Personal Homes and Distinctive Commercial Spaces",
       "description": "Interior design, space planning and refurbishment support for residences, offices and hospitality premises in Mayfair.",
+      "inLanguage": "en-GB",
       "isPartOf": {
-        "@type": "WebSite",
-        "@id": "https://www.oraanj-interiors.co.uk/#website",
-        "url": "https://www.oraanj-interiors.co.uk/",
-        "name": "Oraanj Interior Design"
+        "@id": "https://www.oraanj-interiors.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://www.oraanj-interiors.co.uk/#mayfair-office"
       }
     },
     {
-      "@type": "LocalBusiness",
-      "@id": "https://www.oraanj-interiors.co.uk/mayfair/#localbusiness",
-      "name": "Oraanj Interior Design - Mayfair",
+      "@type": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
+      "@id": "https://www.oraanj-interiors.co.uk/#mayfair-office",
+      "name": "Oraanj Interior Design Mayfair Studio (By Appointment)",
       "url": "https://www.oraanj-interiors.co.uk/mayfair/",
-      "telephone": "07448 803051",
-      "priceRange": "££££",
-      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/mayfair-bar-backlit-bar-interior.webp",
+      "telephone": "+44 7448 803051",
+      "email": "info@oraanj-interiors.co.uk",
+      "priceRange": "£££",
+      "parentOrganization": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
+      },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "23 Berkeley Square, London W1J 6EJ",
+        "streetAddress": "23 Berkeley Square",
         "addressLocality": "Mayfair",
-        "addressRegion": "Greater London",
+        "addressRegion": "London",
+        "postalCode": "W1J 6HE",
         "addressCountry": "GB"
-      }
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.5099,
+        "longitude": -0.1462
+      },
+      "hasMap": "https://g.page/r/CcFsh73zpGpfEBM"
     },
     {
       "@type": "FAQPage",

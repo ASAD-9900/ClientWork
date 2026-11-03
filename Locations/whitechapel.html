@@ -423,32 +423,33 @@ Yes, where the scope allows. An overall design direction helps the phases connec
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.oraanj-interiors.co.uk/whitechapel/",
+      "@id": "https://www.oraanj-interiors.co.uk/whitechapel/#webpage",
       "url": "https://www.oraanj-interiors.co.uk/whitechapel/",
       "name": "Interior Designers in Whitechapel – Comfortable Homes and Flexible Workplaces",
       "description": "Interior design, space planning and refurbishment support for apartments, offices and commercial premises across Whitechapel, Aldgate and the surrounding East London area.",
+      "inLanguage": "en-GB",
       "isPartOf": {
-        "@type": "WebSite",
-        "@id": "https://www.oraanj-interiors.co.uk/#website",
-        "url": "https://www.oraanj-interiors.co.uk/",
-        "name": "Oraanj Interior Design"
+        "@id": "https://www.oraanj-interiors.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
       }
     },
     {
-      "@type": "LocalBusiness",
-      "@id": "https://www.oraanj-interiors.co.uk/whitechapel/#localbusiness",
-      "name": "Oraanj Interior Design - Whitechapel",
+      "@type": "Service",
+      "@id": "https://www.oraanj-interiors.co.uk/whitechapel/#service",
+      "name": "Interior Design & Build in Whitechapel",
+      "serviceType": "Interior Design & Build",
+      "description": "Interior design, space planning and refurbishment support for apartments, offices and commercial premises across Whitechapel, Aldgate and the surrounding East London area.",
       "url": "https://www.oraanj-interiors.co.uk/whitechapel/",
-      "telephone": "07883 306211",
-      "priceRange": "££££",
-      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/whitechapel-east-london-office-reception-oraanj-interiors.webp",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "17 Stable Walk, London E1 8ZG",
-        "addressLocality": "Whitechapel",
-        "addressRegion": "Greater London",
-        "addressCountry": "GB"
-      }
+      "provider": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Whitechapel, London"
+      },
+      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/whitechapel-east-london-office-reception-oraanj-interiors.webp"
     },
     {
       "@type": "FAQPage",

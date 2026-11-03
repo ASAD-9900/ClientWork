@@ -408,32 +408,33 @@ Yes. Pieces you want to keep can form the starting point for the scheme. We asse
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.oraanj-interiors.co.uk/barbican/",
+      "@id": "https://www.oraanj-interiors.co.uk/barbican/#webpage",
       "url": "https://www.oraanj-interiors.co.uk/barbican/",
       "name": "Interior Design & Build in Barbican",
       "description": "Thoughtful refurbishment for modernist homes and commercial spaces in the City of London.",
+      "inLanguage": "en-GB",
       "isPartOf": {
-        "@type": "WebSite",
-        "@id": "https://www.oraanj-interiors.co.uk/#website",
-        "url": "https://www.oraanj-interiors.co.uk/",
-        "name": "Oraanj Interior Design"
+        "@id": "https://www.oraanj-interiors.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
       }
     },
     {
-      "@type": "LocalBusiness",
-      "@id": "https://www.oraanj-interiors.co.uk/barbican/#localbusiness",
-      "name": "Oraanj Interior Design - Barbican",
+      "@type": "Service",
+      "@id": "https://www.oraanj-interiors.co.uk/barbican/#service",
+      "name": "Interior Design & Build in Barbican",
+      "serviceType": "Interior Design & Build",
+      "description": "Thoughtful refurbishment for modernist homes and commercial spaces in the City of London.",
       "url": "https://www.oraanj-interiors.co.uk/barbican/",
-      "telephone": "07700 141101",
-      "priceRange": "££££",
-      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/barbican-london-open-plan-living-dining-interior.webp",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Aldersgate Street, Glasshouse Yard, London EC1A 4JN",
-        "addressLocality": "Barbican",
-        "addressRegion": "Greater London",
-        "addressCountry": "GB"
-      }
+      "provider": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Barbican, London"
+      },
+      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/barbican-london-open-plan-living-dining-interior.webp"
     },
     {
       "@type": "FAQPage",

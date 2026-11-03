@@ -387,32 +387,46 @@ The programme depends on the scope, decisions required and information available
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.oraanj-interiors.co.uk/harrow/",
+      "@id": "https://www.oraanj-interiors.co.uk/harrow/#webpage",
       "url": "https://www.oraanj-interiors.co.uk/harrow/",
       "name": "Interior Designers in Harrow – Homes and Business Interiors With Purpose",
       "description": "Interior design, space planning and refurbishment support across Harrow, Harrow-on-the-Hill, North Harrow, West Harrow and Pinner.",
+      "inLanguage": "en-GB",
       "isPartOf": {
-        "@type": "WebSite",
-        "@id": "https://www.oraanj-interiors.co.uk/#website",
-        "url": "https://www.oraanj-interiors.co.uk/",
-        "name": "Oraanj Interior Design"
+        "@id": "https://www.oraanj-interiors.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://www.oraanj-interiors.co.uk/#harrow-office"
       }
     },
     {
-      "@type": "LocalBusiness",
-      "@id": "https://www.oraanj-interiors.co.uk/harrow/#localbusiness",
-      "name": "Oraanj Interior Design - Harrow",
+      "@type": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
+      "@id": "https://www.oraanj-interiors.co.uk/#harrow-office",
+      "name": "Oraanj Interior Design Harrow Head Office",
       "url": "https://www.oraanj-interiors.co.uk/harrow/",
-      "telephone": "07448 803051",
-      "priceRange": "££££",
-      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/northwood-london-modern-detached-house-living-room-interior.webp",
+      "telephone": "+44 7448 803051",
+      "email": "info@oraanj-interiors.co.uk",
+      "priceRange": "£££",
+      "parentOrganization": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
+      },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "2nd Floor, Hygeia House, 66 College Road, Harrow HA1 1BE",
+        "streetAddress": "2nd Floor, Hygeia House, 66 College Road",
         "addressLocality": "Harrow",
         "addressRegion": "Greater London",
+        "postalCode": "HA1 1BE",
         "addressCountry": "GB"
-      }
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.5806,
+        "longitude": -0.3379
+      },
+      "hasMap": "https://g.page/r/CX9w3xvAir8JEBM"
     },
     {
       "@type": "FAQPage",

@@ -424,32 +424,33 @@ Yes, where the scope allows. An overall design direction helps the phases connec
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.oraanj-interiors.co.uk/knightsbridge/",
+      "@id": "https://www.oraanj-interiors.co.uk/knightsbridge/#webpage",
       "url": "https://www.oraanj-interiors.co.uk/knightsbridge/",
       "name": "Interior Designers in Knightsbridge – Considered Homes and Distinctive Business Interiors",
       "description": "Interior design, space planning and refurbishment support for apartments, townhouses and commercial premises in Knightsbridge.",
+      "inLanguage": "en-GB",
       "isPartOf": {
-        "@type": "WebSite",
-        "@id": "https://www.oraanj-interiors.co.uk/#website",
-        "url": "https://www.oraanj-interiors.co.uk/",
-        "name": "Oraanj Interior Design"
+        "@id": "https://www.oraanj-interiors.co.uk/#website"
+      },
+      "about": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
       }
     },
     {
-      "@type": "LocalBusiness",
-      "@id": "https://www.oraanj-interiors.co.uk/knightsbridge/#localbusiness",
-      "name": "Oraanj Interior Design - Knightsbridge",
+      "@type": "Service",
+      "@id": "https://www.oraanj-interiors.co.uk/knightsbridge/#service",
+      "name": "Interior Design & Build in Knightsbridge",
+      "serviceType": "Interior Design & Build",
+      "description": "Interior design, space planning and refurbishment support for apartments, townhouses and commercial premises in Knightsbridge.",
       "url": "https://www.oraanj-interiors.co.uk/knightsbridge/",
-      "telephone": "07700 141121",
-      "priceRange": "££££",
-      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_living_room_fireplace_closeup_1x1.jpeg",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Suite 17, Broadwalk House, 51 Hyde Park Gate, Knightsbridge, London SW7 5DZ",
-        "addressLocality": "Knightsbridge",
-        "addressRegion": "Greater London",
-        "addressCountry": "GB"
-      }
+      "provider": {
+        "@id": "https://www.oraanj-interiors.co.uk/#organization"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Knightsbridge, London"
+      },
+      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury_living_room_fireplace_closeup_1x1.jpeg"
     },
     {
       "@type": "FAQPage",

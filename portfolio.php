@@ -1506,6 +1506,9 @@ document.addEventListener('click', function(e) {
       },
       "about": {
         "@id": "https://www.oraanj-interiors.co.uk/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://www.oraanj-interiors.co.uk/portfolio/#itemlist"
       }
     },
     {
@@ -1568,22 +1571,6 @@ document.addEventListener('click', function(e) {
           "url": "https://www.oraanj-interiors.co.uk/london-bridge-office-interior-design/"
         }
       ]
-    },
-    {
-      "@type": ["InteriorDesigner", "ProfessionalService", "HomeAndConstructionBusiness"],
-      "@id": "https://www.oraanj-interiors.co.uk/#organization",
-      "name": "Oraanj Interiors",
-      "url": "https://www.oraanj-interiors.co.uk/",
-      "logo": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/logo.png",
-      "image": "https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-modern-living-room-sofa-interior.jpeg",
-      "telephone": "+44 7448 803051",
-      "email": "info@oraanj-interiors.co.uk",
-      "priceRange": "££££",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "London",
-        "addressCountry": "GB"
-      }
     }
   ]
 }
