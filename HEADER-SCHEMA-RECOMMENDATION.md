@@ -226,13 +226,6 @@ Below is the clean, consolidated JSON-LD code recommended to replace the current
       "award": [
         "Interior Designer of the Year - Eastern Eye Property Awards 2025"
       ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "102",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
