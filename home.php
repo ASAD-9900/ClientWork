@@ -414,42 +414,7 @@ get_header();
 </div>
 </div>
 </div>
-<!--<div class="sdw-pro-cards-section">-->
-<!--<div class="sdw-pro-cards-grid">-->
-<!--<div class="sdw-pro-card-box">-->
-<!--<div class="sdw-pro-card-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/space-planning.jpeg" alt="Space Planning Blueprint" class="sdw-pro-card-img" loading="lazy" /></div>-->
-<!--<a href="https://www.oraanj-interiors.co.uk/space-planning/" ><h3 class="sdw-pro-card-title">Space Planning</h3></a>-->
-<!--</div>-->
-<!--<div class="sdw-pro-card-box">-->
-<!--<div class="sdw-pro-card-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/interior-design-according-to-your-taste.jpeg" alt="Interior Design Moodboard" class="sdw-pro-card-img" loading="lazy" /></div>-->
-<!--<a href="https://www.oraanj-interiors.co.uk/" ><h3 class="sdw-pro-card-title">Interior Design</h3></a>-->
-<!--</div>-->
-<!--<div class="sdw-pro-card-box">-->
-<!--<div class="sdw-pro-card-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/complete-3d-visualisation-of-the-design.jpeg" alt="3D Visualisation Render" class="sdw-pro-card-img" loading="lazy" /></div>-->
-<!--<a href="https://www.oraanj-interiors.co.uk/3d-render-services/" ><h3 class="sdw-pro-card-title">3D Visualisation</h3></a>-->
-<!--</div>-->
-<!--<div class="sdw-pro-card-box">-->
-<!--<div class="sdw-pro-card-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/lighting-design.jpeg" alt="Lighting Design Fixtures" class="sdw-pro-card-img" loading="lazy" /></div>-->
-<!--<a href="https://www.oraanj-interiors.co.uk/lighting-design/" ><h3 class="sdw-pro-card-title">Lighting Design</h3></a>-->
-<!--</div>-->
-<!--<div class="sdw-pro-card-box">-->
-<!--<div class="sdw-pro-card-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/furniture-and-ff-and-e.jpeg" alt="Furniture & FF&E" class="sdw-pro-card-img" loading="lazy" /></div>-->
-<!--<a href="https://www.oraanj-interiors.co.uk/procurement/" ><h3 class="sdw-pro-card-title">Furniture &amp; FF&amp;E</h3></a>-->
-<!--</div>-->
-<!--<div class="sdw-pro-card-box">-->
-<!--<div class="sdw-pro-card-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/bespoke-joinery-design.jpeg" alt="Bespoke Joinery Cabinetry" class="sdw-pro-card-img" loading="lazy" /></div>-->
-<!--<a href="https://www.oraanj-interiors.co.uk/custom-furniture-design/" ><h3 class="sdw-pro-card-title">Bespoke Joinery</h3></a>-->
-<!--</div>-->
-<!--<div class="sdw-pro-card-box">-->
-<!--<div class="sdw-pro-card-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/materials-and-finishes.jpeg" alt="Materials & Finishes" class="sdw-pro-card-img" loading="lazy" /></div>-->
-<!--<a href="https://www.oraanj-interiors.co.uk/procurement/" ><h3 class="sdw-pro-card-title">Materials &amp; Finishes</h3></a>-->
-<!--</div>-->
-<!--<div class="sdw-pro-card-box">-->
-<!--<div class="sdw-pro-card-img-wrap"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/complete-technical-design.jpeg" alt="Technical Design Blueprints" class="sdw-pro-card-img" loading="lazy" /></div>-->
-<!--<a href="https://www.oraanj-interiors.co.uk/technical-cad-drawings/" ><h3 class="sdw-pro-card-title">Technical Design</h3></a>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
+
 </div>
 </section>
 
@@ -638,19 +603,19 @@ get_header();
 <h3 class="pib-gallery-title">Bathroom Renovations</h3>
 </div>
 <div class="pib-gallery-card">
-<a href="https://www.oraanj-interiors.co.uk/turnkey-interior-design-london/"><div class="pib-gallery-img-box"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/open_plan_kitchen_dining_garden_view.jpeg" alt="Whole-Home Renovations" class="pib-gallery-img" loading="lazy" /></div></a>
+<div class="pib-gallery-img-box"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/open_plan_kitchen_dining_garden_view.jpeg" alt="Whole-Home Renovations" class="pib-gallery-img" loading="lazy" /></div>
 <h3 class="pib-gallery-title">Whole-Home Renovations</h3>
 </div>
 <div class="pib-gallery-card">
-<a href="https://www.oraanj-interiors.co.uk/interior-designers-london/"><div class="pib-gallery-img-box"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/apartment-refurbishment.jpeg" alt="Apartment Refurbishments" class="pib-gallery-img" loading="lazy" /></div></a>
+<div class="pib-gallery-img-box"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/apartment-refurbishment.jpeg" alt="Apartment Refurbishments" class="pib-gallery-img" loading="lazy" /></div>
 <h3 class="pib-gallery-title">Apartment Refurbishments</h3>
 </div>
 <div class="pib-gallery-card">
-<a href="https://www.oraanj-interiors.co.uk/construction-company/"><div class="pib-gallery-img-box"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/period-properties-renovation.jpeg" alt="Period Properties" class="pib-gallery-img" loading="lazy" /></div></a>
+<div class="pib-gallery-img-box"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/period-properties-renovation.jpeg" alt="Period Properties" class="pib-gallery-img" loading="lazy" /></div>
 <h3 class="pib-gallery-title">Period Properties</h3>
 </div>
 <div class="pib-gallery-card">
-<a href="https://www.oraanj-interiors.co.uk/renovation-company-london/"><div class="pib-gallery-img-box"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/full-interior-renovation.jpeg" alt="Interior Refurbishments" class="pib-gallery-img" loading="lazy" /></div></a>
+<div class="pib-gallery-img-box"><img src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/full-interior-renovation.jpeg" alt="Interior Refurbishments" class="pib-gallery-img" loading="lazy" /></div>
 <h3 class="pib-gallery-title">Interior Refurbishments</h3>
 </div>
 </div>
@@ -802,9 +767,7 @@ get_header();
 
     <!-- Item 1: Residential Interior -->
     <div class="oraanj-expertise-col">
-      <a href="https://www.oraanj-interiors.co.uk/residential-interior-design-london/">
-        <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-neutral-living-room-interior.jpg-e1790961977640.jpeg" alt="Residential Interior" />
-      </a>
+      <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/luxury-neutral-living-room-interior.jpg-e1790961977640.jpeg" alt="Residential Interior" />
       <h3 class="oraanj-expertise-heading">
         <a href="https://www.oraanj-interiors.co.uk/residential-interior-design-london/">Residential Interior</a>
       </h3>
@@ -813,9 +776,7 @@ get_header();
 
     <!-- Item 2: Commercial Interior -->
     <div class="oraanj-expertise-col">
-      <a href="https://www.oraanj-interiors.co.uk/commercial-interior-design/">
-        <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-salon-interior-greenery.jpeg" alt="Commercial Interior" />
-      </a>
+      <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-salon-interior-greenery.jpeg" alt="Commercial Interior" />
       <h3 class="oraanj-expertise-heading">
         <a href="https://www.oraanj-interiors.co.uk/commercial-interior-design/">Commercial Interior</a>
       </h3>
@@ -824,9 +785,7 @@ get_header();
 
     <!-- Item 3: Restaurant Interior -->
     <div class="oraanj-expertise-col">
-      <a href="https://www.oraanj-interiors.co.uk/restaurant-interior-design-london/">
-        <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/terracotta-arched-window-restaurant-interior.jpeg" alt="Restaurant Interior" />
-      </a>
+      <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/terracotta-arched-window-restaurant-interior.jpeg" alt="Restaurant Interior" />
       <h3 class="oraanj-expertise-heading">
         <a href="https://www.oraanj-interiors.co.uk/restaurant-interior-design-london/">Restaurant Interior</a>
       </h3>
@@ -834,20 +793,15 @@ get_header();
     </div>
 
     <!-- Item 4: Cafe Interior -->
-<div class="oraanj-expertise-col">
-      <a href="https://www.oraanj-interiors.co.uk/cafe-interior-designer">
-<img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-warm-wood-cafe-counter.webp" alt="Cafe Interior" />
-</a>
-<h3 class="oraanj-expertise-heading"><a href="https://www.oraanj-interiors.co.uk/cafe-interior-designer/">Cafe Interior</a></h3>
-<p class="oraanj-expertise-text">We design café interiors that combine atmosphere, customer flow and everyday functionality. Our team plans layouts, materials, lighting and finishes to create welcoming spaces that customers enjoy spending time in.</p>
-
-</div>
+    <div class="oraanj-expertise-col">
+      <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-warm-wood-cafe-counter.webp" alt="Cafe Interior" />
+      <h3 class="oraanj-expertise-heading"><a href="https://www.oraanj-interiors.co.uk/cafe-interior-designer/">Cafe Interior</a></h3>
+      <p class="oraanj-expertise-text">We design café interiors that combine atmosphere, customer flow and everyday functionality. Our team plans layouts, materials, lighting and finishes to create welcoming spaces that customers enjoy spending time in.</p>
+    </div>
 
     <!-- Item 5: Office Interior -->
     <div class="oraanj-expertise-col">
-      <a href="https://www.oraanj-interiors.co.uk/office-interior-design-london/">
-        <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-office-workstation-interior.jpeg" alt="Office Interior" />
-      </a>
+      <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/10/modern-office-workstation-interior.jpeg" alt="Office Interior" />
       <h3 class="oraanj-expertise-heading">
         <a href="https://www.oraanj-interiors.co.uk/office-interior-design-london/">Office Interior</a>
       </h3>
@@ -859,71 +813,7 @@ get_header();
 
 
 
-<!--<div class="oraanj-expertise-container">-->
-<!--  <div class="oraanj-expertise-header">-->
-<!--    <div class="oraanj-expertise-line"></div>-->
-<!--    <h2 class="oraanj-expertise-title">Our Specialist Services</h2>-->
-<!--    <div class="oraanj-expertise-line"></div>-->
-<!--  </div>-->
-<!--  <div class="oraanj-expertise-row">-->
 
-    <!-- Item 1: Bespoke Joinery -->
-<!--    <div class="oraanj-expertise-col">-->
-<!--      <a href="https://www.oraanj-interiors.co.uk/custom-furniture-design/">-->
-<!--        <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/bespoke-joinery-design-london.webp" alt="Bespoke Joinery" />-->
-<!--      </a>-->
-<!--      <h3 class="oraanj-expertise-heading">-->
-<!--        <a href="https://www.oraanj-interiors.co.uk/custom-furniture-design/">Bespoke Joinery</a>-->
-<!--      </h3>-->
-<!--      <p class="oraanj-expertise-text">We design bespoke joinery and custom furniture for homes and commercial interiors. Our team creates fitted storage, cabinetry and made-to-measure pieces that maximise space and suit the overall interior design.</p>-->
-<!--    </div>-->
-
-    <!-- Item 2: Lighting Design -->
-<!--    <div class="oraanj-expertise-col">-->
-<!--      <a href="https://www.oraanj-interiors.co.uk/lighting-design/">-->
-<!--        <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/lighting-design-london.webp" alt="Lighting Design" />-->
-<!--      </a>-->
-<!--      <h3 class="oraanj-expertise-heading">-->
-<!--        <a href="https://www.oraanj-interiors.co.uk/lighting-design/">Lighting Design</a>-->
-<!--      </h3>-->
-<!--      <p class="oraanj-expertise-text">We create lighting designs that improve both the look and function of a space. Our team plans architectural and decorative lighting to support the layout, highlight key features and create the right atmosphere.</p>-->
-<!--    </div>-->
-
-    <!-- Item 3: FF&E and Procurement -->
-<!--    <div class="oraanj-expertise-col">-->
-<!--      <a href="https://www.oraanj-interiors.co.uk/procurement/">-->
-<!--        <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/FFE-and-Procurement.webp" alt="FF&amp;E and Procurement" />-->
-<!--      </a>-->
-<!--      <h3 class="oraanj-expertise-heading">-->
-<!--        <a href="https://www.oraanj-interiors.co.uk/procurement/">FF&amp;E and Procurement</a>-->
-<!--      </h3>-->
-<!--      <p class="oraanj-expertise-text">We manage furniture, fixtures, equipment and procurement for interior design projects. Our team sources suitable products, coordinates suppliers and manages orders to help keep the project organised, on time and within budget.</p>-->
-<!--    </div>-->
-
-    <!-- Item 4: Kitchen Renovation -->
-<!--    <div class="oraanj-expertise-col">-->
-<!--      <a href="https://www.oraanj-interiors.co.uk/kitchen-renovation-company/">-->
-<!--        <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/kitchen-renovation-london.webp" alt="Kitchen Renovation" />-->
-<!--      </a>-->
-<!--      <h3 class="oraanj-expertise-heading">-->
-<!--        <a href="https://www.oraanj-interiors.co.uk/kitchen-renovation-company/">Kitchen Renovation</a>-->
-<!--      </h3>-->
-<!--      <p class="oraanj-expertise-text">We design and renovate kitchens around practical layouts, quality materials and everyday living. From cabinetry and finishes to lighting, installation and project coordination, our team manages the transformation from design through to completion.</p>-->
-<!--    </div>-->
-
-    <!-- Item 5: Bathroom Renovation -->
-<!--    <div class="oraanj-expertise-col">-->
-<!--      <a href="https://www.oraanj-interiors.co.uk/bathroom-renovation-company/">-->
-<!--        <img class="oraanj-expertise-img" src="https://www.oraanj-interiors.co.uk/wp-content/uploads/2026/09/bathroom-renovation-london.webp" alt="Bathroom Renovation" />-->
-<!--      </a>-->
-<!--      <h3 class="oraanj-expertise-heading">-->
-<!--        <a href="https://www.oraanj-interiors.co.uk/bathroom-renovation-company/">Bathroom Renovation</a>-->
-<!--      </h3>-->
-<!--      <p class="oraanj-expertise-text">We design and renovate bathrooms with careful attention to layout, storage, sanitaryware, materials and lighting, managing the project from initial design through to installation and completion.</p>-->
-<!--    </div>-->
-
-<!--  </div>-->
-<!--</div>-->
 
 
 
